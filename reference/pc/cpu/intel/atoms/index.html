@@ -48,12 +48,12 @@
     <script>
         function filter(selectInTableHeader) {
             let i;
-            var text = selectInTableHeader.selectedIndex > 0 ? selectInTableHeader.options[selectInTableHeader.selectedIndex].textContent : "";
-            var headerCell = selectInTableHeader.parentNode;
-            var headerRow = headerCell.parentNode;
-            var table = headerRow.parentNode;
-            var columnIndex = headerCell.cellIndex;
-            var rows = table.rows;
+            const text = selectInTableHeader.selectedIndex > 0 ? selectInTableHeader.options[selectInTableHeader.selectedIndex].textContent : "";
+            const headerCell = selectInTableHeader.parentNode;
+            const headerRow = headerCell.parentNode;
+            const table = headerRow.parentNode;
+            const columnIndex = headerCell.cellIndex;
+            const rows = table.rows;
 
             if (text === "") {
                 for (i = 1; i < rows.length; i++) {
@@ -61,7 +61,7 @@
                 }
             } else {
                 for (i = 1; i < rows.length; i++) {
-                    var row = rows[i];
+                    const row = rows[i];
                     if (row.cells[columnIndex].textContent.indexOf(text) > -1) {
                         row.style.display = "";
                     } else {
@@ -72,9 +72,9 @@
         }
     </script>
     <script>
-        var table = Common161.enhancedTable(document, "atomsTable", atoms);
-        for (var iatom in atoms) {
-            var atom = atoms[iatom];
+        const table = Common161.enhancedTable(document, "atomsTable", atoms);
+        for (const iatom in atoms) {
+            const atom = atoms[iatom];
             table.addRow(iatom)
                 .text(atom.architecture)
                 .text(atom.type)
