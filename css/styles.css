@@ -1,0 +1,53 @@
+body {
+	font-family: sans-serif;
+	background: lightgray;
+}
+
+table.gridTable {
+	border-collapse: collapse;
+	font-size: small;
+}
+
+table.gridTable th {
+	border: 1px solid gray;
+	padding: 0.3em;
+	background-color: lightgray;
+}
+
+table.gridTable td {
+	border: 1px solid lightgray;
+	padding: 0.3em;
+}
+
+table.gridTable td.positive {
+	background-color: lightgreen;
+}
+        
+table.gridTable td.neutral {
+	background-color: lightyellow;
+}
+        
+table.gridTable td.negative {
+	background-color: lightcoral;
+}
+
+p.readable {
+    max-width: 30em;
+}
+
+article.readable {
+    font-size: 1em;
+    padding: 2em;
+    background: white;
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+article.wide {
+    padding: 2em;
+    background: white;
+    width: 100%;
+    max-width: 90em;
+    margin: 0 auto;
+}
