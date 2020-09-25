@@ -1,4 +1,4 @@
-var atoms = [
+const atoms = [
     {
         architecture: "Bonnel 45 nm",
         type: "Nettop",
