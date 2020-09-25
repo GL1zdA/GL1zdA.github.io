@@ -1,0 +1,184 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1988-06-16",
+      "title": "386 SX 16",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1989-01-25",
+      "title": "386 SX 20",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1991-09-16",
+      "title": "486 SX 25",
+      "description": "16, 20, 25<br><a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1992-01",
+      "title": "386 SX 25",
+      "description": "<a href=\"https://books.google.pl/books?id=9T0EAAAAMBAJ&pg=PA25\">InfoWorld</a>"
+    },
+    {
+      "start": "1992-09-21",
+      "title": "486 SX 33",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1992-10-26",
+      "title": "386 SX 33",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1994-03-07",
+      "title": "IntelDX4 75, 100",
+      "description": "<a href=\"http://www.intel.com/pressroom/kits/quickrefyr.htm#1993\">Intel Microprocessor Quick Reference Guide</a>"
+    },
+    {
+      "start": "1994-10-10",
+      "title": "Pentium 75"
+    },
+    {
+      "start": "1998-04-15",
+      "title": "Celeron 266",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp041598.htm\">New Intel Pentium II and Celeron Processors Bring Optimized Performance to Computer Systems</a>."
+    },
+    {
+      "start": "1998-06-08",
+      "title": "Celeron 300",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp060898.htm\">Intel Introduces New Celeron Processor for Basic PCs</a>"
+    },
+    {
+      "start": "1998-08-24",
+      "title": "Celeron 333",
+      "description": "300A, 333<br><a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp082498.htm\">New Intel Pentium II and Celeron Processors Complete 1998 Desktop Processor Line-up</a>"
+    },
+    {
+      "start": "1999-01-04",
+      "title": "Celeron 400",
+      "description": "366, 400<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp010499.htm\">New Intel Celeron Processors Deliver Great PC Performance at Low Prices</a>"
+    },
+    {
+      "start": "1999-03-22",
+      "title": "Celeron 433",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp032299.htm\">Intel Ships Fastest Celeron® Processor for Value PCs</a>"
+    },
+    {
+      "start": "1999-04-26",
+      "title": "Celeron 466",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp042699.htm\">Intel Introduces Fast Processor and Innovative Chipset for Value PCs</a>"
+    },
+    {
+      "start": "1999-08-02",
+      "title": "Celeron 500",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp080299.htm\">Intel Ships Fastest Pentium III, Celeron Processors</a>"
+    },
+    {
+      "start": "2000-01-04",
+      "title": "Celeron 533",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp010400.htm\">New Celeron Processor 533 MHz is Intel's Fastest-Ever for Sub-$1000 PCs</a>"
+    },
+    {
+      "start": "2000-03-29",
+      "title": "Celeron 600",
+      "description": "(533A), 566, 600<br><a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp032900.htm\">Intel Unveils New Celeron Processors Based On 0.18-Micron Technology</a>"
+    },
+    {
+      "start": "2000-06-26",
+      "title": "Celeron 700",
+      "description": "633, 667, 700<br><a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp062600.htm\">Intel Unveils Fastest Celeron Processors For Sub - $1000 PCs</a>"
+    },
+    {
+      "start": "2000-11-13",
+      "title": "Celeron 766",
+      "description": "733, 766<br><a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp111300a.htm\">Two New Celeron Processors Are Intel's Fastest For Value PCs</a>"
+    },
+    {
+      "start": "2001-01-03",
+      "title": "Celeron 800",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010103bb.htm\">Intel Unveils New Value PC Technologies</a>"
+    },
+    {
+      "start": "2001-04-09",
+      "title": "Celeron 850",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010409comp.htm\">Intel Advances Value PC Processor Line</a>"
+    },
+    {
+      "start": "2001-07-02",
+      "title": "Celeron 900",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010702comp_a.htm\">Intel Enhances Value PC Processor Line</a>"
+    },
+    {
+      "start": "2001-08-31",
+      "title": "Celeron 1.1",
+      "description": "950, 1, 1.1<br><a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010831comp.htm\">Intel's Value PC Processor Breaks Gigahertz Barrier</a>"
+    },
+    {
+      "start": "2001-10-02",
+      "title": "Celeron 1.2",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20011002comp.htm\">New Process Technology Speeds Up Intel's Value PC Processor</a>"
+    },
+    {
+      "start": "2002-01-03",
+      "title": "Celeron 1.3",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020103comp.htm\">Value PC Market Segment Gets Boost From New Intel Processor</a>"
+    },
+    {
+      "start": "2002-05-15",
+      "title": "Celeron 1.7",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020515comp.htm\">Intel Introduces Celeron Processor At 1.7 GHz</a>"
+    },
+    {
+      "start": "2002-06-12",
+      "title": "Celeron 1.8",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020612comp.htm\">Intel Advances Celeron Processor To 1.80 GHz</a>"
+    },
+    {
+      "start": "2002-09-18",
+      "title": "Celeron 2.0",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020918comp.htm\">Consumer Choice Increases With New Intel Celeron Processor</a>"
+    },
+    {
+      "start": "2002-11-20",
+      "title": "Celeron 2.2",
+      "description": "2.1, 2.2<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021120comp.htm\">Intel Releases Faster Versions Of Celeron Processor</a>"
+    },
+    {
+      "start": "2003-03-31",
+      "title": "Celeron 2.4",
+      "description": "2.3, 2.4<br><a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030331comp.htm\">Intel Revs Up Speed On Celeron Processors</a>"
+    },
+    {
+      "start": "2003-06-25",
+      "title": "Celeron 2.6",
+      "description": "2.5, 2.6<br><a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030625comp.htm\">Intel Celeron Processors Provide Fuel For Value PCs</a>"
+    },
+    {
+      "start": "2003-09-24",
+      "title": "Celeron 2.7",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030924comp.htm\">Intel Celeron Processor At 2.70 GHz Introduced</a>"
+    },
+    {
+      "start": "2003-11-05",
+      "title": "Celeron 2.8",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20031105comp.htm\">Intel Revs Up Processor Speed For Value PCs</a>"
+    },
+    {
+      "start": "2004-06-24",
+      "title": "Celeron D 335",
+      "description": "335 (2.80), 330 (2.66), 325 (2.53), 320 (2.40)<br><a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040624comp.htm\">Intel Celeron D Processor Now Available For Value Market Segment</a>"
+    },
+    {
+      "start": "2004-09-22",
+      "title": "Celeron D 340",
+      "description": "340 (2.93)<br><a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040922comp.htm\">Intel's New Products Improve Features For Value-Priced PCs</a>"
+    },
+    {
+      "start": "2005-06-27",
+      "title": "Celeron D 351",
+      "description": "351, 350, 346, 341, 336, 331, 326<br><a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050627comp.htm\">Intel Completes 64-Bit Transition With Introduction Of Intel Celeron D Processor For Value PCs</a>"
+    }
+  ]
+}

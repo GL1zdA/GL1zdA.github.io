@@ -1,0 +1,40 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "2002-03-12",
+      "title": "Xeon MP 1.6",
+      "description": "Xeon MP 1.4, 1.5, 1.6<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020312comp.htm\">Large Cache Intel Xeon Processor MP Pushes Performance For Multi-Processing Servers By More Than 30 Percent</a>"
+    },
+    {
+      "start": "2002-11-04",
+      "title": "Xeon MP 2.0",
+      "description": "Xeon MP 1.50, 1.90, 2<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021104comp.htm\">Faster Intel Xeon Processors Ship For High-End Servers</a>"
+    },
+    {
+      "start": "2003-06-30",
+      "title": "Xeon MP 2.8",
+      "description": "Xeon MP 2.0, 2.5, 2.8<br><a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030630comp.htm\">New Intel Server Processors Strengthen High-End Line-Up</a>"
+    },
+    {
+      "start": "2004-03-02",
+      "title": "Xeon MP 3.0 4M",
+      "description": "Xeon MP 2.2 2M, 2.7 2M, 3.0 4M<br><a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040302comp.htm\">New Intel Server Processors Strengthen High-End Line-Up</a>"
+    },
+    {
+      "start": "2005-03-29",
+      "title": "Xeon MP 3.33 8M",
+      "description": "Xeon MP 3.16, 3.66, 2.8 4M, 3.0 8M, 3.33 8M<br><a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050329comp.htm\">New Intel Server Processors Strengthen High-End Line-Up</a>"
+    },
+    {
+      "start": "2005-11-01",
+      "title": "Xeon 7000",
+      "description": "Xeon 7020, 7030, 7040, 7041<br><a href=\"http://www.intel.com/pressroom/archive/releases/2005/20051101comp.htm\">Intel Launches Next Wave Of Multi-Core Server Platforms</a>"
+    },
+    {
+      "start": "2006-08-28",
+      "title": "Xeon 7100",
+      "description": "Xeon 7140M, 7140N, 7130M, 7130N, 7120M, 7120N, 7110M, 7110N<br><a href=\"http://www.intel.com/pressroom/archive/releases/2006/20060828comp_b.htm\">New High-End Intel Server Processors Expand Performance Leadership</a>"
+    }
+  ]
+}

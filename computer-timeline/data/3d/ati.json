@@ -1,0 +1,65 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1995-11",
+      "title": "3D Rage",
+      "description": ""
+    },
+    {
+      "start": "1996-09",
+      "title": "3D Rage II",
+      "description": ""
+    },
+    {
+      "start": "1997-05",
+      "title": "Rage Pro",
+      "description": ""
+    },
+    {
+      "start": "1998-08",
+      "title": "Rage Fury",
+      "description": ""
+    },
+    {
+      "start": "1999-08",
+      "title": "Rage Fury Pro",
+      "description": ""
+    },
+    {
+      "start": "2000-04",
+      "title": "Radeon",
+      "description": ""
+    },
+    {
+      "start": "2001-08-14",
+      "title": "Radeon 8500",
+      "description": ""
+    },
+    {
+      "start": "2002-07-18",
+      "title": "Radeon 9700 Pro",
+      "description": ""
+    },
+    {
+      "start": "2004-05-04",
+      "title": "Radeon X800 XT PE",
+      "description": ""
+    },
+    {
+      "start": "2005-10-05",
+      "title": "Radeon X1800 XT",
+      "description": ""
+    },
+    {
+      "start": "2006-01-24",
+      "title": "Radeon X1900 XTX",
+      "description": ""
+    },
+    {
+      "start": "2007-05-14",
+      "title": "Radeon HD 2900 XT",
+      "description": ""
+    }
+  ]
+}

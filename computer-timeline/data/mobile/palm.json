@@ -1,0 +1,55 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1996-04-29",
+      "title": "Pilot",
+      "description": "<a href=\"https://web.archive.org/web/19961221022510if_/http://www.usr.com:80/palm/5012_02.html\">U.S. Robotics Launches Breakthrough Pocket-Size Connected Organizer for PC Users</a><br><a href=\"https://web.archive.org/web/19961221022452if_/http://www.usr.com:80/palm/5012_03.html\">U.S. Robotics Ships Award-Winning Pilot Connected Organizer</a>"
+    },
+    {
+      "start": "1997-03-10",
+      "title": "PalmPilot",
+      "description": "<a href=\"https://web.archive.org/web/20030815030604/http://www.palm.com/us/company/pr/1997/pressrel_palm20.html\">U.S. Robotics Announces Two New Models of the Best Selling Pilot Connected Organizer</a>"
+    },
+    {
+      "start": "1998-03-09",
+      "title": "Palm III",
+      "description": "<a href=\"https://web.archive.org/web/20031010233313/http://www.palm.com:80/us/company/pr/1998/palmiii.html\">3Com Delivers the Palm III Connected Organizer, the Third Generation of the Industry-Leading PalmPilot Handheld Computer</a>"
+    },
+    {
+      "start": "1998-12-02",
+      "title": "Palm VII",
+      "description": "<a href=\"https://web.archive.org/web/20030815015228/http://www.palm.com:80/us/company/pr/1998/palmvii.html\">3Com Announces the Palm VII Connected Organizer, The First Handheld Solution for Out-of-the-box Wireless Internet Access</a>"
+    },
+    {
+      "start": "1999-02-22",
+      "title": "Palm V",
+      "description": "<a href=\"https://web.archive.org/web/20031010202341/http://www.palm.com:80/us/company/pr/1999/palmvpalmiiix.html\">3Com Unveils the Palm V and Palm IIIx Connected Organizers</a>"
+    },
+    {
+      "start": "1999-07-19",
+      "title": "Palm IIIe",
+      "description": "<a href=\"https://web.archive.org/web/20031010200622/http://www.palm.com:80/us/company/pr/1999/palmiiie.html\">3Com Delivers Palm IIIe Connected Organizer, Full-featured Handheld at Breakthrough Price</a>"
+    },
+    {
+      "start": "2000-02-22",
+      "title": "Palm IIIc",
+      "description": "<a href=\"https://web.archive.org/web/20030815013653/http://www.palm.com:80/us/company/pr/2000/022200c.html\">Palm, Inc. Introduces The Palm IIIc Product Industry's Smallest, Lightest Color Handheld Computer</a>"
+    },
+    {
+      "start": "2000-02-22",
+      "title": "Palm IIIxe",
+      "description": "<a href=\"https://web.archive.org/web/20031009233248/http://www.palm.com:80/us/company/pr/2000/022200a.html\">Palm Inc. Introduces Palm IIIxe Product For Versatile Handheld Computing</a>"
+    },
+    {
+      "start": "2001-03-06",
+      "title": "Palm m505",
+      "description": ""
+    },
+    {
+      "start": "2002-03-04",
+      "title": "Palm m515",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1985-10-17",
+      "title": "386 DX 16",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1987-02-16",
+      "title": "386 DX 20",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1988-04-04",
+      "title": "386 DX 25",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a><br>InfoWorld 1998-04-11 <a href=\"https://books.google.pl/books?id=5z4EAAAAMBAJ&pg=PA1\">Sun 386i Runs DOS Programs Under Unix</a><br>InfoWorld 1998-11-14 <a href=\"https://books.google.pl/books?id=wTsEAAAAMBAJ&pg=PT70\">Hot Rods</a><br>InfoWorld 1999-05-01 <a href=\"https://books.google.pl/books?id=WjoEAAAAMBAJ&pg=PT72\">25-MHz 386es</a>"
+    },
+    {
+      "start": "1989-04-10",
+      "title": "386 DX 33",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1989-04-10",
+      "title": "486 DX 25",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1990-05-07",
+      "title": "486 DX 33",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1991-06-24",
+      "title": "486 DX 50",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a><br><a href=\"https://books.google.pl/books?id=TVAEAAAAMBAJ&pg=PA3\">InfoWorld</a>"
+    },
+    {
+      "start": "1992-03-03",
+      "title": "486 DX2 50",
+      "description": "<a href=\"http://www.intel.com/pressroom/kits/quickrefyr.htm#1993\">Intel Microprocessor Quick Reference Guide</a><br><a href=\"https://books.google.pl/books?id=7j0EAAAAMBAJ&pg=PA3\">InfoWorld</a>"
+    },
+    {
+      "start": "1992-08-10",
+      "title": "486 DX2 66",
+      "description": "Intel Releases 486 DX2 66 Megahertz Chip"
+    },
+    {
+      "start": "1993-03-22",
+      "title": "Pentium 60, 66",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1994-03-07",
+      "title": "Pentium 90, 100",
+      "description": "<a href=\"http://www.landley.net/history/mirror/intel/quickrefyr.htm\">Quickref</a>"
+    },
+    {
+      "start": "1995-03-27",
+      "title": "Pentium 120",
+      "description": "<a href=\"https://web.archive.org/web/19961220054821/http://www.intel.com/procs/pentium/pp120/prpp120.htm\">Intel Ships Fastest Pentium Processor</a>"
+    },
+    {
+      "start": "1995-06-12",
+      "title": "Pentium 133",
+      "description": "<a href=\"https://web.archive.org/web/19961220054639/http://www.intel.com/procs/pentium/pp133/prpp133.htm\">Intel Introduces Ninth Member of Pentium Processor Family </a>"
+    },
+    {
+      "start": "1996-01-04",
+      "title": "Pentium 166",
+      "description": "150, 166<br><a href=\"https://web.archive.org/web/19961220054118/http://www.intel.com/procs/biz/vol2no1/news/index.htm#pp166\">Intel Raises Pentium Processor Performance to 166 MHz</a>"
+    },
+    {
+      "start": "1996-06-10",
+      "title": "Pentium 200",
+      "description": "<a href=\"https://web.archive.org/web/19961220053111/http://www.intel.com/pressroom/archive/releases/pp200.htm\">Intel Introduces 200-MHz Pentium Processor</a>"
+    },
+    {
+      "start": "1997-01-08",
+      "title": "Pentium MMX 200",
+      "description": "166, 200<br><a href=\"http://www.intel.com/pressroom/archive/releases/1997/dp010897.htm\">Intel Introduces The Pentium Processor With MMX Technology</a>"
+    },
+    {
+      "start": "1997-06-02",
+      "title": "Pentium MMX 233",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1997/dp060297.htm\">Intel Introduces 11th Microprocessor with MMX Technology</a>",
+      "extInfo": {
+        "links": [
+          {
+            "link": "http://www.intel.com/pressroom/archive/releases/1997/dp060297.htm",
+            "title": "Intel Introduces 11th Microprocessor with MMX Technology",
+            "type": "pr"
+          },
+          {
+            "link": "http://www.tomshardware.com/",
+            "title": "MMX 233 review",
+            "type": "review-thg"
+          }
+        ]
+      }
+    },
+    {
+      "start": "1997-05-07",
+      "title": "Pentium II 300",
+      "description": "233, 266, 300<br>1997-07-14: <a href=\"http://www.intel.com/pressroom/archive/releases/1997/SP071497.HTM\">Pentium® II Processor Now Including ECC Capability Enables New Level of Processing Power for Entry-Level Servers</a>"
+    },
+    {
+      "start": "1998-01-26",
+      "title": "Pentium II 333",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp012698.htm\">Intel Delivers Fastest Pentium II</a>"
+    },
+    {
+      "start": "1998-04-15",
+      "title": "Pentium II 400",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp041598.htm\">New Intel Pentium II and Celeron Processors Bring Optimized Performance to Computer Systems</a>."
+    },
+    {
+      "start": "1998-08-24",
+      "title": "Pentium II 450",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp082498.htm\">New Intel Pentium II and Celeron Processors Complete 1998 Desktop Processor Line-up</a>"
+    },
+    {
+      "start": "1999-02-26",
+      "title": "Pentium III 500",
+      "description": "450, 500<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp022699.htm\">Intel Launches the Pentium III Processor</a>"
+    },
+    {
+      "start": "1999-05-17",
+      "title": "Pentium III 550",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp051799.htm\">Intel Introduces 550 MHz Pentium III Processor for the Desktop</a>"
+    },
+    {
+      "start": "1999-08-02",
+      "title": "Pentium III 600",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp080299.htm\">Intel Ships Fastest Pentium III, Celeron Processors</a>"
+    },
+    {
+      "start": "1999-09-27",
+      "title": "Pentium III 600B",
+      "description": "533B, 600B<br>Could be used with a 810E :/. <a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp092799.htm\">Intel Introduces New Microprocessors And Chipset For Mainstream PCs</a>"
+    },
+    {
+      "start": "1999-10-25",
+      "title": "Pentium III 733",
+      "description": "Pentium III 500E, 533EB, 550E, 600E, 600EB, 650, 667, 700, 733<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp102599.htm\">Intel Introduces 15 New Pentium III And Pentium III Xeon Processors Built On Advanced 0.18-Micron Technology </a>"
+    },
+    {
+      "start": "1999-12-20",
+      "title": "Pentium III 800",
+      "description": "750, 800<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp122099.htm\">Intel Introduces Fastest Processor For Desktop PCs</a>"
+    },
+    {
+      "start": "2000-03-08",
+      "title": "Pentium III 1000",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/sp030800.htm\">Intel Introduces Pentium III Processor At 1.0 Gigahertz</a>"
+    },
+    {
+      "start": "2000-03-20",
+      "title": "Pentium III 866",
+      "description": "850, 866<br><a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp032000.htm\">Intel Introduces Pentium III Processors At 866 And 850 MHz</a>"
+    },
+    {
+      "start": "2000-05-24",
+      "title": "Pentium III 933",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp052400.htm\">Intel Introduces Pentium III Processor At 933 MHz </a>"
+    },
+    {
+      "start": "2000-07-31",
+      "title": "Pentium III 1133",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp073100.htm\">Intel Introduces Pentium III Processor At 1.13 Gigahertz</a>"
+    },
+    {
+      "start": "2000-11-20",
+      "title": "Pentium 4 1.5",
+      "description": "1.4, 1.5<br><a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp112000.htm\">Intel Introduces The Pentium 4 Processor</a>"
+    },
+    {
+      "start": "2001-04-23",
+      "title": "Pentium 4 1.7",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010423comp.htm#_ga=1.80183703.1460903614.1415176013\">Intel Introduces Pentium® 4 Processor at 1.7 Ghz </a>"
+    },
+    {
+      "start": "2001-07-02",
+      "title": "Pentium 4 1.8",
+      "description": "1.6, 1.8<br><a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010702comp.htm\">Intel Introduces Pentium 4 Processor At 1.8 And 1.6 GHz</a>"
+    },
+    {
+      "start": "2001-08-27",
+      "title": "Pentium 4 2.0",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010827comp.htm\">Intel Launches Pentium 4 Processor At 2 GHz</a>"
+    },
+    {
+      "start": "2002-01-07",
+      "title": "Pentium 4 2.2",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020107comp.htm\">Intel Ships Pentium 4 Processor Operating At 2.2 Billion Cycles Per Second</a>"
+    },
+    {
+      "start": "2002-04-02",
+      "title": "Pentium 4 2.4",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020402comp.htm\">Intel Introduces 2.4 GHZ Pentium 4 Processor</a>"
+    },
+    {
+      "start": "2002-05-06",
+      "title": "Pentium 4 2.53",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020506comp.htm\">Intel Extends Performance Leadership With New Pentium 4 Processors</a>"
+    },
+    {
+      "start": "2002-08-26",
+      "title": "Pentium 4 2.8",
+      "description": "2.4, 2.6, 2.66, 2.8<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020826comp.htm\">New Intel Pentium 4 Processors Allow PC Users To Unleash Higher Levels Of Creativity And Business Productivity</a>"
+    },
+    {
+      "start": "2002-11-14",
+      "title": "Pentium 4 HT 3.06",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021114comp.htm\">Intel Delivers Hyper-Threading Technology With Pentium 4 Processor 3 Ghz Milestone</a>"
+    },
+    {
+      "start": "2003-04-14",
+      "title": "Pentium 4 HT 3.0",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030414comp.htm\">Advanced Intel Pentium 4 Processor Platform Features Faster System Bus and New Chipset</a>"
+    },
+    {
+      "start": "2003-05-21",
+      "title": "Pentium 4 HT 2.8C",
+      "description": "2.40C, 2.60C, 2.80C<br><a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030521comp.htm\">Intel Brings Hyper-Threading Technology To Corporate and Mainstream Consumer PC Users</a>"
+    },
+    {
+      "start": "2003-11-03",
+      "title": "Pentium 4 HT 3.2",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030623comp.htm\">Intel Pentium 4 Processor With Hyper-Threading Technology Introduced At 3.2 GHz</a>"
+    },
+    {
+      "start": "2003-11-03",
+      "title": "Pentium 4 HT EE 3.2",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20031103comp_a.htm\">Intel Takes Gaming To The Extreme</a>"
+    },
+    {
+      "start": "2004-02-02",
+      "title": "Pentium 4 HT EE 3.4",
+      "description": "3.4 (Northwood), 2.8, 3.0, 3.2, 3.4 (Prescott), 3.4 (Gallatin)<br><a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040202comp.htm\">Intel Introduces Intel Pentium 4 Processors On High-Volume 90-Nanometer Manufacturing Technology</a>"
+    },
+    {
+      "start": "2004-06-21",
+      "title": "Pentium 4 HT EE 3.4 S775",
+      "description": "520 (2.8), 530 (3.0), 540 (3.2), 550 (3.4), 560 (3.6) (Prescott HT), 3.4 (Gallatin)<br><a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040621comp.htm\">Intel Delivers Breakthrough PC Technologies To Enhance Digital Home and Office Experiences</a>"
+    },
+    {
+      "start": "2004-11-01",
+      "title": "Pentium 4 HT EE 3.46",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20041101comp.htm\">Intel Delivers New Platform For PC Power Users, Gamers</a>"
+    },
+    {
+      "start": "2005-02-21",
+      "title": "Pentium 4 HT EE 3.73",
+      "description": "P4 630 (3.0), 640 (3.2), 650 (3.4), 660 (3.6), 4 HT EE 3.73<br><a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050221comp.htm\">Intel Desktop Processors Get 64-Bit Support</a>"
+    },
+    {
+      "start": "2005-04-18",
+      "title": "Pentium EE 840",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050418comp.htm\">Dual Core Era Begins, PC Makers Start Selling Intel-Based PCs</a>"
+    },
+    {
+      "start": "2005-05-26",
+      "title": "Pentium D 840",
+      "description": "Pentium D 840, 830, 820, Pentium 4 HT 670<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050526comp.htm\">Intel Delivers New Features For Home And Office PCs</a>"
+    },
+    {
+      "start": "2005-11-14",
+      "title": "Pentium 4 672",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20051114comp.htm\">Intel Delivers New Era For Virtualization</a>"
+    },
+    {
+      "start": "2006-07-27",
+      "title": "Core 2 Extreme X6800",
+      "description": "Core 2 Duo E6300, Core 2 Duo E6400, Core 2 Duo E6600, Core 2 Duo E6700, Core 2 Extreme X6800<a href=\"http://www.intel.com/pressroom/archive/releases/2006/20060727comp.htm\">Intel Unveils World's Best Processor</a>"
+    },
+    {
+      "start": "2006-11-14",
+      "title": "Core 2 Extreme QX6700",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2006/20061114comp.htm\">Intel Ignites Quad-Core Era</a>"
+    },
+    {
+      "start": "2007-04-09",
+      "title": "Core 2 Extreme QX6800",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2007/20070409comp.htm\">Intel Delivers Its Fastest Enthusiast Quad-Core Processor</a>"
+    },
+    {
+      "start": "2007-07-16",
+      "title": "Core 2 Extreme QX6850",
+      "description": "Core 2 Duo E6550, Core 2 Duo E6750, Core 2 Duo E6850, Core 2 Quad Q6700, Core 2 Extreme QX6850<a href=\"http://www.intel.com/pressroom/archive/releases/2007/20070716corp_a.htm\">Intel Takes Popular Laptops to 'Extreme' with First-Ever Extreme Edition Mobile Processor; Adds New Desktop Chip</a>"
+    }
+  ]
+}

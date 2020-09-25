@@ -1,0 +1,25 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1994-03",
+      "title": "Movie Machine Pro",
+      "description": ""
+    },
+    {
+      "start": "1995-05",
+      "title": "FPS 60",
+      "description": ""
+    },
+    {
+      "start": "1995-06",
+      "title": "Movie Machine II",
+      "description": ""
+    },
+    {
+      "start": "1996-03",
+      "title": "AV Master",
+      "description": ""
+    }
+  ]
+}

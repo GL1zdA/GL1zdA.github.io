@@ -1,0 +1,35 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1991-07-01",
+      "title": "SGI Express",
+      "description": ""
+    },
+    {
+      "start": "1993-01-01",
+      "title": "SGI Extreme",
+      "description": ""
+    },
+    {
+      "start": "1995-01-01",
+      "title": "SGI Impact",
+      "description": ""
+    },
+    {
+      "start": "2000-06-01",
+      "title": "SGI VPro",
+      "description": ""
+    },
+    {
+      "start": "1998-07-21",
+      "title": "REALimage 2100",
+      "description": "PowerStorm 300, 350&lt;br&gt;&lt;a href=\"http://www.thefreelibrary.com/Diamond+Multimedia%27s+New+Fire+GL+5000+Accelerator+Brings+Hardware...-a020927236\"&gt;Diamond Multimedia's New Fire GL 5000 Accelerator Brings Hardware Geometry Acceleration and AGP Performance to Workstation Graphics&lt;/a&gt;"
+    },
+    {
+      "start": "1995-05-16",
+      "title": "AG300",
+      "description": "<a href=\"http://www.thefreelibrary.com/AccelGraphics,+Inc.+Announces+Immediate+Availability+of+AG300...-a016832755\">AccelGraphics, Inc. Announces Immediate Availability of AG300 High-Performance 3D Graphics Accelerator for AutoCAD and AutoCAD Designer; AccelGraphics delivers optimized 3D software \"AccelView\" for the AG300 delivers up to 10x the rendering performance of any graphics card on the market! Now shipping!</a>"
+    }
+  ]
+}

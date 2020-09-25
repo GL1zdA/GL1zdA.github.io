@@ -1,0 +1,23 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "2000-03-29",
+      "end": "2000-09-19",
+      "title": "Apollo Pro 133A",
+      "description": "<a href=\"https://web.archive.org/web/20010814140730/http://www.via.com.tw/news/00dual.htm\">VIA Offers Dual Processor Support with the VIA Apollo Pro133A</a>"
+    },
+    {
+      "start": "2000-09-20",
+      "end": "2001-05-29",
+      "title": "Apollo Pro 266",
+      "description": "<a href=\"https://web.archive.org/web/20001028195241/http://www.via.com.tw/news/nr2000.htm\">VIA Launches New Chipsets for DDR266 DRAM</a>"
+    },
+    {
+      "start": "2001-05-30",
+      "end": "2002-03-12",
+      "title": "Apollo Pro 266T",
+      "description": "<a href=\"https://web.archive.org/web/20010805154817/http://www.via.com.tw/jsp/en/pr/prhome.jsp\">VIA Implements Support for Upcoming Intel Pentium III Tualatin Processor Across its Full Range of Industry-leading Socket 370 chipsets</a>"
+    }
+  ]
+}

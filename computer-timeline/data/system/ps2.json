@@ -1,0 +1,76 @@
+{
+  "source": "http://mastodonpc.tripod.com/ibm/type.html",
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1981-08-12",
+      "title": "IBM PC",
+      "description": "8088 4.77 MHz, DOS 1.0"
+    },
+    {
+      "start": "1983-03-08",
+      "title": "IBM PC XT",
+      "description": "8088 4.77 MHz, DOS 2.0"
+    },
+    {
+      "start": "1984-08-14",
+      "title": "IBM PC AT",
+      "description": "80286 6, 8 MHz, DOS 3.0<br><a href=\"https://books.google.pl/books?id=Hy8EAAAAMBAJ&pg=PA11\">InfoWorld 1984-09-10</a>"
+    },
+    {
+      "start": "1986-09",
+      "title": "IBM PC XT 286",
+      "description": "80286 6 MHz"
+    },
+    {
+      "start": "1987-04-02",
+      "title": "PS/2 80",
+      "description": "386-16, 386-20"
+    },
+    {
+      "start": "1988-16-02",
+      "title": "PS/2 70",
+      "description": "386-16, 386-20, 386-25"
+    },
+    {
+      "start": "1989-12-19",
+      "title": "PS/2 70 486",
+      "description": "486DX-25"
+    },
+    {
+      "start": "1990-10-30",
+      "title": "PS/2 90, 95",
+      "description": "486DX-25, 486DX-33"
+    },
+    {
+      "start": "1992-04-28",
+      "title": "PS/2 90, 95",
+      "description": "486DX2-50, 486DX-50"
+    },
+    {
+      "start": "1992-09-21",
+      "title": "PS/2 77",
+      "description": "486SX-33, 486DX-66, Ultimedia M77"
+    },
+    {
+      "start": "1993-07-29",
+      "title": "PS/2 Server 95 560",
+      "description": "Pentium 60"
+    },
+    {
+      "start": "1994-06-14",
+      "title": "PS/2 77 I, S",
+      "description": "486 SX-33, DX2-66, DX4-100"
+    },
+    {
+      "start": "1995-04",
+      "title": "PC 730, 750",
+      "description": "Pentium 75, 90, 100, OS/2 Warp"
+    },
+    {
+      "start": "1995-07",
+      "title": "PC 730, 750 P120",
+      "description": "Pentium 120, 133, OS/2 Warp"
+    }
+  ]
+}

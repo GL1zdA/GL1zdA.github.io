@@ -1,0 +1,47 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1998-04-15",
+      "end": "1999-04-25",
+      "title": "440EX",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp041598.htm\">New Intel Pentium II and Celeron Processors Bring Optimized Performance to Computer Systems</a>."
+    },
+    {
+      "start": "1999-04-26",
+      "end": "1999-09-26",
+      "title": "810",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp042699.htm\">Intel Introduces Fast Processor and Innovative Chipset for Value PCs</a>"
+    },
+    {
+      "start": "1999-09-27",
+      "end": "2001-01-02",
+      "title": "810E",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp092799.htm\">Intel Introduces New Microprocessors And Chipset For Mainstream PCs</a>"
+    },
+    {
+      "start": "2001-01-03",
+      "end": "2002-05-19",
+      "title": "810E2",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010103bb.htm\">Intel Unveils New Value PC Technologies</a><br>Dell Dimension L, Dimension 2100, Dimension 2200"
+    },
+    {
+      "start": "2002-05-20",
+      "end": "2002-10-06",
+      "title": "845GL",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020520comp.htm\">Intel Advances Business And Consumer PC Platforms</a><br>Dell Dimension 2300"
+    },
+    {
+      "start": "2002-10-07",
+      "end": "2004-09-21",
+      "title": "845GV",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021007comp.htm\">Intel Extends Pentium 4 Processor Platform Leadership With Four Advanced Chipsets</a><br>Dell Dimension 8200, 8250"
+    },
+    {
+      "start": "2004-09-22",
+      "end": "2007-06-04",
+      "title": "910GL",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040922comp.htm\">Intel's New Products Improve Features For Value-Priced PCs</a>"
+    }
+  ]
+}

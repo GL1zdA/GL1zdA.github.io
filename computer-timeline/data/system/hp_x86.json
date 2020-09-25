@@ -1,0 +1,15 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1999-04-12",
+      "title": "HP Visualize",
+      "description": "<ul><li>HP Expands Industry-leading Workstation Family With New Windows NT-based HP VISUALIZE Personal Workstations</li><li><a href=\"https://web.archive.org/web/20000819123203/http://www.hp.com/pressrel/may99/17may99b.htm\">HP Introduces Intel Pentium III-based HP VISUALIZE P550 Personal Workstation with World-class Application Performance</a></li><li><a href=\"https://web.archive.org/web/20001007233029/http://hp.com/pressrel/jun99/21jun99g.htm\">HP Introduces Linux-based HP VISUALIZE Personal Workstations</a></li><li><a href=\"https://web.archive.org/web/20000824013743/http://www.hp.com/pressrel/aug99/09aug99j.htm\">HP VISUALIZE Workstations Demonstrate Leadership Performance Across UNIX System and Windows NT Platforms, According to Industry-standard Benchmarks</a></li><li><a href=\"https://web.archive.org/web/20000229105355/http://www.hp.com/pressrel/jan00/25jan00b.htm\">HP Captures Graphics Leadership Position with Unparalleled Power of HP VISUALIZE Graphics</a></li><li>HP Sets New Performance Standard with HP VISUALIZE X-Class Personal Workstation Using VISUALIZE Memory Architecture (2000-01-10)</li><li><a href=\"https://web.archive.org/web/20001120023900/http://www.hp.com/pressrel/feb00/02feb00b.htm\">HP Brings Award-winning 3-D VISUALIZE Graphics to Linux Desktop</a></li><li><a href=\"https://web.archive.org/web/20000303223843/http://www.hp.com/pressrel/jan00/10jan00.htm\">HP Sets New Performance Standard with HP VISUALIZE X-Class Personal Workstation Using VISUALIZE Memory Architecture</a></li></ul>"
+    },
+    {
+      "start": "1999-11-02",
+      "title": "HP Visualize P-class",
+      "description": "<a href=\"https://web.archive.org/web/20001118050200/http://www.hp.com/pressrel/nov99/02nov99.htm\">HP Introduces HP VISUALIZE P-class Personal Workstations</a>"
+    }
+  ]
+}

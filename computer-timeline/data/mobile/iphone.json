@@ -1,0 +1,65 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "2007-06-29",
+      "title": "iPhone 2G",
+      "description": ""
+    },
+    {
+      "start": "2008-07-11",
+      "title": "iPhone 3G",
+      "description": ""
+    },
+    {
+      "start": "2009-06-19",
+      "title": "iPhone 3GS",
+      "description": ""
+    },
+    {
+      "start": "2010-06-24",
+      "title": "iPhone 4",
+      "description": ""
+    },
+    {
+      "start": "2011-10-14",
+      "title": "iPhone 4S",
+      "description": ""
+    },
+    {
+      "start": "2012-09-21",
+      "title": "iPhone 5",
+      "description": ""
+    },
+    {
+      "start": "2013-09-30",
+      "title": "iPhone 5S",
+      "description": ""
+    },
+    {
+      "start": "2014-09-19",
+      "title": "iPhone 6",
+      "description": ""
+    },
+    {
+      "start": "2015-09-25",
+      "title": "iPhone 6S",
+      "description": ""
+    },
+    {
+      "start": "2016-09-16",
+      "title": "iPhone 7",
+      "description": ""
+    },
+    {
+      "start": "2017-11-03",
+      "title": "iPhone X",
+      "description": ""
+    },
+    {
+      "start": "2018-09-21",
+      "title": "iPhone XS",
+      "description": ""
+    }
+  ]
+}

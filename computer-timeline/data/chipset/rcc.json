@@ -1,0 +1,30 @@
+{
+   "dateTimeFormat": "iso8601",
+   "source": "http://web.archive.org/web/20010409180159/http://serverworks.com/frames/news_frame.html",
+   "events": [
+      {
+         "start": "1998-06",
+         "end": "1999-12-20",
+         "title": "ServerSet II LE",
+         "description": "<a href=\"https://web.archive.org/web/20000708010908/http://www.intergraph.com/ics/vpr/1998/gl_rls.asp\">Intergraph Computer Systems Redefines Price/Performance with New TDZ 2000 ViZual Workstation Models</a><br><a href=\"http://www.thefreelibrary.com/Compaq+Unveils+Scalable+Performance+of+New+Professional+Workstation...-a053059573\">Compaq Unveils Scalable Performance of New Professional Workstation SP700</a>"
+      },
+      {
+         "start": "1999-12-20",
+         "end": "2001-05-21",
+         "title": "ServerSet III WS",
+         "description": "<a href=\"http://web.archive.org/web/20010412195144/http://www.serverworks.com/news/press/991220.html\">New Zx ViZual Workstations Outperform Comparable i840-based Platforms</a><br><a href=\"http://web.archive.org/web/20010424004446/http://serverworks.com/news/press/000120.html\">New Workstations Outperform Comparable i840-based Platforms</a><br>end - HE-SL appeared, but no one built workstations on HE-SL with AGP, Xeon appeared, Athlon MP appeared (who did WKS with it? <a href=\"http://www.xicomputer.com/products/mtoweramd2p.asp\">SIs did</a>)"
+      },
+      {
+         "start": "2002-03-12",
+         "end": "2002-11-19",
+         "title": "Grand Champion WS",
+         "description": "<a href=\"http://www.thefreelibrary.com/Broadcom%27s+ServerWorks+Subsidiary+Unveils+New+Grand+Champion...-a070900290\">Broadcom's ServerWorks Subsidiary Unveils New Grand Champion Architecture for Future Intel Xeon Based Servers</a><br><a href=\"http://www.thefreelibrary.com/Broadcom%27s+ServerWorks+Ships+Grand+Champion+HE+SystemI%2fO+for+Intel...-a083687556\">Broadcom's ServerWorks Ships Grand Champion HE SystemI/O for Intel Xeon MP Processor Based Servers.</a><br>533 version used only in NEC 5800Express, ends with E7525"
+      },
+      {
+         "start": "1999-01-12",
+         "end": "2000-06",
+         "title": "Visual Workstation 320/540",
+         "description": "<a href=\"http://www.thefreelibrary.com/SGI+MIXES+LITHIUM,+COBALT,+ARSENIC+IN+NT+WORKSTATIONS.-a053524389\">320/540</a><br><a href=\"http://books.google.pl/books?id=93nBwQ5XIAwC&pg=PA132\">PC Magazine Workstation Test<a/><br><a href=\"https://web.archive.org/web/20000303193509/http://www.sgi.com/products/hw_workstations.html\">2000-03 SGI Workstation Page</a><br><a href=\"https://web.archive.org/web/20000619003004/http://www.sgi.com/workstations/index.html\">2000-06 SGI Workstation Page (Visual Workstation 320/540 replaced by 230/330/550)</a>"
+      }
+   ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Timeline of Apple Macintosh computers</title>
+    <link rel='stylesheet' href='styles.css' type='text/css'/>
+    <script src="http://api.simile-widgets.org/timeline/2.3.1/timeline-api.js?bundle=true"
+            type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script>
+        var tl;
+
+        function onLoad() {
+            tl = ComputerTimeline.builder("tl", "1998")
+                .addBand(118)
+                .addData("data/system/apple.json")
+                .addBand(158)
+                .addData("data/cpu/intel.json")
+                .addBand(198)
+                .addData("data/3d/3dfx.json")
+                .addBand(304)
+                .addData("data/os/macos.json")
+                .addData("data/sw/office_mac.json")
+                .build();
+        }
+
+        var resizeTimerID = null;
+
+        function onResize() {
+            if (resizeTimerID == null) {
+                resizeTimerID = window.setTimeout(function () {
+                    resizeTimerID = null;
+                    tl.layout();
+                }, 500);
+            }
+        }
+    </script>
+</head>
+
+<body onload="onLoad();" onresize="onResize();">
+<div id="header">
+    <a href="../index.html">Home</a>
+    <br>
+    <a href="index.html">Intel</a> |
+    <a href="amd_vs_intel.html">AMD vs Intel</a> |
+    <a href="gpu.html">GPU</a> |
+    <a href="sgi.html">SGI</a> |
+    <strong>Mac</strong> |
+    <a href="mobile.html">Mobile</a>
+</div>
+<div id="content">
+    <p>Timeline of Apple Macintosh computers.</p>
+    <div id="tl" class="timeline-default" style="height: 778px;"></div>
+</div>
+</body>
+</html>

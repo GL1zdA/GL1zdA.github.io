@@ -1,0 +1,20 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1988-10-12",
+      "title": "NeXT Computer",
+      "description": "Motorola 68030 @ 25 MHz"
+    },
+    {
+      "start": "1990-09-18",
+      "title": "NeXTcube",
+      "description": "Motorola 68040 @ 25 MHz"
+    },
+    {
+      "start": "1992-04-07",
+      "title": "NeXTcube Turbo",
+      "description": "Motorola 68040 @ 33 MHz"
+    }
+  ]
+}

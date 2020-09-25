@@ -1,0 +1,20 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1988",
+      "title": "Namco System 21",
+      "description": "2x Motorola 68000 12.288 MHz<br>DSP (used for performing 3D math): 4x Texas Instruments TMS320C25 @ 24.576 MHz (Star Blade uses 5xTMS320C20 instead)"
+    },
+    {
+      "start": "1992",
+      "title": "Namco System 22",
+      "description": "Main CPU: Motorola 68020 32-bit @ 24.576 MHz<br>DSP: 2x Texas Instruments TMS32025 @ 49.152 MHz (exact number of DSPs may vary)<br>GPU: Evans & Sutherland TR3 (Texture Mapping, Real-Time, Real-Visual, Rendering System) Features: Texture mapping, Gouraud shading, transparency effects, depth cueing, 16.7 million colors, 240,000 polygons/second[2]"
+    },
+    {
+      "start": "1997",
+      "title": "Namco System 23",
+      "description": "Main CPU: 133 MHz IDT R4650 64-bit. Super System 23 used a 166 MHz chip and Super System 23 Evolution 2 used a 200 MHz chip<br>Graphics hardware: Namco-proprietary hardware. GPU: Multiple parallel VideoLogic PowerVR chips. Graphical capabilities: 2 million polygons per second, texture mapping, Gouraud shading"
+    }
+  ]
+}

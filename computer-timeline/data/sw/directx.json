@@ -1,0 +1,75 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1995-09-30",
+      "title": "DirectX 1.0",
+      "description": ""
+    },
+    {
+      "start": "1996-06-05",
+      "title": "DirectX 2.0a",
+      "description": ""
+    },
+    {
+      "start": "1996-09-15",
+      "title": "DirectX 3.0",
+      "description": ""
+    },
+    {
+      "start": "1997-05-05",
+      "title": "DirectX 5.0",
+      "description": ""
+    },
+    {
+      "start": "1998-08-07",
+      "title": "DirectX 6.0",
+      "description": ""
+    },
+    {
+      "start": "1999-09-02",
+      "title": "DirectX 7.0",
+      "description": ""
+    },
+    {
+      "start": "2000-11-12",
+      "title": "DirectX 8.0",
+      "description": ""
+    },
+    {
+      "start": "2002-12-19",
+      "title": "DirectX 9.0",
+      "description": ""
+    },
+    {
+      "start": "2003-03-26",
+      "title": "DirectX 9.0a",
+      "description": ""
+    },
+    {
+      "start": "2003-08-13",
+      "title": "DirectX 9.0b",
+      "description": ""
+    },
+    {
+      "start": "2004-08-04",
+      "title": "DirectX 9.0c",
+      "description": ""
+    },
+    {
+      "start": "2006-11-30",
+      "title": "DirectX 10",
+      "description": ""
+    },
+    {
+      "start": "2009-10-22",
+      "title": "DirectX 11",
+      "description": ""
+    },
+    {
+      "start": "2015-07-29",
+      "title": "DirectX 12",
+      "description": ""
+    }
+  ]
+}

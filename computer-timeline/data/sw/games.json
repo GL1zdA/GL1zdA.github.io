@@ -1,0 +1,255 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1993-12-10",
+      "title": "DOOM",
+      "description": ""
+    },
+    {
+      "start": "1994-09-30",
+      "title": "DOOM II",
+      "description": ""
+    },
+    {
+      "start": "1996-06-22",
+      "title": "Quake",
+      "description": ""
+    },
+    {
+      "start": "1997-12-09",
+      "title": "Quake II",
+      "description": ""
+    },
+    {
+      "start": "1999-12-02",
+      "title": "Quake III",
+      "description": ""
+    },
+    {
+      "start": "2002-05-10",
+      "title": "3D GameGauge 3.0",
+      "description": "<a href=\"https://www.extremetech.com/computing/51156-exclusive-3d-gamegauge-30-debuts\">Exclusive! 3D GameGauge 3.0 Debuts</a><br><a href=\"https://www.extremetech.com/computing/51392-update-3d-gamegauge-30-debuts\">Update: 3D GameGauge 3.0 Debuts</a>"
+    },
+    {
+      "start": "2004-08-03",
+      "title": "DOOM 3",
+      "description": ""
+    },
+    {
+      "start": "2011-10-04",
+      "title": "Rage",
+      "description": ""
+    },
+    {
+      "start": "2016-05-13",
+      "title": "Doom",
+      "description": ""
+    },
+    {
+      "start": "1998-05-22",
+      "title": "Unreal",
+      "description": ""
+    },
+    {
+      "start": "1999-11-30",
+      "title": "Unreal Tournament",
+      "description": ""
+    },
+    {
+      "start": "2002-09-30",
+      "title": "Unreal Tournament 2003",
+      "description": ""
+    },
+    {
+      "start": "2007-11-19",
+      "title": "Unreal Tournament 3",
+      "description": ""
+    },
+    {
+      "start": "1997-11-30",
+      "title": "Turok: Dinosaur Hunter",
+      "description": ""
+    },
+    {
+      "start": "1999-01-31",
+      "title": "Turok 2: Seeds of Evil",
+      "description": ""
+    },
+    {
+      "start": "1998-10-31",
+      "title": "Blood II: The Chosen (LithTech)",
+      "description": ""
+    },
+    {
+      "start": "2000-11-09",
+      "title": "No One Lives Forever (LithTech 2)",
+      "description": ""
+    },
+    {
+      "start": "2001-10-22",
+      "title": "Aliens versus Predator 2 (LithTech Talon)",
+      "description": ""
+    },
+    {
+      "start": "2002-09-30",
+      "title": "No One Lives Forever 2 (LithTech Jupiter)",
+      "description": ""
+    },
+    {
+      "start": "2005-10-18",
+      "title": "F.E.A.R (LithTech Jupiter EX)",
+      "description": ""
+    },
+    {
+      "start": "2004-03-23",
+      "title": "Far Cry (CryEngine 1)",
+      "description": ""
+    },
+    {
+      "start": "2007-11-13",
+      "title": "Crysis (CryEngine 2)",
+      "description": ""
+    },
+    {
+      "start": "2011-03-22",
+      "title": "Crysis 2 (CryEngine 3)",
+      "description": ""
+    },
+    {
+      "start": "2008-06-23",
+      "title": "Battlefield: Bad Company (Frostbite 1)",
+      "description": ""
+    },
+    {
+      "start": "2011-11-25",
+      "title": "Battlefield 3 (Frostbite 2)",
+      "description": ""
+    },
+    {
+      "start": "2013-10-29",
+      "title": "Battlefield 4 (Frostbite 3)",
+      "description": ""
+    },
+    {
+      "start": "1996-12-31",
+      "title": "Diablo",
+      "description": ""
+    },
+    {
+      "start": "2000-06-29",
+      "title": "Diablo II",
+      "description": ""
+    },
+    {
+      "start": "1998-03-31",
+      "title": "StarCraft",
+      "description": ""
+    },
+    {
+      "start": "2002-07-03",
+      "title": "WarCraft III",
+      "description": ""
+    },
+    {
+      "start": "1995-08",
+      "title": "C&C",
+      "description": ""
+    },
+    {
+      "start": "1996-10-31",
+      "title": "Red Alert",
+      "description": ""
+    },
+    {
+      "start": "1999-08-27",
+      "title": "Tiberian Sun",
+      "description": ""
+    },
+    {
+      "start": "1998-12-21",
+      "title": "Baldur's Gate",
+      "description": ""
+    },
+    {
+      "start": "2000-09-24",
+      "title": "Baldur's Gate II",
+      "description": ""
+    },
+    {
+      "start": "1997-09-30",
+      "title": "Fallout",
+      "description": ""
+    },
+    {
+      "start": "1998-09-30",
+      "title": "Fallout 2",
+      "description": ""
+    },
+    {
+      "start": "1999-12-12",
+      "title": "Planescape: Torment",
+      "description": ""
+    },
+    {
+      "start": "2002-06-18",
+      "title": "Neverwinter Nights",
+      "description": ""
+    },
+    {
+      "start": "1995-08-31",
+      "title": "The Need for Speed",
+      "description": ""
+    },
+    {
+      "start": "1997-03-31",
+      "title": "Need for Speed II",
+      "description": ""
+    },
+    {
+      "start": "1997-11-06",
+      "title": "Need for Speed II SE",
+      "description": ""
+    },
+    {
+      "start": "1998-03-25",
+      "title": "Need for Speed III",
+      "description": "Requirements:<ul><li>Pentium MMX 200</li><li>32 MB RAM</li><li>Recommended Direct3D acceleration</li></ul><br>Supports EAX"
+    },
+    {
+      "start": "1999-03",
+      "title": "Need for Speed: Road Challenge",
+      "description": ""
+    },
+    {
+      "start": "2000-03-28",
+      "title": "Need for Speed: Porsche 2000",
+      "description": ""
+    },
+    {
+      "start": "2002-10-21",
+      "title": "Need for Speed: Hot Pursuit (EAGL 1)",
+      "description": ""
+    },
+    {
+      "start": "2003-11-17",
+      "title": "Need for Speed: Underground (EAGL 1)",
+      "description": ""
+    },
+    {
+      "start": "1997-10-26",
+      "title": "Age of Empires",
+      "description": ""
+    },
+    {
+      "start": "1999-09-30",
+      "title": "Age of Empires II: The Age of Kings",
+      "description": ""
+    },
+    {
+      "start": "2005-10-18",
+      "title": "Age of Empires III",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1985-07-23",
+      "title": "Amiga 1000",
+      "description": "Motorola 68000 @ 7.16 MHz"
+    },
+    {
+      "start": "1987-03",
+      "title": "Amiga 2000",
+      "description": "Motorola 68000 @ 7.16 MHz"
+    },
+    {
+      "start": "1987-05",
+      "title": "Amiga 500",
+      "description": "Motorola 68000 @ 7.16 MHz"
+    },
+    {
+      "start": "1990-06",
+      "title": "Amiga 3000",
+      "description": "Motorola 68030 @ 16, 25 MHz"
+    },
+    {
+      "start": "1992-03",
+      "title": "Amiga 600",
+      "description": "Motorola 68000 @ 7.16 MHz"
+    },
+    {
+      "start": "1992-10-21",
+      "title": "Amiga 1200",
+      "description": "Motorola 68EC020 @ 14 MHz"
+    },
+    {
+      "start": "1992-10",
+      "title": "Amiga 4000/040",
+      "description": "Motorola 68040 @ 25 MHz"
+    },
+    {
+      "start": "1995",
+      "title": "Escom Amiga 4000T",
+      "description": "Motorola 68060 @ 50 MHz"
+    }
+  ]
+}

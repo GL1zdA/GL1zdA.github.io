@@ -1,0 +1,17 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "color": "blue",
+      "start": "1997-05-05",
+      "title": "DPW 600a",
+      "description": "&lt;a href=\"http://www.thefreelibrary.com/Digital+Shatters+the+UNIX+Price%2FPerformance+Model+With+New+Personal...-a019379349\"&gt;Digital Shatters the UNIX Price/Performance Model With New Personal Workstations&lt;/a&gt;"
+    },
+    {
+      "color": "blue",
+      "start": "1999-07-01",
+      "title": "XP1000",
+      "description": "&lt;a href=\"http://news.cnet.com/Compaq-to-ship-667-MHz-computers/2100-1001_3-228681.html\"&gt;XP1000&lt;/a&gt;"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+   "dateTimeFormat": "iso8601",
+   "events": [
+      {
+         "start": "1991",
+         "title": "Am386",
+         "description": ""
+      },
+      {
+         "start": "1993-04",
+         "title": "Am486Dx 40",
+         "description": "<a href=\"http://processortimeline.info/proc1993.htm\">Processor timeline</a><br>AMD486DX 50"
+      },
+      {
+         "start": "1993-10",
+         "title": "Am486DX2 66",
+         "description": "<a href=\"http://processortimeline.info/proc1993.htm\">Processor timeline</a>"
+      },
+      {
+         "start": "1994-09",
+         "title": "Am486DX2 80",
+         "description": "<a href=\"http://processortimeline.info/proc1994.htm\">Processor timeline</a>"
+      },
+      {
+         "start": "1995-06-05",
+         "title": "Am486 120",
+         "description": "<a href=\"http://www.cpushack.com/CIC/announce/1995/AMDAm486DX4120.html\">Advanced Micro targets the 75mhz Pentium with 120mhz Am486</a>"
+      },
+      {
+         "start": "1995-11-06",
+         "title": "Am5x86",
+         "description": "<a href=\"http://www.cpushack.com/CIC/announce/1995/AMDAm5x86CPURelease.html\">Am5x86 microprocessor brings fifth-generation performance to desktops and portables</a>"
+      },
+      {
+         "start": "1996-03-27",
+         "title": "AMD5K86-P90",
+         "description": "<a href=\"http://www.cpushack.com/CIC/announce/1996/AMDK5PR90CPU.html\">AMD introduces Microsoft Windows-compatible AMD5K86 processor</a>"
+      },
+      {
+         "start": "1996-06-17",
+         "title": "K5-PR100",
+         "description": "<a href=\"http://www.cpushack.com/CIC/announce/1996/AMDK5PR100CPU.html\">AMD commences shipments of its AMD-K5-PR100 processor</a>"
+      },
+      {
+         "start": "1996-10-07",
+         "title": "K5-PR133",
+         "description": "<a href=\"https://web.archive.org/web/19970605074314/http://www.amd.com/news/prodpr/9678.html\">AMD introduces AMD-K5-PR133 processor</a>"
+      },
+      {
+         "start": "1997-01-13",
+         "title": "K5 PR166",
+         "description": "<a href=\"https://web.archive.org/web/19970605074152/http://www.amd.com/news/prodpr/9701.html\">AMD raises AMD-K5 processor performance to PR166</a>"
+      },
+      {
+         "start": "1997-04-02",
+         "title": "K6 233",
+         "description": "<a href=\"https://web.archive.org/web/19971012074331/http://www.amd.com/news/prodpr/9726.html\">AMD introduces sixth-generation AMD-K6 MMX processor</a>"
+      },
+      {
+         "start": "1998-01-06",
+         "title": "K6 266",
+         "description": "<a href=\"https://web.archive.org/web/19990421093709/http://www.amd.com/news/corppr/9811.html\">AMD begins shipments of AMD-K6 processors utilizing quarter-micron process technology</a>"
+      },
+      {
+         "start": "1998-04-07",
+         "title": "K6 300",
+         "description": "<a href=\"https://web.archive.org/web/19990128190149/http://www.amd.com/news/prodpr/9835.html\">AMD introduces 300 megahertz AMD-K6 Processor</a>"
+      },
+      {
+         "start": "1998-05-28",
+         "title": "K6-2 333",
+         "description": "<a href=\"https://web.archive.org/web/19990129052158/http://www.amd.com/news/prodpr/9849.html\">AMD introduces AMD-K6-2 Processor with new 3DNow! technology</a>"
+      },
+      {
+         "start": "1998-08-27",
+         "title": "K6-2 350",
+         "description": "<a href=\"https://web.archive.org/web/19990220185343/http://www1.amd.com/news/prodpr/9868.html\">AMD announces shipments of 350MHz AMD-K6-2 Processor with 3DNow! technology</a>"
+      },
+      {
+         "start": "1998-11-16",
+         "title": "K6-2 400",
+         "description": "<a href=\"https://web.archive.org/web/19990221082541/http://www1.amd.com/news/prodpr/9885.html\">AMD introduces 400 MHz AMD-K6-2 Processor with 3DNow! technology</a>"
+      },
+      {
+         "start": "1999-02-22",
+         "title": "K6-III 450",
+         "description": "<a href=\"https://web.archive.org/web/19990428185459/http://www.amd.com/news/prodpr/9915.html\">AMD introduces industry-leading AMD-K6-III processor with 3DNow! technology</a>"
+      },
+      {
+         "start": "1999-04-05",
+         "title": "K6-2 475",
+         "description": "<a href=\"https://web.archive.org/web/19990508184812/http://www.amd.com/news/prodpr/9958.html\">AMD introduces 475-MHz AMD-K6-2 processor with 3DNow! technology</a>"
+      },
+      {
+         "start": "1999-08-30",
+         "title": "K6-2 500",
+         "description": "<a href=\"https://web.archive.org/web/20000524095515/http://www1.amd.com/newsroom/display/1,1528,402,00.html\">AMD introduces 500MHz AMD-K6-2 processor with 3DNow! technology</a>"
+      },
+      {
+         "start": "1999-11-29",
+         "title": "K6-2 533",
+         "description": "<a href=\"https://web.archive.org/web/20001202030200/http://www1.amd.com/newsroom/display/1,1528,449,00.html\">AMD introduces 533MHz AMD-K6-2 processor with 3DNow! technology</a>"
+      },
+      {
+         "start": "2000-02-22",
+         "title": "K6-2 550",
+         "description": "<a href=\"https://web.archive.org/web/20060831180439/http://www.amd.com/us-en/Corporate/VirtualPressRoom/0,,51_104_543_552~775,00.html\">AMD Introduces 550MHz AMD-K6-2 Processor with 3DNow! Technology</a>"
+      },
+      {
+         "start": "1999-06-23",
+         "title": "Athlon 600",
+         "description": "<a href=\"https://web.archive.org/web/20000620083904/http://www1.amd.com/newsroom/display/1,1528,243,00.html\">AMD ships the world's fastest x86 microprocessor</a>"
+      },
+      {
+         "start": "1999-08-09",
+         "title": "Athlon 650",
+         "description": "<a href=\"https://web.archive.org/web/20000302142800/http://www1.amd.com/newsroom/display/1,1528,400,00.html\">AMD introduces the 650MHz AMD Athlon processor, the fastest, most powerful engine for x86 computing</a>"
+      },
+      {
+         "start": "1999-10-04",
+         "title": "Athlon 700",
+         "description": "<a href=\"https://web.archive.org/web/20000411231505/http://www1.amd.com/newsroom/display/1,1528,434,00.html\">AMD ships world's first 700MHz x86 processor</a>"
+      },
+      {
+         "start": "1999-11-29",
+         "title": "Athlon 750",
+         "description": "Athlon 550, 600, 650, 700, 750<br><a href=\"https://web.archive.org/web/20001213134300/http://www1.amd.com/newsroom/display/1,1528,450,00.html\">AMD Athlon processor sets new performance leadership mark at 750MHz built on advanced 0.18 micron technology</a>"
+      },
+      {
+         "start": "2000-01-06",
+         "title": "Athlon 800",
+         "description": "<a href=\"https://web.archive.org/web/20000817090259/http://www1.amd.com/newsroom/display/1,1528,497,00.html\">AMD unleashes 800 MHz AMD Athlon processor</a>"
+      },
+      {
+         "start": "2000-02-11",
+         "title": "Athlon 850",
+         "description": "<a href=\"https://web.archive.org/web/20060612234209/http://www.amd.com/us-en/Corporate/VirtualPressRoom/0,,51_104_543_552~764,00.html\">Fall Deeper in Love with the Worlds' Fastest x86 Processor: The 850MHz AMD Athlon Processor</a>"
+      },
+      {
+         "start": "2000-03-06",
+         "title": "Athlon 1000",
+         "description": "Athlon 900, 950, 1000"
+      },
+      {
+         "start": "2000-06-05",
+         "title": "Athlon 1000B",
+         "description": "Athlon 600, 650, 700, 750, 800, 850, 900, 950, 1000B"
+      },
+      {
+         "start": "2000-08-14",
+         "title": "Athlon 1100",
+         "description": ""
+      },
+      {
+         "start": "2000-10-17",
+         "title": "Athlon 1200B",
+         "description": ""
+      },
+      {
+         "start": "2000-10-31",
+         "title": "Athlon 1200C",
+         "description": "Athlon 1000C, 1133, 1200C"
+      },
+      {
+         "start": "2001-03-21",
+         "title": "Athlon 1333",
+         "description": "Athlon 1300, 1333"
+      },
+      {
+         "start": "2001-06-05",
+         "title": "Athlon MP 1200",
+         "description": "Athlon MP 1000, 1200"
+      },
+      {
+         "start": "2001-06-16",
+         "title": "Athlon 1400C",
+         "description": "Athlon 1400B, 1400C"
+      },
+      {
+         "start": "2001-10-09",
+         "title": "Athlon XP 1800+",
+         "description": "Athlon XP 1500+, 1600+, 1700+, 1800+"
+      },
+      {
+         "start": "2001-10-15",
+         "title": "Athlon MP 1800+",
+         "description": "Athlon MP 1500+, 1600+, 1800+"
+      },
+      {
+         "start": "2001-11-05",
+         "title": "Athlon XP 1900+",
+         "description": ""
+      },
+      {
+         "start": "2002-01-07",
+         "title": "Athlon XP 2000+",
+         "description": ""
+      },
+      {
+         "start": "2002-03-13",
+         "title": "Athlon XP 2100+, MP 2000+",
+         "description": ""
+      },
+      {
+         "start": "2002-06-19",
+         "title": "Athlon MP 2100+",
+         "description": ""
+      },
+      {
+         "start": "2003-09-23",
+         "title": "Athlon 64 FX-51",
+         "description": "K8"
+      },
+      {
+         "start": "2007-11-19",
+         "title": "Phenom X4 9600",
+         "description": "K10"
+      },
+      {
+         "start": "2011-10-12",
+         "title": "FX-8150",
+         "description": "Buldozer"
+      }
+   ]
+}

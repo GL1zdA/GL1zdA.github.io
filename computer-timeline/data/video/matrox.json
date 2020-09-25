@@ -1,0 +1,25 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1999-09-24",
+      "title": "Marvel G400-TV",
+      "description": ""
+    },
+    {
+      "start": "2000-02-24",
+      "title": "RT2000",
+      "description": "<a href=\"http://web.archive.org/web/20000817190327/http://www.matrox.com/videoweb/news/press/pr/pr_rt2000_shipping.htm\">Matrox RT2000 Realtime Editing Platform Shipping Worldwide</a>"
+    },
+    {
+      "start": "2001-04-19",
+      "title": "RT2500",
+      "description": "<a href=\"http://web.archive.org/web/20010812194741/http://www.matrox.com/videoweb/news/press/pr/pr_rt2500.htm\">Matrox Ships RT2500 Realtime Editing Platform</a>"
+    },
+    {
+      "start": "2002-06-24",
+      "title": "RT.X100",
+      "description": "<a href=\"http://web.archive.org/web/20030620225752/http://matrox.com/video/press/releases/intro_rtx100.cfm\">Matrox Announces Matrox RT.X100 Realtime Video Editing Platform</a>"
+    }
+  ]
+}

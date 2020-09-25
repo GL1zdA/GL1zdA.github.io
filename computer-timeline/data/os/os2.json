@@ -1,0 +1,86 @@
+{
+  "source": "http://www.os2museum.com/wp/os2-history/os2-timeline/",
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1987-04",
+      "title": "OS/2 1.0",
+      "description": ""
+    },
+    {
+      "start": "1988-10-31",
+      "title": "OS/2 1.1",
+      "description": ""
+    },
+    {
+      "start": "1988-11-30",
+      "title": "OS/2 1.1 EE",
+      "description": ""
+    },
+    {
+      "start": "1989-10",
+      "title": "OS/2 1.2",
+      "description": ""
+    },
+    {
+      "start": "1990-11-30",
+      "title": "OS/2 1.3",
+      "description": ""
+    },
+    {
+      "start": "1990-12-31",
+      "title": "OS/2 1.3 EE",
+      "description": ""
+    },
+    {
+      "start": "1992-03",
+      "title": "OS/2 2.0",
+      "description": ""
+    },
+    {
+      "start": "1993-05",
+      "title": "OS/2 2.1",
+      "description": "MMPM"
+    },
+    {
+      "start": "1994-02",
+      "title": "OS/2 2.11",
+      "description": ""
+    },
+    {
+      "start": "1994-07",
+      "title": "OS/2 2.11 SMP",
+      "description": ""
+    },
+    {
+      "start": "1994-10",
+      "title": "OS/2 Warp",
+      "description": ""
+    },
+    {
+      "start": "1995-12",
+      "title": "OS/2 Warp, PPC",
+      "description": ""
+    },
+    {
+      "start": "1996-02",
+      "title": "OS/2 Warp Server 4",
+      "description": ""
+    },
+    {
+      "start": "1996-04",
+      "title": "OS/2 Warp 4",
+      "description": ""
+    },
+    {
+      "start": "2000-11",
+      "title": "OS/2 4.51 MCP",
+      "description": ""
+    },
+    {
+      "start": "2001-11",
+      "title": "OS/2 4.52 MCP2",
+      "description": ""
+    }
+  ]
+}

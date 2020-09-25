@@ -1,0 +1,35 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1996-10-01",
+      "title": "Voodoo",
+      "description": "<a href=\"https://web.archive.org/web/19980705224258/http://www.techworks.com/company/news/power3dPR.html\">Techworks Announces Power3D Macintosh Accelerator Card Based On 3dfx Voodoo Graphics</a><br><a href=\"https://web.archive.org/web/19980705224127/http://www.techworks.com/company/news/980202a.html\">New Version of Connectix Virtual PC 2.0 Enables Mac Gammers to Play 3Dfx-based Win95 and DOS Games Using TechWorks' Power3D</a><br><a href=\"https://web.archive.org/web/19980705225439/http://www.techworks.com/products/power3d/Mac/index.html\">TechWorks Power3D Mac</a><br><a href=\"https://web.archive.org/web/19981202004919/http://www.techworks.com/products/power3d/Mac/games3d.html\">TechWorks Power3D Mac Games</a><br><a href=\"https://web.archive.org/web/19980705224619/http://www.techworks.com/products/power3d/Mac/faq3d.html\">TechWorks Power3D Mac FAQ</a><br><a href=\"https://web.archive.org/web/19980705224456/http://www.techworks.com/products/power3d/Mac/support3d.html\">TechWorks Power3D Mac Support Questions and Answers</a><br><a href=\"https://web.archive.org/web/19980705224626/http://www.techworks.com/products/power3d/Mac/virtual3d.html\">TechWorks Power3D Mac Virtual PC FAQ</a>"
+    },
+    {
+      "start": "1997-04",
+      "title": "Voodoo Rush",
+      "description": ""
+    },
+    {
+      "start": "1998-03-01",
+      "title": "Voodoo2",
+      "description": "<a href=\"https://web.archive.org/web/20001009070607/http://3dfx.com/prod/sup/faq-v2.html\">3dfx Vooodoo2 FAQ</a><br><a href=\"https://web.archive.org/web/20000831015609/http://www.3dfx.com/prod/sup/faqV2_1000.html\">3dfx Vooodoo2 1000 FAQ</a><br>Works on MacOS 8.x<br><a href=\"https://web.archive.org/web/20000510100523/http://www.3dfxgamers.com/view.asp?PAGE=V2drivers\">Drivers</a>"
+    },
+    {
+      "start": "1998-06-22",
+      "title": "Voodoo Banshee",
+      "description": ""
+    },
+    {
+      "start": "1999-04-03",
+      "title": "Voodoo3",
+      "description": "<a href=\"https://www.beyond3d.com/content/articles/59\">3dfx 22-bit Rendering Explored</a>"
+    },
+    {
+      "start": "2000-06-22",
+      "title": "Voodoo5 5500",
+      "description": "<a href=\"https://web.archive.org/web/20000816230027/http://www.3dfx.com/3dfxTechnology/fsaa_article.html\">Anti-Aliasing vs. Transform and Lighting</a>"
+    }
+  ]
+}

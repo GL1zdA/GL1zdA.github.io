@@ -1,0 +1,65 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1989",
+      "title": "Sound Blaster",
+      "description": ""
+    },
+    {
+      "start": "1991-05",
+      "title": "Sound Blaster Pro",
+      "description": ""
+    },
+    {
+      "start": "1992-06",
+      "title": "Sound Blaster 16",
+      "description": ""
+    },
+    {
+      "start": "1994-03",
+      "title": "Sound Blaster AWE32",
+      "description": ""
+    },
+    {
+      "start": "1996-11",
+      "title": "Sound Blaster AWE64 Gold",
+      "description": ""
+    },
+    {
+      "start": "1998-08",
+      "title": "Sound Blaster Live! (CT4620)",
+      "description": ""
+    },
+    {
+      "start": "1999",
+      "title": "Sound Blaster Live! (CT4760)",
+      "description": ""
+    },
+    {
+      "start": "2000",
+      "title": "Sound Blaster Live! 5.1 (SB0060)",
+      "description": ""
+    },
+    {
+      "start": "2001",
+      "title": "Sound Blaster Audigy (SB0090)",
+      "description": ""
+    },
+    {
+      "start": "2002",
+      "title": "Sound Blaster Audigy 2 (SB0240)",
+      "description": ""
+    },
+    {
+      "start": "2003",
+      "title": "Sound Blaster Audigy 2 ZS (SB0350)",
+      "description": ""
+    },
+    {
+      "start": "2005",
+      "title": "Sound Blaster Audigy 4 Pro (SB0380)",
+      "description": ""
+    }
+  ]
+}

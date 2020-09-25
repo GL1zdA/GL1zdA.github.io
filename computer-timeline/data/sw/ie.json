@@ -1,0 +1,60 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1995-08-16",
+      "title": "IE 1.0",
+      "description": ""
+    },
+    {
+      "start": "1995-11-22",
+      "title": "IE 2.0",
+      "description": ""
+    },
+    {
+      "start": "1996-08-13",
+      "title": "IE 3.0",
+      "description": ""
+    },
+    {
+      "start": "1997-10",
+      "title": "IE 4.0",
+      "description": ""
+    },
+    {
+      "start": "1999-03-18",
+      "title": "IE 5.0",
+      "description": ""
+    },
+    {
+      "start": "2001-08-27",
+      "title": "IE 6.0",
+      "description": ""
+    },
+    {
+      "start": "2006-10-18",
+      "title": "IE 7.0",
+      "description": ""
+    },
+    {
+      "start": "2009-03-19",
+      "title": "IE 8.0",
+      "description": ""
+    },
+    {
+      "start": "2011-03-14",
+      "title": "IE 9.0",
+      "description": ""
+    },
+    {
+      "start": "2012-10-26",
+      "title": "IE 10.0",
+      "description": ""
+    },
+    {
+      "start": "2013-10-17",
+      "title": "IE 11.0",
+      "description": ""
+    }
+  ]
+}

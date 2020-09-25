@@ -1,0 +1,32 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1995-11-01",
+      "end": "1998-06-28",
+      "title": "450GX",
+      "color": "black",
+      "description": "<a href=\"https://web.archive.org/web/19961220054253/http://www.intel.com/pressroom/archive/releases/82450rel.htm\">Intel Corporation Introduces New PCI Chip Set Family for Pentium Pro Processors</a>"
+    },
+    {
+      "start": "1998-06-29",
+      "end": "2002-03-12",
+      "title": "450NX",
+      "color": "black",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp092799.htm\">Intel Introduces New Pentium(R) II Xeon(TM) Processor to Achieve Unmatched Performance Levels for Servers and Workstations </a>"
+    },
+    {
+      "start": "2002-02-25",
+      "end": "2002-11-19",
+      "title": "E7500",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020225comp.htm\">New Intel Xeon Server Processors And Chipset Boost System Performance Up To 80 Percent</a>"
+    },
+    {
+      "start": "2002-11-19",
+      "end": "2004",
+      "title": "E7505",
+      "description": "E7501, E7505, E7205<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021118comp.htm\">Intel Refreshes Intel Xeon Processor Portfolio Lineup </a>",
+      "color": "black"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1984-01-24",
+      "title": "Macintosh 128k",
+      "description": "Motorola 68000 @ 7.8336 MHz"
+    },
+    {
+      "start": "1984-09-10",
+      "title": "Macintosh 512k",
+      "description": "Motorola 68000 @ 7.8336 MHz"
+    },
+    {
+      "start": "1986-01-16",
+      "title": "Macintosh Plus",
+      "description": "Motorola 68000 @ 8 MHz"
+    },
+    {
+      "start": "1987-03-02",
+      "title": "Macintosh SE",
+      "description": "Motorola 68000 @ 8 MHz"
+    },
+    {
+      "start": "1987-03-02",
+      "title": "Macintosh II",
+      "description": "Motorola 68020 @ 16 MHz"
+    },
+    {
+      "start": "1988-09-19",
+      "title": "Macintosh IIx",
+      "description": "Motorola 68030 @ 16 MHz"
+    },
+    {
+      "start": "1989-01-19",
+      "title": "Macintosh SE/30",
+      "description": "Motorola 68030 @ 16 MHz"
+    },
+    {
+      "start": "1989-03-07",
+      "title": "Macintosh IIcx",
+      "description": "Motorola 68030 @ 16 MHz"
+    },
+    {
+      "start": "1989-09-20",
+      "title": "Macintosh IIci",
+      "description": "Motorola 68030 @ 25 MHz"
+    },
+    {
+      "start": "1990-03-19",
+      "title": "Macintosh IIfx",
+      "description": "Motorola 68030 @ 40 MHz"
+    },
+    {
+      "start": "1990-10-15",
+      "title": "Macintosh Color Classic",
+      "description": "Motorola 68000 @ 8 MHz"
+    },
+    {
+      "start": "1991-10-21",
+      "title": "Macintosh Color Classic II",
+      "description": "Motorola 68030 @ 16 MHz"
+    },
+    {
+      "start": "1991-10-21",
+      "title": "Macintosh Quadra 700",
+      "description": "Motorola 68040 @ 25 MHz"
+    },
+    {
+      "start": "1991-10-21",
+      "title": "Macintosh Quadra 900",
+      "description": "Motorola 68040 @ 25 MHz"
+    },
+    {
+      "start": "1993-02-10",
+      "title": "Macintosh Color Classic",
+      "description": "Motorola 68030 @ 16 MHz"
+    },
+    {
+      "start": "1993-02-10",
+      "title": "Macintosh Quadra 800",
+      "description": "Motorola 68040 @ 33 MHz"
+    },
+    {
+      "start": "1992-03-18",
+      "title": "Macintosh Quadra 950",
+      "description": "Motorola 68040 @ 33 MHz"
+    },
+    {
+      "start": "1993-07-29",
+      "title": "Macintosh Quadra 840AV",
+      "description": "Motorola 68040 @ 40 MHz"
+    },
+    {
+      "start": "1994-03-14",
+      "title": "Power Macintosh 8100",
+      "description": "PowerPC 601 @ 80, 100, 110 MHz"
+    },
+    {
+      "start": "1995-05-01",
+      "title": "Power Macintosh 6200",
+      "description": "PowerPC 603 @ 75 MHz"
+    },
+    {
+      "start": "1995-05-01",
+      "title": "Power Macintosh 9500",
+      "description": "PowerPC 604 @ 120, 132, 150, 180x2, 200 MHz"
+    },
+    {
+      "start": "1995-08-08",
+      "title": "Power Macintosh 8500",
+      "description": "PowerPC 604/604e @ 120, 132, 150, 180 MHz"
+    },
+    {
+      "start": "1995-08-28",
+      "title": "Power Macintosh 5300",
+      "description": "PowerPC 603e @ 100, 120 MHz"
+    },
+    {
+      "start": "1996-01-27",
+      "title": "Power Macintosh 6300",
+      "description": "PowerPC 603e @ 100, 120 MHz"
+    },
+    {
+      "start": "1996-04-13",
+      "title": "Power Macintosh 5400",
+      "description": "PowerPC 603e @ 120, 180, 200 MHz"
+    },
+    {
+      "start": "1996-08-07",
+      "title": "Power Macintosh 6400",
+      "description": "PowerPC 603e @ 180, 200 MHz"
+    },
+    {
+      "start": "1997-02-17",
+      "title": "Power Macintosh 5500/6500",
+      "description": "5500: PowerPC 603e @ 225, 250, 275 MHz<br>6500: PowerPC 603e @ 225, 250, 275, 300 MHz"
+    },
+    {
+      "start": "1997-02-17",
+      "title": "Power Macintosh 8600/9600",
+      "description": "8600: PowerPC 603e/ev @ 200, 250, 300 MHz<br>9600: PowerPC 604e/ev @ 200, 200x2, 233, 300, 350 MHz"
+    },
+    {
+      "start": "1997-11",
+      "title": "Power Macintosh G3",
+      "description": "PowerPC G3, 233, 266, 300 MHz"
+    },
+    {
+      "start": "1999-01",
+      "title": "Power Macintosh G3 (Blue & White)",
+      "description": ""
+    },
+    {
+      "start": "1999-08-31",
+      "title": "Power Mac G4 (PCI Graphics)",
+      "description": ""
+    },
+    {
+      "start": "1999-12",
+      "title": "Power Mac G4 (AGP Graphics)",
+      "description": ""
+    },
+    {
+      "start": "2000-07-19",
+      "title": "Power Mac G4 (Gigabit Ethernet)",
+      "description": ""
+    }
+  ]
+}

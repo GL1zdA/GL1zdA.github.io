@@ -1,0 +1,20 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1989-09-21",
+      "title": "ET4000",
+      "description": "<a href=\"http://www.cbronline.com/news/tseng_has_second_generation_of_the_vga_controller_chip\">Tseng Has Second Generation Of The Vga Controller Chip</a>"
+    },
+    {
+      "start": "1992-09",
+      "title": "ET4000/W32",
+      "description": "<a href=\"http://www.cbronline.com/news/designers_users_are_winners_as_tseng_cirrus_battle_to_do_better_graphics_chips\">Designers, Users Are Winners As Tseng, Cirrus Battle To Do Better Graphics Chips</a>"
+    },
+    {
+      "start": "1995-11-13",
+      "title": "ET6000",
+      "description": "<a href=\"http://www.thefreelibrary.com/Tseng+Labs+Unveils+Revolutionary+Multimedia+Graphics+and+Video...-a017588434\">Tseng Labs Unveils Revolutionary Multimedia Graphics and Video Processor</a>"
+    }
+  ]
+}

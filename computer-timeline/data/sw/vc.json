@@ -1,0 +1,70 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1993-07-26",
+      "title": "VC++ 1.0",
+      "description": ""
+    },
+    {
+      "start": "1994-11-04",
+      "title": "VC++ 2.0",
+      "description": ""
+    },
+    {
+      "start": "1995-12-11",
+      "title": "VC++ 4.0",
+      "description": ""
+    },
+    {
+      "start": "1997-04-28",
+      "title": "VS 5.0",
+      "description": ""
+    },
+    {
+      "start": "1998-06",
+      "title": "VS 6.0",
+      "description": ""
+    },
+    {
+      "start": "2002-02-13",
+      "title": "VS .net (7.0)",
+      "description": ""
+    },
+    {
+      "start": "2005-10",
+      "title": "VS 2005 (8.0)",
+      "description": ""
+    },
+    {
+      "start": "2007-11-19",
+      "title": "VS 2008 (9.0)",
+      "description": ""
+    },
+    {
+      "start": "2010-04-12",
+      "title": "VS 2010 (10.0)",
+      "description": ""
+    },
+    {
+      "start": "2012-09-12",
+      "title": "VS 2012 (11.0)",
+      "description": ""
+    },
+    {
+      "start": "2013-11-13",
+      "title": "VS 2013 (12.0)",
+      "description": ""
+    },
+    {
+      "start": "2015-07-20",
+      "title": "VS 2015 (14.0)",
+      "description": ""
+    },
+    {
+      "start": "2017-03-07",
+      "title": "VS 2017 (15.0)",
+      "description": ""
+    }
+  ]
+}

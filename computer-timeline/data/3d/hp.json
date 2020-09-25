@@ -1,0 +1,21 @@
+{
+  "dateTimeFormat": "iso8601",
+  "source": "https://web.archive.org/web/19990202104547/http://www1.hp.com/pressrel/index.html#prior, https://web.archive.org/web/19980214045327/http://www2.hp.com/pressrel/home.html",
+  "events": [
+    {
+      "start": "1997-09",
+      "title": "HP XW fx4",
+      "description": "HP Announces New HP KAYAK XW PC Workstation Featuring HP Visualize fX4 -- the Fastest Personal Workstation for 3-D Graphics "
+    },
+    {
+      "start": "1998-10",
+      "title": "HP XW fx6",
+      "description": "<a href=\"https://web.archive.org/web/19990203050058/http://www.hp.com/pressrel/jul98/13jul98.htm\">HP's New Top-of-the-line PC Workstation Delivers Quantum Leap in OpenGL 3-D Graphics Performance</a>"
+    },
+    {
+      "start": "2000-07-25",
+      "title": "HP fx10",
+      "description": "<a href=\"https://web.archive.org/web/20000824121301/http://hp.com/pressrel/jul00/25jul00a.htm\">HP Boosts Power, Performance and Value of HP VISUALIZE P-Class Personal Workstations</a>"
+    }
+  ]
+}

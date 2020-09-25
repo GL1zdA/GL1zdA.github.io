@@ -1,0 +1,270 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1981-08-12",
+      "title": "PC-DOS 1.0",
+      "description": "IBM PC"
+    },
+    {
+      "start": "1982-03",
+      "title": "MS-DOS 1.25",
+      "description": "First version available for adaptation for OEMs.<br><a href=\"http://www.patersontech.com/dos/byte%E2%80%93history.aspx\">Byte, 1983-06, A Short History of MS-DOS by Tim Paterson</a>"
+    },
+    {
+      "start": "1983-03-08",
+      "title": "PC-DOS 2.0",
+      "description": "IBM XT"
+    },
+    {
+      "start": "1984-08-14",
+      "title": "PC-DOS 3.0",
+      "description": "IBM AT"
+    },
+    {
+      "start": "1985",
+      "title": "PC-DOS 3.1",
+      "description": "IBM PC Network<br><a href=\"https://books.google.pl/books?id=0y4EAAAAMBAJ&pg=PA16\">InfoWorld 1985-04-22</a><br><a href=\"https://books.google.com/books?id=2S4EAAAAMBAJ&pg=PA16\">InfoWorld 1985-05-06</a> evolution chart"
+    },
+    {
+      "start": "1985-05",
+      "title": "MS-DOS 3.1",
+      "description": "<a href=\"https://books.google.pl/books?id=4C4EAAAAMBAJ&pg=PA30\">InfoWorld 1985-06-10</a><br><a href=\"https://books.google.com/books?id=iS8EAAAAMBAJ&pg=PA5\">InfoWorld 1985-09-30</a>"
+    },
+    {
+      "start": "1986-03",
+      "title": "PC-DOS 3.2",
+      "description": "<a href=\"https://books.google.com/books?id=nC8EAAAAMBAJ&pg=PA5\">InfoWorld 1986-01-20</a><br><a href=\"https://books.google.com/books?id=lS8EAAAAMBAJ&pg=PA1\">InfoWorld 1986-03-24</a><br><a href=\"https://books.google.com/books?id=Oi8EAAAAMBAJ&pg=PA6\">InfoWorld 1986-03-31</a><br><a href=\"https://books.google.com/books?id=QS8EAAAAMBAJ&pg=PA18\">InfoWorld 1986-04-28</a><br><a href=\"https://books.google.com/books?id=hTwEAAAAMBAJ&pg=PA5\">InfoWorld 1986-11-24</a>"
+    },
+    {
+      "start": "1986",
+      "title": "MS-DOS 3.2",
+      "description": "First version available as an \"unadapted\" package.<br><a href=\"https://books.google.com/books?id=nC8EAAAAMBAJ&pg=PA5\">InfoWorld 1986-01-20</a><br><a href=\"https://books.google.com/books?id=lS8EAAAAMBAJ&pg=PA1\">InfoWorld 1986-03-24</a><br><a href=\"https://books.google.com/books?id=Oi8EAAAAMBAJ&pg=PA6\">InfoWorld 1986-03-31</a><br><a href=\"https://books.google.com/books?id=QS8EAAAAMBAJ&pg=PA18\">InfoWorld 1986-04-28</a><br><a href=\"https://books.google.com/books?id=hTwEAAAAMBAJ&pg=PA5\">InfoWorld 1986-11-24</a>"
+    },
+    {
+      "start": "1986-06",
+      "title": "PC-DOS 3.21",
+      "description": "Bugfix release<br><a href=\"https://books.google.com/books?id=SC8EAAAAMBAJ&pg=PA6\">InfoWorld 1986-06-02</a><br><a href=\"https://books.google.com/books?id=Ty8EAAAAMBAJ&pg=PA8\">InfoWorld 1986-06-09</a>"
+    },
+    {
+      "start": "1987-04-02",
+      "title": "PC-DOS 3.3",
+      "description": "PS/2<br><a href=\"https://books.google.com/books?id=lj0EAAAAMBAJ&pg=PA2\">InfoWorld 1997-04-06</a><br>Still limited to 32 MB partitions. Supports multiple partitions. FASTOPEN"
+    },
+    {
+      "start": "1988",
+      "title": "PC-DOS 4.0",
+      "description": "TODO. EMS... https://www.techrepublic.com/pictures/dinosaur-sightings-installing-ms-dos-4/"
+    },
+    {
+      "start": "1988-11",
+      "title": "DOS 4.01",
+      "description": "<a href=\"https://books.google.com/books?id=szsEAAAAMBAJ&pg=PT2\">InfoWorld 1988-10-10</a><br><a href=\"https://books.google.com/books?id=ADoEAAAAMBAJ&pg=PT16\">InfoWorld 1988-11-28</a>"
+    },
+    {
+      "start": "1991-06",
+      "title": "MS-DOS 5.0",
+      "description": ""
+    },
+    {
+      "start": "1993-03",
+      "title": "MS-DOS 6.0",
+      "description": ""
+    },
+    {
+      "start": "1993-09",
+      "title": "MS-DOS 6.2",
+      "description": ""
+    },
+    {
+      "start": "1994-02",
+      "title": "MS-DOS 6.21",
+      "description": ""
+    },
+    {
+      "start": "1994-06",
+      "title": "MS-DOS 6.22",
+      "description": ""
+    },
+    {
+      "start": "1985-11-20",
+      "title": "Windows 1.0",
+      "description": ""
+    },
+    {
+      "start": "1987-12-09",
+      "title": "Windows 2.03",
+      "description": ""
+    },
+    {
+      "start": "1987-12-09",
+      "title": "Windows/386",
+      "description": "Windows/386 2.01<br>Requires DOS 3.1"
+    },
+    {
+      "start": "1988-05-27",
+      "title": "Windows/286 and Windows/386 2.1",
+      "description": "<a href=\"https://books.google.com/books?id=4j4EAAAAMBAJ&pg=PA5\">InfoWorld 1988-06-27</a><br><a href=\"https://books.google.com/books?id=4z4EAAAAMBAJ&pg=PA1\">InfoWorld 1988-07-04</a>"
+    },
+    {
+      "start": "1989-03-13",
+      "title": "Windows 2.11",
+      "description": ""
+    },
+    {
+      "start": "1990-05-22",
+      "title": "Windows 3.0",
+      "description": ""
+    },
+    {
+      "start": "1992-04-06",
+      "title": "Windows 3.1",
+      "description": ""
+    },
+    {
+      "start": "1992-10",
+      "title": "Windows for Workgroups 3.1",
+      "description": ""
+    },
+    {
+      "start": "1993-08-11",
+      "title": "Windows for Workgroups 3.11",
+      "description": ""
+    },
+    {
+      "start": "1993-11-08",
+      "title": "Windows 3.11",
+      "description": ""
+    },
+    {
+      "start": "1995-08-24",
+      "title": "Windows 95",
+      "description": ""
+    },
+    {
+      "start": "1996-02-14",
+      "title": "Windows 95A",
+      "description": ""
+    },
+    {
+      "start": "1996-08-24",
+      "title": "Windows 95 OSR 2.0",
+      "description": ""
+    },
+    {
+      "start": "1997-08-27",
+      "title": "Windows 95 OSR 2.1",
+      "description": ""
+    },
+    {
+      "start": "1997-11-26",
+      "title": "Windows 95 OSR 2.5",
+      "description": ""
+    },
+    {
+      "start": "1998-06-25",
+      "title": "Windows 98",
+      "description": ""
+    },
+    {
+      "start": "1999-04-23",
+      "title": "Windows 98 SE",
+      "description": ""
+    },
+    {
+      "start": "2000-09-14",
+      "title": "Windows ME",
+      "description": ""
+    },
+    {
+      "start": "1993-07-26",
+      "title": "Windows NT 3.1",
+      "description": ""
+    },
+    {
+      "start": "1994-09-21",
+      "title": "Windows NT 3.5",
+      "description": ""
+    },
+    {
+      "start": "1995-05-30",
+      "title": "Windows NT 3.51",
+      "description": ""
+    },
+    {
+      "start": "1996-08-24",
+      "title": "Windows NT 4.0",
+      "description": ""
+    },
+    {
+      "start": "1998-10-25",
+      "title": "NT 4.0 SP4",
+      "description": ""
+    },
+    {
+      "start": "2000-02-17",
+      "title": "Windows 2000",
+      "description": ""
+    },
+    {
+      "start": "2001-10-25",
+      "title": "Windows XP",
+      "description": ""
+    },
+    {
+      "start": "2007-01-30",
+      "title": "Windows Vista",
+      "description": "Build 6.0.6000"
+    },
+    {
+      "start": "2008-02-04",
+      "title": "Windows Vista SP1",
+      "description": "Build 6.0.6001"
+    },
+    {
+      "start": "2009-04-28",
+      "title": "Windows Vista SP2",
+      "description": "Build 6.0.6002"
+    },
+    {
+      "start": "2009-10-22",
+      "title": "Windows 7",
+      "description": "Build 6.1.7600"
+    },
+    {
+      "start": "2010-03-18",
+      "title": "Windows 7 SP1",
+      "description": "Build 6.1.7601"
+    },
+    {
+      "start": "2012-10-26",
+      "title": "Windows 8",
+      "description": "Build 6.2.9200"
+    },
+    {
+      "start": "2013-10-17",
+      "title": "Windows 8.1 (Blue)",
+      "description": "Build 6.3.9600"
+    },
+    {
+      "start": "2015-07-29",
+      "title": "Windows 10 (Threshold)",
+      "description": "Version 1507, Build 10.0.10240"
+    },
+    {
+      "start": "2015-11-12",
+      "title": "Windows 10 November Update (Threshold 2)",
+      "description": "Version 1511, Build 10.0.10586"
+    },
+    {
+      "start": "2016-08-02",
+      "title": "Windows 10 Anniversary Update (Redstone)",
+      "description": "Version 1607, Build 10.0.14393"
+    },
+    {
+      "start": "2017",
+      "title": "Windows 10 Creative Update (Redstone 2)",
+      "description": "Version ????, Build 10.0.?????"
+    }
+  ]
+}

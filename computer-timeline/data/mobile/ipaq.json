@@ -1,0 +1,40 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "2000-08",
+      "title": "iPAQ H3650",
+      "description": "<a href=\"http://www.pdastock.com/Compaq-iPAQ-H3630-H3635-H3650-524.html\">pdastock</a>"
+    },
+    {
+      "start": "2001-03",
+      "title": "iPAQ H3670",
+      "description": ""
+    },
+    {
+      "start": "2001-12",
+      "title": "iPAQ H3760",
+      "description": ""
+    },
+    {
+      "start": "2002-02",
+      "title": "iPAQ H3870",
+      "description": ""
+    },
+    {
+      "start": "2002-08",
+      "title": "iPAQ H3970",
+      "description": "<a href=\"http://www.pdastock.com/Hewlett-Packard-iPAQ-H3970-H3975-503.html\">pdastock</a>"
+    },
+    {
+      "start": "2002-12",
+      "title": "iPAQ H5450",
+      "description": "<a href=\"http://www.pdastock.com/Hewlett-Packard-iPAQ-H5450-H5455-494.html\">pdastock</a>"
+    },
+    {
+      "start": "2003-07",
+      "title": "iPAQ H5550",
+      "description": "<a href=\"http://www.pdastock.com/Hewlett-Packard-iPAQ-H5550-H5555-477.html\">pdastock</a>"
+    }
+  ]
+}

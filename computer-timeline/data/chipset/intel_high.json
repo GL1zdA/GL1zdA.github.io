@@ -1,0 +1,85 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1988-09-13",
+      "title": "350",
+      "description": "<a href=\"http://www.intel-vintage.info/timeline19801989.htm\">intel-vintage</a>"
+    },
+    {
+      "start": "1991-04-08",
+      "title": "350DT",
+      "description": "<a href=\"http://www.intel-vintage.info/timeline19901995.htm\">intel-vintage</a>"
+    },
+    {
+      "start": "1992-01-01",
+      "end": "1995-03-01",
+      "title": "Xpress",
+      "color": "black",
+      "description": "<a href=\"http://108.59.254.117/~mR_Slug/deviceInfo/Intel/xPress/help-file-manual/XPRESS.html\">Xpress System / Baseboard Revision Summary</a>"
+    },
+    {
+      "start": "1995-03-01",
+      "end": "1995-11-01",
+      "title": "Xtended Express",
+      "color": "black",
+      "description": "<a href=\"http://108.59.254.117/~mR_Slug/deviceInfo/Intel/Xtended_xPress/help-file-manual/XX.html\">Xtended Xpress Product History</a>"
+    },
+    {
+      "start": "1995-11-01",
+      "end": "1996-05-05",
+      "title": "450KX",
+      "color": "black",
+      "description": "<a href=\"https://web.archive.org/web/19961220054253/http://www.intel.com/pressroom/archive/releases/82450rel.htm\">Intel Corporation Introduces New PCI Chip Set Family for Pentium Pro Processors</a>"
+    },
+    {
+      "start": "1996-05-06",
+      "end": "1997-05-07",
+      "title": "440FX",
+      "color": "black",
+      "description": "<a href=\"https://web.archive.org/web/19961220053353/http://www.intel.com/pressroom/archive/releases/440fxld8.htm\">Intel Provides the Building Blocks Today for the New Business Computer</a>"
+    },
+    {
+      "start": "1998-06-29",
+      "end": "1999-10-24",
+      "title": "440GX",
+      "color": "black",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp092799.htm\">Intel Introduces New Pentium(R) II Xeon(TM) Processor to Achieve Unmatched Performance Levels for Servers and Workstations </a>.<br>Some manufacturers tried to replaced if with RCC, HP sold them unitl 2000-03?"
+    },
+    {
+      "start": "1999-10-25",
+      "end": "2001-05-20",
+      "title": "840",
+      "color": "#000000",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp102599.htm\">Intel Introduces 15 New Pentium III And Pentium III Xeon Processors Built On Advanced 0.18-Micron Technology</a><br><a href=\"https://web.archive.org/web/20000623014121/http://cpureview.com/prev_i840_a.html\">Intel i840 Preview</a> 1999-12-17 CPUReview.com<br><a href=\"https://web.archive.org/web/20060313011834/http://www.hardwarecentral.com/hardwarecentral/reviews/1422/1/\">Intel 840 Chipset Review</a> HardwareCentral"
+    },
+    {
+      "start": "2001-05-21",
+      "end": "2002-11-18",
+      "title": "860",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010521comp_a.htm\">Intel Introduces The First Generation Of Intel Xeon Processors</a>",
+      "color": "black"
+    },
+    {
+      "start": "2002-11-19",
+      "end": "2004-06-27",
+      "title": "E7505",
+      "description": "E7501, E7505, E7205<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021118comp.htm\">Intel Refreshes Intel Xeon Processor Portfolio Lineup </a>",
+      "color": "black"
+    },
+    {
+      "start": "2004-06-28",
+      "end": "2006-05-22",
+      "title": "E7525",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040628comp.htm\">Intel Xeon Processor Family Ushers In New Technologies, Broader Range of Capabilities for Enterprise Platforms</a><br>Dell Precision 670",
+      "color": "black"
+    },
+    {
+      "start": "2006-05-23",
+      "end": "2007",
+      "title": "5000X",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2006/20060523corp.htm\">Intel’s Core Microarchitecture Redefines Computing</a><br>Dell Precision 690<br>Mac Pro (2006)",
+      "color": "black"
+    }
+  ]
+}

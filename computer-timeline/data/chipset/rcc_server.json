@@ -1,0 +1,24 @@
+{
+  "dateTimeFormat": "iso8601",
+  "source": "http://web.archive.org/web/20010409180159/http://serverworks.com/frames/news_frame.html",
+  "events": [
+    {
+      "start": "1998-06",
+      "end": "2000-03",
+      "title": "ServerSet II LE",
+      "description": "<a href=\"https://web.archive.org/web/20000708010908/http://www.intergraph.com/ics/vpr/1998/gl_rls.asp\">Intergraph Computer Systems Redefines Price/Performance with New TDZ 2000 ViZual Workstation Models</a><br><a href=\"http://www.thefreelibrary.com/Compaq+Unveils+Scalable+Performance+of+New+Professional+Workstation...-a053059573\">Compaq Unveils Scalable Performance of New Professional Workstation SP700</a>"
+    },
+    {
+      "start": "2000-03",
+      "end": "2002-03-12",
+      "title": "ServerSet III HE",
+      "description": "<a href=\"http://web.archive.org/web/20010304174333/http://serverworks.com/news/press/000306.html\">ServerWorks' ServerSet III HE Accelerates High Performance 6-way HP NetServer Systems</a><br><a href=\"http://web.archive.org/web/20010424223507/http://serverworks.com/news/press/000314.html\">ServerWorks' ServerSet III Allows IBM to Add High-End Reliability to Intel-Based Servers.</a><br><a href=\"http://web.archive.org/web/20010425050849/http://serverworks.com/news/press/000419.html\">Four-way Servers Tackle Internet Data Center and Business-Critical Applications</a><br><a href=\"http://web.archive.org/web/20010425050118/http://serverworks.com/news/press/000425.html\">NEC Corporation Integrates ServerWorks' Technology into New High-End Server Line</a><br><a href=\"http://web.archive.org/web/20010425050424/http://serverworks.com/news/press/000426.html\">ServerWorks' ServerSet III Helps IBM Squeeze More Performance into Less Rack Space</a><br><a href=\"http://web.archive.org/web/20010304175222/http://serverworks.com/news/press/000606.html\">ServerWorks and Compaq Pack \"More Performance Per U\" in New Rack-Mount ProLiant Servers</a><br> end - Xeon MP appeared"
+    },
+    {
+      "start": "2002-03-12",
+      "end": "2002-11-19",
+      "title": "Grand Champion HE",
+      "description": "<a href=\"http://www.thefreelibrary.com/Broadcom%27s+ServerWorks+Subsidiary+Unveils+New+Grand+Champion...-a070900290\">Broadcom's ServerWorks Subsidiary Unveils New Grand Champion Architecture for Future Intel Xeon Based Servers</a><br><a href=\"http://www.thefreelibrary.com/Broadcom%27s+ServerWorks+Ships+Grand+Champion+HE+SystemI%2fO+for+Intel...-a083687556\">Broadcom's ServerWorks Ships Grand Champion HE SystemI/O for Intel Xeon MP Processor Based Servers.</a><br>533 version used only in NEC 5800Express, ends with E7525"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1994-06-02",
+      "title": "Office 4.3",
+      "description": ""
+    },
+    {
+      "start": "1995-08-30",
+      "title": "Office 95",
+      "description": ""
+    },
+    {
+      "start": "1996-11-19",
+      "title": "Office 97",
+      "description": ""
+    },
+    {
+      "start": "1999-06-07",
+      "title": "Office 2000",
+      "description": ""
+    },
+    {
+      "start": "2001-05-31",
+      "title": "Office XP",
+      "description": ""
+    },
+    {
+      "start": "2003-11-17",
+      "title": "Office 2003",
+      "description": ""
+    },
+    {
+      "start": "2007-01-30",
+      "title": "Office 2007",
+      "description": ""
+    },
+    {
+      "start": "2010-06-15",
+      "title": "Office 2010",
+      "description": ""
+    },
+    {
+      "start": "2012-10-11",
+      "title": "Office 2013",
+      "description": ""
+    }
+  ]
+}

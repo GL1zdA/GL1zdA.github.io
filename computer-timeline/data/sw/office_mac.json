@@ -1,0 +1,60 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1989",
+      "title": "Office 1.0",
+      "description": "Word 4.0, Excel 2.2, PowerPoint 2.01, Mail 1.37"
+    },
+    {
+      "start": "1991",
+      "title": "Office 1.5",
+      "description": "Word 4.0, Excel 3.0, PowerPoint 2.01, Mail 1.37"
+    },
+    {
+      "start": "1992",
+      "title": "Office 3.0",
+      "description": "Word 5.0, Excel 4.0, PowerPoint 3.0, Mail Client"
+    },
+    {
+      "start": "1994",
+      "title": "Office 4.2",
+      "description": "Word 6.0, Excel 5.0, PowerPoint 4.0, Mail 3.2"
+    },
+    {
+      "start": "1998-01-06",
+      "title": "Office 98",
+      "description": ""
+    },
+    {
+      "start": "2000-08",
+      "title": "Office 2001",
+      "description": ""
+    },
+    {
+      "start": "2001",
+      "title": "Office X",
+      "description": ""
+    },
+    {
+      "start": "2004-05-11",
+      "title": "Office 2004",
+      "description": ""
+    },
+    {
+      "start": "2008-01-15",
+      "title": "Office 2008",
+      "description": ""
+    },
+    {
+      "start": "2010-10-26",
+      "title": "Office 2011",
+      "description": ""
+    },
+    {
+      "start": "2015-03-05",
+      "title": "Office 2016",
+      "description": ""
+    }
+  ]
+}

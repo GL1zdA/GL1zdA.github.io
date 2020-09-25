@@ -1,0 +1,178 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1993-03-22",
+      "end": "1994-03-06",
+      "title": "430LX",
+      "description": "<a href=\"http://www.intel-vintage.info/timeline19901995.htm\">intel-vintage</a>"
+    },
+    {
+      "start": "1994-03-07",
+      "end": "1996-02-11",
+      "title": "430NX",
+      "description": ""
+    },
+    {
+      "start": "1995-01-31",
+      "end": "1996-02-11",
+      "title": "430FX",
+      "color": "SeaGreen",
+      "description": "<a href=\"http://www.thefreelibrary.com/Intel+Corp.+Introduces+Higher+Performing+PCI+Chip+Set+for+Pentium...-a016381763\">Intel Corp. Introduces Higher Performing PCI Chip Set for Pentium Processors</a>"
+    },
+    {
+      "start": "1996-02-12",
+      "end": "1997-05-06",
+      "title": "430HX",
+      "description": "<a href=\"https://web.archive.org/web/19961220045211/http://www.intel.com/pressroom/archive/releases/430rel.htm\">Intel Corporation Introduces New, 4th Generation PCI Chip Set Family for Pentium Processors</a>"
+    },
+    {
+      "start": "1996-02-12",
+      "end": "1998-04-14",
+      "title": "430VX",
+      "color": "SeaGreen",
+      "description": "<a href=\"https://web.archive.org/web/19961220045211/http://www.intel.com/pressroom/archive/releases/430rel.htm\">Intel Corporation Introduces New, 4th Generation PCI Chip Set Family for Pentium Processors</a><br>Dell <a href=\"https://web.archive.org/web/19980130182447/http://www.dell.com/products/dim/index.htm\">still used it in early 1998.</a>"
+    },
+    {
+      "start": "1997-05-07",
+      "end": "1997-08-24",
+      "title": "440FX + PII",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1997/DP050797.HTM\">Intel Delivers the Next Level of Computing with the New Pentium II Processor</a>."
+    },
+    {
+      "start": "1997-08-25",
+      "end": "1998-04-14",
+      "title": "440LX",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1997/CS082597.HTM\">Intel Corporation Introduces Next-Generation Pentium II Platform With New 440LX AGPset</a>."
+    },
+    {
+      "start": "1998-04-15",
+      "end": "2000-06-18",
+      "title": "440BX",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/dp041598.htm\">New Intel Pentium II and Celeron Processors Bring Optimized Performance to Computer Systems</a>Dell Dimension XPS T<br>. Dell sold at least until <a href=\"https://web.archive.org/web/20000618192757/http://www.euro.dell.com/countries/de/deu/dhs/products/series_dimen_desktops.htm\">2000-06</a>. Last advertisement in Maximum PC is 2000-08. Maximum 850 MHz."
+    },
+    {
+      "start": "1999-11-15",
+      "end": "2000-06-04",
+      "title": "820",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1999/cs111599.htm\">Intel Introduces New Chipset For Intel Pentium III Processor-Based Performance PCs</a><br>Dell Dimension XPS B<br> was not really popular. HP did BX until 2000-04, then replaced everything with 820/840."
+    },
+    {
+      "start": "2000-06-05",
+      "end": "2000-11-19",
+      "title": "820E",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/mp061900.htm\">Intel Introduces New Chipset For Intel Pentium III Processor-Based Performance PCs</a>"
+    },
+    {
+      "start": "2000-06-19",
+      "end": "2001-09-09",
+      "title": "815/815E",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/cs061900.htm\">Intel Introduces New Chipsets For Intel Pentium III Processor-Based Mainstream PCs</a><br>Dell Dimension 4100, Dimension 4200<br>Dell sold at least until <a href=\"https://web.archive.org/web/20010806033608/http://www.euro.dell.com/countries/de/deu/dhs/products/series_dimen_desktops.htm\">2001-08</a>. Maximum 1 GHz."
+    },
+    {
+      "start": "2001-09-10",
+      "end": "2002-05-19",
+      "title": "845",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010910comp.htm\">Intel Introduces New Chipset For Intel Pentium 4 Processor-Based PCs</a><br>Dell Dimension 4300, Dimension 4400"
+    },
+    {
+      "start": "2000-11-20",
+      "end": "2002-05-05",
+      "title": "850",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp112000.htm\">Intel Introduces The Pentium 4 Processor</a><br>Dell Dimension 8100, Dimension 8200 (which was also available with 850E)"
+    },
+    {
+      "start": "2002-05-06",
+      "end": "2003-04-13",
+      "title": "850E",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020506comp.htm\">Intel Extends Performance Leadership With New Pentium 4 Processors</a><br>Dell Dimension 8200, 8250"
+    },
+    {
+      "start": "2002-05-20",
+      "end": "2002-10-06",
+      "title": "845E/845G",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020520comp.htm\">Intel Advances Business And Consumer PC Platforms</a><br>Dell Dimension 4500"
+    },
+    {
+      "start": "2002-10-07",
+      "end": "2003-05-20",
+      "title": "845PE/845GE",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021007comp.htm\">Intel Extends Pentium 4 Processor Platform Leadership With Four Advanced Chipsets</a>"
+    },
+    {
+      "start": "2003-05-21",
+      "end": "2004-06-20",
+      "title": "865G/865PE",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030521comp.htm\">Intel Brings Hyper-Threading Technology To Corporate and Mainstream Consumer PC Users</a>"
+    },
+    {
+      "start": "2003-04-14",
+      "end": "2004-06-20",
+      "title": "875P",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020826comp.htm\">Advanced Intel Pentium 4 Processor Platform Features Faster System Bus and New Chipset</a><br>Dell Dimension 8300. Reintroduced XPS with Dimension XPS."
+    },
+    {
+      "start": "2004-06-21",
+      "end": "2005-05-25",
+      "title": "915P/915G",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040621comp.htm\">Intel Delivers Breakthrough PC Technologies To Enhance Digital Home and Office Experiences</a><br>Dell Dimension 8300. Reintroduced XPS with Dimension XPS."
+    },
+    {
+      "start": "2004-06-21",
+      "end": "2004-11-01",
+      "title": "925X",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040621comp.htm\">Intel Delivers Breakthrough PC Technologies To Enhance Digital Home and Office Experiences</a><br>Dell Dimension 8300. Reintroduced XPS with Dimension XPS."
+    },
+    {
+      "start": "2004-10-31",
+      "end": "2005-04-17",
+      "title": "925XE",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20041101comp.htm\">Intel Delivers New Platform For PC Power Users, Gamers</a>"
+    },
+    {
+      "start": "2005-04-18",
+      "end": "2005-11-21",
+      "title": "955X",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050418comp.htm\">Dual Core Era Begins, PC Makers Start Selling Intel-Based PCs</a><br>Dell Dimension 8300. Reintroduced XPS with Dimension XPS."
+    },
+    {
+      "start": "2005-05-26",
+      "end": "2006-06-25",
+      "title": "945P/945G",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050526comp.htm\">Intel Delivers New Features For Home And Office PCs</a>"
+    },
+    {
+      "start": "2005-11-22",
+      "end": "2007-06-04",
+      "title": "975X",
+      "color": "Crimson",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20051122comp.htm\">Intel Brings Home Extreme Multicore Gaming For The Holidays</a>"
+    },
+    {
+      "start": "2006-06-26",
+      "end": "2007-06-04",
+      "title": "P965/G965",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2006/20060606corp.htm\">Intel Sales Chief Readies Industry With New Products, Technologies Ahead Of Widely Anticipated Processor Introductions</a>"
+    },
+    {
+      "start": "2007-06-05",
+      "end": "2008-06-01",
+      "title": "3-Series",
+      "description": "G33, P35 (April), Q33, Q35 (June), G35, X38 (90 days)<a href=\"http://www.intel.com/pressroom/archive/releases/2007/20070605comp.htm\">Intel Introduces '3-Series' Chipsets at Computex</a>"
+    },
+    {
+      "start": "2008-06-02",
+      "end": "2009-12",
+      "title": "4-Series",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2008/20080602comp_hy.htm\">Intel Executive Says Powerful Processors, WiMAX to Bring Full Internet to Mobile Devices </a>"
+    }
+  ]
+}

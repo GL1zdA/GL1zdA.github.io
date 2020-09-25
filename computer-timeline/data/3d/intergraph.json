@@ -1,0 +1,45 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1994-05-01",
+      "title": "Integraph GLZ/GLI",
+      "description": "&lt;a href=\"http://www.computerwoche.de/a/kombination-von-pc-und-workstation-mit-intel-und-windows-sucht-intergraph-den-office-markt,1121215\"&gt;GLZ&lt;/a&gt;, &lt;a href=\"http://www.computerworld.pl/artykuly/300859/Personalne.stacje.robocze.Intergraph.html\"&gt;GLZ&lt;/a&gt;<br>TD-4, TD-5 (Dual Pentium)"
+    },
+    {
+      "start": "1995-11-01",
+      "title": "Intergraph TDZ",
+      "description": "1995-11-01 <a href=\"https://groups.google.com/d/msg/comp.graphics.animation/x8HCtw8_ilA/N-kQBHsQ3LAJ\">TDZ-300, 400, 600</a> (Single, Dual Quad Pentium Pro + GLZ)<br>1996-05-19 <a href=\"https://web.archive.org/web/19980116040604/http://www.intergraph.com/ics/graphics/ics_bkg1.htm\">TDZ-310, 410, 610</a> (Single, Dual Quad Pentium Pro + RealiZm)"
+    },
+    {
+      "start": "1996-06-25",
+      "title": "Intergraph RealiZm",
+      "description": "<a href=\"http://www.thefreelibrary.com/Intergraph%27s+new+TDZ+workstations+with+new+RealiZm+Graphics+surpass+1...-a018425508\">Intergraph's new TDZ workstations with new RealiZm Graphics surpass 1 million 3D triangles/second</a>"
+    },
+    {
+      "start": "1996-12-02",
+      "title": "Intergraph RealiZm V25",
+      "description": "<a href=\"http://www.thefreelibrary.com/Faster+3D+Graphics+Accelerator+for+Visual+Simulation+and+Virtual...-a018898601\">Faster 3D Graphics Accelerator for Visual Simulation and Virtual Reality</a>"
+    },
+    {
+      "start": "1997-08-10",
+      "title": "Intergraph RealiZm II",
+      "description": "<a href=\"http://fcw.com/articles/1997/08/10/intergraph-unveils-windows-ntbased-graphics-machine.aspx\">Intergraph unveils Windows NT-based graphics machine</a>"
+    },
+    {
+      "start": "1998-10-19",
+      "title": "Wildcat 4000",
+      "description": "<a href=\"http://www.thefreelibrary.com/Intergraph+Computer+Systems+Announces+Early+Delivery+of+Wildcat+3D...-a053093133\">Intergraph Computer Systems Announces Early Delivery of Wildcat 3D Graphics Technology</a><br><a href=\"http://www.thefreelibrary.com/Compaq%2c+Dell%2c+IBM%2c+and+Intergraph+Computer+Systems+Use+Intense3D%27s...-a054129838\">Compaq, Dell, IBM, and Intergraph Computer Systems Use Intense3D's Wildcat 3D Graphics in New Pentium -R- III Xeon -TM- Processor-based Workstations</a>"
+    },
+    {
+      "start": "1999-06-29",
+      "title": "Wildcat 4105",
+      "description": "<a href=\"http://www.thefreelibrary.com/Intense3D+Extends+Product+Line+with+New+Wildcat+4105+and+3510+3D...-a055021411\">Intense3D Extends Product Line with New Wildcat 4105 and 3510 3D Graphics Accelerators</a><br><a href=\"http://www.thefreelibrary.com/Intergraph+Computer+Systems+TDZ+2000+Now+Available+with+New+Intense...-a055021435\">Intergraph Computer Systems TDZ 2000 Now Available with New Intense 3D Wildcat 4105 and 3510 3D Graphics Accelerators</a>"
+    },
+    {
+      "start": "1999-08-10",
+      "title": "Wildcat 4110",
+      "description": "<a href=\"http://www.thefreelibrary.com/Intense3D+Delivers+on+Sweeping+Performance+Promise+of+Wildcat+3D...-a055396596\">Intense3D Delivers on Sweeping Performance Promise of Wildcat 3D Graphics</a>"
+    }
+  ]
+}

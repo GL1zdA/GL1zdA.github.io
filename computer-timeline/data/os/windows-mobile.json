@@ -1,0 +1,65 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1998-01-08",
+      "title": "Palm-size PC 1.0",
+      "description": "<a href=\"http://phonedb.net/index.php?m=opsys&id=4&c=microsoft_palm-size_pc_1.0__gryphon\">Palm-size PC 1.0</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=31&c=microsoft_palm_pc_1.0__gryphon\">Palm PC 1.0</a>(name should be the same)"
+    },
+    {
+      "start": "1999-02-01",
+      "title": "Palm-size PC 1.2",
+      "description": "<a href=\"http://phonedb.net/index.php?m=opsys&id=8&c=microsoft_palm-size_pc_1.2_color__wyvern\">Palm-size PC 1.2</a>"
+    },
+    {
+      "start": "2000-04-19",
+      "title": "Pocket PC 2000",
+      "description": "based on Windows CE 3.0<br><a href=\"http://phonedb.net/index.php?m=opsys&id=42&c=microsoft_pocket_pc_2000__rapier\">Pocket PC 2000</a>"
+    },
+    {
+      "start": "2001-10",
+      "title": "Pocket PC 2002",
+      "description": "based on Windows CE 3.0<br><a href=\"http://phonedb.net/index.php?m=opsys&id=35&c=microsoft_pocket_pc_2002_premium_edition__merlin\">Microsoft Pocket PC 2002 Premium Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=34&c=microsoft_pocket_pc_2002_professional_edition__merlin\">Microsoft Pocket PC 2002 Professional Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=24&c=microsoft_pocket_pc_2002_phone_edition__merlin\">Microsoft Pocket PC 2002 Phone Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=37&c=microsoft_smartphone_2002__stinger\">Microsoft Smartphone 2002</a>"
+    },
+    {
+      "start": "2003-06-23",
+      "title": "Windows Mobile 2003",
+      "description": "based on Windows CE 4.2<br><a href=\"http://phonedb.net/index.php?m=opsys&id=29&c=microsoft_windows_mobile_2003_for_pocket_pc_premium_edition__ozone\">for Pocket PC Premium Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=38&c=microsoft_windows_mobile_2003_for_pocket_pc_professional_edition__ozone\">for Pocket PC Professional Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=43&c=microsoft_windows_mobile_2003_for_smartphone\">for Smartphone</a>"
+    },
+    {
+      "start": "2004-03-24",
+      "title": "Windows Mobile 2003 Second Edition",
+      "description": "based on Windows CE 4.2<br><a href=\"http://phonedb.net/index.php?m=opsys&id=15&c=microsoft_windows_mobile_2003_second_edition_for_pocket_pc_premium_edition__ozone_update\">for Pocket PC Premium Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=33&c=microsoft_windows_mobile_2003_second_edition_for_pocket_pc_professional_edition__ozone_update\">for Pocket PC Professional Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=41&c=microsoft_windows_mobile_2003_second_edition_for_pocket_pc_phone_edition__ozone_update\">for Pocket PC Phone Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=44&c=microsoft_windows_mobile_2003_second_edition_for_smartphone__magneto\">for Smartphone</a>"
+    },
+    {
+      "start": "2005-10-13",
+      "title": "Windows Mobile 5",
+      "description": "based on Windows CE 5.0<br><a href=\"http://phonedb.net/index.php?m=opsys&id=47&c=microsoft_windows_mobile_5.0_for_pocket_pc_premium_edition__magneto\">for Pocket PC Premium Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=46&c=microsoft_windows_mobile_5.0_for_pocket_pc_professional_edition__magneto\">for Pocket PC Professional Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=32&c=microsoft_windows_mobile_5.0_for_pocket_pc_phone_edition__magneto\">for Pocket PC Phone Edition</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=45&c=microsoft_windows_mobile_5.0_for_smartphone\">for Smartphone</a> (no touchscreen)"
+    },
+    {
+      "start": "2007-02-12",
+      "title": "Windows Mobile 6",
+      "description": "based on Windows CE 5.2<br><a href=\"http://phonedb.net/index.php?m=opsys&id=48&c=microsoft_windows_mobile_6_classic__crossbow\">Classic</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=51&c=microsoft_windows_mobile_6_standard__crossbow\">Standard</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=52&c=microsoft_windows_mobile_6_professional__crossbow\">Professional</a>"
+    },
+    {
+      "start": "2008-04-01",
+      "title": "Windows Mobile 6.1",
+      "description": "based on Windows CE 5.x<br><a href=\"http://phonedb.net/index.php?m=opsys&id=133&c=microsoft_windows_mobile_6.1_classic\">Classic</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=86&c=microsoft_windows_mobile_6.1_standard\">Standard</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=87&c=microsoft_windows_mobile_6.1_professional\">Professional</a>"
+    },
+    {
+      "start": "2009-05-11",
+      "title": "Windows Mobile 6.5",
+      "description": "based on Windows CE 5.x<br><a href=\"http://phonedb.net/index.php?m=opsys&id=150&c=microsoft_windows_mobile_6.5_standard\">Standard</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=147&c=microsoft_windows_mobile_6.5_professional__titanium\">Professional</a>"
+    },
+    {
+      "start": "2010-03-01",
+      "title": "Windows Mobile 6.5.3",
+      "description": "based on Windows CE 5.0<br><a href=\"http://phonedb.net/index.php?m=opsys&id=166&c=microsoft_windows_mobile_6.5.3_professional__maldives\">Windows Mobile 6.5.3</a>"
+    },
+    {
+      "start": "2011-01-10",
+      "title": "Windows Embedded Handheld 6.5",
+      "description": "based on Windows CE 5.0<br><a href=\"http://phonedb.net/index.php?m=opsys&id=202&c=microsoft_windows_embedded_handheld_6.5_classic\">Classic</a><br><a href=\"http://phonedb.net/index.php?m=opsys&id=201&c=microsoft_windows_embedded_handheld_6.5_professional\">Professional</a>"
+    }
+  ]
+}

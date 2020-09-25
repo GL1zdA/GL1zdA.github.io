@@ -1,0 +1,50 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1997-12-18",
+      "title": "Nokia 6110",
+      "description": ""
+    },
+    {
+      "start": "2000-02-01",
+      "title": "Nokia 6210",
+      "description": ""
+    },
+    {
+      "start": "2001-03-15",
+      "title": "Nokia 6310",
+      "description": ""
+    },
+    {
+      "start": "2001-11-19",
+      "title": "Nokia 7650",
+      "description": ""
+    },
+    {
+      "start": "2003-06-16",
+      "title": "Nokia 6600",
+      "description": ""
+    },
+    {
+      "start": "2004-06-14",
+      "title": "Nokia 6630",
+      "description": ""
+    },
+    {
+      "start": "2005-04-27",
+      "title": "Nokia N70/N90",
+      "description": "S60 2nd Edition"
+    },
+    {
+      "start": "2006-04-25",
+      "title": "Nokia N73/N91",
+      "description": "S60 3rd Edition"
+    },
+    {
+      "start": "2006-06-01",
+      "title": "Nokia N93",
+      "description": "S60 3rd Edition, PowerVR MBX"
+    }
+  ]
+}

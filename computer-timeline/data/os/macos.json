@@ -1,0 +1,135 @@
+{
+      "dateTimeFormat": "iso8601",
+      "events": [
+            {
+                  "start": "1991-05-13",
+                  "title": "System 7",
+                  "description": ""
+            },
+            {
+                  "start": "1991-10-21",
+                  "title": "System 7.0.1",
+                  "description": ""
+            },
+            {
+                  "start": "1992-03-23",
+                  "title": "System 7.0.1P",
+                  "description": ""
+            },
+            {
+                  "start": "1992-08-03",
+                  "title": "System 7.1",
+                  "description": ""
+            },
+            {
+                  "start": "1993-01",
+                  "title": "System 7.1P",
+                  "description": ""
+            },
+            {
+                  "start": "1993-10-21",
+                  "title": "System 7.1.1",
+                  "description": ""
+            },
+            {
+                  "start": "1993-10-21",
+                  "title": "System 7 Pro",
+                  "description": ""
+            },
+            {
+                  "start": "1994-03-14",
+                  "title": "System 7.1.2",
+                  "description": ""
+            },
+            {
+                  "start": "1994-07-15",
+                  "title": "System 7.1.2P",
+                  "description": ""
+            },
+            {
+                  "start": "1994-09-12",
+                  "title": "System 7.5",
+                  "description": ""
+            },
+            {
+                  "start": "1995-03-23",
+                  "title": "System 7.5.1",
+                  "description": ""
+            },
+            {
+                  "start": "1995-06-19",
+                  "title": "System 7.5.2",
+                  "description": ""
+            },
+            {
+                  "start": "1996-01-01",
+                  "title": "System 7.5.3",
+                  "description": ""
+            },
+            {
+                  "start": "1996-09-27",
+                  "title": "System 7.5.5",
+                  "description": ""
+            },
+            {
+                  "start": "1997-01-07",
+                  "title": "System 7.6",
+                  "description": ""
+            },
+            {
+                  "start": "1997-04-07",
+                  "title": "System 7.6.1",
+                  "description": ""
+            },
+            {
+                  "start": "1997-07-26",
+                  "title": "MacOS 8.0",
+                  "description": ""
+            },
+            {
+                  "start": "1998-01-19",
+                  "title": "MacOS 8.1",
+                  "description": ""
+            },
+            {
+                  "start": "1998-10-17",
+                  "title": "MacOS 8.5",
+                  "description": ""
+            },
+            {
+                  "start": "1998-12-07",
+                  "title": "MacOS 8.5.1",
+                  "description": ""
+            },
+            {
+                  "start": "1999-05-10",
+                  "title": "MacOS 8.6",
+                  "description": ""
+            },
+            {
+                  "start": "1999-10-23",
+                  "title": "MacOS 9.0",
+                  "description": ""
+            },
+            {
+                  "start": "2000-04-04",
+                  "title": "MacOS 9.0.4",
+                  "description": ""
+            },
+            {
+                  "start": "2001-01-09",
+                  "title": "MacOS 9.1",
+                  "description": ""
+            },
+            {
+                  "start": "2001-08-21",
+                  "title": "MacOS 9.2.1",
+                  "description": ""
+            },
+            {
+                  "start": "2001-12-05",
+                  "title": "MacOS 9.2.2",
+                  "description": ""
+            }
+      ]
+}

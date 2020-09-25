@@ -1,0 +1,20 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1992",
+      "title": "Sega Model 1",
+      "description": ""
+    },
+    {
+      "start": "1993",
+      "title": "Sega Model 2",
+      "description": ""
+    },
+    {
+      "start": "1996",
+      "title": "Sega Model 3",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1995-11-01",
+      "title": "Pentium Pro 200",
+      "description": "Pentium Pro 150, 180, 200 256 kB<br><a href=\"https://web.archive.org/web/19961220054259/http://www.intel.com/procs/biz/vol1no3/news/index.htm#ppro\">Pentium Pro Processor To Power Next Wave of High-Performance Workstations and Servers Based on Intel Architecture</a>"
+    },
+    {
+      "start": "1996-03",
+      "title": "Pentium Pro 166 512 kB",
+      "description": "No exact date given, should have been introduced in 96 Q1"
+    },
+    {
+      "start": "1996-06",
+      "title": "Pentium Pro 200 512 kB",
+      "description": "No exact date given, should have been introduced in 96 Q2"
+    },
+    {
+      "start": "1997-08-18",
+      "title": "Pentium Pro 200 1 MB",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1997/dp081897.htm\">Intel\"s Pentium Pro Processor, Now With One Megabyte Of L2 Cache</a>."
+    },
+    {
+      "start": "1998-06-29",
+      "title": "Pentium II Xeon 400 1 MB",
+      "description": "Pentium II Xeon 400 512 kB, 1 MB<br><a href=\"http://www.intel.com/pressroom/archive/releases/1998/sp062998.htm\">Intel Introduces New Pentium(R) II Xeon(TM) Processor to Achieve Unmatched Performance Levels for Servers and Workstations </a>"
+    },
+    {
+      "start": "1998-10-06",
+      "title": "Pentium II Xeon 450",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/1998/wp100698.htm\">Intel Announces Fastest Pentium II Xeon Processor</a>"
+    },
+    {
+      "start": "1999-01-05",
+      "title": "Pentium II Xeon 450 2 MB",
+      "description": "Pentium II Xeon 450 1 MB, 2 MB<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/sp010599.htm\">Intel Announces Pentium II Xeon Processor with Larger Cache, Higher Frequency for Industry-Leading Performance</a>"
+    },
+    {
+      "start": "1999-03-17",
+      "title": "Pentium III Xeon 500 2 MB",
+      "description": "Pentium III Xeon 500 512 kB, 1 MB, 2 MB<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/sp031799.htm\">Pentium III Xeon Processor Launch</a>"
+    },
+    {
+      "start": "1999-08-23",
+      "title": "Pentium III Xeon 550 2 MB",
+      "description": "Pentium III Xeon 550 512 kB, 1 MB, 2 MB<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/sp082399.htm\">Intel Announces Latest Pentium III Xeon Processors Offering Higher Levels Of Performance, Headroom And Scalability</a>"
+    },
+    {
+      "start": "1999-10-25",
+      "title": "Pentium III Xeon 733",
+      "description": "Pentium III Xeon 600, 667, 733<br><a href=\"http://www.intel.com/pressroom/archive/releases/1999/dp102599.htm\">Intel Introduces 15 New Pentium III And Pentium III Xeon Processors Built On Advanced 0.18-Micron Technology</a>"
+    },
+    {
+      "start": "2000-01-12",
+      "title": "Pentium III Xeon 800",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp011200.htm\">Intel Introduces New High Performance Processor For Servers And Workstations</a>"
+    },
+    {
+      "start": "2000-04-10",
+      "title": "Pentium III Xeon 866",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/wp041000.htm\">Intel Boosts Workstation Performance With New Processors</a>"
+    },
+    {
+      "start": "2000-05-22",
+      "title": "Pentium III Xeon 700 2 MB",
+      "description": "Pentium III Xeon 700 1 MB, 2 MB<br><a href=\"http://www.intel.com/pressroom/archive/releases/2000/sp052200.htm\">Intel Introduces New Processors For High-End Servers</a>"
+    },
+    {
+      "start": "2000-05-24",
+      "title": "Pentium III Xeon 933",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/dp052400.htm\">Intel Introduces Pentium III Processor At 933 MHz </a>"
+    },
+    {
+      "start": "2000-08-22",
+      "title": "Pentium III Xeon 1000",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2000/sp082200.htm\">Intel Ships Industry's First Gigahertz Server And Workstation Processors</a>"
+    },
+    {
+      "start": "2001-03-21",
+      "title": "Pentium III Xeon 900 2 MB",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010321comp.htm\">Intel Boosts Performance For High-End Servers</a>"
+    },
+    {
+      "start": "2001-05-21",
+      "title": "Xeon 1.7",
+      "description": "Xeon 1.4, 1.5, 1.7<br><a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010521comp_a.htm\">Intel Introduces The First Generation Of Intel Xeon Processors</a>"
+    },
+    {
+      "start": "2001-09-25",
+      "title": "Xeon 2.0",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2001/20010925comp.htm\">Intel Xeon Processors Reach 2 Gigahertz For Workstations</a>"
+    },
+    {
+      "start": "2002-01-08",
+      "title": "Pentium III-S 1400",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020108comp.htm\">Intel Introduces Faster Intel Pentium III Processors For Front-End And General-Purpose Servers </a>"
+    },
+    {
+      "start": "2002-02-25",
+      "title": "Xeon 2.2",
+      "description": "Xeon 1.8, 2, 2.2<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020225comp.htm\">New Intel Xeon Server Processors And Chipset Boost System Performance Up To 80 Percent</a>"
+    },
+    {
+      "start": "2002-04-23",
+      "title": "Xeon 2.4",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020423comp_a.htm\">Intel Xeon Processors For Dual Servers And Workstations Accelerate To 2.40 Gigahertz</a>"
+    },
+    {
+      "start": "2002-09-11",
+      "title": "Xeon 2.8",
+      "description": "Xeon 2.60, 2.80<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20020911comp.htm\">New Intel Xeon Processors Ship For Dual Processing Systems At 2.8 And 2.6 Gigahertz</a>"
+    },
+    {
+      "start": "2002-11-19",
+      "title": "Xeon 2.8B",
+      "description": "Xeon 2, 2.4, 2.6, 2.8 @ 533<br><a href=\"http://www.intel.com/pressroom/archive/releases/2002/20021118comp.htm\">Intel Refreshes Intel Xeon Processor Portfolio Lineup</a>"
+    },
+    {
+      "start": "2003-07-14",
+      "title": "Xeon 3.06",
+      "description": "3, 3.06<br><a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030310comp.htm\">Intel Xeon Processors Speed Past 3 GHz </a>"
+    },
+    {
+      "start": "2003-07-14",
+      "title": "Xeon 3.06 1M ",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20030714comp.htm\">New Intel Xeon Processor Boosts Performance For Dual Processor Servers And Workstations</a>"
+    },
+    {
+      "start": "2003-10-06",
+      "title": "Xeon 3.2 1M",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2003/20031006comp.htm\">New Intel Xeon Processor Provides High Performance For Dual Processor Server Need</a>"
+    },
+    {
+      "start": "2004-02-18",
+      "title": "Xeon 3.2 2M",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040218corp.htm\">Intel Outlines Platform Innovations For More Manageable, Balanced And Secure Enterprise Computing</a>"
+    },
+    {
+      "start": "2004-06-28",
+      "title": "Xeon 3.6",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2004/20040628comp.htm\">Intel Xeon Processor Family Ushers In New Technologies, Broader Range of Capabilities for Enterprise Platforms</a>"
+    },
+    {
+      "start": "2005-02-14",
+      "title": "Xeon 3.6 2M",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050214comp.htm\">Intel Advances Enterprise Platforms From Desktop To Datacenter</a>"
+    },
+    {
+      "start": "2005-09-26",
+      "title": "Xeon 3.8 2M",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20050926corp_a.htm\">Intel Continues Push Down Power-Optimization Path With Intel® Xeon™ Processor Line</a>"
+    },
+    {
+      "start": "2005-10-10",
+      "title": "Xeon 2.8 DP",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20051010comp.htm\">Intel Ships Multi-Core Server Platforms</a>"
+    },
+    {
+      "start": "2006-05-23",
+      "title": "Xeon 5000",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2006/20060523corp.htm\">Intel’s Core Microarchitecture Redefines Computing</a>"
+    },
+    {
+      "start": "2006-06-26",
+      "title": "Xeon 5100",
+      "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2006/20060626comp.htm\">Intel Unleashes New Server Processors That Deliver World-Class Performance And Power Efficiency</a>"
+    },
+    {
+      "start": "2006-11-14",
+      "title": "Xeon 5300",
+      "description": "Xeon X5355, Xeon E5345, Xeon E5320, Xeon E5310<a href=\"http://www.intel.com/pressroom/archive/releases/2006/20061114comp.htm\">Intel Ignites Quad-Core Era</a>"
+    }
+  ]
+}

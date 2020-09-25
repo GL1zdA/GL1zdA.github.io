@@ -1,0 +1,80 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1999-03-05",
+      "title": "Alias 8.5",
+      "description": "<a href=\"http://download.autodesk.com/us/aliasstudio/qualcharts/alias_8_5_nt.html\">Alias 8.5 NT</a>"
+    },
+    {
+      "start": "2000-03-02",
+      "title": "Alias 9.5",
+      "description": "<a href=\"http://download.autodesk.com/us/aliasstudio/qualcharts/alias_9_5_nt.html\">StudioTools 9.5 NT</a>"
+    },
+    {
+      "start": "2000-05-31",
+      "title": "Alias 9.5.2",
+      "description": "<a href=\"http://download.autodesk.com/us/aliasstudio/qualcharts/alias952_nt.html\">StudioTools 9.5.2 NT</a>"
+    },
+    {
+      "start": "2000-12-01",
+      "title": "Alias 9.6",
+      "description": "<a href=\"http://download.autodesk.com/us/aliasstudio/qualcharts/alias96_nt.html\">StudioTools 9.6 NT</a>"
+    },
+    {
+      "start": "2001-05-29",
+      "title": "Alias 9.7",
+      "description": "<a href=\"http://download.autodesk.com/us/aliasstudio/qualcharts/alias97_nt.html\">StudioTools 9.7 NT</a>"
+    },
+    {
+      "start": "1998-01-06",
+      "title": "Maya 1.0",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/nt_maya_1_x.html\">Maya 1.0</a>"
+    },
+    {
+      "start": "1999-06-02",
+      "title": "Maya 2.0",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_2_0_nt.html\">Maya 2.0</a>"
+    },
+    {
+      "start": "2000-03-06",
+      "title": "Maya 2.5.2",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_2_52_nt.html\">Maya 2.5.2</a>"
+    },
+    {
+      "start": "2000-05-24",
+      "title": "Maya 3.0",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_30_NT.html\">Maya 3.0</a>"
+    },
+    {
+      "start": "2001-05-30",
+      "title": "Maya 4.0",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_40_NT.html\">Maya 4.0</a>"
+    },
+    {
+      "start": "2002-08-16",
+      "title": "Maya 4.5",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_45_NT.html\">Maya 4.5</a>"
+    },
+    {
+      "start": "2003-04-01",
+      "title": "Maya 5.0",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_50_win.html\">Maya 5.0</a>"
+    },
+    {
+      "start": "2004-04-09",
+      "title": "Maya 6.0",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_60_win.html\">Maya 5.0</a>"
+    },
+    {
+      "start": "2005-01-14",
+      "title": "Maya 6.5",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_65_win.html\">Maya 6.5</a>"
+    },
+    {
+      "start": "2005-07-19",
+      "title": "Maya 7.0",
+      "description": "<a href=\"http://download.autodesk.com/us/maya/qualcharts/maya_70_win.html\">Maya 7.0</a>"
+    }
+  ]
+}

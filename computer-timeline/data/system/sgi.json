@@ -1,0 +1,113 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1988-10",
+      "end": "1991-04",
+      "title": "Personal Iris 4D/20",
+      "description": "<a href=\"https://books.google.com/books?id=szsEAAAAMBAJ&pg=PT4\">Infoworld 1988-10-10</a>"
+    },
+    {
+      "start": "1991-04",
+      "end": "1991-06",
+      "title": "Personal Iris 4D/35",
+      "description": ""
+    },
+    {
+      "start": "1991-06",
+      "end": "1992-09",
+      "title": "Indigo",
+      "description": ""
+    },
+    {
+      "start": "1992-09",
+      "end": "1993-01",
+      "title": "Indigo R4000",
+      "description": ""
+    },
+    {
+      "start": "1993-01",
+      "end": "1996-01",
+      "title": "Indigo2",
+      "description": ""
+    },
+    {
+      "start": "1996-01",
+      "end": "1997-01",
+      "title": "Indigo2 R10000",
+      "description": ""
+    },
+    {
+      "start": "1993-07-12",
+      "end": "1997-06-30",
+      "title": "SGI Indy",
+      "description": ""
+    },
+    {
+      "start": "1996-10-01",
+      "end": "2002-09-30",
+      "title": "SGI O2",
+      "description": "-> Fuel"
+    },
+    {
+      "start": "1997-01",
+      "end": "2001-08-31",
+      "title": "SGI Octane",
+      "description": "https://web.archive.org/web/20010804014215/http://www.sgi.com/workstations/comparison.html"
+    },
+    {
+      "start": "2000-06",
+      "end": "2004-06-25",
+      "title": "SGI Octane2",
+      "description": "-> Tezro"
+    },
+    {
+      "start": "2002-01-01",
+      "end": "2006-12-29",
+      "title": "SGI Fuel",
+      "description": ""
+    },
+    {
+      "start": "1999-01-12",
+      "end": "2000-06",
+      "title": "Visual Workstation 320/540",
+      "description": "<a href=\"http://www.thefreelibrary.com/SGI+MIXES+LITHIUM,+COBALT,+ARSENIC+IN+NT+WORKSTATIONS.-a053524389\">320/540</a><br><a href=\"http://books.google.pl/books?id=93nBwQ5XIAwC&pg=PA132\">PC Magazine Workstation Test<a/><br><a href=\"https://web.archive.org/web/20000303193509/http://www.sgi.com/products/hw_workstations.html\">2000-03 SGI Workstation Page</a><br><a href=\"https://web.archive.org/web/20000619003004/http://www.sgi.com/workstations/index.html\">2000-06 SGI Workstation Page (Visual Workstation 320/540 replaced by 230/330/550)</a>"
+    },
+    {
+      "start": "2000-05-15",
+      "end": "2001-06-29",
+      "title": "Visual Workstation 230/330/550",
+      "description": ""
+    },
+    {
+      "start": "1991-06",
+      "end": "1992-01",
+      "title": "Power Series 4D/4x0",
+      "description": ""
+    },
+    {
+      "start": "1992-01",
+      "end": "1993-06",
+      "title": "Crimson",
+      "description": ""
+    },
+    {
+      "start": "1993-06",
+      "end": "1994-06",
+      "title": "Onyx",
+      "description": ""
+    },
+    {
+      "start": "1994-06",
+      "end": "1996-01",
+      "title": "Power Onyx",
+      "description": ""
+    },
+    {
+      "start": "1996-01",
+      "end": "1996-06",
+      "title": "Onyx R10000",
+      "description": ""
+    }
+  ]
+}

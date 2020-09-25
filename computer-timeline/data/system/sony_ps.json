@@ -1,0 +1,25 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1994-12-03",
+      "title": "PlayStation",
+      "description": ""
+    },
+    {
+      "start": "2000-03-04",
+      "title": "PlayStation 2",
+      "description": ""
+    },
+    {
+      "start": "2006-11-11",
+      "title": "PlayStation 3",
+      "description": ""
+    },
+    {
+      "start": "2013-11-15",
+      "title": "PlayStation 4",
+      "description": ""
+    }
+  ]
+}

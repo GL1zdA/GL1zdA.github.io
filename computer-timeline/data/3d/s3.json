@@ -1,0 +1,30 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1991-07-10",
+      "title": "S3 911",
+      "description": "S3 LAUNCHES 86C911 CHIP http://www.cbronline.com/news/s3_launches_86c911_chip"
+    },
+    {
+      "start": "1994-04",
+      "title": "S3 Vision864/964",
+      "description": ""
+    },
+    {
+      "start": "1994-11-14",
+      "title": "S3 Vision868/968, Trio64",
+      "description": ""
+    },
+    {
+      "start": "1995-06",
+      "title": "S3 Trio64V+",
+      "description": ""
+    },
+    {
+      "start": "1996-04",
+      "title": "S3 ViRGE",
+      "description": ""
+    }
+  ]
+}
