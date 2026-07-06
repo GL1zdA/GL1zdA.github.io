@@ -1,0 +1,261 @@
+{
+    "source": "https://en.wikipedia.org/wiki/Fedora_Linux",
+    "dateTimeFormat": "iso8601",
+    "events": [
+        {
+            "start": "1997-12-01",
+            "title": "Red Hat 5.0",
+            "description": "Hurricane, Kernel 2.0.32"
+        },
+        {
+            "start": "1998-05-22",
+            "title": "Red Hat 5.1",
+            "description": "Manhattan, Kernel 2.0.34, Gnome 0.13"
+        },
+        {
+            "start": "1998-11-02",
+            "title": "Red Hat 5.2",
+            "description": "Apollo, Kernel 2.0.36, Gnome 0.20"
+        },
+        {
+            "start": "1999-04-26",
+            "title": "Red Hat 6.0",
+            "description": "Hedwig, Kernel 2.2.5, Gnome 1.0.4, KDE 1.1.1pre2"
+        },
+        {
+            "start": "1999-10-04",
+            "title": "Red Hat 6.1",
+            "description": "Cartman, Kernel 2.2.12, Gnome 1.0.39, KDE 1.1.2"
+        },
+        {
+            "start": "2000-04-03",
+            "title": "Red Hat 6.2",
+            "description": "Zoot, Kernel 2.2.14, Gnome 1.0.55, KDE 1.1.2"
+        },
+        {
+            "start": "2000-09-25",
+            "title": "Red Hat 7.0",
+            "description": "Guinness, Kernel 2.2.16, Gnome 1.2.1, KDE 1.1.2"
+        },
+        {
+            "start": "2001-04-16",
+            "title": "Red Hat 7.1",
+            "description": "Seawolf, Kernel 2.4.2, Gnome 1.2.4, KDE 2.1.1"
+        },
+        {
+            "start": "2001-10-22",
+            "title": "Red Hat 7.2",
+            "description": "Enigma, Kernel 2.4.7, Gnome 1.4, KDE 2.2"
+        },
+        {
+            "start": "2002-05-06",
+            "title": "Red Hat 7.3",
+            "description": "Valhalla, Kernel 2.4.18, KDE 3.0.0"
+        },
+        {
+            "start": "2002-09-30",
+            "title": "Red Hat 8",
+            "description": "Psyche, Kernel 2.4.18, Gnome 2, KDE 3.0.3"
+        },
+        {
+            "start": "2003-03-31",
+            "title": "Red Hat 9",
+            "description": "Shrike, Kernel 2.4.20, Gnome 2.2, KDE 3.1"
+        },
+        {
+            "start": "2003-11-06",
+            "title": "Fedora 1",
+            "description": "Yarrow, Kernel 2.4.22, Gnome 2.4, KDE 3.1.4"
+        },
+        {
+            "start": "2004-05-18",
+            "title": "Fedora 2",
+            "description": "Tettnang, Kernel 2.6.5, Gnome 2.6, KDE 3.2.2"
+        },        
+        {
+            "title": "Fedora 3",
+            "start": "2004-11-08",
+            "description": "Heidelberg, Kernel 2.6.9, Gnome 2.8, KDE 3.3.0"
+        },
+        {
+            "title": "Fedora 4",
+            "start": "2005-06-13",
+            "description": "Stentz, Kernel 2.6.11, Gnome 2.10, KDE 3.4.0"
+        },
+        {
+            "title": "Fedora 5",
+            "start": "2006-03-20",
+            "description": "Bordeaux, Kernel 2.6.15, Gnome 2.14, KDE 3.5.1"
+        },
+        {
+            "title": "Fedora 6",
+            "start": "2006-10-24",
+            "description": "Zod, Kernel 2.6.18, Gnome 2.16, KDE 3.5.4"
+        },
+        {
+            "title": "Fedora 7",
+            "start": "2007-05-31",
+            "description": "Moonshine, Kernel 2.6.21, Gnome 2.18"
+        },
+        {
+            "title": "Fedora 8",
+            "start": "2007-11-08",
+            "description": "Werewolf, Kernel 2.6.23, Gnome 2.20"
+        },
+        {
+            "title": "Fedora 9",
+            "start": "2008-05-13",
+            "description": "Sulphur, Kernel 2.6.25, Gnome 2.22"
+        },
+        {
+            "title": "Fedora 10",
+            "start": "2008-11-25",
+            "description": "Cambridge, Kernel 2.6.27, Gnome 2.24"
+        },
+        {
+            "title": "Fedora 11",
+            "start": "2009-06-09",
+            "description": "Leonidas, Kernel 2.6.29, Gnome 2.26"
+        },
+        {
+            "title": "Fedora 12",
+            "start": "2009-11-17",
+            "description": "Constantine, Kernel 2.6.31, Gnome 2.28"
+        },
+        {
+            "title": "Fedora 13",
+            "start": "2010-05-25",
+            "description": "Goddard, Kernel 2.6.33, Gnome 2.30"
+        },
+        {
+            "title": "Fedora 14",
+            "start": "2010-11-02",
+            "description": "Laughlin, Kernel 2.6.35, Gnome 2.32"
+        },
+        {
+            "title": "Fedora 15",
+            "start": "2011-05-24",
+            "description": "Lovelock, Kernel 2.6.38, Gnome 3.0"
+        },
+        {
+            "title": "Fedora 16",
+            "start": "2011-11-08",
+            "description": "Verne, Kernel 3.1, Gnome 3.2"
+        },
+        {
+            "title": "Fedora 17",
+            "start": "2012-05-29",
+            "description": "Beefy Miracle, Kernel 3.3, Gnome 3.4"
+        },
+        {
+            "title": "Fedora 18",
+            "start": "2013-01-15",
+            "description": "Spherical Cow, Kernel 3.6, Gnome 3.6"
+        },
+        {
+            "title": "Fedora 19",
+            "start": "2013-07-02",
+            "description": "Schrödinger's Cat, Kernel 3.9, Gnome 3.8"
+        },
+        {
+            "title": "Fedora 20",
+            "start": "2013-12-17",
+            "description": "Heisenbug, Kernel 3.11, Gnome 3.10"
+        },
+        {
+            "title": "Fedora 21",
+            "start": "2014-12-09",
+            "description": "Kernel 3.17, Gnome 3.14"
+        },
+        {
+            "title": "Fedora 22",
+            "start": "2015-05-26",
+            "description": "Kernel 4.0, Gnome 3.16"
+        },
+        {
+            "title": "Fedora 23",
+            "start": "2015-11-03",
+            "description": "Kernel 4.2, Gnome 3.18"
+        },
+        {
+            "title": "Fedora 24",
+            "start": "2016-06-21",
+            "description": "Kernel 4.5, Gnome 3.20"
+        },
+        {
+            "title": "Fedora 25",
+            "start": "2016-11-22",
+            "description": "Kernel 4.8, Gnome 3.22"
+        },
+        {
+            "title": "Fedora 26",
+            "start": "2017-07-11",
+            "description": "Kernel 4.11, Gnome 3.24"
+        },
+        {
+            "title": "Fedora 27",
+            "start": "2017-11-14",
+            "description": "Kernel 4.13, Gnome 3.26"
+        },
+        {
+            "title": "Fedora 28",
+            "start": "2018-05-01",
+            "description": "Kernel 4.16, Gnome 3.28"
+        },
+        {
+            "title": "Fedora 29",
+            "start": "2018-10-30",
+            "description": "Kernel 4.18, Gnome 3.30"
+        },
+        {
+            "title": "Fedora 30",
+            "start": "2019-05-07",
+            "description": "Kernel 5.0, Gnome 3.32"
+        },
+        {
+            "title": "Fedora 31",
+            "start": "2019-10-29",
+            "description": "Kernel 5.3, Gnome 3.34"
+        },
+        {
+            "title": "Fedora 32",
+            "start": "2020-04-28",
+            "description": "Kernel 5.6, Gnome 3.36"
+        },
+        {
+            "title": "Fedora 33",
+            "start": "2020-10-27",
+            "description": "Kernel 5.8, Gnome 3.38"
+        },
+        {
+            "title": "Fedora 34",
+            "start": "2021-04-27",
+            "description": "Kernel 5.11, Gnome 40"
+        },
+        {
+            "title": "Fedora 35",
+            "start": "2021-11-02",
+            "description": "Kernel 5.14, Gnome 41"
+        },
+        {
+            "title": "Fedora 36",
+            "start": "2022-05-10",
+            "description": "Kernel 5.17, Gnome 42"
+        },
+        {
+            "title": "Fedora 37",
+            "start": "2022-11-15",
+            "description": "Kernel 6.0, Gnome 43"
+        },
+        {
+            "title": "Fedora 38",
+            "start": "2023-04-18",
+            "description": "Kernel 6.2, Gnome 44"
+        },
+        {
+            "title": "Fedora 39",
+            "start": "2023-11-07",
+            "description": "Kernel 6.5, Gnome 45"
+        }
+    ]
+}

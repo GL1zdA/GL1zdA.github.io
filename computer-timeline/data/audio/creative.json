@@ -57,8 +57,13 @@
       "description": ""
     },
     {
-      "start": "2005",
+      "start": "2004",
       "title": "Sound Blaster Audigy 4 Pro (SB0380)",
+      "description": ""
+    },
+    {
+      "start": "2005-08",
+      "title": "Sound Blaster X-Fi Elite Pro (SB0550)",
       "description": ""
     }
   ]
