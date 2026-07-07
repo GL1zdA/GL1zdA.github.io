@@ -252,9 +252,19 @@
          "description": "Zen <a href=\"https://ir.amd.com/news-events/press-releases/detail/750/innovation-and-competition-return-to-high-performance-pcs-march-2nd-with-worldwide-amd-ryzen-7-availability\">Innovation and Competition Return to High-Performance PCs March 2nd with Worldwide AMD Ryzen 7 Availability</a>"
       },
       {
+         "start": "2017-08-10",
+         "title": "Threadripper 1950X",
+         "description": "Zen, HEDT <a href=\"https://ir.amd.com/news-events/press-releases/detail/786/amd-launches-the-highest-performance-desktop-processor-ever-with-ryzen-threadripper-high-end-desktop-processors\">AMD Launches the Highest-Performance Desktop Processor, Ever, with Ryzen Threadripper High End Desktop Processors</a>"
+      },
+      {
          "start": "2018-04-19",
          "title": "Ryzen 7 2700X",
          "description": "Zen+ <a href=\"https://ir.amd.com/news-events/press-releases/detail/827/2nd-generation-amd-ryzen-desktop-processors-deliver-best-in-class-compute-performance-and-even-faster-gaming-framerates-than-previous-generation\">2nd Generation AMD Ryzen Desktop Processors Deliver Best-in-Class Compute Performance and Even Faster Gaming Framerates than Previous Generation</a>"
+      },
+      {
+         "start": "2018-08-13",
+         "title": "Threadripper 2990WX",
+         "description": "Zen+, HEDT <a href=\"https://ir.amd.com/news-events/press-releases/detail/846/amd-launches-worlds-most-powerful-desktop-processor-bigger-better-2nd-generation-amd-ryzen-threadripper-processors-break-boundaries-of-high-end-desktop-market\">AMD Launches World's Most Powerful Desktop Processor: Bigger, Better 2nd Generation AMD Ryzen Threadripper Processors Break Boundaries of High-End Desktop Market</a>"
       },
       {
          "start": "2019-07-07",
@@ -267,6 +277,16 @@
          "description": "<a href=\"https://ir.amd.com/news-events/press-releases/detail/914/amd-introduces-worlds-most-powerful-16-core-consumer-desktop-processor-the-amd-ryzen-9-3950x\">AMD Introduces World's Most Powerful 16-core Consumer Desktop Processor, the AMD Ryzen 9 3950X</a>"
       },
       {
+         "start": "2019-11-07",
+         "title": "Threadripper 3970X",
+         "description": "Zen 2, HEDT <a href=\"https://ir.amd.com/news-events/press-releases/detail/913/amd-introduces-worlds-fastest-high-end-desktop-processors-with-3rd-gen-ryzen-threadripper-family-delivering-unmatched-performance-with-no-compromises\">AMD Introduces World's Fastest High-End Desktop Processors With 3rd Gen Ryzen Threadripper Family</a>"
+      },
+      {
+         "start": "2020-02-07",
+         "title": "Threadripper 3990X",
+         "description": "Zen 2, HEDT, 64 rdzeni"
+      },
+      {
          "start": "2020-10-08",
          "title": "Ryzen 9 5950X",
          "description": "Zen 3 <a href=\"https://ir.amd.com/news-events/press-releases/detail/972/amd-launches-amd-ryzen-5000-series-desktop-processors-the-fastest-gaming-cpus-in-the-world\">AMD Launches AMD Ryzen 5000 Series Desktop Processors: The Fastest Gaming CPUs in the World</a>"
@@ -277,9 +297,19 @@
          "description": "Zen 4 <a href=\"https://ir.amd.com/news-events/press-releases/detail/1089/amdlaunches-ryzen-7000-series-desktop-processors-with-zen-4-architecture-the-fastest-core-in-gaming\">AMD Launches Ryzen 7000 Series Desktop Processors with \"Zen 4\" Architecture: the Fastest Core in Gaming</a>"
       },
       {
+         "start": "2023-10-19",
+         "title": "Threadripper 7980X",
+         "description": "Zen 4, HEDT <a href=\"https://ir.amd.com/news-events/press-releases/detail/1162/amd-introduces-new-amd-ryzen-threadripper-7000-series-processors-and-ryzen-threadripper-pro-7000-wx-series-processors-for-the-ultimate-workstation\">AMD Introduces New AMD Ryzen Threadripper 7000 Series Processors and Ryzen Threadripper PRO 7000 WX-Series Processors for the Ultimate Workstation</a>"
+      },
+      {
          "start": "2024-06-02",
          "title": "Ryzen 9 9950X",
          "description": "Zen 5, Computex 2024 <a href=\"https://ir.amd.com/news-events/press-releases/detail/1202/amd-unveils-next-gen-zen-5-ryzen-processors-to-power-advanced-ai-experiences\">AMD Unveils Next-Gen \"Zen 5\" Ryzen Processors to Power Advanced AI Experiences</a>"
+      },
+      {
+         "start": "2025-05-20",
+         "title": "Threadripper 9980X",
+         "description": "Zen 5, HEDT, Computex 2025 <a href=\"https://ir.amd.com/news-events/press-releases/detail/1253/amd-introduces-new-radeon-graphics-cards-and-ryzen-threadripper-processors-at-computex-2025\">AMD Introduces New Radeon Graphics Cards and Ryzen Threadripper Processors at COMPUTEX 2025</a>"
       }
    ]
 }
