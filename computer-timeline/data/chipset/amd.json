@@ -5,25 +5,25 @@
       "start": "2006",
       "end": "2007-11-18",
       "title": "580X/570X/550X CrossFire",
-      "description": "Socket AM2, chipsety po przejęciu ATI"
+      "description": "Socket AM2, chipsets from AMD's ATI acquisition"
     },
     {
       "start": "2007-11-19",
       "end": "2010-02-08",
       "title": "790FX/790X",
-      "description": "platforma \"Spider\" <a href=\"https://ir.amd.com/news-events/press-releases/detail/272/amd-introduces-worlds-first-comprehensive-cutting-edge-pc-platform\">AMD Introduces World's First Comprehensive, Cutting-Edge PC Platform</a>"
+      "description": "\"Spider\" platform <a href=\"https://ir.amd.com/news-events/press-releases/detail/272/amd-introduces-worlds-first-comprehensive-cutting-edge-pc-platform\">AMD Introduces World's First Comprehensive, Cutting-Edge PC Platform</a>"
     },
     {
       "start": "2010-02-09",
       "end": "2011-05-31",
       "title": "890FX",
-      "description": "platforma \"Leo\""
+      "description": "\"Leo\" platform"
     },
     {
       "start": "2011-06-01",
       "end": "2017-02-21",
       "title": "990FX/990X/970",
-      "description": "platforma \"Scorpius\", Socket AM3+ <a href=\"https://ir.amd.com/news-events/press-releases/detail/352/amd-paves-the-way-for-the-next-generation-of-supercharged-desktop-pcs-with-9-series-chipsets\">AMD Paves the Way for the Next Generation of Supercharged Desktop PCs With 9-Series Chipsets</a>"
+      "description": "\"Scorpius\" platform, Socket AM3+ <a href=\"https://ir.amd.com/news-events/press-releases/detail/352/amd-paves-the-way-for-the-next-generation-of-supercharged-desktop-pcs-with-9-series-chipsets\">AMD Paves the Way for the Next Generation of Supercharged Desktop PCs With 9-Series Chipsets</a>"
     },
     {
       "start": "2017-02-22",
@@ -35,13 +35,13 @@
       "start": "2018-04-19",
       "end": "2019-07-06",
       "title": "X470/B450",
-      "description": "B450 dodany na Computex 2018 <a href=\"https://ir.amd.com/news-events/press-releases/detail/827/2nd-generation-amd-ryzen-desktop-processors-deliver-best-in-class-compute-performance-and-even-faster-gaming-framerates-than-previous-generation\">2nd Generation AMD Ryzen Desktop Processors Deliver Best-in-Class Compute Performance and Even Faster Gaming Framerates than Previous Generation</a>"
+      "description": "B450 added at Computex 2018 <a href=\"https://ir.amd.com/news-events/press-releases/detail/827/2nd-generation-amd-ryzen-desktop-processors-deliver-best-in-class-compute-performance-and-even-faster-gaming-framerates-than-previous-generation\">2nd Generation AMD Ryzen Desktop Processors Deliver Best-in-Class Compute Performance and Even Faster Gaming Framerates than Previous Generation</a>"
     },
     {
       "start": "2019-07-07",
       "end": "2022-08-28",
       "title": "X570/B550",
-      "description": "pierwszy chipset desktopowy z PCIe 4.0; B550 dodany 2020-04-21 <a href=\"https://ir.amd.com/news-events/press-releases/detail/899/amd-unleashes-ultimate-pc-gaming-platform-with-worldwide-availability-of-amd-radeon-rx-5700-series-graphics-cards-and-amd-ryzen-3000-series-desktop-processors\">AMD Unleashes Ultimate PC Gaming Platform with Worldwide Availability of AMD Radeon RX 5700 Series Graphics Cards and AMD Ryzen 3000 Series Desktop Processors</a>"
+      "description": "first desktop chipset with PCIe 4.0; B550 added 2020-04-21 <a href=\"https://ir.amd.com/news-events/press-releases/detail/899/amd-unleashes-ultimate-pc-gaming-platform-with-worldwide-availability-of-amd-radeon-rx-5700-series-graphics-cards-and-amd-ryzen-3000-series-desktop-processors\">AMD Unleashes Ultimate PC Gaming Platform with Worldwide Availability of AMD Radeon RX 5700 Series Graphics Cards and AMD Ryzen 3000 Series Desktop Processors</a>"
     },
     {
       "start": "2022-08-29",
@@ -52,7 +52,7 @@
     {
       "start": "2024-06-02",
       "title": "X870E/X870/B850",
-      "description": "USB4 standardowo; B850 dodany później (ok. 2025-01) bez osobnego press release <a href=\"https://ir.amd.com/news-events/press-releases/detail/1202/amd-unveils-next-gen-zen-5-ryzen-processors-to-power-advanced-ai-experiences\">AMD Unveils Next-Gen \"Zen 5\" Ryzen Processors to Power Advanced AI Experiences</a>"
+      "description": "USB4 standard; B850 added later (approx. 2025-01) without a dedicated press release <a href=\"https://ir.amd.com/news-events/press-releases/detail/1202/amd-unveils-next-gen-zen-5-ryzen-processors-to-power-advanced-ai-experiences\">AMD Unveils Next-Gen \"Zen 5\" Ryzen Processors to Power Advanced AI Experiences</a>"
     },
     {
       "start": "2017-08-10",
@@ -72,7 +72,7 @@
       "start": "2023-10-19",
       "title": "TRX50",
       "color": "Crimson",
-      "description": "Socket sTR5, HEDT; WRX90 dla wariantów PRO <a href=\"https://ir.amd.com/news-events/press-releases/detail/1162/amd-introduces-new-amd-ryzen-threadripper-7000-series-processors-and-ryzen-threadripper-pro-7000-wx-series-processors-for-the-ultimate-workstation\">AMD Introduces New AMD Ryzen Threadripper 7000 Series Processors and Ryzen Threadripper PRO 7000 WX-Series Processors for the Ultimate Workstation</a>"
+      "description": "Socket sTR5, HEDT; WRX90 for PRO variants <a href=\"https://ir.amd.com/news-events/press-releases/detail/1162/amd-introduces-new-amd-ryzen-threadripper-7000-series-processors-and-ryzen-threadripper-pro-7000-wx-series-processors-for-the-ultimate-workstation\">AMD Introduces New AMD Ryzen Threadripper 7000 Series Processors and Ryzen Threadripper PRO 7000 WX-Series Processors for the Ultimate Workstation</a>"
     }
   ]
 }

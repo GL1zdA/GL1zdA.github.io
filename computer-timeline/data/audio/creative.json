@@ -32,19 +32,24 @@
       "description": ""
     },
     {
-      "start": "1999",
-      "title": "Sound Blaster Live! (CT4760)",
-      "description": ""
+      "start": "1999-09-13",
+      "title": "Sound Blaster Live! digital (CT4760)",
+      "description": "PCI, audio accelerator <a href=\"https://sg.creative.com/corporate/pressroom?id=6210\">Creative Introduces Sound Blaster Live! MP3+ Audio Accelerator</a>; <a href=\"https://sg.creative.com/corporate/pressroom?id=6209\">Creative Unveils Sound Blaster Live! X-Gamer</a>"
     },
     {
-      "start": "2000",
+      "start": "2000-09-26",
       "title": "Sound Blaster Live! 5.1 (SB0060)",
-      "description": ""
+      "description": "PCI <a href=\"https://sg.creative.com/corporate/pressroom?id=6178\">Creative Delivers Dolby Digital-Quality Sound on the PC</a>"
     },
     {
-      "start": "2001",
+      "start": "2001-08-20",
       "title": "Sound Blaster Audigy (SB0090)",
-      "description": ""
+      "description": "PCI <a href=\"https://sg.creative.com/corporate/pressroom?id=6422\">Creative Shatters PC Sound Barrier With Sound Blaster Audigy</a>"
+    },
+    {
+      "start": "2002-01-08",
+      "title": "Sound Blaster Extigy",
+      "description": "USB, first external Sound Blaster <a href=\"https://sg.creative.com/corporate/pressroom?id=6161\">Creative Launches Sound Blaster Extigy - First External Sound Blaster</a>"
     },
     {
       "start": "2002",
@@ -52,19 +57,164 @@
       "description": ""
     },
     {
-      "start": "2003",
-      "title": "Sound Blaster Audigy 2 ZS (SB0350)",
-      "description": ""
+      "start": "2003-02-05",
+      "title": "Sound Blaster Audigy 2 Platinum eX",
+      "description": "PCI + external breakout box <a href=\"https://sg.creative.com/corporate/pressroom?id=8366\">Creative Sound Blaster Audigy 2 Platinum eX Transforms the PC Into a Home Recording Studio</a>"
     },
     {
-      "start": "2004",
+      "start": "2003-09-02",
+      "title": "Sound Blaster Audigy 2 ZS (SB0350)",
+      "description": "PCI <a href=\"https://sg.creative.com/corporate/pressroom?id=8379\">Creative Advances Award-Winning Sound Blaster Audigy 2 Line with Introduction of Sound Blaster Audigy 2 ZS</a>"
+    },
+    {
+      "start": "2003-09-10",
+      "title": "Sound Blaster Audigy 2 NX",
+      "description": "USB, external <a href=\"https://sg.creative.com/corporate/pressroom?id=8381\">Creative Continues to Drive 7.1 Surround by Launching External Sound Blaster Audigy 2 NX</a>"
+    },
+    {
+      "start": "2004-10-08",
+      "title": "Sound Blaster Audigy 2 ZS Notebook",
+      "description": "PCMCIA, first Sound Blaster card in PCMCIA form factor <a href=\"https://sg.creative.com/corporate/pressroom?id=12001\">Creative Debuts the PCMCIA Sound Blaster Audigy 2 ZS Notebook</a>"
+    },
+    {
+      "start": "2004-11-08",
       "title": "Sound Blaster Audigy 4 Pro (SB0380)",
-      "description": ""
+      "description": "PCI <a href=\"https://sg.creative.com/corporate/pressroom?id=11881\">MEDIA ALERT - Creative Announces Limited Edition Sound Blaster Audigy 4 Pro Sound Card</a>"
     },
     {
       "start": "2005-08",
       "title": "Sound Blaster X-Fi Elite Pro (SB0550)",
       "description": ""
+    },
+    {
+      "start": "2007-11-05",
+      "title": "Sound Blaster X-Fi Xtreme Audio",
+      "description": "PCIe <a href=\"https://sg.creative.com/corporate/pressroom?id=12835\">Creative Announces PCI Express Sound Blaster X-Fi Xtreme Audio</a>"
+    },
+    {
+      "start": "2008-05-12",
+      "title": "Sound Blaster X-Fi Surround 5.1",
+      "description": "USB 2.0 <a href=\"https://sg.creative.com/corporate/pressroom?id=12924\">Creative Announces First USB 2.0 Sound Blaster X-Fi</a>"
+    },
+    {
+      "start": "2008-07-21",
+      "title": "Sound Blaster Play!",
+      "description": "USB, entry-level <a href=\"https://sg.creative.com/corporate/pressroom?id=12969\">Creative Announces Sound Blaster Play!</a>"
+    },
+    {
+      "start": "2008-08-22",
+      "title": "Sound Blaster X-Fi Go!",
+      "description": "USB <a href=\"https://sg.creative.com/corporate/pressroom?id=12988\">Creative Launches Sound Blaster X-Fi Go!</a>"
+    },
+    {
+      "start": "2008-09-17",
+      "title": "Sound Blaster X-Fi Notebook Sound Card",
+      "description": "ExpressCard <a href=\"https://sg.creative.com/corporate/pressroom?id=13013\">Creative Announces the Sound Blaster X-Fi Notebook Sound Card and Creative Wireless Receiver</a>"
+    },
+    {
+      "start": "2010-01-07",
+      "title": "Sound Blaster X-Fi Titanium HD",
+      "description": "PCIe, THX TruStudio PC; alongside the USB Sound Blaster X-Fi HD <a href=\"https://sg.creative.com/corporate/pressroom?id=13137\">Creative Announces Sound Blaster X-Fi Titanium HD and USB Sound Blaster X-Fi HD</a>"
+    },
+    {
+      "start": "2013-09-04",
+      "title": "Sound Blaster Omni Surround 5.1",
+      "description": "USB <a href=\"https://sg.creative.com/corporate/pressroom?id=13374\">Creative Announces New High Performance External USB Sound Card - The Sound Blaster Omni Surround 5.1</a>"
+    },
+    {
+      "start": "2014-04-02",
+      "title": "Sound Blaster Play! 2",
+      "description": "USB <a href=\"https://sg.creative.com/corporate/pressroom?id=13406\">Creative Introduces the Sound Blaster Play! 2 USB Sound Card</a>"
+    },
+    {
+      "start": "2014-05-14",
+      "title": "Sound Blaster E1/E3",
+      "description": "USB DAC/headphone amp <a href=\"https://sg.creative.com/corporate/pressroom?id=13413\">Creative Launches the All-New Sound Blaster E Series</a>"
+    },
+    {
+      "start": "2014-08-26",
+      "title": "Sound Blaster E5",
+      "description": "24-bit/192kHz USB DAC/amp, flagship of the E series <a href=\"https://sg.creative.com/corporate/pressroom?id=13437\">Unveiling the Flagship Professional-Grade Sound Blaster E5</a>"
+    },
+    {
+      "start": "2014-09-03",
+      "title": "Sound Blaster X7",
+      "description": "USB/optical DAC + 100W amp <a href=\"https://sg.creative.com/corporate/pressroom?id=13439\">Unleashing the Biggest, Baddest, Boldest Sound Blaster Ever - The Sound Blaster X7</a>"
+    },
+    {
+      "start": "2015-08-04",
+      "title": "Sound BlasterX G5",
+      "description": "USB, external <a href=\"https://sg.creative.com/corporate/pressroom?id=13476\">Announcing Sound BlasterX G5: 7.1 HD Audio External Sound Card And Headphone Amplifier</a>"
+    },
+    {
+      "start": "2016-04-13",
+      "title": "Sound BlasterX G1",
+      "description": "USB, thumb-sized <a href=\"https://sg.creative.com/corporate/pressroom?id=13502\">Sound BlasterX G1 Thumb-Sized USB Sound Card with True 7.1 HD Surround</a>"
+    },
+    {
+      "start": "2017-06-12",
+      "title": "Sound BlasterX AE-5",
+      "description": "PCIe, gaming <a href=\"https://sg.creative.com/corporate/pressroom?id=13549\">Creative Unveils All-New Sound BlasterX AE-5 Audiophile-Grade Gaming Sound Card</a>"
+    },
+    {
+      "start": "2018-08-27",
+      "title": "Sound BlasterX G6",
+      "description": "USB, external <a href=\"https://sg.creative.com/corporate/pressroom?id=13600\">Creative Unleashes Sound BlasterX G6</a>"
+    },
+    {
+      "start": "2019-09-25",
+      "title": "Sound Blaster X3",
+      "description": "USB, Super X-Fi <a href=\"https://sg.creative.com/corporate/pressroom?id=13651\">Sound Blaster X3: The First Sound Blaster with Super X-Fi is Here</a>"
+    },
+    {
+      "start": "2019-12-05",
+      "title": "Sound Blaster G3",
+      "description": "USB, console/PC <a href=\"https://sg.creative.com/corporate/pressroom?id=13658\">Sound Blaster G3: Console Gaming gets Sound Blaster Boost</a>"
+    },
+    {
+      "start": "2020-04-16",
+      "title": "Sound BlasterX AE-5 Plus",
+      "description": "PCIe <a href=\"https://sg.creative.com/corporate/pressroom?id=13733\">Sound BlasterX AE-5 Plus: A Cut Above Itself in Gaming Sound Cards</a>"
+    },
+    {
+      "start": "2021-02-09",
+      "title": "Sound Blaster Z SE",
+      "description": "PCIe <a href=\"https://sg.creative.com/corporate/pressroom?id=13744\">Sound Blaster Z SE: Greater Sound Blaster Punch for Less</a>"
+    },
+    {
+      "start": "2021-04-01",
+      "title": "Sound Blaster GC7",
+      "description": "USB gaming DAC/amp <a href=\"https://sg.creative.com/corporate/pressroom?id=13695\">Sound Blaster GC7: Take Full Control</a>"
+    },
+    {
+      "start": "2021-06-17",
+      "title": "Sound Blaster X4",
+      "description": "USB <a href=\"https://sg.creative.com/corporate/pressroom?id=13706\">Sound Blaster X4: The All-Rounder Sound Card</a>"
+    },
+    {
+      "start": "2021-10-05",
+      "title": "Sound Blaster Audigy Fx V2",
+      "description": "PCIe <a href=\"https://sg.creative.com/corporate/pressroom?id=13723\">Sound Blaster Audigy Fx V2: Get More Audio from Your PC</a>"
+    },
+    {
+      "start": "2023-01-31",
+      "title": "Sound Blaster X5",
+      "description": "USB DAC/amp <a href=\"https://sg.creative.com/corporate/pressroom?id=13777\">Sound Blaster X5: Make Your Audiophile-grade Headphones Sing</a>"
+    },
+    {
+      "start": "2024-10-16",
+      "title": "Sound Blaster G8",
+      "description": "USB, external <a href=\"https://sg.creative.com/corporate/pressroom?id=13829\">Sound Blaster G8: Versatility Redefined</a>"
+    },
+    {
+      "start": "2026-03-16",
+      "title": "Sound Blaster Audigy FX Pro",
+      "description": "PCIe <a href=\"https://sg.creative.com/corporate/pressroom?id=13860\">Creative Launches Sound Blaster Audigy FX Pro</a>"
+    },
+    {
+      "start": "2026-05-28",
+      "title": "Sound Blaster AE-X",
+      "description": "PCIe, flagship internal card <a href=\"https://sg.creative.com/corporate/pressroom?id=13862\">Creative Announces Sound Blaster AE-X</a>"
     }
   ]
 }
