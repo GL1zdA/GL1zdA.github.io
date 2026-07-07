@@ -117,6 +117,26 @@
       "description": "PCIe, THX TruStudio PC; alongside the USB Sound Blaster X-Fi HD <a href=\"https://sg.creative.com/corporate/pressroom?id=13137\">Creative Announces Sound Blaster X-Fi Titanium HD and USB Sound Blaster X-Fi HD</a>"
     },
     {
+      "start": "2011-09-01",
+      "title": "Sound Blaster Recon3D",
+      "description": "PCIe/USB, Sound Core3D quad-core audio processor <a href=\"https://www.globenewswire.com/news-release/2011/09/01/455397/14982/en/creative-unleashes-sound-blaster-recon3d-a-new-audio-platform-powered-by-sound-core3d-the-world-s-first-quad-core-audio-and-voice-processor.html\">Creative Unleashes Sound Blaster Recon3D</a>"
+    },
+    {
+      "start": "2012-08-15",
+      "title": "Sound Blaster Z/Zx/ZxR",
+      "description": "PCIe <a href=\"https://www.globenewswire.com/news-release/2012/08/15/482976/14982/en/creative-introduces-the-sound-blaster-z-series-a-new-range-of-ultra-high-performance-sound-cards-designed-for-future-gaming-and-entertainment-audio.html\">Creative Introduces the Sound Blaster Z-Series</a>"
+    },
+    {
+      "start": "2013-09",
+      "title": "Sound Blaster Audigy Fx",
+      "description": "PCIe (SB1570); exact announcement date unconfirmed, no press release found"
+    },
+    {
+      "start": "2013-09",
+      "title": "Sound Blaster Audigy Rx",
+      "description": "PCIe (SB1550); exact announcement date unconfirmed, no press release found"
+    },
+    {
       "start": "2013-09-04",
       "title": "Sound Blaster Omni Surround 5.1",
       "description": "USB <a href=\"https://sg.creative.com/corporate/pressroom?id=13374\">Creative Announces New High Performance External USB Sound Card - The Sound Blaster Omni Surround 5.1</a>"
@@ -160,6 +180,16 @@
       "start": "2018-08-27",
       "title": "Sound BlasterX G6",
       "description": "USB, external <a href=\"https://sg.creative.com/corporate/pressroom?id=13600\">Creative Unleashes Sound BlasterX G6</a>"
+    },
+    {
+      "start": "2019-07-09",
+      "title": "Sound Blaster AE-7",
+      "description": "PCIe <a href=\"https://sg.creative.com/corporate/pressroom?id=13641\">Sound Blaster: 30 Years of Revolutionizing Audio - Sound Blaster AE-9 and Sound Blaster AE-7</a>"
+    },
+    {
+      "start": "2019-07-09",
+      "title": "Sound Blaster AE-9",
+      "description": "PCIe, flagship with Xamp discrete headphone amp <a href=\"https://sg.creative.com/corporate/pressroom?id=13641\">Sound Blaster: 30 Years of Revolutionizing Audio - Sound Blaster AE-9 and Sound Blaster AE-7</a>"
     },
     {
       "start": "2019-09-25",
