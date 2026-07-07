@@ -289,6 +289,116 @@
       "start": "2007-07-16",
       "title": "Core 2 Extreme QX6850",
       "description": "Core 2 Duo E6550, Core 2 Duo E6750, Core 2 Duo E6850, Core 2 Quad Q6700, Core 2 Extreme QX6850<a href=\"http://www.intel.com/pressroom/archive/releases/2007/20070716corp_a.htm\">Intel Takes Popular Laptops to 'Extreme' with First-Ever Extreme Edition Mobile Processor; Adds New Desktop Chip</a>"
+    },
+    {
+      "start": "2007-11-11",
+      "title": "Core 2 Extreme QX9650",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/988/adding-multimedia-intels-fundamental-advance-in\">Intel's Fundamental Advance in Transistor Design Extends Moore's Law</a>"
+    },
+    {
+      "start": "2008-01-07",
+      "title": "Core 2 Extreme QX9770",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/974/intel-unveils-16-next-generation-processors\">Intel Unveils 16 Next-Generation Processors</a>"
+    },
+    {
+      "start": "2008-11-17",
+      "title": "Core i7-965 Extreme Edition",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/893/intel-launches-fastest-processor-on-the-planet\">Intel Launches Fastest Processor on the Planet</a>"
+    },
+    {
+      "start": "2009-05-03",
+      "title": "Core i7-975 Extreme Edition",
+      "description": ""
+    },
+    {
+      "start": "2010-03-16",
+      "title": "Core i7-980X Extreme Edition",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/1295/intel-spotlights-new-extreme-edition-processor-software\">Intel Spotlights New Extreme Edition Processor at Game Conference</a>"
+    },
+    {
+      "start": "2011-01-05",
+      "title": "Core i7-2600K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/702/intel-brings-eye-candy-to-masses-with-newest-laptop-pc\">Intel Brings 'Eye Candy' to Masses with Newest Laptop, PC Chips</a>"
+    },
+    {
+      "start": "2011-02-14",
+      "title": "Core i7-990X Extreme Edition",
+      "description": ""
+    },
+    {
+      "start": "2012-04-23",
+      "title": "Core i7-3770K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/577/3rd-generation-intel-core-processors-bring-exciting\">3rd Generation Intel® Core™ Processors Bring Exciting New Experiences and Fun to the PC</a>"
+    },
+    {
+      "start": "2013-06-04",
+      "title": "Core i7-4770K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/499/innovation-reinvention-on-intel-architecture-fuel-wave\">Innovation, Reinvention on Intel® Architecture Fuel Wave of 2-in-1 Devices, New Mobile Computing Experiences</a>"
+    },
+    {
+      "start": "2014-08-29",
+      "title": "Core i7-5960X",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/1214/intel-unleashes-its-first-8-core-desktop-processor\">Intel Unleashes its First 8-Core Desktop Processor</a>"
+    },
+    {
+      "start": "2015-09-01",
+      "title": "Core i7-6700K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/317/introducing-6th-generation-intel-core-intels-best\">Introducing 6th Generation Intel® Core™, Intel's Best Processor Ever</a>"
+    },
+    {
+      "start": "2016-05-30",
+      "title": "Core i7-6950X",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/1136/our-most-powerful-desktop-processor-yet---the-new-intel\">Our Most Powerful Desktop Processor Yet - The New Intel Core i7 Extreme Edition</a>"
+    },
+    {
+      "start": "2017-01-05",
+      "title": "Core i7-7700K",
+      "description": "CES 2017"
+    },
+    {
+      "start": "2017-06-12",
+      "title": "Core i9-7900X",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/226/intel-showcases-extraordinary-pc-gaming-and-vr-experiences\">Intel Showcases Extraordinary PC Gaming and VR Experiences at E3</a>"
+    },
+    {
+      "start": "2017-09-24",
+      "title": "Core i7-8700K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/203/intel-unveils-the-8th-gen-intel-core-processor-family\">Intel Unveils the 8th Gen Intel® Core™ Processor Family for Desktop, Featuring Intel's Best Gaming Processor Ever</a>"
+    },
+    {
+      "start": "2018-10-08",
+      "title": "Core i9-9900K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/122/intel-announces-worlds-best-gaming-processor-new-9th\">Intel Announces World's Best Gaming Processor: New 9th Gen Intel Core i9-9900K</a>"
+    },
+    {
+      "start": "2020-04-30",
+      "title": "Core i9-10900K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/7/intel-delivers-worlds-fastest-gaming-processor\">Intel Delivers World's Fastest Gaming Processor</a>"
+    },
+    {
+      "start": "2021-03-16",
+      "title": "Core i9-11900K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/1449/introducing-11th-gen-intel-core-unmatched-overclocking\">Introducing 11th Gen Intel Core: Unmatched Overclocking, Game Performance</a>"
+    },
+    {
+      "start": "2021-10-27",
+      "title": "Core i9-12900K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/1506/intel-unveils-12th-gen-intel-core-launches-worlds-best\">Intel Unveils 12th Gen Intel Core, Launches World's Best Gaming Processor, i9-12900K</a>"
+    },
+    {
+      "start": "2022-09-27",
+      "title": "Core i9-13900K",
+      "description": "<a href=\"https://www.intc.com/news-events/press-releases/detail/1578/intel-launches-13th-gen-intel-core-processor-family\">Intel Launches 13th Gen Intel Core Processor Family Alongside New Intel Unison Solution</a>"
+    },
+    {
+      "start": "2023-10-17",
+      "title": "Core i9-14900K",
+      "description": ""
+    },
+    {
+      "start": "2024-10-24",
+      "title": "Core Ultra 9 285K",
+      "description": ""
     }
   ]
 }
