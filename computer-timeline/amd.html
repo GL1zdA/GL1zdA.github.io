@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Intel and AMD comparison Timeline</title>
+    <title>Timeline of Intel CPUs</title>
     <link rel='stylesheet' href='styles.css' type='text/css'/>
     <script type="text/javascript">
         Timeline_ajax_url = "../js/timeline_2.3.0/timeline_ajax/simile-ajax-api.js";
@@ -18,19 +18,40 @@
             tl = ComputerTimeline.builder("tl", "1998")
                 .addBand(138)//20 * 6 + 18
                 .addData("data/cpu/amd.json")
-                .addBand(98)//20 * 4 + 18
-                .addData("data/cpu/intel.json")
-                .addBand(184)// 20 * 7 + 18
+                .addBand(178)
+                .addData("data/chipset/amd.json")
+                .addBand(324)
                 .addData("data/3d/3dfx.json")
                 .addData("data/3d/3dlabs.json")
                 .addData("data/3d/ati.json")
+                .addData("data/3d/s3.json")
+                .addData("data/3d/tseng.json")
                 .addData("data/3d/hp.json")
                 .addData("data/3d/intergraph.json")
                 .addData("data/3d/nvidia.json")
                 .addData("data/3d/3d.json")
+                .addData("data/os/windows.json", "blue")
+                .addData("data/sw/vc.json", "blue")
+                .addData("data/sw/opengl.json")
+                .addData("data/sw/directx.json")
                 .addData("data/sw/games.json", "blue")
+                .addData("data/commentary/id.json", "olive")
+                .addData("data/audio/creative.json", "green")
+                .addData("data/audio/soundcards.json", "green")
+                .addData("data/misc/iomega.json", "green")
+                .addData("data/system/sony_ps.json", "red")
+                .addData("data/system/apple.json", "red")
+                .addData("data/system/amiga.json", "red")
+                .addData("data/system/next.json", "red")
+                .addData("data/system/atari.json", "red")
+                .addData("data/system/clones.json", "red")
+                .addData("data/system/ps2.json", "red")
+                .addData("data/os/linux.json", "red")
+                .addData("data/system/namco_system_2x.json", "purple")
+                .addData("data/system/sega_model_x.json", "purple")
+                .addData("data/video/fast.json", "yellow")
+                .addData("data/video/matrox.json", "yellow")
                 .build();
-
         }
 
         let resizeTimerID = null;
@@ -50,16 +71,16 @@
 <div id="header">
     <a href="../index.html">Home</a> >
     <a href="index.html">Intel</a> |
-    <a href="amd.html">AMD</a> |
-    <strong>AMD vs Intel</strong> |
+    <strong>AMD</strong> |
+    <a href="amd_vs_intel.html">AMD vs Intel</a> |
     <a href="gpu.html">GPU</a> |
     <a href="sgi.html">SGI</a> |
     <a href="mac.html">Mac</a> |
     <a href="mobile.html">Mobile</a>
 </div>
 <div id="content">
-    <p>Timeline comparing release dates of Intel and AMD CPUs.</p>
-    <div id="tl" class="timeline-default" style="height: 420px;"></div>
+    <p>Timeline of Intel CPUs by class with other hardware as reference.</p>
+    <div id="tl" class="timeline-default" style="height: 738px;"></div>
 </div>
 </body>
 </html>
