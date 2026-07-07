@@ -271,8 +271,38 @@
     },
     {
       "start": "2018-10-08",
+      "end": "2020-04-29",
       "title": "Z390",
       "description": "Z390 <a href=\"https://www.intc.com/news-events/press-releases/detail/122/intel-announces-worlds-best-gaming-processor-new-9th\">Intel Announces World's Best Gaming Processor: New 9th Gen Intel Core i9-9900K</a>"
+    },
+    {
+      "start": "2020-04-30",
+      "end": "2021-03-15",
+      "title": "400-Series",
+      "description": "Z490, H470, B460, H410 <a href=\"https://www.intc.com/news-events/press-releases/detail/7/intel-delivers-worlds-fastest-gaming-processor\">Intel Delivers World's Fastest Gaming Processor</a>"
+    },
+    {
+      "start": "2021-03-16",
+      "end": "2021-10-26",
+      "title": "500-Series",
+      "description": "Z590, H570, B560, H510 <a href=\"https://www.intc.com/news-events/press-releases/detail/1449/introducing-11th-gen-intel-core-unmatched-overclocking\">Introducing 11th Gen Intel Core: Unmatched Overclocking, Game Performance</a>"
+    },
+    {
+      "start": "2021-10-27",
+      "end": "2022-09-26",
+      "title": "600-Series",
+      "description": "Z690, H670, B660, H610 <a href=\"https://www.intc.com/news-events/press-releases/detail/1506/intel-unveils-12th-gen-intel-core-launches-worlds-best\">Intel Unveils 12th Gen Intel Core, Launches World's Best Gaming Processor, i9-12900K</a>"
+    },
+    {
+      "start": "2022-09-27",
+      "end": "2024-10-23",
+      "title": "700-Series",
+      "description": "Z790, H770, B760 <a href=\"https://www.intc.com/news-events/press-releases/detail/1578/intel-launches-13th-gen-intel-core-processor-family\">Intel Launches 13th Gen Intel Core Processor Family Alongside New Intel Unison Solution</a>"
+    },
+    {
+      "start": "2024-10-24",
+      "title": "800-Series",
+      "description": "Z890, B860, H810"
     }
   ]
 }
