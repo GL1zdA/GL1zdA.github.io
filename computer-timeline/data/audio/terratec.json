@@ -1,0 +1,130 @@
+{
+  "dateTimeFormat": "iso8601",
+  "events": [
+    {
+      "start": "1998-08-26",
+      "title": "Terratec SoundSystem Base2PCI",
+      "description": "PCI, entry-level SoundBlaster/SoundBlaster Pro compatible &lt;a href=\"https://web.archive.org/web/20030223023814/http://www.terratec.net:80/press/pressemit/base2pci.htm\"&gt;For gamers + new users: TerraTec SoundSystem BASE2PCI&lt;/a&gt;"
+    },
+    {
+      "start": "1998-08-26",
+      "title": "Terratec microWAVE PC",
+      "description": "EWS64 XL expansion module, wavetable synthesizer co-developed with Waldorf Electronics &lt;a href=\"https://web.archive.org/web/20030405121445/http://www.terratec.net:80/press/pressemit/MicrowavePC.htm\"&gt;World premier: TerraTec/Waldorf with microWAVE PC&lt;/a&gt;"
+    },
+    {
+      "start": "1998-08-28",
+      "title": "Terratec EWS64 S AudioSystem",
+      "description": "Successor to the Maestro 32/96 SoundSystem &lt;a href=\"https://web.archive.org/web/20030223024224/http://www.terratec.net:80/press/pressemit/EWS64S_Gamer.htm\"&gt;Gamer's paradise: TerraTec's EWS64 S AudioSystem&lt;/a&gt;"
+    },
+    {
+      "start": "1998-11-04",
+      "title": "Terratec 128iPCI",
+      "description": "PCI, entry-level SoundBlaster/SoundBlaster Pro compatible &lt;a href=\"https://web.archive.org/web/20030405103655/http://www.terratec.net:80/press/pressemit/128i_pci.htm\"&gt;TerraTec 128iPCI: A lot of sound for little money&lt;/a&gt;"
+    },
+    {
+      "start": "1999-01-28",
+      "title": "Terratec EWS64 XXL",
+      "description": "EWS64 L sampling/hard-disk recording card bundled with the microWAVE PC synthesizer extension &lt;a href=\"https://web.archive.org/web/20030405120700/http://www.terratec.net:80/press/pressemit/EWS64XXL.htm\"&gt;TerraTec: EWS64 L + microWAVE PC = EWS64 XXL&lt;/a&gt;"
+    },
+    {
+      "start": "1999-03-03",
+      "title": "Terratec XLerate Pro",
+      "description": "PCI, Aureal Vortex 2, A3D 2.0, optical digital output &lt;a href=\"https://web.archive.org/web/20030405100647/http://www.terratec.net:80/press/pressemit/xleratepro.htm\"&gt;TerraTec Launches XLerate Pro&lt;/a&gt;"
+    },
+    {
+      "start": "1999-03-18",
+      "title": "Terratec SoundSystem DMX",
+      "description": "PCI, ESS Canyon3D, S/PDIF digital I/O, wavetable upgrade slot &lt;a href=\"https://web.archive.org/web/20030405104700/http://www.terratec.net:80/press/pressemit/dmx.htm\"&gt;TerraTec: SoundSystem DMX really puts on the pressure&lt;/a&gt;"
+    },
+    {
+      "start": "1999-07-26",
+      "title": "Terratec EWS88 MT",
+      "description": "PCI, 8 in/8 out, 24-bit/96kHz multitrack recording interface &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405121401/http://www.terratec.net:80/press/pressemit/ews88mt2.htm\"&gt;TerraTec: EWS 88MT – The ultimate MultiTracking solution&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405120358/http://www.terratec.net:80/press/pressemit/EWS88MT.htm\"&gt;New features for the EWS88 MT audio system&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
+    },
+    {
+      "start": "2000-02-20",
+      "title": "Terratec EWS96 M",
+      "description": "PCI, fully balanced stereo mastering interface &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20001210073500/http://www.terratec.net:80/press/pressemit/ews96m.htm\"&gt;High Performance: TerraTec AudioSystem EWS96 M&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20010417153655/http://www.terratec.net:80/press/pressemit/ews96m2.htm\"&gt;AudioSystem EWS96 M: The exceptional Mastering solution&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
+    },
+    {
+      "start": "2000-02-20",
+      "title": "Terratec DMX XFire 1024",
+      "description": "PCI, Crystal CS4624 (4.0), VXD, WDM, Sensaura, 4-channel 3D audio accelerator with digital I/O &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405105526/http://www.terratec.net:80/press/pressemit/dmxcrossfire.htm\"&gt;TerraTec's new SoundSystem DMX XFire 1024 (Feb. 2000)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405105542/http://www.terratec.net:80/press/pressemit/dmx_xfire.htm\"&gt;TerraTec's new SoundSystem DMX XFire 1024 (Jun. 2000)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
+    },
+    {
+      "start": "2000-02-20",
+      "title": "Terratec EWS88 D",
+      "description": "PCI, ADAT/10-channel digital I/O multitrack interface &lt;a href=\"https://web.archive.org/web/20030405121935/http://www.terratec.net:80/press/pressemit/ews88-adat.htm\"&gt;TerraTec AudioSystem EWS88 D with 10 digital audio channels&lt;/a&gt;"
+    },
+    {
+      "start": "2000-10-20",
+      "title": "Terratec EWX 24/96",
+      "description": "PCI, 24-bit/96kHz, based on EWS88 MT/D technology &lt;a href=\"https://web.archive.org/web/20030405121251/http://www.terratec.net:80/press/pressemit/ewx24-96.htm\"&gt;Jack of all trades: the brand new AudioSystem EWX 24/96&lt;/a&gt;"
+    },
+    {
+      "start": "2000-12-12",
+      "title": "Terratec SoundSystem 512i digital",
+      "description": "PCI, 4-channel, budget card with digital output &lt;a href=\"https://web.archive.org/web/20030405104842/http://www.terratec.net:80/press/pressemit/512idigital.htm\"&gt;SoundSystem 512i digital: 4 Channel Technique and Digital Out&lt;/a&gt;"
+    },
+    {
+      "start": "2001-03-19",
+      "title": "Terratec SiXPack 5.1+",
+      "description": "PCI, Crystal CS4630 (5.1), WDM only, Sensaura, 6-channel (5.1) with digital I/O &lt;a href=\"https://web.archive.org/web/20030405105743/http://www.terratec.net:80/press/pressemit/sixpack.htm\"&gt;TerraTec: 6 channel sound card SiXPack 5.1+ with digital I/O&lt;/a&gt;"
+    },
+    {
+      "start": "2001-06-06",
+      "title": "Terratec CNR SoundMAX sound cards",
+      "description": "CNR (Communications and Networking Riser), Analog Devices SoundMAX &lt;a href=\"https://web.archive.org/web/20030405103716/http://www.terratec.net:80/press/pressemit/cnr.htm\"&gt;TerraTec launches new class of CNR sound cards with Analog Devices SoundMAX&lt;/a&gt;"
+    },
+    {
+      "start": "2001-09-13",
+      "title": "Terratec DMX 6fire 24/96",
+      "description": "PCI, ICE1712, WDM only, 6-channel (5.1), 24-bit/96kHz, 5.25\" front module &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20020718172038/http://www.terratec.net:80/press/pressemit/6fire.htm\"&gt;The REAL revolution in sound! The new TerraTec sound system DMX 6fire 24/96 (Sept. 2001)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405105349/http://www.terratec.net:80/press/pressemit/6fire_2.htm\"&gt;The REAL revolution in sound! (Feb. 2002)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
+    },
+    {
+      "start": "2002-02-22",
+      "title": "Terratec DMX 6fire LT",
+      "description": "PCI, 6-channel (5.1), \"4G Sound\", mid-range sibling of the DMX 6fire 24/96 &lt;a href=\"https://web.archive.org/web/20030405104937/http://www.terratec.net:80/press/pressemit/6fire_LT.htm\"&gt;DMX 6fire LT: TerraTec's sound for DVD, games and music&lt;/a&gt;"
+    },
+    {
+      "start": "2002-10-09",
+      "title": "Terratec Aureon 5.1 fun",
+      "description": "PCI, entry-level 5.1 surround &lt;a href=\"https://web.archive.org/web/20030405095428/http://www.terratec.net:80/press/pressemit/aureon_fun.htm\"&gt;TerraTec Aureon 5.1 fun: The entry into the surround class&lt;/a&gt;"
+    },
+    {
+      "start": "2002-10-09",
+      "title": "Terratec Aureon 5.1 sky",
+      "description": "PCI, 24-bit/96kHz, 5.1 surround, \"4G Sound\" &lt;a href=\"https://web.archive.org/web/20030405101724/http://www.terratec.net:80/press/pressemit/aureon_sky.htm\"&gt;TerraTec Aureon 5.1 sky: 4G Surround Sound!&lt;/a&gt;"
+    },
+    {
+      "start": "2002-10-09",
+      "title": "Terratec Aureon 7.1 space",
+      "description": "PCI, 8-channel (7.1), 24-bit/96kHz &lt;a href=\"https://web.archive.org/web/20030405100331/http://www.terratec.net:80/press/pressemit/aureon_space.htm\"&gt;TerraTec Aureon 7.1 space: round is round&lt;/a&gt;"
+    },
+    {
+      "start": "2003-01-16",
+      "title": "Terratec EWS MIC8(+)/MIC2(+)",
+      "description": "PCI (EWS88), 8 balanced mic/line inputs and outputs, 48V phantom power, ADAT/S-PDIF, preamp/converter &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030219035955/http://www.terratec.net:80/press/pressemit/mic8.htm\"&gt;TerraTec's new AudioSystems EWS MIC8 (+) and EWS MIC2 (+)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405103603/http://www.terratec.net:80/press/pressemit/mic.htm\"&gt;TerraTec Producer Presents the MIC 2 / MIC 8 Series&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
+    },
+    {
+      "start": "2003-03-05",
+      "title": "Terratec Producer PHASE 26 USB",
+      "description": "USB, external, 24-bit/96kHz, 2 in/6 out, MIDI &lt;a href=\"https://web.archive.org/web/20030405103515/http://www.terratec.net:80/press/pressemit/phase26.htm\"&gt;TerraTec Producer Presents PHASE 26 USB&lt;/a&gt;"
+    },
+    {
+      "start": "2003-03-05",
+      "title": "Terratec Producer PHASE 28",
+      "description": "PCI, 24-bit/192kHz, 2 in/8 out, MIDI, digital I/O &lt;a href=\"https://web.archive.org/web/20030405102926/http://www.terratec.net:80/press/pressemit/phase28.htm\"&gt;PHASE 28 - the 24-bit/192-kHz Multi I/O Recording Interface&lt;/a&gt;"
+    },
+    {
+      "start": "2003-03-05",
+      "title": "Terratec Producer PHASE 88",
+      "description": "PCI, 24-bit/96kHz, 8 in/8 out, modular breakout &lt;a href=\"https://web.archive.org/web/20030405103136/http://www.terratec.net:80/press/pressemit/phase88.htm\"&gt;PHASE 88: Perfect Sound and an Extendible Modular I/O Solution&lt;/a&gt;"
+    },
+    {
+      "start": "2003-03-05",
+      "title": "Terratec Producer PHASE 88 Rack",
+      "description": "19\" rack, 24-bit/96kHz, expandable to 40 I/O &lt;a href=\"https://web.archive.org/web/20030405104050/http://www.terratec.net:80/press/pressemit/phase88r.htm\"&gt;PHASE 88 RACK - the 24-bit/96-kHz 19\" Multi I/O Recording Interface&lt;/a&gt;"
+    }
+  ]
+}
