@@ -151,7 +151,7 @@
     },
     {
       "start": "2005-11-22",
-      "end": "2007-06-04",
+      "end": "2007-09-02",
       "title": "975X",
       "color": "Crimson",
       "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2005/20051122comp.htm\">Intel Brings Home Extreme Multicore Gaming For The Holidays</a>"
@@ -169,10 +169,31 @@
       "description": "G33, P35 (April), Q33, Q35 (June), G35, X38 (90 days)<a href=\"http://www.intel.com/pressroom/archive/releases/2007/20070605comp.htm\">Intel Introduces '3-Series' Chipsets at Computex</a>"
     },
     {
+      "start": "2007-09-03",
+      "end": "2008-03-22",
+      "title": "X38",
+      "color": "Crimson",
+      "description": "X38 <a href=\"https://www.intc.com/news-events/press-releases/detail/1027/intel-introduces-3-series-chipsets-at-computex\">Intel Introduces 3-Series Chipsets at Computex</a>"
+    },
+    {
+      "start": "2008-03-23",
+      "end": "2008-11-16",
+      "title": "X48",
+      "color": "Crimson",
+      "description": "X48"
+    },
+    {
       "start": "2008-06-02",
       "end": "2009-09-07",
       "title": "4-Series",
       "description": "<a href=\"http://www.intel.com/pressroom/archive/releases/2008/20080602comp_hy.htm\">Intel Executive Says Powerful Processors, WiMAX to Bring Full Internet to Mobile Devices </a>"
+    },
+    {
+      "start": "2008-11-17",
+      "end": "2011-11-13",
+      "title": "X58",
+      "color": "Crimson",
+      "description": "X58 <a href=\"https://www.intc.com/news-events/press-releases/detail/893/intel-launches-fastest-processor-on-the-planet\">Intel Launches Fastest Processor on the Planet</a>"
     },
     {
       "start": "2009-09-08",
@@ -185,6 +206,13 @@
       "end": "2012-04-22",
       "title": "6-Series",
       "description": "P67, H67, H61, B65, Q67, Q65 <a href=\"https://www.intc.com/news-events/press-releases/detail/702/intel-brings-eye-candy-to-masses-with-newest-laptop-pc\">Intel Brings 'Eye Candy' to Masses with Newest Laptop, PC Chips</a>"
+    },
+    {
+      "start": "2011-11-14",
+      "end": "2014-08-28",
+      "title": "X79",
+      "color": "Crimson",
+      "description": "X79"
     },
     {
       "start": "2012-04-23",
@@ -202,6 +230,12 @@
       "start": "2014-05-11",
       "title": "9-Series",
       "description": "Z97, H97"
+    },
+    {
+      "start": "2014-08-29",
+      "title": "X99",
+      "color": "Crimson",
+      "description": "X99 <a href=\"https://www.intc.com/news-events/press-releases/detail/1214/intel-unleashes-its-first-8-core-desktop-processor\">Intel Unleashes its First 8-Core Desktop Processor</a>"
     }
   ]
 }
