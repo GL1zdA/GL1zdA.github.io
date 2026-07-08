@@ -2,6 +2,36 @@
   "dateTimeFormat": "iso8601",
   "events": [
     {
+      "start": "1996-06-11",
+      "title": "Terratec SoundSystem GOLD 16/96",
+      "description": "16-bit, Plug &amp; Play, FullDuplex, V-Space 3D, wavetable upgrade slot, E-IDE interface &lt;a href=\"https://web.archive.org/web/19961129051606/http://www.terratec.de/e/presse.htm#3\"&gt;SoundSystem GOLD 16/96 now available&lt;/a&gt;"
+    },
+    {
+      "start": "1996-09-27",
+      "title": "Terratec EWS64 XL",
+      "description": "AudioSystem, first teaser announcement (full details followed later) &lt;a href=\"https://web.archive.org/web/19961129051606/http://www.terratec.de/e/presse.htm#5\"&gt;Here you get the first info on the EWS 64...&lt;/a&gt;"
+    },
+    {
+      "start": "1997-03-13",
+      "title": "Terratec SoundSystem Gold 32",
+      "description": "16-bit, Plug &amp; Play, Microsoft DirectSound support, FullDuplex &lt;a href=\"https://web.archive.org/web/19980115084201/http://www.terratec.de/presse2.htm#p7\"&gt;SoundSystem Gold 32 - Die Alternative&lt;/a&gt;"
+    },
+    {
+      "start": "1997-03-13",
+      "title": "Terratec SoundSystem BASE 1",
+      "description": "16-bit, integrated 3D sound (V-Space), FullDuplex, SoundBlaster compatible, bundled Internet-phone software &lt;a href=\"https://web.archive.org/web/19980115084201/http://www.terratec.de/presse2.htm#p6\"&gt;SoundSystem BASE 1 - Ready For Take Off&lt;/a&gt;"
+    },
+    {
+      "start": "1997-11-20",
+      "title": "Terratec AudioSystem EWS64 L",
+      "description": "AudioSystem, EWS64 XL without the 5.25\" front module, DirectSound support up to 64 channels &lt;a href=\"https://web.archive.org/web/19980115084201/http://www.terratec.de/presse2.htm#p13\"&gt;Anspruchsvoll: AudioSystem EWS64 L&lt;/a&gt;"
+    },
+    {
+      "start": "1997-11-20",
+      "title": "Terratec SoundSystem Base 64",
+      "description": "16-bit (&gt;48kHz), wavetable, ~300 sounds, integrated effects processor (reverb/chorus/EQ) &lt;a href=\"https://web.archive.org/web/19980115084201/http://www.terratec.de/presse2.htm#p10\"&gt;Ein heißes Eisen: TerraTecs SoundSystem Base 64&lt;/a&gt;"
+    },
+    {
       "start": "1998-08-26",
       "title": "Terratec SoundSystem Base2PCI",
       "description": "PCI, entry-level SoundBlaster/SoundBlaster Pro compatible &lt;a href=\"https://web.archive.org/web/20030223023814/http://www.terratec.net:80/press/pressemit/base2pci.htm\"&gt;For gamers + new users: TerraTec SoundSystem BASE2PCI&lt;/a&gt;"
@@ -24,7 +54,7 @@
     {
       "start": "1999-01-28",
       "title": "Terratec EWS64 XXL",
-      "description": "EWS64 L sampling/hard-disk recording card bundled with the microWAVE PC synthesizer extension &lt;a href=\"https://web.archive.org/web/20030405120700/http://www.terratec.net:80/press/pressemit/EWS64XXL.htm\"&gt;TerraTec: EWS64 L + microWAVE PC = EWS64 XXL&lt;/a&gt;"
+      "description": "EWS64 L sampling/hard-disk recording card bundled with the microWAVE PC synthesizer extension &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030103160746/http://www.terratec.de/presse/pressemit/ews64xxl.htm\"&gt;TerraTec: EWS64 L + microWAVE PC = EWS64 XXL (Jan. 1999)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405120700/http://www.terratec.net:80/press/pressemit/EWS64XXL.htm\"&gt;TerraTec: EWS64 L + microWAVE PC = EWS64 XXL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
     },
     {
       "start": "1999-03-03",
@@ -39,7 +69,7 @@
     {
       "start": "1999-07-26",
       "title": "Terratec EWS88 MT",
-      "description": "PCI, 8 in/8 out, 24-bit/96kHz multitrack recording interface &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405121401/http://www.terratec.net:80/press/pressemit/ews88mt2.htm\"&gt;TerraTec: EWS 88MT – The ultimate MultiTracking solution&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405120358/http://www.terratec.net:80/press/pressemit/EWS88MT.htm\"&gt;New features for the EWS88 MT audio system&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
+      "description": "PCI, 8 in/8 out, 24-bit/96kHz multitrack recording interface &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030308050319/http://www.terratec.de/presse/pressemit/ews88mt.htm\"&gt;EWS 88MT – The ultimate Rein-Raus (Jan. 1999)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405121401/http://www.terratec.net:80/press/pressemit/ews88mt2.htm\"&gt;TerraTec: EWS 88MT – The ultimate MultiTracking solution&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030308045345/http://www.terratec.de/presse/pressemit/ews88mt-2.htm\"&gt;EWS 88MT jetzt verfügbar (Jul. 1999)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405120358/http://www.terratec.net:80/press/pressemit/EWS88MT.htm\"&gt;New features for the EWS88 MT audio system&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
     },
     {
       "start": "2000-02-20",
@@ -59,7 +89,7 @@
     {
       "start": "2000-10-20",
       "title": "Terratec EWX 24/96",
-      "description": "PCI, 24-bit/96kHz, based on EWS88 MT/D technology &lt;a href=\"https://web.archive.org/web/20030405121251/http://www.terratec.net:80/press/pressemit/ewx24-96.htm\"&gt;Jack of all trades: the brand new AudioSystem EWX 24/96&lt;/a&gt;"
+      "description": "PCI, 24-bit/96kHz, based on EWS88 MT/D technology &lt;ul&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030303141353/http://www.terratec.de/presse/pressemit/ewx24-96.htm\"&gt;TTTausendsassa: das brandneue AudioSystem EWX 24/96 (Oct. 13, 2000)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://web.archive.org/web/20030405121251/http://www.terratec.net:80/press/pressemit/ewx24-96.htm\"&gt;Jack of all trades: the brand new AudioSystem EWX 24/96&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"
     },
     {
       "start": "2000-12-12",
