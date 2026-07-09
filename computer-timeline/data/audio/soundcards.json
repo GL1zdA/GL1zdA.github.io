@@ -15,6 +15,26 @@
         "start": "1996-11",
         "title": "M-Audio",
         "description": ""
+      },
+      {
+        "start": "2011",
+        "title": "Scarlett 1st Gen",
+        "description": ""
+      },
+      {
+        "start": "2016",
+        "title": "Scarlett 2nd Gen",
+        "description": ""
+      },
+      {
+        "start": "2019",
+        "title": "Scarlett 3rd Gen",
+        "description": ""
+      },
+      {
+        "start": "2023",
+        "title": "Scarlett 4th Gen",
+        "description": ""
       }
     ]
   }
