@@ -205,6 +205,16 @@
       "start": "2010-11",
       "title": "Terratec Aureon 7.1 USB",
       "description": "USB, external, successor to the Aureon 5.1 USB, for notebooks/netbooks &lt;a href=\"https://web.archive.org/web/20120526002905/http://www.terratec.net/en/company/press/November_2010_-_TERRATEC_Presents_Aureon_7.1_USB_140198.html\"&gt;TERRATEC Presents Aureon 7.1 USB&lt;/a&gt;"
+    },
+    {
+      "start": "2013-02-28",
+      "title": "Terratec Aureon 7.1 PCIe",
+      "description": "PCIe (Terratec's first), low-profile, 4x 3.5mm jacks (7.1/5.1/2.1/stereo) + line-in, optional Digital Extension panel (S/PDIF + coaxial), 24-bit/192kHz, 100dB SNR &lt;a href=\"https://www.hardware-mag.de/news/2013/februar/terratec_noxon_stellt_neue_aureon-soundkarten_vor/\"&gt;TERRATEC NOXON stellt neue AUREON-Soundkarten vor&lt;/a&gt;"
+    },
+    {
+      "start": "2013-02-28",
+      "title": "Terratec Aureon XFire 8.0",
+      "description": "USB, external, 108dB SNR, rounded-square design with blue backlight &lt;a href=\"https://www.hardware-mag.de/news/2013/februar/terratec_noxon_stellt_neue_aureon-soundkarten_vor/\"&gt;TERRATEC NOXON stellt neue AUREON-Soundkarten vor&lt;/a&gt;"
     }
   ]
 }
