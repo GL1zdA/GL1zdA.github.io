@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Test J: jitter od łącza S/PDIF do wyjścia DAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --bg: #E4E8EB;
+  --surface: #F7F9FA;
+  --ink: #17212B;
+  --ink2: #56636F;
+  --rule: #BFC8D0;
+  --grid: #E1E6EA;
+  --traceA: #1F4FA3;
+  --traceB: #B36A00;
+  --ref: #2E8A57;
+  --band: rgba(179, 106, 0, 0.08);
+  --band2: rgba(23, 33, 43, 0.05);
+  --warn: #A8261B;
+  --tint: rgba(31, 79, 163, 0.08);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12181E;
+    --surface: #19212A;
+    --ink: #E4EAEF;
+    --ink2: #9AA7B3;
+    --rule: #34414D;
+    --grid: #242E38;
+    --traceA: #88AFF5;
+    --traceB: #F2AE45;
+    --ref: #63C48F;
+    --band: rgba(242, 174, 69, 0.09);
+    --band2: rgba(228, 234, 239, 0.05);
+    --warn: #F2877C;
+    --tint: rgba(136, 175, 245, 0.12);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12181E;
+  --surface: #19212A;
+  --ink: #E4EAEF;
+  --ink2: #9AA7B3;
+  --rule: #34414D;
+  --grid: #242E38;
+  --traceA: #88AFF5;
+  --traceB: #F2AE45;
+  --ref: #63C48F;
+  --band: rgba(242, 174, 69, 0.09);
+  --band2: rgba(228, 234, 239, 0.05);
+  --warn: #F2877C;
+  --tint: rgba(136, 175, 245, 0.12);
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Archivo", "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--traceA); outline-offset: 2px; }
+
+.page { max-width: 1340px; margin: 0 auto; padding: 28px clamp(16px, 3vw, 40px) 56px; }
+
+/* ---------- nagłówek ---------- */
+.masthead { max-width: 900px; margin-bottom: 28px; }
+.masthead h1 { margin: 0; font-weight: 400; }
+.h-big {
+  display: block;
+  font-size: clamp(3.4rem, 9vw, 6.4rem);
+  font-stretch: 64%;
+  font-weight: 850;
+  line-height: 0.86;
+  letter-spacing: -0.015em;
+}
+.h-sub {
+  display: block;
+  margin-top: 12px;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-stretch: 88%;
+  font-weight: 560;
+  line-height: 1.2;
+  max-width: 34ch;
+}
+.cycle {
+  margin: 16px 0 0;
+  font-size: 13px;
+  color: var(--ink2);
+  letter-spacing: 0.02em;
+}
+.cycle b { color: var(--traceA); font-weight: 600; }
+.cycle i { color: var(--traceB); font-style: normal; font-weight: 600; }
+.lede { margin: 12px 0 0; max-width: 66ch; color: var(--ink2); }
+
+/* ---------- układ ---------- */
+.content {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  grid-template-areas: "ctrl spec" "ctrl chain" "ctrl model";
+  gap: 32px 36px;
+  align-items: start;
+}
+.controls { grid-area: ctrl; }
+.spec { grid-area: spec; min-width: 0; }
+.chain { grid-area: chain; min-width: 0; }
+.model { grid-area: model; min-width: 0; }
+@media (min-width: 961px) {
+  .controls {
+    position: sticky;
+    top: calc(env(safe-area-inset-top, 0px) + 16px);
+    max-height: calc(100vh - 32px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+@media (max-width: 960px) {
+  .content { grid-template-columns: minmax(0, 1fr); grid-template-areas: "spec" "ctrl" "chain" "model"; gap: 28px; }
+}
+
+/* ---------- panel parametrów ---------- */
+.controls {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 18px 18px 8px;
+}
+.controls h2, .group legend {
+  font-size: 1.02rem;
+  font-stretch: 80%;
+  font-weight: 700;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.scen-list { display: grid; gap: 6px; margin-bottom: 18px; }
+.scen-group { margin: 8px 0 0; font-size: 12.5px; font-weight: 620; color: var(--ink2); }
+.group.muted .ctl:not(.keep) { opacity: 0.45; }
+.scen-btn {
+  text-align: left;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--rule);
+  border-radius: 4px;
+  padding: 7px 10px;
+  cursor: pointer;
+  display: grid;
+  gap: 1px;
+}
+.scen-btn:hover { border-color: var(--ink2); }
+.scen-btn[aria-pressed="true"] { border-color: var(--rule); border-left-color: var(--traceA); background: var(--tint); }
+.scen-name { font-weight: 620; font-size: 14px; }
+.scen-desc { font-size: 12.5px; color: var(--ink2); line-height: 1.35; }
+
+.group { border: 0; border-top: 1px solid var(--rule); margin: 0; padding: 14px 0 6px; min-width: 0; }
+.group legend { float: left; width: 100%; }
+.group legend + * { clear: both; }
+.ctl { margin-bottom: 14px; }
+.ctl-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+.ctl-top label, .ctl-top .lbl { font-size: 13.5px; }
+.ctl-top output { font-weight: 650; font-size: 14px; font-stretch: 90%; white-space: nowrap; }
+.hint { margin: 5px 0 0; font-size: 12.5px; line-height: 1.4; color: var(--ink2); }
+
+.seg { display: flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.seg button {
+  flex: 1 1 auto;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid var(--rule);
+  padding: 6px 8px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.seg button:first-child { border-left: 0; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); font-weight: 600; }
+.seg button:focus-visible { outline-offset: -2px; }
+
+input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: 24px; margin: 0; background: transparent; cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track { height: 3px; background: var(--rule); border-radius: 2px; }
+input[type="range"]::-moz-range-track { height: 3px; background: var(--rule); border-radius: 2px; }
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 14px; height: 18px; margin-top: -7.5px;
+  background: var(--surface); border: 2px solid var(--ink); border-radius: 3px;
+}
+input[type="range"]::-moz-range-thumb { width: 10px; height: 14px; background: var(--surface); border: 2px solid var(--ink); border-radius: 3px; }
+input[type="range"]:focus-visible { outline-offset: 0; }
+
+/* ---------- sekcje ---------- */
+.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 10px 20px; margin-bottom: 10px; }
+h2.sec { margin: 0; font-size: clamp(1.4rem, 2.4vw, 1.75rem); font-stretch: 74%; font-weight: 760; line-height: 1.1; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; font-size: 13px; color: var(--ink2); }
+.toolbar .seg { background: var(--surface); }
+.toolbar .seg button { color: var(--ink); }
+.toolbar .seg button[aria-pressed="true"] { color: var(--surface); }
+.toolbar select { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 5px 6px; font-size: 13px; }
+.tb-item { display: flex; align-items: center; gap: 6px; }
+
+.plot { position: relative; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.plot canvas { display: block; width: 100%; }
+.plot .overlay { position: absolute; inset: 0; height: 100%; touch-action: pan-y; cursor: crosshair; }
+#cvSpec, #cvSpecHover { height: 420px; }
+#cvWave { height: 230px; }
+#cvTie { height: 190px; }
+#cvJit { height: 250px; }
+#cvDac { height: 340px; }
+@media (max-width: 640px) {
+  #cvSpec, #cvSpecHover { height: 320px; }
+  #cvWave { height: 210px; }
+  #cvDac { height: 320px; }
+}
+
+.caption { margin: 10px 0 0; max-width: 72ch; color: var(--ink2); font-size: 14px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--ink2); }
+.legend li { display: flex; align-items: center; gap: 7px; }
+.legend li[hidden] { display: none; }
+.sw { display: inline-block; width: 20px; height: 0; border-top: 2.5px solid; }
+.sw.a { border-color: var(--traceA); }
+.sw.b { border-color: var(--traceB); }
+.sw.ref { border-top-style: dashed; border-color: var(--ref); }
+.sw.ink { border-color: var(--ink2); border-top-width: 1.5px; }
+.sw.tri { width: 0; height: 0; border-top: 7px solid var(--traceB); border-left: 5px solid transparent; border-right: 5px solid transparent; }
+.sw.dot { width: 6px; height: 6px; border: 0; border-radius: 50%; background: var(--ink); }
+
+.readouts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0;
+  margin: 16px 0 0;
+  border-top: 1px solid var(--rule);
+}
+.readouts > div { padding: 10px 14px 10px 0; border-bottom: 1px solid var(--rule); }
+.readouts dt { font-size: 12.5px; color: var(--ink2); line-height: 1.3; }
+.readouts dd { margin: 3px 0 0; font-size: 1.3rem; font-stretch: 82%; font-weight: 660; line-height: 1.2; }
+.readouts dd span { display: block; font-size: 12.5px; font-stretch: 100%; font-weight: 500; color: var(--traceB); margin-top: 2px; }
+.note { margin: 14px 0 0; padding: 10px 14px; border-left: 3px solid var(--traceA); background: var(--surface); font-size: 14px; max-width: 80ch; }
+.note a { color: var(--traceA); }
+.warn { margin: 12px 0 0; padding: 8px 12px; border-left: 3px solid var(--warn); color: var(--warn); background: var(--surface); font-weight: 560; }
+
+/* ---------- łańcuch ---------- */
+.chain > h2 { margin-bottom: 4px; }
+.chain-intro { margin: 0 0 18px; color: var(--ink2); max-width: 72ch; }
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: st; display: grid; gap: 34px; }
+.step { counter-increment: st; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 0 12px; }
+.step::before {
+  content: counter(st);
+  font-size: 2.4rem; font-stretch: 64%; font-weight: 820; line-height: 1;
+  color: var(--traceA);
+  padding-top: 2px;
+}
+.step > * { grid-column: 2; }
+.step h3 { margin: 0 0 4px; font-size: 1.22rem; font-stretch: 80%; font-weight: 720; }
+.step .caption:first-of-type { margin-top: 0; margin-bottom: 12px; }
+.pair { display: grid; gap: 12px; }
+.sub { margin: 14px 0 6px; font-size: 13.5px; font-weight: 620; }
+.winrow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 0 0 10px; font-size: 13.5px; }
+.winrow input { flex: 1 1 200px; max-width: 360px; }
+.winrow output { font-weight: 650; min-width: 64px; }
+@media (max-width: 640px) {
+  .step { grid-template-columns: minmax(0, 1fr); }
+  .step::before { font-size: 1.9rem; margin-bottom: 4px; }
+  .step > * { grid-column: 1; }
+}
+
+/* ---------- założenia ---------- */
+.model { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 0 18px; }
+.model summary { cursor: pointer; padding: 14px 0; font-weight: 680; font-stretch: 86%; font-size: 1.05rem; }
+.model ul { margin: 0 0 16px; padding-left: 18px; max-width: 80ch; color: var(--ink2); font-size: 14px; }
+.model li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <h1><span class="h-big">Test J</span><span class="h-sub">Jak wzorzec bitów na kablu S/PDIF zamienia się w prążki wokół tonu Fs/4</span></h1>
+    <p class="cycle" aria-label="Cykl próbek testu J">Cykl 192 próbek: <b id="cyc-a">C000 C000 4000 4000</b> × 24, potem <i id="cyc-b">BFFF BFFF 3FFF 3FFF</i> × 24</p>
+    <p class="lede">Symulacja przechodzi przez cały tor: transport, kodowanie bifazowe, łącze o ograniczonym paśmie, pętlę PLL odbiornika i przetwornik C/A. Zmieniaj parametry i patrz, jak zmienia się widmo na wyjściu.</p>
+  </header>
+
+  <main class="content">
+    <aside class="controls" aria-label="Parametry symulacji">
+      <h2>Scenariusze</h2>
+      <div class="scen-list" id="scen"></div>
+      <div id="groups"></div>
+    </aside>
+
+    <section class="spec" aria-labelledby="spec-h">
+      <div class="sec-head">
+        <h2 class="sec" id="spec-h">Widmo na wyjściu przetwornika</h2>
+        <div class="toolbar">
+          <div class="tb-item"><span id="rng-l">Zakres</span>
+            <div class="seg" role="group" aria-labelledby="rng-l">
+              <button type="button" data-range="full">0 – Fs/2</button>
+              <button type="button" data-range="z35">±3,5 kHz</button>
+              <button type="button" data-range="z07">±700 Hz</button>
+            </div>
+          </div>
+          <label class="tb-item" for="ymin">Dół skali
+            <select id="ymin">
+              <option value="-200">−200 dBFS</option>
+              <option value="-180">−180 dBFS</option>
+              <option value="-160">−160 dBFS</option>
+              <option value="-140">−140 dBFS</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="plot">
+        <canvas id="cvSpec" role="img" aria-label="Widmo sygnału na wyjściu przetwornika w dBFS"></canvas>
+        <canvas id="cvSpecHover" class="overlay" aria-hidden="true"></canvas>
+      </div>
+      <ul class="legend">
+        <li><span class="sw a"></span>widmo wyjścia (FFT 98 304 punkty)</li>
+        <li id="lg-ref"><span class="sw ref"></span>poprawny poziom harmonicznych przebiegu na najmłodszym bicie</li>
+        <li id="lg-tri"><span class="sw tri"></span>pierwsza para prążków: Fs/4 ± Fs/192</li>
+        <li id="lg-hum" hidden><svg width="10" height="8" viewBox="0 0 10 8" aria-hidden="true" style="color:var(--ink)"><path d="M1 1 H9 L5 7 Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>prążki od składowej tonalnej transportu</li>
+        <li id="lg-sj" hidden><svg width="10" height="8" viewBox="0 0 10 8" aria-hidden="true" style="color:var(--traceB)"><path d="M1 1 H9 L5 7 Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>prążki od jittera sinusoidalnego zegara</li>
+      </ul>
+      <p class="caption" id="spec-cap"></p>
+      <dl class="readouts" id="readouts"></dl>
+      <p class="warn" id="warn" hidden></p>
+      <p class="note" id="scen-note" hidden></p>
+    </section>
+
+    <section class="chain" aria-labelledby="chain-h">
+      <h2 class="sec" id="chain-h">Skąd się biorą</h2>
+      <p class="chain-intro">Trzy etapy toru, w kolejności przepływu sygnału. Kolor niebieski to zawsze pierwsza połowa okresu testu J, bursztynowy to druga.</p>
+      <ol class="steps">
+        <li class="step">
+          <h3>Łącze S/PDIF</h3>
+          <p class="caption" id="cap-bits"></p>
+          <div class="plot"><canvas id="cvWave" role="img" aria-label="Przebieg podramki S/PDIF przed łączem i po nim dla dwóch ramek"></canvas></div>
+          <ul class="legend">
+            <li><span class="sw a"></span><span id="lg-a"></span></li>
+            <li><span class="sw b"></span><span id="lg-b"></span></li>
+            <li>cienka linia: przed łączem, gruba: po łączu</li>
+            <li id="ui-ns"></li>
+          </ul>
+          <p class="sub">Chwile przejścia przez próg (tylko wpływ łącza)</p>
+          <div class="plot"><canvas id="cvTie" role="img" aria-label="Histogram przesunięć zboczy dla dwóch połówek okresu"></canvas></div>
+          <ul class="legend">
+            <li><span class="sw a"></span><span id="lg-ta"></span></li>
+            <li><span class="sw b"></span><span id="lg-tb"></span></li>
+            <li>linie przerywane: średnie</li>
+          </ul>
+          <p class="caption" id="tie-note"></p>
+        </li>
+        <li class="step">
+          <h3>Odzyskany zegar</h3>
+          <p class="caption">Pętla PLL uśrednia chwile zboczy i odtwarza z nich zegar próbek. W teście J różnica między połówkami okresu daje jitter o przebiegu zbliżonym do prostokąta o częstotliwości Fs/192. Jitter transportu, np. odtwarzacza CD, jest w zboczach już na wyjściu nadajnika i pętla traktuje go tak samo: przepuszcza wszystko, co wolniejsze od jej pasma. Dlatego wąska pętla nie usuwa najwolniejszego dryfu, a całkowicie odcina go dopiero lokalny zegar z buforem.</p>
+          <div class="plot"><canvas id="cvJit" role="img" aria-label="Jitter w funkcji czasu na wejściu i wyjściu pętli PLL"></canvas></div>
+          <ul class="legend">
+            <li><span class="sw b"></span>wejście pętli: średni błąd fazy zboczy w ramce (dane i transport)</li>
+            <li><span class="sw a"></span>część przeniesiona na zegar przetwornika</li>
+            <li><span class="sw ink"></span><span id="lg-tot">z dodanym jitterem własnym zegara</span></li>
+          </ul>
+        </li>
+        <li class="step">
+          <h3>Przetwornik C/A</h3>
+          <p class="caption">Każda próbka pojawia się na wyjściu w chwili wyznaczonej przez zegar z jitterem. Gdy sygnał szybko się zmienia, przesunięcie chwili daje błąd amplitudy. Dlatego jitter najmocniej moduluje składowe o wysokiej częstotliwości, a te o niskiej prawie wcale.</p>
+          <div class="winrow">
+            <label for="win">Okno: próbki</label>
+            <input type="range" id="win" min="0" max="191" step="1">
+            <output id="win-o" for="win"></output>
+          </div>
+          <div class="plot"><canvas id="cvDac" role="img" aria-label="Sygnał idealny, wyjście przetwornika z jitterem i błąd wyjścia"></canvas></div>
+          <ul class="legend">
+            <li><span class="sw ink"></span>sygnał idealny</li>
+            <li><span class="sw dot"></span>próbki w idealnych chwilach</li>
+            <li><span class="sw a"></span>wyjście z przesuniętymi zboczami</li>
+            <li><span class="sw b"></span>wyjście minus sygnał idealny, po filtrze rekonstrukcyjnym</li>
+          </ul>
+          <p class="caption" id="dac-gain"></p>
+        </li>
+      </ol>
+    </section>
+
+    <details class="model">
+      <summary>Założenia modelu</summary>
+      <ul>
+        <li>Ramki IEC 60958 z preambułami X, Y i Z (Z co 192 ramki), bitami V i U równymi zero, przykładowym konsumenckim blokiem statusu kanału i parzystością. Oba kanały niosą ten sam sygnał.</li>
+        <li>Łącze to filtr jednobiegunowy RC, a odbiornik to komparator z progiem w zerze. Model pomija odbicia i długi ogon odpowiedzi prawdziwego kabla, dlatego powyżej około 15 MHz jitter z danych praktycznie znika.</li>
+        <li>Jitter transportu to jitter zegara nadajnika: biały szum, szum wolnozmienny o widmie dolnoprzepustowym pierwszego rzędu (50 Hz) i składowa tonalna o zadanej częstotliwości (domyślnie 100 Hz). Przechodzi przez pętlę PLL tak samo jak jitter z danych. Tryb lokalnego zegara zakłada bufor FIFO, który całkowicie odcina jitter łącza; jego własny jitter to parametry w grupie „Zegar przetwornika”.</li>
+        <li>Detektor fazy daje średnie opóźnienie zboczy w każdej ramce: wszystkich albo tylko tych w preambułach. Pętla to PLL typu II drugiego rzędu, liczony w dziedzinie częstotliwości dla sygnału okresowego.</li>
+        <li>Próbka trafia do przetwornika 4 ramki po odebraniu. Wyjście liczone jest w przybliżeniu pierwszego rzędu: błąd = −x′(t)·Δt, jak w przetworniku z nadpróbkowaniem. Iloczyn liczony jest jako splot widm bez aliasingu, więc prążek, który wypada powyżej Fs/2, nie wraca do pasma.</li>
+        <li>Sinus jest generowany z ditherem TPDF i dociągany do prążka FFT. Dla sinusa przy paśmie łącza od 12 MHz wpływ poprzednich bitów na zbocza jest poniżej 0,1 ps i symulacja go pomija; łącze jest wtedy liczone tylko dla ramek pokazanych na wykresach.</li>
+        <li>FFT ma 98 304 punkty (512 okresów testu J), okno prostokątne i próbkowanie koherentne. Częstotliwość jittera sinusoidalnego jest dociągana do najbliższego prążka FFT.</li>
+        <li>Scenariusze z literatury odtwarzają zmierzone poziomy jittera, ale nie widmo ani konkretny sprzęt: opis pod widmem mówi, co jest wzięte ze źródła, a co przybliżone.</li>
+        <li>Jitter losowy i szum analogowy są białe, ze stałym ziarnem generatora, więc obraz nie migocze przy zmianie parametrów.</li>
+      </ul>
+    </details>
+  </main>
+</div>
+<script>
+// ===== Rdzeń symulacji: sygnał testowy, strumień S/PDIF, łącze RC, PLL, transport, jitter zegara DAC, FFT =====
+const SIM = (() => {
+  const P = 192;            // okres testu J (ramki)
+  const M = 32768;
+  const N = 3 * M;          // długość FFT = 98304 (wielokrotność 192 -> próbkowanie koherentne)
+  const DAC_LATENCY = 4;    // ramki między odbiorem próbki a jej konwersją
+
+  // ---------- generator liczb pseudolosowych (stałe ziarno => stabilny obraz) ----------
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function gaussArray(n, seed) {
+    const r = mulberry32(seed), out = new Float64Array(n);
+    for (let i = 0; i < n; i += 2) {
+      let u = r(); if (u < 1e-12) u = 1e-12;
+      const v = r(), m = Math.sqrt(-2 * Math.log(u));
+      out[i] = m * Math.cos(2 * Math.PI * v);
+      if (i + 1 < n) out[i + 1] = m * Math.sin(2 * Math.PI * v);
+    }
+    return out;
+  }
+  const G1 = gaussArray(N, 12345);   // jitter losowy zegara DAC
+  const G2 = gaussArray(N, 67890);   // szum analogowy (biny widma)
+  const G3 = gaussArray(N, 424242);  // transport: szerokopasmowy
+  const G4 = gaussArray(N, 515151);  // transport: wolnozmienny
+
+  // ---------- FFT ----------
+  const rev = new Uint32Array(M);
+  { const bitsM = Math.log2(M); for (let i = 0; i < M; i++) { let r = 0, x = i; for (let b = 0; b < bitsM; b++) { r = (r << 1) | (x & 1); x >>= 1; } rev[i] = r; } }
+  const twR = new Float64Array(M / 2), twI = new Float64Array(M / 2);
+  for (let i = 0; i < M / 2; i++) { twR[i] = Math.cos(-2 * Math.PI * i / M); twI[i] = Math.sin(-2 * Math.PI * i / M); }
+  function fft2(re, im) {
+    for (let i = 0; i < M; i++) { const j = rev[i]; if (j > i) { let t = re[i]; re[i] = re[j]; re[j] = t; t = im[i]; im[i] = im[j]; im[j] = t; } }
+    for (let size = 2; size <= M; size <<= 1) {
+      const half = size >> 1, step = M / size;
+      for (let i = 0; i < M; i += size) {
+        for (let j = 0, k = 0; j < half; j++, k += step) {
+          const a = i + j, b = a + half;
+          const tr = re[b] * twR[k] - im[b] * twI[k];
+          const ti = re[b] * twI[k] + im[b] * twR[k];
+          re[b] = re[a] - tr; im[b] = im[a] - ti;
+          re[a] += tr; im[a] += ti;
+        }
+      }
+    }
+  }
+  const cN = new Float64Array(N), sN = new Float64Array(N);
+  for (let k = 0; k < N; k++) { cN[k] = Math.cos(-2 * Math.PI * k / N); sN[k] = Math.sin(-2 * Math.PI * k / N); }
+  const bufR = [new Float64Array(M), new Float64Array(M), new Float64Array(M)];
+  const bufI = [new Float64Array(M), new Float64Array(M), new Float64Array(M)];
+  function fft3(xr, xi, K) {
+    for (let r = 0; r < 3; r++) {
+      const R = bufR[r], I = bufI[r];
+      for (let m = 0; m < M; m++) { R[m] = xr[3 * m + r]; I[m] = xi ? xi[3 * m + r] : 0; }
+      fft2(R, I);
+    }
+    const Yr = new Float64Array(K), Yi = new Float64Array(K);
+    for (let k = 0; k < K; k++) {
+      const km = k % M, k2 = (2 * k) % N;
+      const a1r = bufR[1][km], a1i = bufI[1][km], a2r = bufR[2][km], a2i = bufI[2][km];
+      Yr[k] = bufR[0][km] + a1r * cN[k] - a1i * sN[k] + a2r * cN[k2] - a2i * sN[k2];
+      Yi[k] = bufI[0][km] + a1r * sN[k] + a1i * cN[k] + a2r * sN[k2] + a2i * cN[k2];
+    }
+    return [Yr, Yi];
+  }
+  const fftRealN = x => fft3(x, null, N / 2 + 1);          // biny 0..N/2
+  function ifftHalf(Hr, Hi) {                                // sygnał rzeczywisty z połowy widma
+    const xr = new Float64Array(N), xi = new Float64Array(N);
+    for (let k = 0; k <= N / 2; k++) { xr[k] = Hr[k]; xi[k] = -Hi[k]; }
+    for (let k = 1; k < N / 2; k++) { xr[N - k] = Hr[k]; xi[N - k] = Hi[k]; }
+    const [Yr] = fft3(xr, xi, N);
+    for (let n = 0; n < N; n++) Yr[n] /= N;
+    return Yr;
+  }
+
+  // ---------- małe DFT (192 punkty) ----------
+  function dft(xr) {
+    const n = xr.length, Xr = new Float64Array(n), Xi = new Float64Array(n);
+    for (let k = 0; k < n; k++) {
+      let sr = 0, si = 0;
+      for (let t = 0; t < n; t++) { const a = -2 * Math.PI * k * t / n; sr += xr[t] * Math.cos(a); si += xr[t] * Math.sin(a); }
+      Xr[k] = sr; Xi[k] = si;
+    }
+    return [Xr, Xi];
+  }
+  const signedK = (k, n) => (k <= n / 2 ? k : k - n);
+
+  // ---------- PLL drugiego rzędu (typ II) ----------
+  function pllH(f, fn, zeta) {
+    const wn = 2 * Math.PI * fn, w = 2 * Math.PI * f;
+    const nr = wn * wn, ni = 2 * zeta * wn * w;
+    const dr = wn * wn - w * w, di = 2 * zeta * wn * w;
+    const den = dr * dr + di * di;
+    return [(nr * dr + ni * di) / den, (ni * dr - nr * di) / den];
+  }
+  function fnFromBandwidth(f3, zeta) { const a = 1 + 2 * zeta * zeta; return f3 / Math.sqrt(a + Math.sqrt(a * a + 1)); }
+
+  // ---------- sygnały testowe ----------
+  // Każdy sygnał: okres (P albo N), kody próbek, wartości w FS, linie widma (do iloczynu z jitterem), widmo sygnału.
+  function makeSignal(p) {
+    return p.sig === 'sine' ? makeSine(p) : makeJtest(p);
+  }
+  function makeJtest(p) {
+    const bits = p.bits, q = 2 ** (bits - 2), fs = 2 ** (bits - 1);
+    const off = p.variant === 'dunn' ? -1 : p.variant === 'plus' ? 1 : 0;
+    const code = new Int32Array(P), xf = new Float64Array(P);
+    for (let n = 0; n < P; n++) {
+      const tone = (n % 4) < 2 ? -q : q;          // C000 C000 4000 4000 ...
+      const lsb = n < P / 2 ? 0 : off;            // ... BFFF BFFF 3FFF 3FFF
+      code[n] = tone + lsb; xf[n] = code[n] / fs;
+    }
+    const [Xr, Xi] = dft(xf);
+    const step = N / P;
+    const lines = [];
+    for (let m = 0; m < P; m++) {
+      if (Math.hypot(Xr[m], Xi[m]) < 1e-4 * P * 0.35) continue;   // pomijalne linie (harmoniczne LSB)
+      lines.push([signedK(m, P) * step, Xr[m] * step, Xi[m] * step]);
+    }
+    const Sr = new Float64Array(N / 2 + 1), Si = new Float64Array(N / 2 + 1);
+    for (let m = 0; m <= P / 2; m++) { Sr[m * step] = Xr[m] * step; Si[m * step] = Xi[m] * step; }
+    const ideal = new Float32Array(P / 2 + 1);
+    for (let m = 0; m <= P / 2; m++) ideal[m] = 20 * Math.log10(Math.hypot(Xr[m], Xi[m]) * 2 / P + 1e-16);
+    const idealAt = s => { let v = 0; for (let k = 0; k < P; k++) { if (k === P / 2 || (Xr[k] === 0 && Xi[k] === 0)) continue; const a = 2 * Math.PI * signedK(k, P) * s / P; v += Xr[k] * Math.cos(a) - Xi[k] * Math.sin(a); } return v / P; };
+    return { kind: 'jtest', period: P, code, xf, lines, Sr, Si, ideal, idealAt, f0: p.Fs / 4, k0: N / 4 };
+  }
+  function makeSine(p) {
+    const bits = p.bits, fs = 2 ** (bits - 1);
+    const k0 = Math.min(N / 2 - 1, Math.max(1, Math.round(p.sineHz * N / p.Fs)));
+    const A = Math.pow(10, p.sineDb / 20) * (fs - 1) / fs;          // szczyt w FS, bez przesterowania
+    const r = mulberry32(777);
+    const code = new Int32Array(N), xf = new Float64Array(N);
+    for (let n = 0; n < N; n++) {
+      const v = A * fs * Math.sin(2 * Math.PI * k0 * n / N) + (r() - r());   // dither TPDF
+      code[n] = Math.max(-fs, Math.min(fs - 1, Math.round(v)));
+      xf[n] = code[n] / fs;
+    }
+    const [Sr, Si] = fftRealN(xf);
+    const lines = [[k0, 0, -A * N / 2], [-k0, 0, A * N / 2]];
+    return { kind: 'sine', period: N, code, xf, lines, Sr, Si, ideal: null, idealAt: s => A * Math.sin(2 * Math.PI * k0 * s / N), f0: k0 * p.Fs / N, k0, A };
+  }
+
+  // ---------- status kanału (przykładowy blok konsumencki) ----------
+  function channelStatus(Fs) {
+    const c = new Uint8Array(P);
+    c[2] = 1;                     // kopiowanie dozwolone
+    if (Fs === 48000) c[25] = 1;  // bity 24–27: 44,1 kHz = 0000, 48 kHz = 0100
+    return c;
+  }
+  const PRE = { X: 0b11100010, Y: 0b11100100, Z: 0b11101000 };
+
+  // ---------- łącze: kodowanie bifazowe, filtr RC, komparator (strumieniowo) ----------
+  let linkId = 0;
+  function runLink(p) {
+    const sig = makeSignal(p);
+    const Lp = sig.period, bits = p.bits;
+    const UI = 1 / (128 * p.Fs);
+    const tauUI = 1 / (2 * Math.PI * p.linkMHz * 1e6) / UI;
+    const cs = channelStatus(p.Fs);
+    const EXP = new Float64Array(16); for (let d = 0; d < 16; d++) EXP[d] = Math.exp(-d / tauUI);
+    const W = Lp === P ? P : 16;                 // ramki rozbiegowe (stan ustalony)
+    const sumA = new Float64Array(Lp), cntA = new Float64Array(Lp), sumP = new Float64Array(Lp), cntP = new Float64Array(Lp);
+    const tieFrames = Lp === P ? P : 4096;
+    const tieA = new Float64Array(tieFrames * 130), tieB = new Float64Array(Lp === P ? tieFrames * 130 : 1);
+    let nA = 0, nB = 0;
+    const dispFrames = Lp === P ? [8, 104] : [0, 1];
+    const disp = {};
+    const buf = new Uint8Array(128), slot = new Uint8Array(28);
+    const isJ = Lp === P, halfJ = P / 2;
+    let lastLev = 0, L = -1, y = -1, dt = 0, missed = 0;
+    let pend = NaN, pendF = -1, pendPre = false, pendRec = false;
+    let dMin = Infinity, dMax = -Infinity, dSum = 0, dCnt = 0;
+    const d0 = dispFrames[0], d1 = dispFrames[1];
+    // przy szerokim paśmie łącza wpływ poprzednich bitów jest pomijalny (< 0,1 ps): dla długiego sygnału liczymy tylko ramki do wykresów
+    const skip = Lp !== P && p.linkMHz >= 12;
+    const fEnd = skip ? Math.min(Lp, tieFrames) : Lp;
+    for (let f = -W; f < fEnd; f++) {
+      const fb = ((f % Lp) + Lp) % Lp, rec = f >= 0;
+      const w = (sig.code[fb] << (24 - bits)) & 0xFFFFFF;
+      const fp = fb % P, csb = cs[fp];
+      // poziomy 128 UI ramki
+      let g = 0, level = lastLev;
+      for (let s = 0; s < 2; s++) {
+        const pre = s === 0 ? (fp === 0 ? PRE.Z : PRE.X) : PRE.Y;
+        const inv = level;
+        for (let u = 0; u < 8; u++) buf[g++] = ((pre >> (7 - u)) & 1) ^ inv;
+        level = buf[g - 1];
+        let ones = 0;
+        for (let i = 0; i < 24; i++) { const b = (w >> i) & 1; slot[i] = b; ones += b; }
+        slot[24] = 0; slot[25] = 0; slot[26] = csb; ones += csb;
+        slot[27] = ones & 1;
+        for (let i = 0; i < 28; i++) { level ^= 1; buf[g++] = level; level ^= slot[i]; buf[g++] = level; }
+      }
+      if (rec && (fb === d0 || fb === d1)) disp[fb] = { lev: buf.slice(0, 64), y0: L + (y - L) * EXP[dt < 15 ? dt : 15], L0: L };
+      // przejścia
+      for (let u = 0; u < 128; u++) {
+        const bu = buf[u];
+        if (bu !== lastLev) {
+          // rozstrzygnięcie poprzedniego przejścia: czy próg został przekroczony przed tym zboczem
+          if (pendRec) {
+            if (pend === pend && pend < dt) {
+              const d = pend, pf = pendF;
+              sumA[pf] += d; cntA[pf]++;
+              if (pendPre) { sumP[pf] += d; cntP[pf]++; }
+              if (d < dMin) dMin = d;
+              if (d > dMax) dMax = d;
+              dSum += d; dCnt++;
+              if (pf < tieFrames) { if (isJ && pf >= halfJ) tieB[nB++] = d; else tieA[nA++] = d; }
+            } else missed++;
+          }
+          y = L + (y - L) * EXP[dt < 15 ? dt : 15];
+          const Ln = bu ? 1 : -1;
+          pend = ((Ln > 0 && y < 0) || (Ln < 0 && y > 0)) ? tauUI * Math.log(1 - y * Ln) : NaN;
+          pendF = fb; pendPre = (u & 63) < 8; pendRec = rec;
+          L = Ln; lastLev = bu; dt = 0;
+        }
+        dt++;
+      }
+    }
+    if (pendRec) {
+      if (pend === pend && pend < dt) { const d = pend, pf = pendF; sumA[pf] += d; cntA[pf]++; if (pendPre) { sumP[pf] += d; cntP[pf]++; } if (d < dMin) dMin = d; if (d > dMax) dMax = d; dSum += d; dCnt++; if (pf < tieFrames) { if (isJ && pf >= halfJ) tieB[nB++] = d; else tieA[nA++] = d; } }
+      else missed++;
+    }
+
+    const meanD = dSum / (dCnt || 1);
+    const phase = (sum, cnt) => {
+      const out = new Float64Array(Lp); let m = 0, c = 0;
+      for (let f = 0; f < Lp; f++) { out[f] = cnt[f] ? (sum[f] / cnt[f]) * UI : NaN; if (cnt[f]) { m += out[f]; c++; } }
+      m /= (c || 1);
+      for (let f = 0; f < Lp; f++) out[f] = out[f] === out[f] ? out[f] - m : 0;
+      return out;
+    };
+    if (skip) { sumA.fill(0); cntA.fill(0); sumP.fill(0); cntP.fill(0); }
+    const phAll = phase(sumA, cntA), phPre = phase(sumP, cntP);
+    const tile = ph => { const x = new Float64Array(N); for (let n = 0; n < N; n++) x[n] = ph[n % Lp]; return fftRealN(x); };
+    return {
+      id: ++linkId, sig, UI, tauUI, phAll, phPre, specAll: tile(phAll), specPre: tile(phPre),
+      tieA: tieA.subarray(0, nA), tieB: tieB.subarray(0, nB), meanDelayUI: meanD,
+      edgePkPk: dCnt ? (dMax - dMin) * UI : 0, missed, disp, dispFrames, skipped: skip, pllCache: { key: null },
+    };
+  }
+  // przebieg na wyjściu łącza dla zapisanej ramki (64 UI podramki A)
+  function waveform(Lk, fb, S) {
+    const d = Lk.disp[fb]; if (!d) return null;
+    const E = Math.exp(-1 / (S * Lk.tauUI));
+    const out = new Float64Array(64 * S + 1);
+    let y = d.y0, L = d.L0;
+    let prev = null;
+    for (let u = 0; u < 64; u++) {
+      const lv = d.lev[u] ? 1 : -1;
+      if (lv !== L) L = lv;
+      for (let s = 0; s < S; s++) { out[u * S + s] = y; y = L + (y - L) * E; }
+      prev = lv;
+    }
+    out[64 * S] = y;
+    return out;
+  }
+
+  // ---------- jitter transportu (nadajnika) ----------
+  // szerokopasmowy (biały), wolnozmienny (dolnoprzepustowy 1. rzędu, 50 Hz), składowa tonalna o zadanej częstotliwości.
+  const LF_CORNER = 50;
+  let txCache = { key: null };
+  function transport(p) {
+    const key = [p.Fs, p.pllHz, p.zeta, p.tWide, p.tLow, p.tHum, p.tHumHz].join('|');
+    if (txCache.key === key) return txCache;
+    const sw = p.tWide * 1e-12, sl = p.tLow * 1e-12, ah = p.tHum * 1e-12;
+    if (!(sw > 0 || sl > 0 || ah > 0)) { txCache = { key, raw: null, pll: null, rms: 0 }; return txCache; }
+    const H = N / 2 + 1, K = N / 2 - 1;
+    const Tr = new Float64Array(H), Ti = new Float64Array(H);
+    let wsum = 0;
+    for (let k = 1; k <= K; k++) { const f = k * p.Fs / N; wsum += 1 / (1 + (f / LF_CORNER) ** 2); }
+    for (let k = 1; k <= K; k++) {
+      const f = k * p.Fs / N;
+      const aW = N * Math.sqrt(sw * sw / K / 2), aL = N * Math.sqrt(sl * sl / (1 + (f / LF_CORNER) ** 2) / wsum / 2);
+      Tr[k] = (aW * G3[2 * k] + aL * G4[2 * k]) / Math.SQRT2;
+      Ti[k] = (aW * G3[2 * k + 1] + aL * G4[2 * k + 1]) / Math.SQRT2;
+    }
+    const kh = Math.min(K, Math.max(1, Math.round(p.tHumHz * N / p.Fs)));
+    Tr[kh] += N * ah / 2;
+    const raw = ifftHalf(Tr, Ti);
+    const fn = fnFromBandwidth(p.pllHz, p.zeta);
+    const Pr = new Float64Array(H), Pi = new Float64Array(H);
+    for (let k = 1; k <= K; k++) {
+      const [hr, hi] = pllH(k * p.Fs / N, fn, p.zeta);
+      Pr[k] = Tr[k] * hr - Ti[k] * hi; Pi[k] = Tr[k] * hi + Ti[k] * hr;
+    }
+    const pll = ifftHalf(Pr, Pi);
+    let s2 = 0; for (let n = 0; n < N; n++) s2 += pll[n] * pll[n];
+    txCache = { key, raw, pll, rms: Math.sqrt(s2 / N), humHz: kh * p.Fs / N };
+    return txCache;
+  }
+
+  // ---------- PLL dla jittera z danych ----------
+  function dataPll(p, Lk) {
+    const key = [p.pllHz, p.zeta, p.pd].join('|');
+    if (Lk.pllCache.key === key) return Lk.pllCache;
+    const [Rr, Ri] = p.pd === 'pre' ? Lk.specPre : Lk.specAll;
+    const fn = fnFromBandwidth(p.pllHz, p.zeta);
+    const H = N / 2 + 1, Pr = new Float64Array(H), Pi = new Float64Array(H);
+    for (let k = 1; k < N / 2; k++) {
+      if (Rr[k] === 0 && Ri[k] === 0) continue;
+      const [hr, hi] = pllH(k * p.Fs / N, fn, p.zeta);
+      Pr[k] = Rr[k] * hr - Ri[k] * hi; Pi[k] = Rr[k] * hi + Ri[k] * hr;
+    }
+    const pll = ifftHalf(Pr, Pi);
+    let mn = Infinity, mx = -Infinity;
+    for (let n = 0; n < N; n++) { if (pll[n] < mn) mn = pll[n]; if (pll[n] > mx) mx = pll[n]; }
+    Lk.pllCache = { key, pll, pkpk: mx - mn };
+    return Lk.pllCache;
+  }
+
+  // ---------- zegar DAC, wyjście, widmo ----------
+  function runDac(p, Lk) {
+    const sig = Lk.sig, local = p.clk === 'local', D = DAC_LATENCY;
+    const dp = dataPll(p, Lk);
+    const tx = transport(p);
+    const ifPll = local ? null : dp.pll, txPll = local ? null : tx.pll;
+    const fsSnap = Math.max(1, Math.round(p.sinHz * N / p.Fs)) * p.Fs / N;
+    const sr = p.rndPs * 1e-12, sa = p.sinPs * 1e-12, wj = 2 * Math.PI * fsSnap / p.Fs;
+    const j = new Float64Array(N);
+    let jm = 0, j2 = 0;
+    for (let n = 0; n < N; n++) {
+      const m = (n + D) % N;
+      const v = (ifPll ? ifPll[m] : 0) + (txPll ? txPll[m] : 0) + sr * G1[n] + sa * Math.sin(wj * n);
+      j[n] = v; jm += v; j2 += v * v;
+    }
+    jm /= N;
+    const jRms = Math.sqrt(Math.max(0, j2 / N - jm * jm));
+    // błąd = −x′(t)·Δt, liczony jako splot widm bez aliasingu (przetwornik z nadpróbkowaniem)
+    const [Jr, Ji] = fftRealN(j);
+    const H = N / 2 + 1, Er = new Float64Array(H), Ei = new Float64Array(H);
+    for (const [q, Xr, Xi] of sig.lines) {
+      const w = 2 * Math.PI * q * p.Fs / N;
+      const Dr = -w * Xi / N, Di = w * Xr / N;       // (jω·X)/N
+      const k0 = Math.max(0, q - N / 2), k1 = Math.min(N / 2, q + N / 2);
+      for (let k = k0; k <= k1; k++) {
+        const r = k - q;
+        const jr = r >= 0 ? Jr[r] : Jr[-r], ji = r >= 0 ? Ji[r] : -Ji[-r];
+        Er[k] -= Dr * jr - Di * ji; Ei[k] -= Dr * ji + Di * jr;
+      }
+    }
+    // szum analogowy
+    const sigA = Math.pow(10, p.noiseDb / 20) / Math.SQRT2, gn = sigA * Math.sqrt(N / 2);
+    for (let k = 1; k < N / 2; k++) { Er[k] += gn * G2[2 * k]; Ei[k] += gn * G2[2 * k + 1]; }
+    const eTime = ifftHalf(Er, Ei);
+    const db = new Float32Array(H);
+    for (let k = 0; k < H; k++) db[k] = 20 * Math.log10(Math.hypot(sig.Sr[k] + Er[k], sig.Si[k] + Ei[k]) * 2 / N + 1e-16);
+    db[0] -= 6.0206;
+    // przebiegi na wejściu i wyjściu pętli (czas na kablu), dwa okresy testu J
+    const ph = p.pd === 'pre' ? Lk.phPre : Lk.phAll, Lp = sig.period;
+    const inRaw = new Float64Array(2 * P), inPll = new Float64Array(2 * P);
+    for (let f = 0; f < 2 * P; f++) {
+      inRaw[f] = ph[f % Lp] + (tx.raw ? tx.raw[f] : 0);
+      inPll[f] = (ifPll ? ifPll[f] : 0) + (txPll ? txPll[f] : 0);
+    }
+    return {
+      db, eTime, jFirst: j.subarray(0, 4 * P), jRms, inRaw, inPll, fsSnap, binHz: p.Fs / N,
+      pllPkPk: local ? 0 : dp.pkpk, txRms: local ? 0 : tx.rms, humHz: tx.humHz || p.tHumHz,
+    };
+  }
+
+  return { P, N, DAC_LATENCY, runLink, runDac, waveform, signedK, pllH, fnFromBandwidth };
+})();
+
+
+// ===== Interfejs =====
+(() => {
+  const { P, N } = SIM;
+
+  // ---------- stan ----------
+  const DEFAULTS = { sig: 'jtest', Fs: 44100, bits: 16, variant: 'dunn', sineHz: 1000, sineDb: 0, tWide: 0, tLow: 0, tHum: 0, tHumHz: 100, linkMHz: 4, pllHz: 20000, zeta: 0.7, pd: 'all', clk: 'pll', rndPs: 20, sinPs: 0, sinHz: 1000, noiseDb: -115 };
+  const state = Object.assign({}, DEFAULTS, { range: 'z35', yMin: -180, win: 84 });
+
+  // ---------- formatowanie ----------
+  const nf = (v, d) => v.toLocaleString('pl-PL', { minimumFractionDigits: d, maximumFractionDigits: d }).replace('-', '\u2212');
+  const trim = s => (s.includes(',') ? s.replace(/0+$/, '').replace(/,$/, '') : s);
+  const sig = (v, n) => { if (v === 0) return 0; const e = Math.floor(Math.log10(Math.abs(v))) - (n - 1); const m = Math.pow(10, e); return Math.round(v / m) * m; };
+  function fmtHz(v) {
+    if (v >= 1000) { const k = v / 1000; return trim(nf(k, k < 10 ? 2 : k < 100 ? 1 : 0)) + ' kHz'; }
+    return trim(nf(v, v < 10 ? 1 : 0)) + ' Hz';
+  }
+  function fmtTime(sec) {
+    const ps = sec * 1e12;
+    if (Math.abs(ps) >= 1000) return trim(nf(ps / 1000, Math.abs(ps) < 10000 ? 2 : 1)) + ' ns';
+    return trim(nf(ps, Math.abs(ps) < 10 ? 1 : 0)) + ' ps';
+  }
+  function hex(code, bits) { const m = 2 ** bits; return (((code % m) + m) % m).toString(16).toUpperCase().padStart(bits / 4, '0'); }
+
+  // ---------- definicje kontrolek ----------
+  const psRound = v => (v < 10 ? Math.round(v * 10) / 10 : Math.round(v));
+  const psFmt = v => trim(nf(v, v < 10 ? 1 : 0)) + ' ps';
+  const GROUPS = [
+    { title: 'Sygnał testowy', items: [
+      { key: 'sig', type: 'seg', label: 'Sygnał', options: [['jtest', 'test J'], ['sine', 'sinus']] },
+      { key: 'Fs', type: 'seg', label: 'Próbkowanie', options: [[44100, '44,1 kHz'], [48000, '48 kHz']] },
+      { key: 'bits', type: 'seg', label: 'Rozdzielczość', options: [[16, '16 bitów'], [24, '24 bity']] },
+      { key: 'variant', type: 'seg', label: 'Przebieg na najmłodszym bicie', options: [['dunn', '0 ↔ −1'], ['plus', '0 ↔ +1'], ['off', 'brak']],
+        hint: 'Wersja Dunna (0 ↔ −1) odwraca prawie wszystkie bity słowa. Wersja 0 ↔ +1 zmienia tylko jeden bit.', show: s => s.sig === 'jtest' },
+      { key: 'sineHz', type: 'range', label: 'Częstotliwość sinusa', min: 20, max: 21000, scale: 'log', round: v => sig(v, 3), fmt: fmtHz, show: s => s.sig === 'sine' },
+      { key: 'sineDb', type: 'range', label: 'Poziom sinusa', min: -100, max: 0, scale: 'lin', round: v => Math.round(v), fmt: v => nf(v, 0) + ' dBFS', show: s => s.sig === 'sine',
+        hint: 'Sinus z ditherem TPDF, dociągnięty do najbliższego prążka FFT.' },
+    ] },
+    { id: 'tx', title: 'Transport (nadajnik)', items: [
+      { key: 'tWide', type: 'range', label: 'Jitter szerokopasmowy (RMS)', min: 0, max: 1000, scale: 'sq', round: psRound, fmt: psFmt,
+        hint: 'Jitter zegara nadajnika, np. odtwarzacza CD. Nie zależy od danych, więc dochodzi do jittera z łącza.' },
+      { key: 'tLow', type: 'range', label: 'Szum wolnozmienny (RMS)', min: 0, max: 3000, scale: 'sq', round: psRound, fmt: psFmt,
+        hint: 'Wahania od serwa, silnika i zasilania, z widmem opadającym powyżej około 50 Hz. Poszerzają podstawę tonu.' },
+      { key: 'tHum', type: 'range', label: 'Składowa tonalna (szczyt)', min: 0, max: 2000, scale: 'sq', round: psRound, fmt: psFmt },
+      { key: 'tHumHz', type: 'range', label: 'Częstotliwość składowej tonalnej', min: 10, max: 5000, scale: 'log', round: v => sig(v, 2), fmt: fmtHz,
+        hint: '100 Hz to tętnienia zasilania przy sieci 50 Hz. Daje parę prążków w tej odległości od tonu.' },
+    ] },
+    { title: 'Łącze S/PDIF', items: [
+      { key: 'linkMHz', type: 'range', label: 'Pasmo łącza (−3 dB)', min: 1, max: 20, scale: 'log', round: v => (v < 10 ? Math.round(v * 10) / 10 : Math.round(v)), fmt: v => trim(nf(v, v < 10 ? 1 : 0)) + ' MHz',
+        hint: 'Węższe pasmo to mniej ustalony poziom przed każdym zboczem, czyli większa zależność chwili przejścia od poprzednich bitów.' },
+    ] },
+    { id: 'pll', title: 'Odbiornik (PLL)', items: [
+      { key: 'pllHz', type: 'range', label: 'Pasmo pętli', min: 1, max: 100000, scale: 'log', round: v => sig(v, 2), fmt: fmtHz,
+        hint: 'Jitter z danych o częstotliwościach powyżej pasma pętli jest tłumiony.' },
+      { key: 'zeta', type: 'range', label: 'Tłumienie ζ', min: 0.3, max: 2, scale: 'lin', round: v => Math.round(v * 100) / 100, fmt: v => nf(v, 2) },
+      { key: 'pd', type: 'seg', label: 'Detektor fazy patrzy na', options: [['all', 'wszystkie zbocza'], ['pre', 'tylko preambuły']] },
+      { key: 'clk', type: 'seg', label: 'Źródło zegara przetwornika', keep: true, options: [['pll', 'pętla PLL'], ['local', 'lokalny (reclocking)']],
+        hint: 'Lokalny generator z buforem FIFO nie przenosi jittera z łącza ani z transportu.' },
+    ] },
+    { title: 'Zegar przetwornika', items: [
+      { key: 'rndPs', type: 'range', label: 'Jitter losowy (RMS)', min: 0, max: 1000, scale: 'sq', round: v => (v < 10 ? Math.round(v * 10) / 10 : Math.round(v)), fmt: v => trim(nf(v, v < 10 ? 1 : 0)) + ' ps' },
+      { key: 'sinPs', type: 'range', label: 'Jitter sinusoidalny (szczyt)', min: 1, max: 500000, scale: 'log0', round: v => sig(v, 2), fmt: v => (v > 0 ? fmtTime(v * 1e-12) : '0 ps') },
+      { key: 'sinHz', type: 'range', label: 'Częstotliwość jittera sinusoidalnego', min: 10, max: 20000, scale: 'log', round: v => sig(v, 2), fmt: fmtHz },
+      { key: 'noiseDb', type: 'range', label: 'Szum analogowy (całkowity)', min: -160, max: -90, scale: 'lin', round: v => Math.round(v), fmt: v => nf(v, 0) + ' dBFS' },
+    ] },
+  ];
+  const ITEMS = {};
+  GROUPS.forEach(g => g.items.forEach(it => (ITEMS[it.key] = it)));
+
+  const toVal = (it, t) => {
+    if (it.scale === 'log0') return t < 0.02 ? 0 : it.round(it.min * Math.pow(it.max / it.min, (t - 0.02) / 0.98));
+    return it.round(it.scale === 'log' ? it.min * Math.pow(it.max / it.min, t) : it.scale === 'sq' ? it.min + (it.max - it.min) * t * t : it.min + (it.max - it.min) * t);
+  };
+  const toPos = (it, v) => {
+    let t;
+    if (it.scale === 'log0') t = v <= 0 ? 0 : 0.02 + 0.98 * Math.log(Math.max(v, it.min) / it.min) / Math.log(it.max / it.min);
+    else t = it.scale === 'log' ? Math.log(v / it.min) / Math.log(it.max / it.min) : it.scale === 'sq' ? Math.sqrt((v - it.min) / (it.max - it.min)) : (v - it.min) / (it.max - it.min);
+    return Math.round(Math.min(1, Math.max(0, t)) * 1000);
+  };
+
+  const LINK_KEYS = new Set(['sig', 'Fs', 'bits', 'variant', 'sineHz', 'sineDb', 'linkMHz']);
+  const ui = {};
+  const ROWS = [];
+
+  function buildControls() {
+    const root = document.getElementById('groups');
+    GROUPS.forEach(g => {
+      const fs = document.createElement('fieldset');
+      fs.className = 'group';
+      if (g.id) fs.id = 'grp-' + g.id;
+      fs.innerHTML = `<legend>${g.title}</legend>`;
+      g.items.forEach(it => {
+        const row = document.createElement('div');
+        row.className = 'ctl' + (it.keep ? ' keep' : '');
+        const id = 'c-' + it.key;
+        if (it.type === 'range') {
+          row.innerHTML = `<div class="ctl-top"><label for="${id}">${it.label}</label><output id="${id}-o" for="${id}"></output></div>
+            <input type="range" id="${id}" min="0" max="1000" step="1">`;
+          const inp = row.querySelector('input'), out = row.querySelector('output');
+          inp.addEventListener('input', () => { state[it.key] = toVal(it, inp.value / 1000); out.textContent = it.fmt(state[it.key]); clearScenario(); schedule(LINK_KEYS.has(it.key)); });
+          ui[it.key] = { sync: () => { inp.value = toPos(it, state[it.key]); out.textContent = it.fmt(state[it.key]); } };
+        } else {
+          row.innerHTML = `<div class="ctl-top"><span class="lbl" id="${id}-l">${it.label}</span></div><div class="seg" role="group" aria-labelledby="${id}-l"></div>`;
+          const seg = row.querySelector('.seg');
+          const btns = it.options.map(([v, text]) => {
+            const b = document.createElement('button');
+            b.type = 'button'; b.textContent = text;
+            b.addEventListener('click', () => { state[it.key] = v; sync(); muteGroups(); clearScenario(); schedule(LINK_KEYS.has(it.key)); });
+            seg.appendChild(b);
+            return [v, b];
+          });
+          const sync = () => btns.forEach(([v, b]) => b.setAttribute('aria-pressed', String(v === state[it.key])));
+          ui[it.key] = { sync };
+        }
+        if (it.hint) { const h = document.createElement('p'); h.className = 'hint'; h.textContent = it.hint; row.appendChild(h); }
+        if (it.show) ROWS.push([row, it.show]);
+        fs.appendChild(row);
+      });
+      root.appendChild(fs);
+    });
+  }
+  const syncAll = () => { Object.values(ui).forEach(u => u.sync()); muteGroups(); };
+  function muteGroups() {
+    const g = document.getElementById('grp-pll'); if (g) g.classList.toggle('muted', state.clk === 'local');
+    ROWS.forEach(([row, f]) => { row.hidden = !f(state); });
+  }
+
+  // ---------- scenariusze ----------
+  const TX = { tWide: 150, tLow: 500, tHum: 250 };
+  const SCEN = [
+    { group: null, list: [
+      { id: 'ideal', name: 'Tor idealny', desc: 'Bez jittera i praktycznie bez szumu: punkt odniesienia', set: { linkMHz: 20, rndPs: 0, sinPs: 0, noiseDb: -160 } },
+      { id: 'simple', name: 'Prosty odbiornik', desc: 'Łącze 4 MHz, szeroka pętla PLL 20 kHz', set: {} },
+    ] },
+    { group: 'Łącze i dane', list: [
+      { id: 'weak', name: 'Słabe łącze', desc: 'Pasmo 1,5 MHz: długie ogony między zboczami', set: { linkMHz: 1.5 } },
+      { id: 'narrow', name: 'Wąska pętla PLL', desc: 'Pętla 30 Hz odfiltrowuje jitter z danych', set: { pllHz: 30 } },
+      { id: 'plus', name: 'Wzorzec 0 ↔ +1', desc: 'Zmienia się jeden bit zamiast piętnastu', set: { variant: 'plus' } },
+    ] },
+    { group: 'Z literatury', list: [
+      { id: 'sp338', name: 'Stereophile 1994: dobry transport', desc: '338 ps RMS na zegarze słowa przetwornika', set: { linkMHz: 20, rndPs: 338 }, note: 'sp' },
+      { id: 'sp610', name: 'Stereophile 1994: przenośny odtwarzacz jako transport', desc: '610 ps RMS na zegarze słowa przetwornika', set: { linkMHz: 20, rndPs: 610 }, note: 'sp' },
+      { id: 'bg20', name: 'Dolby 1998: próg dla sinusa 20 kHz', desc: '10 ns RMS jittera 17 kHz, prążek przy 3 kHz', set: { sig: 'sine', sineHz: 20000, sineDb: 0, linkMHz: 20, rndPs: 0, sinPs: 14142, sinHz: 17000 }, view: 'full', note: 'bg20' },
+      { id: 'bg4', name: 'Dolby 1998: próg dla sinusa 4 kHz', desc: '100 ns RMS jittera 2 kHz, prążki przy 2 i 6 kHz', set: { sig: 'sine', sineHz: 4000, sineDb: 0, linkMHz: 20, rndPs: 0, sinPs: 141421, sinHz: 2000 }, view: 'full', note: 'bg4' },
+    ] },
+    { group: 'Transport CD', list: [
+      { id: 'cd', name: 'Słaby transport', desc: 'Tętnienia 100 Hz i wolny dryf zegara nadajnika', set: Object.assign({}, TX), view: 'z07' },
+      { id: 'cdNarrow', name: 'Słaby transport, wąska pętla', desc: 'Pętla 30 Hz: tętnienia słabną, najwolniejszy dryf zostaje', set: Object.assign({ pllHz: 30 }, TX), view: 'z07' },
+      { id: 'cdLocal', name: 'Słaby transport, reclocking', desc: 'Lokalny zegar z buforem: jitter transportu nie dochodzi', set: Object.assign({ clk: 'local' }, TX), view: 'z07' },
+    ] },
+  ];
+  let activeScen = 'simple';
+  function buildScenarios() {
+    const box = document.getElementById('scen');
+    SCEN.forEach(gr => {
+      if (gr.group) { const h = document.createElement('p'); h.className = 'scen-group'; h.textContent = gr.group; box.appendChild(h); }
+      gr.list.forEach(s => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'scen-btn'; b.dataset.id = s.id;
+        b.innerHTML = `<span class="scen-name">${s.name}</span><span class="scen-desc">${s.desc}</span>`;
+        b.addEventListener('click', () => {
+          Object.assign(state, DEFAULTS, s.set);
+          state.range = s.view || 'z35';
+          activeScen = s.id; activeNote = s.note || null; syncAll(); syncToolbar(); markScen(); showNote(); schedule(true);
+        });
+        box.appendChild(b);
+      });
+    });
+    markScen();
+  }
+  function markScen() { document.querySelectorAll('.scen-btn').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === activeScen))); }
+  function clearScenario() { if (activeScen) { activeScen = null; markScen(); } if (activeNote) { activeNote = null; showNote(); } }
+  let activeNote = null;
+  const NOTES = {
+    sp: 'W listopadzie 1994 Robert Harley ze Stereophile zmierzył jitter zegara słowa w procesorze PS Audio UltraLink (odbiornik Yamaha YM3623, słabo tłumiący jitter). Z transportem PS Audio Lambda wyszło 338 ps RMS w paśmie 400 Hz – 22 kHz, z przenośnym Radio Shack Optimus CD-3400 610 ps. Pismo traktowało różnice między transportami jako słyszalne, ale bez odsłuchu w ciemno. W modelu jitter jest wpisany jako szum szerokopasmowy zegara przetwornika; prawdziwe widmo miało też wiele składowych okresowych.',
+    bg20: 'Eric Benjamin i Benjamin Gannon (Dolby, konwencja AES 1998) mierzyli próg słyszalności na słuchawkach metodą góra-dół. Dla pełnoskalowego sinusa 20 kHz średni próg wyniósł 10 ns RMS jittera sinusoidalnego o częstotliwości 17 kHz; słychać dolny prążek przy 3 kHz. Model daje go około 61 dB pod tonem, zgodnie ze wzorem z pracy: −107 + 20·log(F [kHz]) + 20·log(J [ns RMS]). W badaniu jitter dodawano w łączu przed odbiornikiem przetwornika, tu trafia prosto do zegara, więc to górne oszacowanie.',
+    bg4: 'W tej samej pracy dla sinusa 4 kHz i jittera 2 kHz średni próg wzrósł do 100 ns RMS, bo prążki przy 2 i 6 kHz leżą blisko tonu, który je maskuje. Na muzyce autorzy znaleźli tylko kilka nagrań pojedynczych instrumentów, na których jitter był słyszalny, z progiem od około 30 do 300 ns RMS. Na większości nagrań nie słyszeli go wcale, aż do poziomu, przy którym odbiornik tracił synchronizację.',
+  };
+  const NOTE_SRC = {
+    sp: ['Stereophile: Jitterbuggin’ Measurements', 'https://www.stereophile.com/content/jitterbuggin-measurements'],
+    bg20: ['AES E-Library: Theoretical and Audible Effects of Jitter on Digital Audio Quality', 'https://aes2.org/publications/elibrary-page/?id=8354'],
+    bg4: ['AES E-Library: Theoretical and Audible Effects of Jitter on Digital Audio Quality', 'https://aes2.org/publications/elibrary-page/?id=8354'],
+  };
+  function showNote() {
+    const el = document.getElementById('scen-note');
+    if (!activeNote) { el.hidden = true; return; }
+    const [t, href] = NOTE_SRC[activeNote];
+    el.hidden = false;
+    el.innerHTML = `${NOTES[activeNote]} <a href="${href}" target="_blank" rel="noopener">${t}</a>`;
+  }
+
+  // ---------- obliczenia ----------
+  let L = null, D = null, tie = null, pendingLink = true, rafId = 0;
+  function schedule(link) {
+    if (link) pendingLink = true;
+    if (!rafId) rafId = requestAnimationFrame(compute);
+  }
+  function compute() {
+    rafId = 0;
+    const p = {}; Object.keys(DEFAULTS).forEach(k => (p[k] = state[k]));
+    if (pendingLink || !L) { L = SIM.runLink(p); tie = buildTie(L); pendingLink = false; }
+    D = SIM.runDac(p, L);
+    updateText();
+    drawAll();
+  }
+
+  // histogram chwil przejścia, osobno dla dwóch połówek okresu testu J
+  function buildTie(L) {
+    const { UI, meanDelayUI } = L;
+    const conv = a => { const o = new Float64Array(a.length); for (let i = 0; i < a.length; i++) o[i] = (a[i] - meanDelayUI) * UI; return o; };
+    const devA = conv(L.tieA), devB = conv(L.tieB);
+    let mx = 0, sA = 0, sB = 0;
+    for (const v of devA) { mx = Math.max(mx, Math.abs(v)); sA += v; }
+    for (const v of devB) { mx = Math.max(mx, Math.abs(v)); sB += v; }
+    return { devA, devB, mx, meanA: sA / (devA.length || 1), meanB: sB / (devB.length || 1) };
+  }
+
+  // ---------- teksty i odczyty ----------
+  function updateText() {
+    const S = L.sig, bits = state.bits, isJ = S.kind === 'jtest';
+    const set = (id, t) => { document.getElementById(id).textContent = t; };
+    if (isJ) {
+      const a0 = hex(S.code[0], bits), a2 = hex(S.code[2], bits), b0 = hex(S.code[96], bits), b2 = hex(S.code[98], bits);
+      let diff = 0; { const m = 2 ** bits; let z = (((S.code[0] % m) + m) % m) ^ (((S.code[96] % m) + m) % m); while (z) { diff += z & 1; z >>>= 1; } }
+      set('cyc-a', `${a0} ${a0} ${a2} ${a2}`); set('cyc-b', `${b0} ${b0} ${b2} ${b2}`);
+      set('cap-bits', diff === 0
+        ? `Przebieg na najmłodszym bicie jest wyłączony, więc obie połowy okresu mają te same próbki (${a0}/${a2}). Zostają tylko drobne różnice od bitów statusu kanału i preambuły Z.`
+        : `W pierwszej połowie każdego okresu 192 próbek słowa to ${a0}/${a2}, w drugiej ${b0}/${b2}. W każdym słowie zmienia się ${diff} z ${bits} bitów, więc w strumieniu pojawia się inny układ zboczy.`);
+      set('lg-a', `ramka z pierwszej połowy (${a0})`); set('lg-b', `ramka z drugiej połowy (${b0})`);
+      set('lg-ta', `zbocza w ramkach ${a0}/${a2}`); set('lg-tb', `zbocza w ramkach ${b0}/${b2}`);
+      set('spec-cap', 'Harmoniczne przebiegu na najmłodszym bicie leżą w odstępach Fs/192, więc prążki boczne od jittera wypadają dokładnie na nich. Jitter widać jako wybrzuszenie ponad zieloną linią wokół tonu. Przy 24 bitach harmoniczne leżą głęboko pod szumem i zostają same prążki.');
+    } else {
+      set('cap-bits', `Przy sinusie ${fmtHz(S.f0)} układ bitów zmienia się z każdą próbką, więc jitter z danych ma widmo związane z samym sygnałem. Poniżej dwie kolejne ramki.`);
+      set('lg-a', 'ramka 0'); set('lg-b', 'ramka 1');
+      set('lg-ta', 'zbocza z pierwszych 4096 ramek'); set('lg-tb', '');
+      set('spec-cap', `Każda składowa jittera o częstotliwości fj daje parę prążków w odległości fj od tonu ${fmtHz(S.f0)}. Prążek, który wypadałby powyżej Fs/2, leży poza pasmem i jest usuwany przez filtr przetwornika.`);
+    }
+    document.getElementById('lg-tb').parentElement.hidden = !isJ;
+    document.getElementById('lg-ref').hidden = !isJ;
+    document.getElementById('lg-tri').hidden = !isJ;
+    set('ui-ns', `1 UI = ${trim(nf(1e9 * L.UI, 1))} ns`);
+
+    // odczyty
+    const k0 = S.k0, step = N / P;
+    const fc = S.f0, sd = D.jRms;
+    const snr = sd > 1e-15 ? -20 * Math.log10(2 * Math.PI * fc * sd) : Infinity;
+    const R = [
+      ['Rozrzut zboczy od łącza (pk-pk)', fmtTime(L.edgePkPk)],
+      ['Jitter z danych na zegarze DAC (pk-pk)', fmtTime(D.pllPkPk)],
+      ['Jitter z transportu na zegarze DAC (RMS)', fmtTime(D.txRms)],
+      ['Jitter zegara DAC łącznie (RMS)', fmtTime(D.jRms)],
+    ];
+    if (isJ) {
+      const sb = Math.max(D.db[k0 - step], D.db[k0 + step]);
+      const idl = Math.max(S.ideal[47], S.ideal[49]);
+      R.push(['Prążki Fs/4 ± Fs/192', nf(sb, 1) + ' dBFS', idl > -200 ? (sb - idl >= 0.05 ? `${nf(sb - idl, 1)} dB ponad poprawny poziom` : 'na poprawnym poziomie') : '']);
+    }
+    const tone = D.db[k0];
+    const pair = (df) => { const kb = Math.round(df / D.binHz); let v = -1e9; [k0 - kb, k0 + kb].forEach(k => { if (k > 0 && k < N / 2) v = Math.max(v, D.db[k]); }); return v; };
+    if (state.sinPs > 0) { const v = pair(D.fsSnap); R.push([`Prążki od jittera sinusoidalnego (± ${fmtHz(D.fsSnap)})`, nf(v, 1) + ' dBFS', `${nf(tone - v, 1)} dB pod tonem`]); }
+    if (state.tHum > 0) { const v = pair(D.humHz); R.push([`Prążki od składowej tonalnej transportu (± ${fmtHz(D.humHz)})`, nf(v, 1) + ' dBFS', `${nf(tone - v, 1)} dB pod tonem`]); }
+    R.push([`Limit SNR od jittera dla tonu ${isJ ? 'Fs/4' : fmtHz(fc)}`, isFinite(snr) ? nf(snr, 1) + ' dB' : 'brak jittera']);
+    document.getElementById('readouts').innerHTML = R.map(([k, v, s]) => `<div><dt>${k}</dt><dd>${v}${s ? `<span>${s}</span>` : ''}</dd></div>`).join('');
+    document.getElementById('lg-hum').hidden = !(state.tHum > 0);
+    document.getElementById('lg-sj').hidden = !(state.sinPs > 0);
+    const w = document.getElementById('warn');
+    if (L.missed > 0) { w.hidden = false; w.textContent = `Oko jest zamknięte: odbiornik gubi ${L.missed} zboczy. Poszerz pasmo łącza.`; } else w.hidden = true;
+    document.getElementById('c-sinHz-o').textContent = fmtHz(D.fsSnap);
+  }
+
+  // ---------- rysowanie: narzędzia ----------
+  let C = {};
+  function readColors() {
+    const cs = getComputedStyle(document.documentElement);
+    ['ink', 'ink2', 'rule', 'grid', 'surface', 'traceA', 'traceB', 'ref', 'band', 'band2'].forEach(k => (C[k] = cs.getPropertyValue('--' + k).trim()));
+  }
+  const FONT = '"Archivo", "Helvetica Neue", Arial, system-ui, sans-serif';
+  function setup(cv) {
+    const dpr = window.devicePixelRatio || 1;
+    const w = cv.clientWidth, h = cv.clientHeight;
+    const W = Math.max(1, Math.round(w * dpr)), H = Math.max(1, Math.round(h * dpr));
+    if (cv.width !== W || cv.height !== H) { cv.width = W; cv.height = H; }
+    const ctx = cv.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    ctx.font = `12px ${FONT}`;
+    ctx.lineJoin = 'round';
+    return { ctx, w, h };
+  }
+  function niceStep(range, target) {
+    const raw = range / target, p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p;
+    return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p;
+  }
+  function axes(ctx, box, { xs, ys, fx, fy, mx, my, xLabel, yLabel }) {
+    ctx.save();
+    ctx.strokeStyle = C.grid; ctx.lineWidth = 1; ctx.fillStyle = C.ink2;
+    ctx.textBaseline = 'middle'; ctx.textAlign = 'right';
+    ys.forEach(v => { const y = Math.round(my(v)) + 0.5; ctx.beginPath(); ctx.moveTo(box.l, y); ctx.lineTo(box.r, y); ctx.stroke(); ctx.fillText(fy(v), box.l - 6, y); });
+    ctx.textBaseline = 'top'; ctx.textAlign = 'center';
+    const cw = ctx.canvas.width / (window.devicePixelRatio || 1);
+    xs.forEach(v => { const x = Math.round(mx(v)) + 0.5; ctx.beginPath(); ctx.moveTo(x, box.t); ctx.lineTo(x, box.b); ctx.stroke(); const s = fx(v); if (!s) return; const tw = ctx.measureText(s).width / 2; if (x + tw > cw - 2 || x - tw < 2) return; ctx.fillText(s, x, box.b + 6); });
+    ctx.strokeStyle = C.rule; ctx.strokeRect(box.l + 0.5, box.t + 0.5, box.r - box.l, box.b - box.t);
+    if (yLabel) { ctx.textAlign = 'left'; ctx.textBaseline = 'bottom'; ctx.fillText(yLabel, box.l, box.t - 4); }
+    if (xLabel) { ctx.textAlign = 'right'; ctx.textBaseline = 'top'; ctx.fillText(xLabel, box.r, box.b + 22); }
+    ctx.restore();
+  }
+  function ticks(a, b, step) { const out = []; for (let v = Math.ceil(a / step - 1e-9) * step; v <= b + 1e-9; v += step) out.push(Math.round(v / step) * step + 0); return out; }
+  function clip(ctx, box) { ctx.save(); ctx.beginPath(); ctx.rect(box.l, box.t, box.r - box.l, box.b - box.t); ctx.clip(); }
+
+  // ---------- widmo ----------
+  const cvSpec = document.getElementById('cvSpec'), cvHover = document.getElementById('cvSpecHover');
+  let specGeom = null;
+  function drawSpectrum() {
+    const { ctx, w, h } = setup(cvSpec);
+    const narrow = w < 560;
+    const box = { l: narrow ? 40 : 48, r: w - 10, t: 22, b: h - (narrow ? 42 : 40) };
+    const Fs = state.Fs, S = L.sig, isJ = S.kind === 'jtest', fc = S.f0, binHz = D.binHz;
+    let f0, f1;
+    if (state.range === 'full') { f0 = 0; f1 = Fs / 2; } else { const hw = state.range === 'z35' ? 3500 : 700; f0 = Math.max(0, fc - hw); f1 = Math.min(Fs / 2, fc + hw); if (f1 - f0 < 2 * hw) { if (f0 === 0) f1 = Math.min(Fs / 2, 2 * hw); else f0 = Math.max(0, Fs / 2 - 2 * hw); } }
+    const y0 = state.yMin, y1 = 0;
+    const mx = f => box.l + (f - f0) / (f1 - f0) * (box.r - box.l);
+    const my = d => box.b - (d - y0) / (y1 - y0) * (box.b - box.t);
+    const xStep = niceStep(f1 - f0, narrow ? 4 : 8);
+    axes(ctx, box, {
+      xs: ticks(f0, f1, xStep), ys: ticks(y0, y1, 20),
+      fx: v => trim(nf(v / 1000, xStep < 1000 ? (xStep < 100 ? 2 : 1) : 0)), fy: v => nf(v, 0), mx, my,
+      xLabel: 'kHz', yLabel: 'dBFS',
+    });
+    const W = Math.max(1, Math.floor(box.r - box.l));
+    const colMax = new Float32Array(W), colBin = new Int32Array(W);
+    const kMax = N / 2;
+    for (let px = 0; px < W; px++) {
+      const fa = f0 + (px / W) * (f1 - f0), fb = f0 + ((px + 1) / W) * (f1 - f0);
+      let ka = Math.ceil(fa / binHz), kb = Math.floor(fb / binHz - 1e-9);
+      if (kb < ka) { ka = kb = Math.round(((fa + fb) / 2) / binHz); }
+      ka = Math.max(0, ka); kb = Math.min(kMax, kb);
+      let m = -1e9, mb = ka;
+      for (let k = ka; k <= kb; k++) if (D.db[k] > m) { m = D.db[k]; mb = k; }
+      colMax[px] = m; colBin[px] = mb;
+    }
+    clip(ctx, box);
+    // poprawne poziomy harmonicznych przebiegu LSB
+    ctx.strokeStyle = C.ref; ctx.lineWidth = 1.25; ctx.setLineDash([4, 3]);
+    ctx.beginPath();
+    let started = false;
+    for (let m = 1; isJ && m < P / 2; m += 2) {
+      const f = m * Fs / P, v = S.ideal[m];
+      if (v < -290) continue;
+      const x = mx(f), y = my(v);
+      if (!started) { ctx.moveTo(x, y); started = true; } else ctx.lineTo(x, y);
+    }
+    ctx.stroke(); ctx.setLineDash([]);
+    // widmo
+    ctx.strokeStyle = C.traceA; ctx.lineWidth = 1.1;
+    ctx.beginPath();
+    for (let px = 0; px < W; px++) { const x = box.l + px + 0.5, y = my(Math.max(colMax[px], y0 - 5)); px ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+    ctx.stroke();
+    ctx.restore();
+    // znaczniki pierwszej pary prążków
+    const step = N / P, toneBin = S.k0;
+    ctx.fillStyle = C.traceB;
+    if (isJ) [-1, 1].forEach(s => {
+      const f = fc + s * Fs / P, x = mx(f), v = D.db[toneBin + s * step];
+      if (x < box.l || x > box.r || v < y0) return;
+      const y = Math.max(box.t + 8, my(v) - 8);
+      ctx.beginPath(); ctx.moveTo(x - 4, y - 6); ctx.lineTo(x + 4, y - 6); ctx.lineTo(x, y); ctx.closePath(); ctx.fill();
+    });
+    const hollow = (df, col) => {
+      const hb = Math.round(df / binHz);
+      ctx.strokeStyle = col; ctx.lineWidth = 1.3;
+      [-1, 1].forEach(s => {
+        const k = toneBin + s * hb;
+        if (k <= 0 || k >= N / 2) return;
+        const x = mx(k * binHz), v = D.db[k];
+        if (x < box.l || x > box.r || v < y0) return;
+        const y = Math.max(box.t + 8, my(v) - 8);
+        ctx.beginPath(); ctx.moveTo(x - 4, y - 6); ctx.lineTo(x + 4, y - 6); ctx.lineTo(x, y); ctx.closePath(); ctx.stroke();
+      });
+    };
+    if (state.tHum > 0) hollow(D.humHz, C.ink);
+    if (state.sinPs > 0) hollow(D.fsSnap, C.traceB);
+    ctx.fillStyle = C.ink; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+    if (mx(fc) >= box.l && mx(fc) <= box.r) ctx.fillText(isJ ? 'Fs/4' : fmtHz(fc), Math.min(box.r - 20, Math.max(box.l + 20, mx(fc))), box.t - 4);
+    specGeom = { box, W, colMax, colBin, binHz, my, mx };
+    drawHover(null);
+  }
+  function drawHover(evt) {
+    const { ctx, w, h } = setup(cvHover);
+    if (!evt || !specGeom) return;
+    const r = cvHover.getBoundingClientRect();
+    const px = Math.round(evt.clientX - r.left - specGeom.box.l);
+    if (px < 0 || px >= specGeom.W) return;
+    let best = px;
+    for (let d = -4; d <= 4; d++) { const q = px + d; if (q >= 0 && q < specGeom.W && specGeom.colMax[q] > specGeom.colMax[best]) best = q; }
+    const k = specGeom.colBin[best], f = k * specGeom.binHz, v = D.db[k];
+    const x = specGeom.box.l + best + 0.5, y = specGeom.my(Math.max(v, state.yMin));
+    ctx.strokeStyle = C.ink2; ctx.lineWidth = 1; ctx.setLineDash([2, 3]);
+    ctx.beginPath(); ctx.moveTo(x, specGeom.box.t); ctx.lineTo(x, specGeom.box.b); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(x, y, 3, 0, 2 * Math.PI); ctx.fill();
+    const txt = `${trim(nf(f, 1))} Hz   ${nf(v, 1)} dBFS`;
+    ctx.font = `600 12px ${FONT}`;
+    const tw = ctx.measureText(txt).width + 14;
+    let bx = x + 10; if (bx + tw > w - 4) bx = x - 10 - tw;
+    const by = Math.min(Math.max(specGeom.box.t + 4, y - 30), specGeom.box.b - 26);
+    ctx.fillStyle = C.surface; ctx.strokeStyle = C.rule;
+    ctx.fillRect(bx, by, tw, 22); ctx.strokeRect(bx + 0.5, by + 0.5, tw - 1, 21);
+    ctx.fillStyle = C.ink; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+    ctx.fillText(txt, bx + 7, by + 11);
+  }
+  cvHover.addEventListener('pointermove', e => drawHover(e));
+  cvHover.addEventListener('pointerleave', () => drawHover(null));
+
+  // ---------- przebieg S/PDIF ----------
+  function drawWave() {
+    const cv = document.getElementById('cvWave');
+    const { ctx, w, h } = setup(cv);
+    const box = { l: 34, r: w - 10, t: 34, b: h - 34 };
+    const mx = u => box.l + u / 64 * (box.r - box.l);
+    const my = v => box.b - (v + 1.3) / 2.6 * (box.b - box.t);
+    axes(ctx, box, { xs: ticks(0, 64, 8), ys: [-1, 0, 1], fx: v => String(v), fy: v => (v === 0 ? '0' : v > 0 ? '+1' : '−1'), mx, my, xLabel: 'UI od początku podramki' });
+    const regions = state.bits === 16
+      ? [[0, 8, 'preambuła'], [8, 24, 'zera'], [24, 56, 'próbka: LSB … MSB'], [56, 64, 'VUCP']]
+      : [[0, 8, 'preambuła'], [8, 56, 'próbka: LSB … MSB'], [56, 64, 'VUCP']];
+    ctx.save();
+    ctx.font = `11px ${FONT}`; ctx.textBaseline = 'bottom'; ctx.textAlign = 'center';
+    regions.forEach(([a, b, t], i) => {
+      if (!(i % 2)) { ctx.fillStyle = C.band2; ctx.fillRect(mx(a), box.t, mx(b) - mx(a), box.b - box.t); }
+      ctx.fillStyle = C.ink2;
+      if (mx(b) - mx(a) > ctx.measureText(t).width + 6) ctx.fillText(t, (mx(a) + mx(b)) / 2, box.t - 5);
+    });
+    ctx.restore();
+    ctx.save(); ctx.strokeStyle = C.ink2; ctx.setLineDash([3, 3]); ctx.beginPath(); ctx.moveTo(box.l, my(0)); ctx.lineTo(box.r, my(0)); ctx.stroke(); ctx.restore();
+    clip(ctx, box);
+    const S = 24;
+    L.dispFrames.forEach((fb, i) => {
+      const d = L.disp[fb]; if (!d) return;
+      const col = i ? C.traceB : C.traceA;
+      ctx.strokeStyle = col; ctx.globalAlpha = 0.45; ctx.lineWidth = 1;
+      ctx.beginPath();
+      for (let u = 0; u < 64; u++) { const y = my(d.lev[u] ? 1 : -1); if (u === 0) ctx.moveTo(mx(u), y); else ctx.lineTo(mx(u), y); ctx.lineTo(mx(u + 1), y); }
+      ctx.stroke();
+      const wv = SIM.waveform(L, fb, S);
+      ctx.globalAlpha = 1; ctx.lineWidth = 1.8;
+      ctx.beginPath();
+      for (let k = 0; k < wv.length; k++) { const x = mx(k / S), y = my(wv[k]); k ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+      ctx.stroke();
+    });
+    ctx.restore();
+  }
+
+  // ---------- histogram chwil przejścia ----------
+  function drawTie() {
+    const cv = document.getElementById('cvTie');
+    const { ctx, w, h } = setup(cv);
+    const box = { l: 34, r: w - 10, t: 20, b: h - 40 };
+    let span = Math.max(tie.mx * 1.15, 1e-12);
+    const unitPs = span < 1e-9;
+    const mul = unitPs ? 1e12 : 1e9;
+    const mx = s => box.l + (s + span) / (2 * span) * (box.r - box.l);
+    const B = 64;
+    const hist = arr => { const hh = new Float64Array(B); arr.forEach(v => { const b = Math.min(B - 1, Math.max(0, Math.floor((v + span) / (2 * span) * B))); hh[b]++; }); return hh; };
+    const hA = hist(tie.devA), hB = hist(tie.devB);
+    let hm = 1; for (let i = 0; i < B; i++) hm = Math.max(hm, hA[i], hB[i]);
+    const my = v => box.b - v / hm * (box.b - box.t) * 0.92;
+    const xStep = niceStep(2 * span * mul, w < 560 ? 4 : 8) / mul;
+    axes(ctx, box, { xs: ticks(-span, span, xStep), ys: [], fx: v => trim(nf(v * mul, xStep * mul < 1 ? 2 : xStep * mul < 10 ? 1 : 0)), fy: () => '', mx, my, xLabel: unitPs ? 'przesunięcie zbocza względem średniej, ps' : 'przesunięcie zbocza względem średniej, ns' });
+    clip(ctx, box);
+    [[hA, C.traceA], [hB, C.traceB]].forEach(([hh, col]) => {
+      ctx.fillStyle = col; ctx.globalAlpha = 0.22;
+      ctx.beginPath(); ctx.moveTo(mx(-span), box.b);
+      for (let i = 0; i < B; i++) { const xa = mx(-span + (2 * span * i) / B), xb = mx(-span + (2 * span * (i + 1)) / B); ctx.lineTo(xa, my(hh[i])); ctx.lineTo(xb, my(hh[i])); }
+      ctx.lineTo(mx(span), box.b); ctx.closePath(); ctx.fill();
+      ctx.globalAlpha = 1; ctx.strokeStyle = col; ctx.lineWidth = 1.4; ctx.stroke();
+    });
+    // średnie
+    [[tie.meanA, C.traceA], [tie.meanB, C.traceB]].forEach(([m, col]) => {
+      ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.setLineDash([5, 3]);
+      ctx.beginPath(); ctx.moveTo(mx(m), box.t); ctx.lineTo(mx(m), box.b); ctx.stroke();
+    });
+    ctx.setLineDash([]);
+    ctx.restore();
+    const dm = Math.abs(tie.meanA - tie.meanB);
+    document.getElementById('tie-note').textContent = !tie.devA.length ? ''
+      : L.sig.kind === 'jtest'
+        ? `Średnie chwile przejścia obu połówek różnią się o ${fmtTime(dm)}. Ta różnica powtarza się co 192 próbki i trafia do pętli PLL.`
+        : `Rozrzut chwil przejścia od łącza wynosi ${fmtTime(L.edgePkPk)} pk-pk.${L.skipped ? ' Przy tym paśmie łącza wpływ poprzednich bitów jest pomijalny.' : ''}`;
+  }
+
+  // ---------- jitter w czasie ----------
+  function drawJitter() {
+    const cv = document.getElementById('cvJit');
+    const { ctx, w, h } = setup(cv);
+    const box = { l: 52, r: w - 10, t: 26, b: h - 40 };
+    const F = 2 * P, T = 1 / state.Fs, Dl = SIM.DAC_LATENCY;
+    const raw = f => D.inRaw[f], pll = f => D.inPll[f];
+    const tot = f => (f >= Dl ? D.jFirst[f - Dl] : NaN);
+    const showTot = state.rndPs > 0 || state.sinPs > 0;
+    let m = 1e-13;
+    for (let f = 0; f < F; f++) { m = Math.max(m, Math.abs(raw(f)), Math.abs(pll(f))); if (showTot && f >= Dl) m = Math.max(m, Math.abs(tot(f))); }
+    m *= 1.15;
+    const unitNs = m >= 1e-9, mul = unitNs ? 1e9 : 1e12;
+    const mxF = f => box.l + f / F * (box.r - box.l);
+    const my = v => box.b - (v + m) / (2 * m) * (box.b - box.t);
+    const yStep = niceStep(2 * m * mul, 5) / mul;
+    const msStep = niceStep(F * T * 1000, w < 560 ? 4 : 8);
+    axes(ctx, box, { xs: ticks(0, F * T * 1000, msStep).map(v => v / (T * 1000)), ys: ticks(-m, m, yStep), fx: f => trim(nf(f * T * 1000, msStep < 1 ? 1 : 0)), fy: v => trim(nf(v * mul, yStep * mul < 1 ? 1 : 0)), mx: mxF, my, xLabel: 'ms', yLabel: unitNs ? 'ns' : 'ps' });
+    // tło: druga połowa okresu
+    if (L.sig.kind === 'jtest') {
+      ctx.save();
+      ctx.fillStyle = C.band;
+      [[P / 2, P], [P + P / 2, 2 * P]].forEach(([a, b]) => ctx.fillRect(mxF(a), box.t + 1, mxF(b) - mxF(a), box.b - box.t - 1));
+      ctx.fillStyle = C.ink2; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom'; ctx.font = `11px ${FONT}`;
+      const bits = state.bits, c = L.sig.code;
+      ctx.fillText(`${hex(c[0], bits)}/${hex(c[2], bits)}`, mxF(P / 4), box.t - 4);
+      ctx.fillText(`${hex(c[96], bits)}/${hex(c[98], bits)}`, mxF(3 * P / 4), box.t - 4);
+      ctx.restore();
+    }
+    clip(ctx, box);
+    if (showTot) {
+      ctx.strokeStyle = C.ink2; ctx.globalAlpha = 0.55; ctx.lineWidth = 1;
+      ctx.beginPath(); let s = false;
+      for (let f = Dl; f < F; f++) { const x = mxF(f + 0.5), y = my(tot(f)); s ? ctx.lineTo(x, y) : (ctx.moveTo(x, y), (s = true)); }
+      ctx.stroke(); ctx.globalAlpha = 1;
+    }
+    ctx.strokeStyle = C.traceB; ctx.lineWidth = 3;
+    ctx.beginPath();
+    for (let f = 0; f < F; f++) { const y = my(raw(f)); f ? ctx.lineTo(mxF(f), y) : ctx.moveTo(mxF(f), y); ctx.lineTo(mxF(f + 1), y); }
+    ctx.stroke();
+    ctx.strokeStyle = C.traceA; ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    for (let f = 0; f < F; f++) { const x = mxF(f + 0.5), y = my(pll(f)); f ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+    ctx.stroke();
+    ctx.restore();
+    document.getElementById('lg-tot').parentElement.hidden = !showTot;
+  }
+
+  // ---------- przetwornik: dziedzina czasu ----------
+  function drawDac() {
+    const cv = document.getElementById('cvDac');
+    const { ctx, w, h } = setup(cv);
+    const narrow = w < 560;
+    const n0 = state.win, M = 24;
+    const gap = 30;
+    const hTop = Math.round((h - 56 - gap) * 0.62);
+    const boxA = { l: 52, r: w - 10, t: 22, b: 22 + hTop };
+    const boxB = { l: 52, r: w - 10, t: boxA.b + gap, b: h - 34 };
+    const T = 1 / state.Fs, S = L.sig, xf = S.xf, Lp = S.period;
+    const mx = s => boxA.l + (s - n0) / M * (boxA.r - boxA.l);
+    const myA = v => boxA.b - (v + 1) / 2 * (boxA.b - boxA.t);
+    // sygnał idealny: szereg Fouriera (okres 192 próbki)
+    const ideal = S.idealAt;
+    // wzmocnienie jitteru na wykresie
+    let jm = 0;
+    for (let n = n0 - 1; n <= n0 + M; n++) jm = Math.max(jm, Math.abs(D.jFirst[(n + 4 * P) % (4 * P)]));
+    let gain = 0;
+    if (jm > 1e-15) { const raw = 0.3 * T / jm; const p = Math.pow(10, Math.floor(Math.log10(raw))); const mm = raw / p; gain = (mm >= 5 ? 5 : mm >= 2 ? 2 : 1) * p; }
+    document.getElementById('dac-gain').textContent = gain ? `Przesunięcia zboczy powiększone ${nf(gain, 0)} razy.` : 'Zegar bez jittera: zbocza w idealnych chwilach.';
+    axes(ctx, boxA, { xs: ticks(n0, n0 + M, 4), ys: [-1, -0.5, 0, 0.5, 1], fx: () => '', fy: v => trim(nf(v, 1)), mx, my: myA, yLabel: 'FS' });
+    clip(ctx, boxA);
+    // idealny
+    ctx.strokeStyle = C.ink2; ctx.lineWidth = 1.2; ctx.beginPath();
+    for (let i = 0; i <= M * 16; i++) { const s = n0 + i / 16, y = myA(ideal(s)); i ? ctx.lineTo(mx(s), y) : ctx.moveTo(mx(s), y); }
+    ctx.stroke();
+    // schodki z jitterem
+    const jAt = n => D.jFirst[((n % (4 * P)) + 4 * P) % (4 * P)];
+    const xAt = n => xf[((n % Lp) + Lp) % Lp];
+    ctx.strokeStyle = C.traceA; ctx.lineWidth = 1.8; ctx.beginPath();
+    let prevY = myA(xAt(n0 - 1));
+    ctx.moveTo(mx(n0 - 1), prevY);
+    for (let n = n0; n <= n0 + M; n++) {
+      const te = n + gain * jAt(n) / T;
+      ctx.lineTo(mx(te), prevY);
+      const y = myA(xAt(n));
+      ctx.lineTo(mx(te), y);
+      prevY = y;
+    }
+    ctx.lineTo(mx(n0 + M + 1), prevY);
+    ctx.stroke();
+    // idealne chwile próbek
+    ctx.fillStyle = C.ink;
+    for (let n = n0; n <= n0 + M; n++) { ctx.beginPath(); ctx.arc(mx(n), myA(xAt(n)), 2.6, 0, 2 * Math.PI); ctx.fill(); }
+    ctx.restore();
+
+    // błąd wyjścia (pasmowo ograniczony), w LSB
+    const lsb = 2 ** (state.bits - 1), e = D.eTime, TAP = 40;
+    const pts = [];
+    let em = 1e-6;
+    for (let i = 0; i <= M * 8; i++) {
+      const s = n0 + i / 8, c = Math.floor(s);
+      let v = 0;
+      for (let m = c - TAP; m <= c + TAP; m++) {
+        const x = s - m;
+        const sc = x === 0 ? 1 : Math.sin(Math.PI * x) / (Math.PI * x);
+        const wv = Math.abs(x) >= TAP + 1 ? 0 : 0.42 + 0.5 * Math.cos(Math.PI * x / (TAP + 1)) + 0.08 * Math.cos(2 * Math.PI * x / (TAP + 1));
+        v += e[((m % N) + N) % N] * sc * wv;
+      }
+      v *= lsb; pts.push(v); em = Math.max(em, Math.abs(v));
+    }
+    em *= 1.15;
+    const myB = v => boxB.b - (v + em) / (2 * em) * (boxB.b - boxB.t);
+    const yStep = niceStep(2 * em, 4);
+    axes(ctx, boxB, { xs: ticks(n0, n0 + M, 4), ys: ticks(-em, em, yStep), fx: v => String(v), fy: v => trim(nf(v, yStep < 0.01 ? 3 : yStep < 0.1 ? 2 : yStep < 1 ? 1 : 0)), mx, my: myB, xLabel: 'numer próbki', yLabel: 'błąd, LSB' });
+    clip(ctx, boxB);
+    ctx.strokeStyle = C.traceB; ctx.lineWidth = 1.6; ctx.beginPath();
+    pts.forEach((v, i) => { const x = mx(n0 + i / 8), y = myB(v); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function drawAll() {
+    if (!D) return;
+    readColors();
+    drawSpectrum(); drawWave(); drawTie(); drawJitter(); drawDac();
+  }
+
+  // ---------- pasek narzędzi widma i okno czasu ----------
+  function bindToolbar() {
+    document.querySelectorAll('[data-range]').forEach(b => b.addEventListener('click', () => { state.range = b.dataset.range; syncToolbar(); drawSpectrum(); }));
+    const sel = document.getElementById('ymin');
+    sel.addEventListener('change', () => { state.yMin = +sel.value; drawSpectrum(); });
+    const win = document.getElementById('win');
+    win.addEventListener('input', () => { state.win = +win.value; document.getElementById('win-o').textContent = `${state.win}–${state.win + 24}`; drawDac(); });
+    syncToolbar();
+  }
+  function syncToolbar() {
+    document.querySelectorAll('[data-range]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.range === state.range)));
+    document.getElementById('ymin').value = String(state.yMin);
+    document.getElementById('win').value = String(state.win);
+    document.getElementById('win-o').textContent = `${state.win}–${state.win + 24}`;
+  }
+
+  // ---------- start ----------
+  buildControls(); buildScenarios(); syncAll(); bindToolbar();
+  let resizeRaf = 0;
+  new ResizeObserver(() => { if (!resizeRaf) resizeRaf = requestAnimationFrame(() => { resizeRaf = 0; drawAll(); }); }).observe(document.querySelector('.content'));
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  (mq.addEventListener ? mq.addEventListener('change', drawAll) : mq.addListener(drawAll));
+  new MutationObserver(drawAll).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  compute();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawAll);
+})();
+
+</script>
+</body>
+</html>
