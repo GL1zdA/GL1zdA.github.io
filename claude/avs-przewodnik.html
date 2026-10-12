@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>Przewodnik po salach AVS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&text=%F0%9F%87%A6%F0%9F%87%B9%F0%9F%87%A6%F0%9F%87%BA%F0%9F%87%A7%F0%9F%87%AA%F0%9F%87%A8%F0%9F%87%A6%F0%9F%87%A8%F0%9F%87%AD%F0%9F%87%A8%F0%9F%87%B3%F0%9F%87%A8%F0%9F%87%BE%F0%9F%87%A8%F0%9F%87%BF%F0%9F%87%A9%F0%9F%87%AA%F0%9F%87%A9%F0%9F%87%B0%F0%9F%87%AA%F0%9F%87%AA%F0%9F%87%AA%F0%9F%87%B8%F0%9F%87%AB%F0%9F%87%AE%F0%9F%87%AB%F0%9F%87%B7%F0%9F%87%AC%F0%9F%87%A7%F0%9F%87%AC%F0%9F%87%B7%F0%9F%87%AD%F0%9F%87%B0%F0%9F%87%AD%F0%9F%87%BA%F0%9F%87%AE%F0%9F%87%B1%F0%9F%87%AE%F0%9F%87%B9%F0%9F%87%AF%F0%9F%87%B5%F0%9F%87%B0%F0%9F%87%B7%F0%9F%87%B1%F0%9F%87%B9%F0%9F%87%B2%F0%9F%87%BE%F0%9F%87%B3%F0%9F%87%B1%F0%9F%87%B3%F0%9F%87%B4%F0%9F%87%B3%F0%9F%87%BF%F0%9F%87%B5%F0%9F%87%B1%F0%9F%87%B5%F0%9F%87%B9%F0%9F%87%B7%F0%9F%87%B4%F0%9F%87%B7%F0%9F%87%B8%F0%9F%87%B8%F0%9F%87%AA%F0%9F%87%B8%F0%9F%87%AC%F0%9F%87%B8%F0%9F%87%AE%F0%9F%87%B8%F0%9F%87%B0%F0%9F%87%B9%F0%9F%87%BC%F0%9F%87%BA%F0%9F%87%B8%F0%9F%87%BB%F0%9F%87%B3%F0%9F%87%BF%F0%9F%87%A6&display=swap">
+<style>
+:root {
+  --bg: #f4f4f1;
+  --surface: #ffffff;
+  --ink: #1c1e23;
+  --muted: #5c616c;
+  --line: #dcdcd5;
+  --accent: #23395b;
+  --accent-ink: #ffffff;
+  --c-gray: #dedfe2;
+  --c-darkgray: #a2a5ad;
+  --c-red: #ffcdc7;
+  --c-green: #cdeebe;
+  --c-yellow: #fbf0a2;
+  --c-orange: #ffd5a6;
+  --c-pink: #f9d0e3;
+  --chip-ink: #1c1e23;
+  --dim: 0.22;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #15171b;
+    --surface: #1d2026;
+    --ink: #e9e9e5;
+    --muted: #a0a5b0;
+    --line: #33373f;
+    --accent: #9db8e0;
+    --accent-ink: #11151c;
+    --c-gray: #3b3e45;
+    --c-darkgray: #5a5e68;
+    --c-red: #5e2a26;
+    --c-green: #2e4b2a;
+    --c-yellow: #4d4720;
+    --c-orange: #5c3b1d;
+    --c-pink: #5b2b42;
+    --chip-ink: #eeeeea;
+    --dim: 0.28;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #15171b;
+  --surface: #1d2026;
+  --ink: #e9e9e5;
+  --muted: #a0a5b0;
+  --line: #33373f;
+  --accent: #9db8e0;
+  --accent-ink: #11151c;
+  --c-gray: #3b3e45;
+  --c-darkgray: #5a5e68;
+  --c-red: #5e2a26;
+  --c-green: #2e4b2a;
+  --c-yellow: #4d4720;
+  --c-orange: #5c3b1d;
+  --c-pink: #5b2b42;
+  --chip-ink: #eeeeea;
+  --dim: 0.28;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.45;
+  padding-inline: 16px;
+  padding-block: 0 48px;
+}
+.wrap { max-width: 1180px; margin-inline: auto; }
+
+header.intro { padding-block: 32px 18px; display: grid; gap: 10px; }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+h1 {
+  font-family: var(--font-display);
+  font-stretch: 118%;
+  font-weight: 800;
+  font-size: clamp(26px, 5vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+.intro p { margin: 0; max-width: 64ch; color: var(--muted); }
+
+/* toolbar */
+.toolbar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding-block: 10px;
+  display: grid;
+  gap: 8px;
+}
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.search { flex: 1 1 240px; display: flex; gap: 6px; min-width: 0; }
+.search input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.search input:focus-visible, button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.venues { display: flex; gap: 6px; flex-wrap: wrap; }
+.venues a {
+  font-family: var(--font-display);
+  font-stretch: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--ink);
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  white-space: nowrap;
+}
+.venues a span { font-family: var(--font-mono); font-weight: 500; color: var(--muted); margin-left: 4px; }
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.filters .sep { flex: 0 0 1px; background: var(--line); margin-inline: 2px; }
+.f {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--chip-ink);
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+}
+.f .n { font-family: var(--font-mono); font-size: 12px; font-weight: 500; opacity: 0.7; }
+.f[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.f.outline { background: transparent; border-color: var(--line); color: var(--ink); }
+.f.outline[aria-pressed="true"] { border-color: var(--ink); }
+.f[data-state="exclude"] {
+  text-decoration: line-through;
+  opacity: 0.55;
+  border: 1px dashed var(--ink);
+  box-shadow: none;
+}
+.btn-clear {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+}
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.detail strong { font-family: var(--font-display); font-stretch: 105%; font-size: 17px; }
+.detail .cat { color: var(--muted); font-size: 14px; }
+.detail .where { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.detail a.site {
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.detail a.site.search { font-weight: 400; }
+.status { font-size: 13px; color: var(--muted); min-height: 1.2em; }
+
+/* category colors */
+.k-D { background: var(--c-gray); }
+.k-K { background: var(--c-darkgray); }
+.k-S { background: var(--c-red); }
+.k-G { background: var(--c-green); }
+.k-W { background: var(--c-yellow); }
+.k-C { background: var(--c-orange); }
+.k-R { background: var(--c-pink); }
+.chip.k-D, .f.k-D { font-weight: 700; }
+.tube, .chip.tube, .f.tube { font-style: italic; }
+
+/* venues */
+section.venue { padding-top: 28px; scroll-margin-top: calc(var(--toolbar-h, 150px) + 8px); }
+.venue-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 2px solid var(--ink); padding-bottom: 6px; }
+h2 {
+  font-family: var(--font-display);
+  font-stretch: 112%;
+  font-weight: 800;
+  font-size: clamp(21px, 3.4vw, 28px);
+  margin: 0;
+  text-wrap: balance;
+}
+.venue-head .meta { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.code { font-family: var(--font-mono); font-size: 13px; font-weight: 600; border: 1px solid var(--ink); border-radius: 4px; padding: 0 5px; margin-right: 8px; vertical-align: 3px; }
+
+.group-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-block: 18px 4px;
+}
+.block-label {
+  font-family: var(--font-display);
+  font-stretch: 105%;
+  font-weight: 700;
+  font-size: 17px;
+  padding-block: 22px 2px;
+  border-bottom: 1px solid var(--ink);
+}
+.room {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 4px 14px;
+  padding-block: 9px;
+  border-bottom: 1px solid var(--line);
+}
+.room-name {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  padding-top: 3px;
+}
+.room-name small { display: block; font-weight: 500; font-size: 11px; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  font: inherit;
+  font-size: 14.5px;
+  color: var(--chip-ink);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: opacity 120ms ease;
+}
+.chip.k-H, .chip.k-A, .chip.k-P, .chip.k-V, .chip.k-M, .chip.k-I {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.chip.k-H.zone { background: var(--c-green); border-color: transparent; color: var(--chip-ink); }
+.flag {
+  font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 5px;
+}
+.chip .spis { color: var(--muted); font-weight: 400; margin-left: 2px; }
+.chip.unsure { text-decoration: underline dotted; text-underline-offset: 3px; text-decoration-color: var(--muted); }
+.chip.dim { opacity: var(--dim); }
+.chip.hit { box-shadow: 0 0 0 2px var(--accent); }
+.empty { color: var(--muted); padding-block: 14px; }
+footer { margin-top: 36px; color: var(--muted); font-size: 13px; display: grid; gap: 6px; max-width: 70ch; }
+footer a { color: inherit; }
+
+@media (max-width: 560px) {
+  .room { grid-template-columns: 1fr; }
+  .room-name { padding-top: 0; }
+  .room-name small { display: inline; margin-left: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chip { transition: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+
+<div class="wrap">
+  <header class="intro">
+    <div class="eyebrow">Audio Video Show · Warszawa · lista z edycji 2026</div>
+    <h1>Przewodnik po salach Audio Video Show</h1>
+    <p>Wystawcy posortowani według miejsca i sali. Na Narodowym po strefie słuchawkowej są trybuny zachodnia i wschodnia, w nich poziomy, a na każdym poziomie sale bez numeru, numerowane i stoiska w holu. W hotelach najpierw są sale bez numeru, potem numerowane. Kolor oznacza główną działkę firmy, dystrybutorzy są pogrubieni, a kursywą zapisano firmy robiące głównie sprzęt lampowy. Strefa słuchawkowa na Narodowym jest na początku listy. Głośniki i słuchawki mają wspólny, zielony kolor. Flaga oznacza kraj marki. Gwiazdka oznacza markę, której nie ma na liście wystawców: jej salę podaje tylko spis marek w przewodniku, w którym zdarzają się błędy druku. W każdej sali kolejność to: dystrybutorzy, głośniki i słuchawki, wzmacniacze, cyfra, stoliki, adaptacja akustyczna, inne, kable i podstawki. Kliknięcie filtra pokazuje tylko jego kategorię, drugie kliknięcie ukrywa tę kategorię, trzecie wyłącza filtr. Kliknij nazwę, żeby zobaczyć wszystkie sale danej firmy i link do jej strony, a kliknij ją ponownie, żeby wrócić do poprzedniego filtra.</p>
+  </header>
+
+  <div class="toolbar" role="search">
+    <div class="row">
+      <label class="search" for="q">
+        <span class="eyebrow" style="align-self:center">Szukaj</span>
+        <input id="q" type="search" placeholder="np. Accuphase, Fezz, Audio Klan" autocomplete="off">
+      </label>
+      <nav class="venues" aria-label="Miejsca" id="venue-links"></nav>
+    </div>
+    <div class="detail" id="detail" hidden></div>
+    <div class="filters" id="filters" aria-label="Filtruj według kategorii"></div>
+    <div class="row">
+      <div class="status" id="status" aria-live="polite"></div>
+      <button class="btn-clear" id="clear" type="button" hidden>Pokaż wszystkich</button>
+    </div>
+  </div>
+
+  <main id="venues"></main>
+
+  <footer>
+    <p>Źródła: lista wystawców <a href="https://audioshow.pl/pl/wystawa/wystawcy">audioshow.pl/pl/wystawa/wystawcy</a> oraz „Alfabetyczny spis wystawców i marek” ze stron 87–90 <a href="https://audioshow.pl/pl/wystawa/przewodnik">przewodnika po wystawie</a>, stan z 12 października 2026 (edycja 2026). Lista podaje głównie dystrybutorów, a spis także marki, które pokazują. Spis jest dostępny tylko jako obraz i został odczytany automatycznie (OCR), więc w nazwach i numerach sal ze spisu mogą być błędy. Gdy spis i lista podawały dla firmy inną salę tego samego rodzaju, przyjęto salę z listy, zgodną z mapą obiektu. Spis ma też błędy druku: u 11 z 234 firm obecnych w obu źródłach podawał inną salę niż lista i mapa. Salę marki, której nie ma na liście, podaje tylko spis i nie było jej z czym porównać, więc należy ją traktować jako wskazówkę. Takie marki są oznaczone gwiazdką. Nazwy sal zapisane niejednolicie zostały ujednolicone, np. „Hetman II” i „Hetman 2”.</p>
+    <p>Kategorie przypisał Claude na podstawie znajomości marek i wyszukiwania w sieci. Mogą zawierać błędy. Nazwy podkreślone kropkami to kategorie, których nie udało się potwierdzić.</p>
+  </footer>
+</div>
+
+<script>
+const DATA = {"exhibitors":[["21 Distribution","D",0,0,"https://21distribution.pl/","PL",0],["2xHD","P",0,0,"https://2xhd.com/","CA",1],["3city sound lab","G",0,0,"","PL",0],["432 EVO","C",0,0,"","DE",1],["4hifi","D",0,0,"http://4hifi.pl/","PL",0],["Aavik","W",0,0,"https://audiogroupdenmark.com/aavik-acoustics/","DK",1],["AB-Tech","K",0,0,"https://www.ab-tech.se/","SE",1],["Abyss","G",0,0,"https://abyss-headphones.com/","US",1],["AC Records","P",0,0,"","PL",0],["Acapella Audio Arts","G",0,0,"https://www.acapella.de/","DE",0],["Accuphase","W",0,0,"https://www.accuphase.com/","JP",1],["Acoustic Energy","G",0,0,"https://acousticenergy.co.uk/","GB",1],["Acoustic Signature","A",0,0,"https://www.acoustic-signature.com/","DE",1],["Acoustic Solid","A",0,0,"https://acoustic-solid.com/","DE",0],["Acurus","W",0,0,"","US",1],["ADMD Audio","C",0,0,"https://adm-d.com/","",0],["Advance Paris","W",0,0,"https://advance-paris.com/","FR",1],["AEC Connectors","K",0,0,"","CN",0],["Aesthetix","W",1,0,"https://www.aesthetix.net/","US",1],["AFUL","G",0,0,"","CN",1],["Age Reborn","K",0,0,"https://www.agereborncables.pl/","PL",1],["AIA Cinema","G",0,0,"","DE",1],["Aidas Cartridges","A",0,0,"https://www.aidascartridges.com/","LT",1],["Air Tight","W",1,0,"","JP",1],["AIRT","D",0,0,"https://www.airtaudio.com/","GB",0],["AIYIMA","W",0,0,"https://www.aiyima.com/","CN",1],["Albedo","K",0,0,"","IT",0],["Albedo Audio","G",0,0,"https://albedo.it/","IT",0],["Amphion Loudspeakers","G",0,0,"https://amphion.fi/","FI",0],["Analogue Alchemy","W",1,0,"https://analoguealchemy.com/","DK",0],["Analogue Audio Association","M",0,0,"","DE",0],["Analogue Productions","P",0,0,"https://store.acousticsounds.com/s/448/Analogue_Productions/","US",1],["Ancient Audio","C",1,0,"","PL",0],["Ansuz","K",0,0,"http://ansuz-acoustics.com/","DK",1],["Anthem","W",0,0,"https://anthemav.com/","CA",1],["Antykwariat Grochowski","P",0,0,"","PL",0],["Aqua Acoustic","C",0,0,"https://www.aquahifi.com/","IT",1],["AR Acoustics","G",0,0,"","PL",0],["ARCAM","W",0,0,"https://www.arcam.co.uk/","GB",1],["Architettura Sonora","G",0,0,"","IT",1],["ArcTec Berlin","G",0,0,"https://arctec-berlin.com/","DE",1],["ARETAI","G",0,0,"https://aretai.com/","SI",0],["Argon Audio","G",0,0,"https://argonaudio.com/","DK",1],["Aries Cerat","C",1,0,"","CY",1],["Aroma Audio","G",0,0,"","CN",1],["Ars-Sonum","W",1,0,"","ES",0],["Artcoustic","G",0,0,"https://www.artcoustic.com/","DK",1],["Artesania Audio","S",0,0,"https://artesaniaaudio.com/","ES",1],["Artisan Acoustics","G",0,0,"https://artisanacoustics.eu/","GR",0],["ArtReco","P",0,0,"","PL",0],["ARTSOUND","G",0,0,"https://www.artsound.be/nl/","BE",1],["Arya Audio Labs","G",0,0,"https://www.arya-audio.com/","",0],["Asbis","D",0,0,"","PL",0],["Ascendo Immersive Audio","G",0,0,"","DE",1],["AST - Advanced Silver Technology","K",0,0,"https://astconductors.com/","GR",0],["Astell & Kern","G",0,0,"https://www.astellnkern.com:443/en/index.php","KR",1],["Atacama","S",0,0,"","GB",1],["ATC","G",0,0,"","GB",1],["Athenamuse Cable","K",0,0,"","PL",0],["ATI","W",0,0,"","US",1],["Atlantis Lab","K",0,0,"","IT",1],["Atmosfera Dźwięku","D",0,0,"https://atmosferadzwieku.com/","PL",1],["ATOHM","G",0,0,"","FR",1],["ATOLL Electronique","W",0,0,"https://www.atoll-electronique.com/","FR",1],["Audeos","D",0,0,"https://audeos.pl/","PL",0],["Audeze","G",0,0,"https://www.audeze.com/","US",0],["Audia Flight","W",0,0,"https://www.audia.it/","IT",1],["Audies","W",0,0,"https://www.audies.pl/","PL",0],["Audio Analogue","W",0,0,"https://www.audioanalogue.com/it/","IT",1],["Audio Atelier","D",0,0,"","PL",0],["Audio Center","D",0,0,"https://www.audiocenter.pl/","PL",0],["Audio Emotions","D",0,0,"","PL",0],["Audio Group Denmark","D",0,0,"https://audiogroupdenmark.com/","DK",1],["Audio Heaven","G",0,0,"","",0],["Audio Klan","D",0,0,"https://audioklan.pl/","PL",1],["Audio Nautes","P",0,0,"","",1],["Audio Nostrum","G",0,0,"https://www.audionostrum.pl/","ES",0],["Audio Note UK","W",1,0,"https://www.audionote.co.uk/","GB",0],["Audio Physic","G",0,0,"https://audiophysic.com/","DE",0],["Audio Pro","G",0,0,"https://audiopro.com/","SE",1],["Audio Research","W",1,0,"https://audioresearch.com/new_website/","US",1],["Audio Solutions","G",0,0,"","LT",1],["Audio Source","D",0,0,"https://audiosource.pl/","PL",0],["Audio System","D",0,0,"http://audiosystem.pl/","PL",0],["Audio-Connect","D",0,0,"","PL",0],["AudioDesign","D",0,1,"","",0],["Audiofast","D",0,0,"https://audiofast.pl/","PL",0],["AudioForte","D",0,0,"","PL",0],["Audio-gd","C",0,0,"","CN",1],["AudioKultura","D",0,0,"http://audiokultura.pl/","PL",0],["Audiolab","W",0,0,"https://www.audiolab.co.uk/","GB",1],["Audiomagic","K",0,0,"","US",0],["Audionet","W",0,0,"https://www.audionet.de/","DE",1],["AudioPaTia","D",0,0,"https://www.audiopatia.pl/","PL",0],["AudioPhase","G",0,1,"","",0],["Audioplan","K",0,0,"","DE",1],["Audiopunkt","D",0,0,"","PL",1],["Audioquest","K",0,0,"https://www.audioquest.com/","US",1],["Audiostacja","D",0,0,"https://audiostacja.pl/","PL",0],["Audio-Technica","A",0,0,"https://www.audio-technica.com/en-eu/","JP",0],["Audiothlon","D",0,0,"","PL",0],["Audiotite","D",0,0,"","PL",0],["Audiovector","G",0,0,"https://audiovector.com/","DK",1],["AUDMA","W",0,0,"https://www.audma.it/","IT",1],["AUER Acoustic","G",0,0,"https://auer-acoustics.com/","DE",0],["aune audio","C",0,0,"https://www.auneaudio.com/","CN",1],["Aurea","G",0,0,"https://aureahomecinema.pl/","PL",0],["Aurender","C",0,0,"https://aurender.com/","KR",1],["Auris Audio","W",1,0,"https://www.aurisaudio.com/","RS",1],["Aurorasound","W",0,0,"","JP",1],["Aurum Cantus","G",0,0,"","CN",1],["Avantgarde Acoustic","G",0,0,"https://avantgarde-acoustic.de/","DE",1],["Avatar Audio","G",0,0,"","PL",0],["AVID","A",0,0,"https://www.avidhifi.com/","GB",1],["AWOL","V",0,0,"","US",1],["Axxess","W",0,0,"","CH",1],["Ayon","W",1,0,"https://www.ayonaudio.com/","AT",1],["Barco Residential","V",0,0,"https://www.barco.com/en/solutions/cinema/residential","BE",1],["Bare Baffle","G",0,0,"","",0],["Base Audio","D",0,0,"","PL",1],["Bassocontinuo","S",0,0,"https://bassocontinuo.biz/","IT",1],["B.audio","C",0,0,"https://b-audio.fr/","FR",1],["Beloguroff","K",0,0,"https://beloguroff.com/","LT",0],["Benchmark","C",0,0,"https://benchmarkmedia.com/","US",1],["BennyAudio","A",0,0,"","PL",0],["BenQ","V",0,0,"https://www.benq.eu/pl-pl/index.html","TW",0],["Bertram Audio","K",0,0,"https://www.bertramaudio.com/","DK",1],["Beyerdynamic","G",0,0,"https://europe.beyerdynamic.com/","DE",0],["Bladelius","W",0,0,"https://www.bladelius.com/","SE",1],["Blaze Audio","I",0,0,"https://sonance.com/pages/blaze-audio","DK",1],["BLOK Axis","S",0,0,"","GB",1],["BLOK Stax","S",0,0,"","GB",1],["Bluesound","C",0,0,"https://www.bluesound.com/","CA",1],["Blumenhofer","G",0,0,"https://blumenhofer-acoustics.com/","DE",1],["BMN","G",0,0,"https://bmn.com.pl/","PL",0],["BonaWatt","D",0,0,"","PL",0],["Borresen","G",0,0,"","DK",1],["Boulder Amplifiers","W",0,0,"https://boulderamp.com/","US",1],["Bowers & Wilkins","G",0,0,"https://www.bowerswilkins.com/en/","GB",0],["Brinkmann","A",0,0,"https://www.brinkmann-audio.de/","DE",1],["Bryston","W",0,0,"https://bryston.com/","CA",1],["Burson Audio","W",0,0,"https://bursonaudio.com/","AU",1],["Cambridge Audio","W",0,0,"https://cambridgeaudio.com/","GB",1],["Cammino","K",0,0,"","IT",1],["Canor","W",1,0,"https://canor-audio.com/","SK",0],["Canpur","G",0,0,"https://canpur.eu/","NL",1],["Canto Grand","G",0,0,"https://studio16hz.pl/","PL",1],["Canton","G",0,0,"https://www.canton.de/","DE",1],["Canvas HiFi","G",0,0,"https://canvashifi.com/?currency=EUR","DK",1],["Carbide Audio","K",0,0,"https://carbide.audio/","US",1],["Cardas","K",0,0,"https://www.cardas.com/","US",1],["Cary Audio","W",1,0,"https://caryaudio.com/","US",1],["Cayin","W",1,0,"https://cayin.com/?v=288404204e3d","CN",1],["Cayin Polska","W",1,0,"","PL",0],["CelAudio","C",0,0,"https://www.celaudio.com/","CN",1],["CH Precision","W",0,0,"https://www.ch-precision.com/","CH",1],["Chord Company","K",0,0,"https://chord.co.uk/","GB",1],["Chord Electronics","C",0,0,"https://chordelectronics.co.uk/","GB",1],["Ciarry Audio","G",0,0,"","IT",0],["Circle Labs","W",0,0,"","PL",1],["CLC","G",0,0,"https://www.gato-audio.com/clc65.html","DK",1],["Clearaudio","A",0,0,"https://www.clearaudio.de/","DE",1],["Clearwave","G",0,0,"https://www.clearwavespeakers.com/","US",1],["Closer Acoustics","G",0,0,"https://www.closeracoustics.com/","PL",0],["Cloud","I",0,0,"https://www.cloud.co.uk/","GB",1],["Copland","W",1,0,"","DK",1],["Cornered Audio","G",0,0,"https://www.cornered-audio.com/","DK",1],["Craft Ears","G",0,0,"https://craftears.com/","PL",0],["Crafted in Lithuania","I",0,0,"","LT",0],["Crystal Cable","K",0,0,"https://crystalcable.com/","NL",1],["CS Port","W",1,0,"","JP",1],["Cube Audio","G",0,0,"","PL",0],["cunae audio","R",0,0,"","",1],["Custom Installation","D",0,0,"","PL",0],["Cyrus","W",0,0,"https://cyrusaudio.com/","GB",1],["DALI","G",0,0,"https://dali-speakers.com/","DK",0],["Dan Clark Audio","G",0,0,"https://danclarkaudio.com/","US",1],["Dan D'Agostino","W",0,0,"https://dandagostino.com/","US",1],["darTZeel Studio Polska","D",0,0,"","PL",0],["Data Group","D",0,0,"","PL",0],["David Laboga","G",0,0,"","PL",0],["dCS","C",0,0,"https://dcsaudio.com/","GB",1],["ddHiFi","G",0,0,"https://www.ddhifi.com/en/","CN",1],["Dearwolf","G",0,0,"https://dearwolf.pl/","PL",0],["Dekoni Audio","G",0,0,"https://dekoniaudio.com/","US",1],["Delta Audio","D",0,0,"https://delta-audio.pl/","PL",0],["DENAFRIPS","C",0,0,"https://www.denafrips.com/","CN",1],["DENON","W",0,0,"https://www.denon.com/en/","JP",0],["Destination Audio","W",1,0,"https://destinationaudio.eu/","PL",0],["Devialet","W",0,0,"https://www.devialet.com/","FR",1],["DeVore Fidelity","G",0,0,"https://devorefidelity.com/","US",1],["DH Labs","K",0,0,"https://dhlabs.com/","US",1],["Diapason","G",0,0,"https://diapason.it/","IT",0],["Digital Audio","D",0,0,"https://sklep.digital-audio.pl/","PL",0],["Diora Acoustics","G",0,0,"","PL",0],["Diptyque Audio","G",0,0,"","FR",1],["Display Technologies","V",0,0,"","PL",1],["Divine Acoustic","S",0,0,"https://divineacoustics.com/","PL",0],["DNA • AUDIO","D",0,0,"https://dna.audio/","PL",0],["Dohmann Audio","A",0,0,"https://dohmannaudio.com/","AU",1],["Doshi Audio","W",1,0,"https://doshiaudio.com/","US",1],["Dream Audio","D",0,0,"https://dreamaudio.eu/","PL",0],["Dreamcinema","I",0,0,"https://www.dreamcinema.pl/","PL",1],["DS Audio","A",0,0,"","JP",1],["DSV","D",0,0,"","PL",0],["Duevel","G",0,0,"","DE",1],["DUNU","G",0,0,"https://www.dunu-topsound.com/","CN",1],["Dwa Kanały","D",0,0,"https://dwakanaly.pl/","PL",0],["Dynaudio","G",0,0,"https://dynaudio.com/","DK",1],["Dynavector","A",0,0,"https://www.dynavector.co.jp/","JP",1],["Dyrholm Audio","G",0,0,"","DK",1],["EarMen","C",0,0,"https://earmen.com/","RS",1],["EAT","A",0,0,"","CZ",1],["Ecosse","K",0,0,"","GB",1],["écoute audio","G",1,0,"https://ecouteaudio.com/","",0],["Effect Audio","K",0,0,"https://www.effectaudio.com/","SG",1],["Eggleston","G",0,0,"https://egglestonworks.com/","US",1],["Ego Audio","G",0,1,"","",1],["EIZZ","A",0,0,"http://www.eizz.cn/","CN",0],["ELAC","G",0,0,"https://elac.com/","DE",0],["Electric Audio","W",0,0,"","DE",1],["Electrocompaniet","W",0,0,"https://electrocompaniet.com/","NO",1],["Elekit","W",1,0,"","JP",1],["Eletech","K",0,0,"","SG",1],["elinsAudio","W",0,0,"https://elinsaudio.com/en/home/","PL",0],["Elite Screens","V",0,0,"","US",1],["Eltax","G",0,0,"https://www.eltax.com/","DK",1],["Emotiva","W",0,0,"https://emotiva.com/","US",1],["EMT","A",0,0,"https://emt-tontechnik.ch/index.html","DE",1],["Enerr","K",0,0,"","PL",1],["EPO Sound","G",0,0,"https://eposound.com/","PL",0],["Epson","V",0,0,"https://www.epson.pl/pl_PL","JP",0],["Equilibrium","G",0,0,"https://equiaudio.com/","PL",1],["Eryk S Concept","G",0,0,"","PL",1],["Erzetich","G",0,0,"https://www.erzetich.com/","SI",1],["Esoteric","C",0,0,"https://esoteric.teac.com","JP",1],["ESPRIT","K",0,0,"https://www.esprit-audio.fr/","FR",1],["Estelon","G",0,0,"https://estelon.com/","EE",1],["Everest Audio Labs","C",0,0,"https://everestaudiolabs.com/","PL",0],["EverSolo","C",0,0,"https://www.eversolo.com/en","CN",1],["Evo Aria","G",0,0,"https://evoaria.com/","CN",1],["Exposure","W",0,0,"https://exposurehifi.com/","GB",1],["Extraudio","W",0,0,"https://extraudio.com/","NL",1],["Faber’s Cable","K",0,0,"","NL",0],["FATfreq","G",0,0,"","MY",1],["Feliks Audio","W",1,0,"https://feliksaudio.pl/","PL",0],["Ferrum","C",0,0,"https://ferrum.audio/","PL",0],["Fezz Audio","W",1,0,"https://fezzaudio.com/","PL",0],["FiiO","G",0,0,"https://fiio.com/","CN",1],["Final","G",0,0,"https://www.final-audio.com/","JP",0],["Finite Elemente","S",0,0,"https://www.finite-elemente.eu/","DE",1],["Fink Team","G",0,0,"https://www.finkteam.com/","DE",1],["Focal","G",0,0,"https://www.focal.com/","FR",1],["Fonica International","A",0,1,"","PL",0],["Fonnex","D",0,0,"https://www.fonnex.pl/","PL",1],["fonolab.","A",0,0,"https://www.fonolab.com/","CZ",0],["Form at Wood","S",0,1,"","",1],["Formovie","V",0,0,"","CN",1],["Forum audiostereo.pl","M",0,0,"https://www.audiostereo.pl/","PL",0],["Forum DIYaudio.pl","M",0,0,"https://diyaudio.pl/","PL",0],["Fosi Audio","W",0,0,"https://fosiaudio.com/","CN",1],["Fostex","G",0,0,"http://fostexinternational.com/","JP",1],["Fram","G",0,0,"https://fram-audio.com/","PL",0],["Franc Audio Accessories","S",0,1,"","PL",1],["Franco Serblin Studio","G",0,0,"https://www.francoserblin.it/en","IT",1],["Frankenstein Vinyl","P",0,0,"","PL",0],["Frontiers Loudspeakers","G",0,0,"https://www.frontiers-loudspeakers.com/","IT",0],["Furutech","K",0,0,"https://furutech.com/","JP",1],["Fyne Audio","G",0,0,"https://www.fyneaudio.com/","GB",1],["Galeria Audio","D",0,0,"","PL",0],["Gallo Acoustics","G",0,0,"https://galloacoustics.com/","GB",1],["Garlubidor","C",0,0,"https://www.garlubidor.com/","CN",1],["Garmin","G",0,0,"","US",1],["Garrard","A",0,0,"","GB",1],["Gato Audio","W",0,0,"https://www.gato-audio.com/","DK",0],["Gauder Akustik","G",0,0,"https://gauderakustik.com/","DE",1],["Gemstone","G",0,0,"","",0],["Genelec","G",0,0,"https://www.genelec.com/","FI",0],["getAudio","D",0,0,"https://getaudio.eu/en/","PL",0],["GigaWatt","K",0,0,"https://www.gigawatt.pl/","PL",0],["Goebel High End","G",0,0,"https://goebel-highend.de/","DE",1],["Gold-Note Polska","W",0,0,"https://www.goldnote.it/","IT",0],["Gradient","G",0,0,"https://gradient.fi/en/","FI",1],["Grado","G",0,0,"https://gradolabs.com/","US",1],["Grandinote","W",0,0,"https://www.grandinote.it/","IT",0],["Graphite Audio","K",0,0,"","PL",0],["Grimm Audio","C",0,0,"https://www.grimmaudio.com/","NL",1],["Grobel Audio","D",0,0,"https://www.audio.grobel.com.pl/","PL",0],["Groove Note","P",0,0,"","US",1],["Gryphon Audio Designs","W",0,0,"https://gryphon-audio.dk/","DK",1],["Gustard","C",0,0,"","CN",1],["Haiku-Audio","W",0,0,"https://www.haiku-audio.pl/","PL",0],["HAKII","G",0,0,"","CN",1],["Halcro","W",0,0,"","AU",1],["Harbeth","G",0,0,"https://harbeth.co.uk/","GB",1],["Harman Kardon","G",0,0,"https://global.harmankardon.com/","US",1],["Harmonic Resolution Systems (HRS)","S",0,0,"https://avisolation.com/","US",1],["hARt Lab","W",0,0,"https://hartlab.gr/","GR",0],["Hashimoto","I",0,0,"","JP",1],["H.E.A.R.","D",0,1,"","PL",1],["Heed Audio","W",0,0,"https://heedaudio.com/","HU",1],["Heeskof Audio","G",0,0,"https://www.heeskof.cz/","CZ",0],["Hegel","W",0,0,"https://www.hegel.com/en/","NO",0],["HiBy","G",0,0,"https://store.hiby.com/","CN",1],["Hidizs","G",0,0,"https://www.hidizs.net/","CN",1],["HiFi Club","D",0,0,"https://hificlub.pl/","PL",0],["HiFi Ja i Ty","D",0,0,"https://hifijaity.pl/","PL",0],["HiFi System","D",0,0,"https://hifisystem.pl/","PL",0],["HiFiMAN","G",0,0,"https://hifiman.com/","CN",1],["HiFiPro","D",0,0,"https://www.hifipro.audio/","PL",0],["HifiStay","K",0,0,"","KR",1],["High Audio","D",0,0,"","PL",0],["Hijiri","K",0,0,"","JP",1],["Hisenior","G",0,0,"","CN",1],["HiSense","V",0,0,"https://pl.hisense.com/","CN",0],["holbo","A",0,0,"https://holbo.si/","SI",0],["Holborne","A",0,0,"","PL",0],["Homogenix","A",0,0,"https://www.homogenix.com/","PL",0],["Horn Acoustic","G",0,0,"","DE",0],["Horn Distribution","D",0,0,"https://horn.eu/","PL",0],["Horn Distribution (dealers only)","D",0,0,"https://horn.eu/","PL",0],["hORNS","G",0,0,"https://horns.pl/","PL",0],["iBasso","G",0,0,"https://ibasso.com/","CN",1],["Ideon","C",0,0,"https://ideonaudio.com/","GR",0],["Idhos Amplification","W",1,0,"","PL",1],["iFi Audio","C",0,0,"https://ifi-audio.com/","GB",0],["IGS Audio","W",1,1,"https://igsaudio.com/","PL",0],["Ikigai Audio","D",0,0,"","PL",1],["In-Akustik","K",0,0,"https://www.in-akustik.com/","DE",1],["Indiana Line","G",0,0,"https://indianaline.it","IT",0],["Innuos","C",0,0,"https://innuos.com/","PT",0],["Instal Audio","D",0,0,"","PL",0],["Intrada","D",0,0,"","PL",0],["IsoAcoustics","K",0,0,"https://isoacoustics.com/","CA",0],["Isotek","K",0,0,"https://isoteksystems.com/","GB",1],["Jack in Black","I",0,0,"https://jackinblack.pl/","PL",0],["Jadis","W",1,0,"https://jadis-electronics.com/","FR",1],["Jamo","G",0,0,"https://www.jamo.com/","DK",1],["Java Hi-Fi","W",0,0,"","NL",0],["Jay's Audio","C",0,0,"","CN",1],["Jazz TV","M",0,0,"","PL",0],["JBL","G",0,0,"https://pl.jbl.com/","US",0],["Jean-Marie Reynaud (JMR)","G",0,0,"","FR",1],["JJ Pure Audio","W",0,0,"https://jj-pureaudio.com/","PL",1],["JL Audio","G",0,0,"https://WWW.garmin.com/pl-PL/c/jlaudio/","US",0],["Jomo Audio","G",0,0,"","SG",1],["Jorma","K",0,0,"https://jormaaudio.com/","SE",1],["Joseph Audio","G",0,0,"https://www.josephaudio.net/","US",1],["J.Sikora","A",0,0,"https://jsikora.com","PL",0],["JVC Reference Series","V",0,0,"https://eu.jvc.com/","JP",0],["Kaiser Acoustics","G",0,0,"https://www.kaiser-acoustics.com/","DE",0],["Kaizen Art Audio","G",0,0,"","PL",0],["Kaleidescape","V",0,0,"https://www.kaleidescape.com/","US",1],["Kanto Audio","G",0,0,"https://kantoaudio.com/","CA",1],["Karan Acoustics","W",0,0,"https://karanacoustics.com/","RS",1],["KASOTO","S",0,0,"","PL",0],["Keith Monks","A",0,0,"","GB",1],["Kerr Acoustic","G",0,0,"","GB",1],["Khadas","C",0,0,"https://www.khadas.com/","CN",1],["Kharma International","G",0,0,"https://kharma.com/","NL",1],["Kimber Kable","K",0,0,"https://kimber.com/","US",0],["Klipsch","G",0,0,"https://www.klipsch.com:443/uk/","US",1],["Koetsu","A",0,0,"","JP",1],["Konsbud Audio","D",0,0,"https://konsbud-audio.pl/","PL",0],["Konsbud Hi-Fi","D",0,0,"","PL",0],["Kora","W",1,0,"","FR",1],["Kordz","K",0,0,"https://www.kordz.com/","AU",1],["Koss","G",0,0,"https://koss.com/","US",1],["KR Audio","W",1,0,"","CZ",1],["Krautrock-Vinyl","P",0,0,"","DE",0],["Kroma Atelier","G",0,0,"","ES",1],["Kubala Sosna","K",0,0,"https://kubala-sosna.com/","US",1],["Kultura","G",0,0,"https://soundculture.pl/","PL",0],["Kuzma","A",0,0,"https://www.kuzma.si/","SI",1],["Lab12","W",1,0,"https://www.lab12.gr/","GR",1],["LAiV","C",0,0,"https://www.laiv.audio/","CN",1],["LA-LAB","R",0,0,"","",1],["Lampizator","C",1,0,"http://lampizator.eu/","PL",0],["Leak","W",0,0,"","GB",1],["Leema Acoustics","W",0,0,"https://leema-acoustics.com/","GB",1],["Legacy Audio","G",0,0,"","US",1],["Letshuoer","G",0,0,"https://letshuoer.net/","CN",1],["Linea Audio","D",0,1,"","PL",0],["Linear Audio Research","W",1,0,"https://www.lar-audio.com/","PL",0],["Linear Tube Audio","W",1,0,"","US",1],["Lirogon","G",0,0,"https://lirogon.com/","PL",0],["Lithe Audio","G",0,0,"https://www.litheaudio.com/","GB",1],["Living Voice","G",0,0,"","GB",1],["Lockwood Loudspeakers","G",0,0,"https://www.lockwoodloudspeakers.co.uk/","GB",0],["Loewe","V",0,0,"https://www.loewe.tv/eu/en","DE",1],["Lohengrin","W",1,0,"https://www.vtl.com/","US",1],["Lotoo","G",0,0,"http://lotoo.cn/","CN",1],["Lucarto Audio","W",0,0,"https://www.lucartoaudio.pl/","PL",0],["Lucas Audio Lab","C",0,0,"https://www.lucasaudiolab.com/","",0],["Lumagen","V",0,0,"https://www.lumagen.com/","US",1],["Lumen White","G",0,0,"https://www.lumenwhite.com/","SK",1],["Lumin","C",0,0,"https://luminmusic.com/","HK",1],["Luna Cables","K",0,0,"","CA",1],["Lundahl Transformers","I",0,0,"","SE",1],["Luxman","W",0,0,"https://luxman.com/","JP",0],["Luxsin","C",0,0,"","CN",1],["Lyra","A",0,0,"https://www.lyraconnoisseur.com/","JP",1],["MadVR","V",0,0,"https://madvrenvy.com/","US",1],["Magico","G",0,0,"https://www.magicoaudio.com/","US",1],["Magnat","G",0,0,"https://magnat.de/","DE",1],["Magnetar","C",0,0,"https://magnetar-audio.com/","CN",1],["Manunta m2tech","W",0,0,"https://manunta-audio.com/?lang=en","IT",1],["Marantz","W",0,0,"https://www.marantz.com/en/","JP",0],["Mark Levinson","W",0,0,"https://www.marklevinson.com/","US",0],["Mark PRO","I",0,0,"","ES",1],["Marten","G",0,0,"https://www.marten.se/","SE",1],["Martin Logan","G",0,0,"https://martinlogan.com:443/en/","CA",1],["Marton","W",0,0,"https://www.marton-audio.eu/","PL",0],["Master Fidelity","C",0,0,"https://www.master-fidelity.com/","CA",0],["MasterDisc","P",0,0,"","PL",0],["Matrix Audio","C",0,0,"https://www.matrix-digi.com/","CN",1],["mbl","G",0,0,"https://www.mbl.de/en","DE",0],["McIntosh","W",0,0,"https://mcintoshlabs.com/","US",0],["Mega Acoustic","R",0,0,"https://www.mega-acoustic.pl/?v=288404204e3d","PL",0],["Meitner Audio","C",0,0,"https://emmlabs-meitner.com/","CA",1],["Melodika","K",0,0,"","PL",0],["Metronome","C",0,0,"http://metronome-audio.com/","FR",0],["Meze Audio","G",0,0,"https://mezeaudio.com/","RO",0],["MiArt","G",0,0,"https://www.miartspeakers.com/","PL",0],["Miflex Solutions","I",0,0,"https://miflexsolutions.com/","PL",0],["Milocha Analog Engineering","A",0,0,"http://milocha.eu/","PL",0],["MIP","D",0,0,"https://mip.biz.pl/","PL",0],["MIRPH","G",0,0,"https://mirphdesigns.com/","DE",1],["MJ Audio","D",0,0,"https://mjaudiolab.pl/","PL",0],["M&K Sound","G",0,0,"https://www.mksound.com/","DK",1],["Mobile Fidelity Sound Labs","P",0,0,"","US",1],["Mola Mola","W",0,0,"https://www.mola-mola.nl/","NL",1],["Monitor Audio","G",0,0,"https://www.monitoraudio.com/","GB",1],["Moon","W",0,0,"https://simaudio.com/en/","CA",1],["Moondrop","G",0,0,"https://moondroplab.com/","CN",1],["Moonriver Audio","W",0,0,"https://moonriveraudio.com/","SE",0],["MORE audio","W",0,0,"https://moreaudio.pl/","PL",0],["Morel","G",0,0,"","IL",1],["MP3Store","D",0,0,"","PL",0],["MSB","C",0,0,"https://msbtechnology.com/","US",1],["Muarah Audio","A",0,0,"https://muarah.pl/","PL",0],["Mundorf","I",0,0,"","DE",1],["MUSE HiFi","G",0,0,"","CN",1],["Music Fan","P",0,0,"","",0],["Music Tools","S",0,0,"","IT",1],["MuzgAUDIO","K",0,0,"https://muzgaudio.com/","PL",0],["My Sonic Lab","A",0,0,"https://mysoniclab.com/","JP",1],["Mytek Audio USA","C",0,0,"https://mytek.audio/","US",0],["NAD","W",0,0,"https://nadelectronics.com/","CA",0],["Nagra","W",0,0,"https://www.nagraaudio.com/","CH",1],["Naim Audio","W",0,0,"https://www.naimaudio.com/","GB",1],["Natural Distortion Audio","C",0,0,"https://ndaudio.com/","HU",0],["Natural Sound","D",0,0,"","PL",0],["Nautilus","D",0,0,"https://nautilus.net.pl/","PL",0],["Neat Acoustics","G",0,0,"https://www.neatacoustics.com/","GB",0],["NEO High End","D",0,0,"","PL",1],["Network Acoustics","K",0,0,"https://www.networkacoustics.com/","GB",0],["New Horizon","A",0,0,"https://www.newhorizonaudio.com/en/","IT",1],["Nice","I",0,0,"","IT",1],["Noble Audio","G",0,0,"https://nobleaudio.com/","US",1],["Nogler Audiotech","A",0,0,"https://www.nogleraudiotech.com/","IT",0],["No-Limit-Audio","G",0,0,"https://www.no-limit-audio.com/","CH",0],["Norma Audio","W",0,0,"","IT",1],["Norse Audio","W",0,0,"https://www.norseaudio.se/","SE",1],["NUR","G",0,0,"","PL",1],["NxLT","K",0,0,"https://www.nxlt.eu/","PL",1],["Ø Audio","G",0,0,"https://www.urr.audio/","NO",0],["Odra Records","P",0,0,"","PL",0],["OePhi","K",0,0,"https://oephi.com/","DK",0],["Officina Acustica","R",0,0,"https://officinaacustica.com/","IT",1],["Oladra","C",0,0,"https://oladra.com/","NZ",1],["Oldies But Goldies","P",0,0,"","PL",0],["Omega Audio Concepts","K",0,1,"https://www.omegaudioconcepts.com/","IT",0],["ONIX","W",0,0,"","GB",1],["Onkyo","W",0,0,"https://onkyo.com/emea/","JP",1],["OnWaTi","G",0,0,"","PL",0],["Opal Audio","G",0,0,"","",1],["Opera Loudspeakers","G",0,0,"https://www.operaloudspeakers.com/","IT",0],["Ophidian Audio","G",0,0,"https://www.ophidian.co.uk/","GB",1],["Orchestalls","G",0,0,"https://www.orchestalls.com/","KR",0],["Origami Disc","P",0,0,"https://origamidisc.com/","PL",0],["Osola Audio Lab","G",0,0,"https://osolaaudio.pl/","PL",0],["OTTA","A",0,0,"","DE",1],["Owl Audio","D",0,1,"","PL",0],["Palma","G",0,0,"https://palma.audio/","ES",1],["Panasonic","V",0,0,"https://www.panasonic.com/","JP",0],["Paradigm","G",0,0,"https://www.paradigm.com/en/","CA",1],["Pass Labs","W",0,0,"https://www.passlabs.com/","US",1],["Pathos Acoustics","W",1,0,"","IT",0],["Peerless-AV","V",0,0,"https://eu.peerless-av.com/","US",1],["Pełne Brzmienie Studio Hi-End","D",0,0,"https://www.hi-endstudio.com/","PL",0],["Perfect Audio","D",0,0,"https://perfectaudio.pl/","PL",0],["Perfect Connection","C",0,0,"","PL",0],["Perfect8","G",0,0,"https://perfect8.com/","SE",0],["Perlisten","G",0,0,"https://perlistenaudio.com/","US",1],["Phase Tech","G",0,0,"","US",1],["Philips TV & Sound","V",0,0,"https://www.philips.pl/","NL",0],["Piliumm","W",0,0,"","GR",1],["Pink Faun","C",0,0,"https://pinkfaun.com/","NL",1],["Planeta Dźwięku","D",0,0,"https://www.planetadzwieku.com/","PL",0],["Playback Designs","C",0,0,"","US",1],["PLiXiR Power","K",0,0,"","SG",0],["Płyty w Twoim Mieście","P",0,0,"","PL",0],["Polk Audio","G",0,0,"https://www.polkaudio.com/en/","US",1],["Polpak Poland","D",0,0,"","PL",0],["Polskie Nagrania","P",0,0,"https://polskienagrania.com.pl/","PL",0],["Polskie Radio","P",0,0,"","PL",0],["Pracownia Wzmacniaczy Lampowych","W",1,1,"","PL",0],["Premium Sound","D",0,0,"https://www.premiumsound.pl/","PL",0],["Primare","W",0,0,"https://primare.net/","SE",1],["Project","A",0,0,"https://www.project-audio.com/en/","AT",0],["Projekt Audio","D",0,0,"https://www.projektaudio.pl/","PL",0],["ProTone","R",0,0,"","",0],["PS Audio","W",0,0,"https://www.psaudio.com/","US",1],["PSB Speakers","G",0,0,"https://www.psbspeakers.com/","CA",1],["PSI Audio","G",0,0,"https://www.psiaudio.swiss/","CH",1],["PSVANE","I",0,0,"","CN",1],["PureLink","K",0,0,"https://www.purelink.de/","DE",1],["Purist Audio Design","K",0,0,"https://puristaudiodesign.com/","US",1],["Pylon Audio","G",0,0,"https://pylon.pl/en/","PL",0],["Q Acoustics","G",0,0,"https://www.qacoustics.co.uk/","GB",0],["Q21","D",0,0,"https://www.q21.pl/","PL",0],["QED","K",0,0,"https://www.qed.co.uk/","GB",1],["QLN","G",0,0,"https://qln.se/","SE",1],["Qobuz","M",0,0,"https://www.qobuz.com/gb-en/discover","FR",0],["QUAD","G",0,0,"","GB",1],["Qualio","D",0,1,"","PL",0],["Questyle","C",0,0,"","CN",1],["Quiescent","K",0,0,"https://quiescent.co.uk/","GB",0],["Rada Electronics","D",0,1,"","PL",1],["Rafko","D",0,0,"","PL",0],["Raidho","G",0,0,"https://www.raidho.dk/","DK",0],["RCM","D",0,0,"https://rcm.com.pl/","PL",0],["REED Turntables","A",0,0,"https://www.reed.lt/","LT",1],["Rega Acoustic","A",0,0,"https://www.rega.co.uk/","GB",1],["REL","G",0,0,"https://rel.net/","GB",1],["Relco Audio","G",0,0,"https://relco-audio.com/","DE",0],["Remton Audio","A",0,0,"https://www.remton.eu/","CZ",0],["Requiem Records","P",0,0,"","PL",0],["Ricable","K",0,0,"https://www.ricable.com/","IT",1],["Riviera Audio Labs","W",1,0,"https://www.rivieralabs.com/","IT",0],["RMS.pl","D",0,0,"https://rms.pl/","PL",0],["Robert Koda","W",0,0,"","JP",1],["Rockport Technologies","G",0,0,"https://rockporttechnologies.com/","US",1],["Roksan","W",0,0,"https://www.roksan.com/","GB",1],["Rose HiFi","C",0,0,"https://hifirose.com/","KR",1],["Rosso Fiorentino","G",0,0,"https://rossofiorentino.com/","IT",1],["Rotel Michi","W",0,0,"https://rotel.com/","JP",0],["Ruark Audio","G",0,0,"https://www.ruarkaudio.com/","GB",1],["RUI Borges Turntables","A",0,0,"","PT",1],["SAEQ","W",0,0,"https://saeq-audio.com/","RS",1],["Salon Ultima Audio Kalisz","D",0,0,"https://www.ultimaaudio.pl/","PL",1],["SAT Swedish Analog Technologies","A",0,0,"","SE",1],["Schetl","G",0,0,"https://www.schetl.com/","HU",1],["Schnerzinger","K",0,0,"https://www.schnerzinger.com/","DE",1],["Screen Excellence","V",0,0,"https://screenexcellence.com/","DK",1],["ScreenPro","V",0,0,"","PL",1],["Sendy Audio","G",0,0,"https://sendyaudio.com/","CN",1],["Serblin & Son","G",0,0,"","IT",1],["Sforzato","C",0,0,"https://www.sfz.co.jp/","JP",1],["Shanling Audio","G",0,0,"https://shanling.com/","CN",1],["Shore","V",0,0,"","PL",1],["Shunyata Research","K",0,0,"https://shunyata.com/","US",1],["Silent Angel","C",0,0,"http://silentangel.audio/en/index.html","CN",1],["Silent Pound","G",0,0,"https://silentpound.com/","LT",0],["Siltech","K",0,0,"https://www.siltechcables.com/","NL",1],["Simply Analog","A",0,0,"","CY",1],["SinusAudio","W",1,0,"http://sinusaudio.pl/","PL",0],["Sisound","G",0,0,"https://www.sisound-audio.pl/","PL",0],["SIVGA Audio","G",0,0,"https://sivgaaudio.com/","CN",1],["Skala Audio","G",0,0,"https://skala-audio.pl/","PL",0],["SkalibrujTV.pl","V",0,0,"https://skalibrujtv.pl/","PL",0],["Skyanalog","A",0,0,"https://skyanalog.com/","CN",1],["SME","A",0,0,"https://sme.co.uk/","GB",1],["Soft Collective","G",0,0,"https://www.softcollective.se/","SE",0],["Softears","G",0,0,"","CN",1],["Solid Drive","G",0,0,"https://www.soundtube.com/","US",1],["Soliton","P",0,0,"https://www.soliton.pl/","PL",0],["Sonance","G",0,0,"https://sonance.com/","US",1],["Sonoro","G",0,0,"","DE",1],["SONOS","G",0,0,"https://sonos.com/","US",0],["Sonus Faber","G",0,0,"https://www.sonusfaber.com/en","IT",0],["Sony","V",0,0,"https://www.sony.com:443/","JP",0],["Soulnote","W",0,0,"https://kcsr.co.jp/","JP",0],["Soulution","W",0,0,"https://soulution-audio.com/","CH",1],["Sound Demo","D",0,0,"https://soundemo.pl/","PL",0],["Sound Source","D",0,1,"","PL",0],["SoundAlchemy","D",0,0,"https://soundalchemy.pl/","PL",0],["SoundClub","D",0,0,"https://www.soundclub.pl/","PL",0],["Soundsphere","G",0,0,"","US",1],["Soundtube","G",0,0,"","US",1],["SoundWorks","I",0,1,"","",0],["Soyaton","K",0,0,"https://blog.soyaton.com/","PL",1],["Spark Audio","G",0,0,"","PL",0],["SPEC","W",0,0,"https://spec-corp.co.jp/","JP",1],["Spendor","G",0,0,"https://spendoraudio.com/","GB",1],["SpinFit","G",0,0,"https://spinfit-eartip.com/","TW",1],["Spinor Audio","K",0,0,"","PL",0],["Spirit Torino","G",0,0,"","IT",1],["Staccato Audio","G",0,1,"","",0],["Stage III Concepts","K",0,0,"http://stage3concepts.com/","US",1],["Starke Sound","G",0,0,"https://starkesound.com/","US",1],["Stax","G",0,0,"https://stax.co.jp/","JP",0],["Stealth Acoustics","G",0,0,"https://www.stealthacoustics.com/","US",1],["Stealth Audio Cables","K",0,0,"https://stealthaudiocables.com/","US",1],["Stein","K",0,0,"","DE",1],["Steinway & Sons","G",0,0,"https://www.steinwaylyngdorf.com/","US",1],["Steinway Lyngdorf","G",0,0,"https://steinwaylyngdorf.com/","DK",0],["Stenheim","G",0,0,"https://www.stenheim.com/","CH",1],["Stewart Filmscreen","V",0,0,"https://www.stewartfilmscreen.com/en","US",1],["Straight Wire","K",0,0,"","US",1],["Stratos","D",0,1,"","PL",0],["Stromtank","K",0,0,"https://stromtank.com/","DE",1],["Studio 16Hz","G",0,0,"https://studio16hz.pl/","PL",0],["Studio 999 Audio","D",0,0,"https://studio999.pl/","PL",0],["Sulek Audio","K",0,0,"","PL",1],["Suprema","V",0,0,"","PL",0],["Supreme Acoustic Systems","D",0,0,"https://supremeacousticsystems.com/","US",0],["Supreme Analog","A",0,0,"","RS",1],["SV-Audio","G",0,0,"https://www.sv-audio.com/","DK",0],["Sveda Audio","G",0,0,"https://sveda.audio/","PL",1],["SVS","G",0,0,"https://www.svsound.com/","US",1],["SWAN","G",0,0,"","CN",1],["Swiss analog AG","A",0,0,"https://www.holborne-swiss.ch/","CH",1],["Symphonic Line","W",0,0,"","DE",1],["Symphonium Audio","G",0,0,"","SG",1],["Synergistic Research","K",0,0,"https://synergisticresearch.com/","US",1],["Szemis Audio Konsultant","D",0,0,"https://www.szemis.pl/","PL",0],["Szymański Audio","D",0,0,"https://www.szymanskiaudio.pl/","PL",1],["Święty Spokój","R",0,1,"","PL",0],["T+A","W",0,0,"https://www.ta-hifi.de/","DE",0],["TAGA Harmony","G",0,0,"https://www.tagaharmony.com/en","PL",0],["Takatsuki","I",0,0,"","JP",1],["Tamura","I",0,0,"","JP",1],["Tangent Audio","G",0,0,"https://www.tangent-audio.com/","DK",1],["TARA Labs","K",0,0,"https://taralabs.com/","US",1],["TCL","V",0,0,"https://www.tcl.com/pl/pl","CN",0],["Teac","W",0,0,"","JP",1],["TechDas","A",0,0,"https://techdas.jp/","JP",1],["TechEvolution","I",0,1,"","PL",0],["Technics","A",0,0,"https://www.technics.com/","JP",0],["Tektron","W",1,0,"","IT",0],["Tellurium Q","K",0,0,"https://telluriumq.com/","GB",0],["Tenor Audio","W",0,0,"http://tenoraudio.com/","CA",1],["Tentogra","A",0,0,"https://www.tentogra.pl/","PL",0],["The Cine.ma","V",0,0,"https://thecine.ma/pl","PL",0],["Thivan Labs","W",1,0,"https://thivanlabs.com/","VN",1],["Thorens","A",0,0,"https://www.thorens.com/de/","DE",1],["TLA","W",0,0,"","",1],["Ton Trager","D",0,1,"","PL",1],["Tonar","A",0,0,"http://tonar.eu/","NL",1],["tonArt","A",0,0,"https://www.toneart-audio.com/","AT",0],["Tonewinner","W",0,0,"https://www.tonewinner.com/","CN",1],["Tonsil","G",0,0,"https://www.tonsilproducent.pl/","PL",0],["Top Hi-Fi & Video Design","D",0,0,"https://www.tophifi.pl/","PL",0],["Topping Audio","C",0,0,"https://toppingaudio.com/","CN",1],["Toscana","G",0,0,"","IT",1],["Transparent Audio","K",0,0,"https://www.transparentcable.com/","US",1],["Transrotor","A",0,0,"https://transrotor.de/de","DE",1],["TrebleClefAudio","G",0,0,"https://www.trebleclefaudio.com/","DK",0],["Trenner & Friedl","G",0,0,"","AT",1],["Triangle","G",0,0,"","FR",0],["Trinnov","W",0,0,"https://www.trinnov.com/","FR",1],["Triode","W",1,0,"","JP",1],["True Tone","G",0,0,"https://www.truetonespeakers.com/","GB",0],["Trzaski","P",0,0,"","PL",0],["Tsakiridis Devices","W",1,0,"","GR",1],["Tung-Sol","I",0,0,"","US",1],["Ubiq Audio Lab","G",0,0,"https://www.ubiqaudiolab.com/","SI",0],["Unique Melody","G",0,0,"https://www.uniquemelody.co/","CN",1],["Unison Research","W",1,0,"https://unisonresearch.com/","IT",0],["Unitra","A",0,0,"https://unitra.pl/","PL",0],["Universal Music Polska","P",0,0,"https://www.universalmusic.pl/","PL",0],["Valerion","V",0,0,"","CN",1],["Velikinac Audio Lab","G",0,0,"http://velikinacaudiolab.com/","RS",0],["Velodyne Acoustic","G",0,0,"","DE",1],["Verseo Audio","G",0,0,"https://www.verseoaudio.com/","PL",0],["VIABLUE","K",0,0,"https://viablue.de/en/","DE",1],["Vicoustic","R",0,0,"https://vicoustic.com/","PT",1],["Vienna Acoustics","G",0,0,"https://www.vienna-acoustics.com/","AT",1],["Vincent","W",1,0,"https://vincent-tac.de/home.html","DE",1],["VinnieRossi","W",0,0,"","US",1],["Vinyl Discount","P",0,0,"","PL",1],["Vinyl Tamka","P",0,0,"","PL",0],["VinylCare Technologies","A",0,0,"https://www.vinylcare.de/","DE",1],["VINYL-MATEUS","P",0,0,"https://www.vinyl-mateus.cz/","CZ",0],["vinylspot.pl","P",0,0,"https://vinylspot.pl/","PL",0],["Virtual HiFi","G",0,1,"https://virtualhifi.com/","PL",0],["Vitus Audio","W",0,0,"https://www.vitusaudio.com/","DK",0],["Viva Audio","W",1,0,"","IT",1],["Vivid Audio","G",0,0,"https://vividaudio.com/","ZA",1],["Voice","D",0,0,"https://voice.com.pl/","PL",0],["Volumio","C",0,0,"https://volumio.com/","IT",1],["VPI","A",0,0,"https://www.vpi.com/","US",0],["Vrel Electroacoustic","G",0,0,"https://www.vrel.eu/","IT",1],["VTL","W",1,0,"https://www.vtl.com/","US",1],["Wadax","C",0,0,"https://wadax.eu/","ES",1],["Warner Music Poland","P",0,0,"","PL",1],["Waterfall","G",0,0,"https://waterfallaudio.com/","FR",0],["Waterfall Audio","G",0,0,"https://waterfallaudio.com/","FR",1],["Wattson Audio","C",0,0,"https://www.wattson.audio/","CH",1],["Westend Audio","W",1,0,"https://westendaudiosystems.de/","DE",1],["Western Electric","W",1,0,"","US",1],["WestminsterLab","W",0,0,"","HK",1],["Wharfedale","G",0,0,"https://www.wharfedale.co.uk/","GB",0],["Wibroakustyka","I",0,0,"","PL",0],["WiiM","C",0,0,"https://wiimhome.com/","CN",1],["Wilson","G",0,0,"https://wilsonaudio.com/","US",0],["Wilson Audio","G",0,0,"https://wilsonaudio.com/","US",1],["Winyl-Bud","P",0,0,"","PL",0],["Winylowa Jazzda","P",0,0,"","PL",0],["Winylownia.pl","P",0,0,"","PL",0],["WireWorld","K",0,0,"https://wireworldcable.com/","US",1],["Wisdom Audio","G",0,0,"https://www.wisdomaudio.com/","US",1],["WK Audio","K",0,0,"https://www.wkaudio.com/","PL",0],["Wolf von Langa","G",0,0,"","DE",1],["Woo Audio","W",1,0,"https://wooaudio.com/","US",1],["Work PRO","I",0,0,"https://workpro.es/","ES",1],["xDuoo","W",0,0,"https://xduoo.net/","CN",1],["Xgimi","V",0,0,"https://eu.xgimi.com/","CN",0],["Xilica","I",0,0,"","CA",1],["Yamaha","W",0,0,"https://pl.yamaha.com/","JP",0],["YBA","W",0,0,"","FR",1],["YG Acoustic","G",0,0,"https://www.yg-acoustics.com/","US",1],["Ypsilon","W",1,0,"https://ypsilonelectronics.com/","GR",1],["Yuki","A",0,0,"","JP",1],["Zavfino","K",0,0,"https://www.zavfino1877.com/","US",1],["Zellaton","G",0,0,"https://www.zellaton.de/de/","DE",1],["ZenSati","K",0,0,"https://www.zensati.com/","DK",0],["Zidoo","V",0,0,"","CN",1],["Zikra Audio","W",1,0,"https://zikra-audio.com/","DK",1],["ZMF Headphones","G",0,0,"https://www.zmfheadphones.com/","US",0]],"venues":[{"code":"SN","id":"sn","short":"Narodowy","name":"PGE Narodowy","rooms":[{"name":"Strefa słuchawkowa","group":"Strefa słuchawkowa","block":null,"ids":[64,98,254,309,331,364,438,541,7,19,40,44,55,73,127,145,167,176,182,184,206,214,217,234,240,244,248,249,261,283,292,303,304,308,313,322,341,345,353,381,391,427,434,442,459,464,476,484,557,560,569,575,596,598,622,625,669,731,25,103,108,141,152,245,260,392,473,550,652,689,716,718,722,105,186,211,246,271,290,325,415,447,527,655,692,705,91,215,223],"zone":true},{"name":"Biała","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[341,408],"zone":false},{"name":"Platynowa 1","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[496],"zone":false},{"name":"Platynowa 2","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[636],"zone":false},{"name":"Platynowa 3","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[485,640],"zone":false},{"name":"Studio TV1","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,138,189,399,545,56,97],"zone":false},{"name":"Studio TV2","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[86,708,177,181,470,47,562,604,612,626],"zone":false},{"name":"Studio TV3","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[455,532,723,688,203,267],"zone":false},{"name":"Studio TV4","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[453,76,348,362,373,446,552,573,638],"zone":false},{"name":"Studio TV5","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[207,327,403,497,439,498,250,12],"zone":false},{"name":"Studio TV6","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[319,581,417],"zone":false},{"name":"Studio TV7","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[319,581,417],"zone":false},{"name":"Symfonia 1","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,65,138,367,422,602,165,189,487,99],"zone":false},{"name":"Symfonia 2","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 1","ids":[295,341],"zone":false},{"name":"101","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[204,268,637,235],"zone":false},{"name":"102","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,78,189,302,132,97,334],"zone":false},{"name":"103","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,329,189,721,132,719,97,334],"zone":false},{"name":"104","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,219,189,448,132,97,333,334],"zone":false},{"name":"105","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,189,547,132,97,334],"zone":false},{"name":"106","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,329,189,721,132,97,334],"zone":false},{"name":"107","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[631],"zone":false},{"name":"108","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[341,408],"zone":false},{"name":"111","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[106,125,582,616],"zone":false},{"name":"116","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[207,327,251,419,498,250,12],"zone":false},{"name":"119","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[252,474,349,489,609,729,517],"zone":false},{"name":"120","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[331,455,546,656,488],"zone":false},{"name":"121","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[331,455,601,239],"zone":false},{"name":"122","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[504,486,34],"zone":false},{"name":"123","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[504,411,34],"zone":false},{"name":"124","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[0,521,42,478,675,90,247,20],"zone":false},{"name":"125","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 1","ids":[0,679,90,247,534,20],"zone":false},{"name":"Hall W1","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[265],"zone":false},{"name":"Hall W2","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[74,654,148,386,514,578,579,189,161,389,647],"zone":false},{"name":"Hall W3","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[89],"zone":false},{"name":"Hall W4","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[691,79,548,510],"zone":false},{"name":"Hall W5","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[693],"zone":false},{"name":"Hall W6","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[640],"zone":false},{"name":"Hall W7","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[331,488,239,400,457,566,539,677],"zone":false},{"name":"Hall W8","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[331,601,488,239,375,400],"zone":false},{"name":"Hall W9","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[698],"zone":false},{"name":"Hall W10","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[571],"zone":false},{"name":"Hall W11","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[0,42,478,675,679,90,247,378,358,534,20],"zone":false},{"name":"Hall W12","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 1","ids":[0,42,478,675,679,90,247,378,358,534,20],"zone":false},{"name":"Kryształowa","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 2","ids":[364,337,361,621,474,706,225],"zone":false},{"name":"Strefa płytowa","group":"Sale bez numeru","block":"Trybuna Zachodnia · poziom 2","ids":[8,35,49,369,443,467,480,502,505,538,577,665,672,682,683,685,697,709,710,711],"zone":false},{"name":"201","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[163],"zone":false},{"name":"202","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[332,120,113,726],"zone":false},{"name":"203","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[86,708,80,286,47,562,604,626],"zone":false},{"name":"204","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[83,133,380,151,513,663,680,143,371,605],"zone":false},{"name":"205","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[83,133,380,151,513,663,680,143,371,605],"zone":false},{"name":"206","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[86,708,289,107,562,604,626],"zone":false},{"name":"207","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[299,347,200,22,348,592],"zone":false},{"name":"208","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[305,543,354,390,500,296,401,693,657],"zone":false},{"name":"209","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[305,543,390,695,500,296,401,693,657],"zone":false},{"name":"210","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[192,540,460],"zone":false},{"name":"211","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[70,432,38,544,130,150],"zone":false},{"name":"212","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[70,11,535,142,712],"zone":false},{"name":"213","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[70,102,535,433,131],"zone":false},{"name":"214","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[691,595,509,157,156],"zone":false},{"name":"217+218","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[194,671],"zone":false},{"name":"221","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[530,661,144,420],"zone":false},{"name":"222","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[364,337,621,474,706],"zone":false},{"name":"223","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[530,494,140,420],"zone":false},{"name":"224","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[614,608,441],"zone":false},{"name":"226","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[630,197],"zone":false},{"name":"227","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[321,393],"zone":false},{"name":"228","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[160,274],"zone":false},{"name":"229","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[111,330],"zone":false},{"name":"230","group":"Sale numerowane","block":"Trybuna Zachodnia · poziom 2","ids":[96,318,583,714],"zone":false},{"name":"Hall W20","group":"Stoiska w holu","block":"Trybuna Zachodnia · poziom 2","ids":[530,437,241,405,420],"zone":false},{"name":"Aria 1","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 1","ids":[320],"zone":false},{"name":"Aria 2","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 1","ids":[319,503,187],"zone":false},{"name":"Książęca","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 1","ids":[314],"zone":false},{"name":"130","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[319,272,344],"zone":false},{"name":"131","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[319,503,407],"zone":false},{"name":"135","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[319,175],"zone":false},{"name":"136","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[319,477,670],"zone":false},{"name":"137","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[319,525,704,90],"zone":false},{"name":"138","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[508,81,256],"zone":false},{"name":"139","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[246],"zone":false},{"name":"140","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[309,426,248],"zone":false},{"name":"141","group":"Sale numerowane","block":"Trybuna Wschodnia · poziom 1","ids":[499,57,68,155,212],"zone":false},{"name":"Hall E1","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[319,520,522],"zone":false},{"name":"Hall E2","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[707],"zone":false},{"name":"Hall E3","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[173,319,175,503,581],"zone":false},{"name":"Hall E4","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[319,580],"zone":false},{"name":"Hall E5","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[628,13],"zone":false},{"name":"Hall E6","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[179,628,603,699],"zone":false},{"name":"Hall E7","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[508],"zone":false},{"name":"Hall E8","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[466],"zone":false},{"name":"Hall E9","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 1","ids":[642],"zone":false},{"name":"Amsterdam","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[416],"zone":false},{"name":"Barcelona","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[588,280,410,137,584,643,696,263,346],"zone":false},{"name":"Londyn A","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[119,453,208,66,159,559,563,565],"zone":false},{"name":"Londyn B","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[9,439,498,728],"zone":false},{"name":"Londyn C","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[359,43,348],"zone":false},{"name":"Paryż A","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[385,695,238,348,285,456],"zone":false},{"name":"Paryż B","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[668,708,181,470,199],"zone":false},{"name":"Paryż C","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[201,370,724,149,310,600],"zone":false},{"name":"Rzym A","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[611,147,252,16,174,450,328],"zone":false},{"name":"Rzym B","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[305,543,221,390,296,401,657],"zone":false},{"name":"Warszawa A","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[620,377],"zone":false},{"name":"Warszawa B","group":"Sale bez numeru","block":"Trybuna Wschodnia · poziom 2","ids":[588,649,21,46,53,162,190,216,294,357,515,713,715,14,18,23,59,227,293,365,542,662,3,123,263,469,117,139,196,202,352,394,402,482,555,572,725,191,213,366],"zone":false},{"name":"Hall E20","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[52,404],"zone":false},{"name":"Hall E21","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[471],"zone":false},{"name":"Hall E22","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[506],"zone":false},{"name":"Hall E23","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[591],"zone":false},{"name":"Hall E24","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[231],"zone":false},{"name":"Hall E25","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[231],"zone":false},{"name":"Hall E26","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[645],"zone":false},{"name":"Hall E27","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[39,233,270,429,458,639],"zone":false},{"name":"Hall E28","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[180,285],"zone":false},{"name":"Hall E29","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[619],"zone":false},{"name":"Hall E30","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[728],"zone":false},{"name":"Hall E31","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[606,607],"zone":false},{"name":"Hall E32","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[17],"zone":false},{"name":"Hall E33","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[424],"zone":false},{"name":"Hall E34","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[193,50,166,576,589,590,129,164,409,717,720],"zone":false},{"name":"Hall E35","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[668],"zone":false},{"name":"Hall E36","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[453],"zone":false},{"name":"Hall E37","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[524],"zone":false},{"name":"Hall E38","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[111,512,31,658],"zone":false},{"name":"Hall E39","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[453,288,430],"zone":false},{"name":"Hall E40","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[480],"zone":false},{"name":"Hall E41","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[30],"zone":false},{"name":"Hall E42","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[629],"zone":false},{"name":"Hall E43","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[685],"zone":false},{"name":"Hall E44","group":"Stoiska w holu","block":"Trybuna Wschodnia · poziom 2","ids":[340],"zone":false}]},{"code":"GT","id":"gt","short":"Golden Tulip","name":"Hotel Golden Tulip","rooms":[{"name":"Golden 1","group":"Sale bez numeru","block":null,"ids":[119,453,237,10,116,681,559,31,658,169,565],"zone":false},{"name":"Golden 2","group":"Sale bez numeru","block":null,"ids":[119,453,395,658,565],"zone":false},{"name":"Patio Bar","group":"Sale bez numeru","block":null,"ids":[617,27,583,447,444,124,441,243],"zone":false},{"name":"Platinum 1","group":"Sale bez numeru","block":null,"ids":[455,532,275,723,224,209,373],"zone":false},{"name":"Platinum 2","group":"Sale bez numeru","block":null,"ids":[452],"zone":false},{"name":"Platinum 3","group":"Sale bez numeru","block":null,"ids":[112],"zone":false},{"name":"Silver 1","group":"Sale bez numeru","block":null,"ids":[287,264,336,592],"zone":false},{"name":"Silver 2","group":"Sale bez numeru","block":null,"ids":[275,723,688,501],"zone":false},{"name":"Steel","group":"Sale bez numeru","block":null,"ids":[269,387,727,594,624,646,648,43,533,554,635],"zone":false},{"name":"Hall 1","group":"Stoiska w holu","block":null,"ids":[453,336],"zone":false},{"name":"Hall 2","group":"Stoiska w holu","block":null,"ids":[287,1,288,430],"zone":false}]},{"code":"RS","id":"rs","short":"Radisson","name":"Hotel Radisson Blu Sobieski","rooms":[{"name":"Arkadia 1","group":"Sale bez numeru","block":null,"ids":[281],"zone":false},{"name":"Arkadia 2+3","group":"Sale bez numeru","block":null,"ids":[412,253,279],"zone":false},{"name":"Arkadia 4+5","group":"Sale bez numeru","block":null,"ids":[564,338],"zone":false},{"name":"Belweder 1","group":"Sale bez numeru","block":null,"ids":[94,159,323],"zone":false},{"name":"Belweder 2","group":"Sale bez numeru","block":null,"ids":[499,586,57,690,68,92,155,379,431,700,212],"zone":false},{"name":"Galeria 1","group":"Sale bez numeru","block":null,"ids":[307,531],"zone":false},{"name":"Galeria 2","group":"Sale bez numeru","block":null,"ids":[653],"zone":false},{"name":"Galeria 3","group":"Sale bez numeru","block":null,"ids":[198,628],"zone":false},{"name":"Hetman 1","group":"Sale bez numeru","block":null,"ids":[84,45,36,26],"zone":false},{"name":"Hetman 2","group":"Sale bez numeru","block":null,"ids":[84,192,195,342,540,36,26],"zone":false},{"name":"Husaria","group":"Sale bez numeru","block":null,"ids":[519,247],"zone":false},{"name":"Magnat 1","group":"Sale bez numeru","block":null,"ids":[247,418],"zone":false},{"name":"Magnat 2","group":"Sale bez numeru","block":null,"ids":[247,418],"zone":false},{"name":"Wilanów 1","group":"Sale bez numeru","block":null,"ids":[48,323],"zone":false},{"name":"Wilanów 2","group":"Sale bez numeru","block":null,"ids":[71,72,136,5,115,33],"zone":false},{"name":"Hall 1","group":"Stoiska w holu","block":null,"ids":[71,5,115],"zone":false},{"name":"Hall 3","group":"Stoiska w holu","block":null,"ids":[414],"zone":false},{"name":"Hall 4","group":"Stoiska w holu","block":null,"ids":[686],"zone":false},{"name":"Hall 6","group":"Stoiska w holu","block":null,"ids":[629],"zone":false},{"name":"Hall 7","group":"Stoiska w holu","block":null,"ids":[369],"zone":false},{"name":"101","group":"Sale 1xx","block":null,"ids":[69,508,660,109],"zone":false},{"name":"102","group":"Sale 1xx","block":null,"ids":[619],"zone":false},{"name":"105","group":"Sale 1xx","block":null,"ids":[451],"zone":false},{"name":"106","group":"Sale 1xx","block":null,"ids":[382,492,376,445],"zone":false},{"name":"107","group":"Sale 1xx","block":null,"ids":[694,281,406,425],"zone":false},{"name":"111","group":"Sale 1xx","block":null,"ids":[94,159,323],"zone":false},{"name":"115","group":"Sale 1xx","block":null,"ids":[82,146,613,152,153,415],"zone":false},{"name":"118","group":"Sale 1xx","block":null,"ids":[526,171,641],"zone":false},{"name":"122","group":"Sale 1xx","block":null,"ids":[493],"zone":false},{"name":"123","group":"Sale 1xx","block":null,"ids":[479,247],"zone":false},{"name":"125","group":"Sale 1xx","block":null,"ids":[479,247],"zone":false},{"name":"127","group":"Sale 1xx","block":null,"ids":[472],"zone":false},{"name":"128","group":"Sale 1xx","block":null,"ids":[61,454,433,518],"zone":false},{"name":"129","group":"Sale 1xx","block":null,"ids":[676],"zone":false},{"name":"130","group":"Sale 1xx","block":null,"ids":[85,326],"zone":false},{"name":"131","group":"Sale 1xx","block":null,"ids":[674],"zone":false},{"name":"201","group":"Sale 2xx","block":null,"ids":[262,32],"zone":false},{"name":"202","group":"Sale 2xx","block":null,"ids":[475,188,355],"zone":false},{"name":"205","group":"Sale 2xx","block":null,"ids":[28],"zone":false},{"name":"206","group":"Sale 2xx","block":null,"ids":[659],"zone":false},{"name":"207","group":"Sale 2xx","block":null,"ids":[306,615],"zone":false},{"name":"208","group":"Sale 2xx","block":null,"ids":[210,574,730],"zone":false},{"name":"210","group":"Sale 2xx","block":null,"ids":[664],"zone":false},{"name":"211","group":"Sale 2xx","block":null,"ids":[588,190,29,139,273,298,632,633],"zone":false},{"name":"212","group":"Sale 2xx","block":null,"ids":[54],"zone":false},{"name":"214","group":"Sale 2xx","block":null,"ids":[363,277],"zone":false},{"name":"215","group":"Sale 2xx","block":null,"ids":[58],"zone":false},{"name":"216","group":"Sale 2xx","block":null,"ids":[507],"zone":false},{"name":"218","group":"Sale 2xx","block":null,"ids":[178,307],"zone":false},{"name":"222","group":"Sale 2xx","block":null,"ids":[523,435],"zone":false},{"name":"223","group":"Sale 2xx","block":null,"ids":[24,468],"zone":false},{"name":"225","group":"Sale 2xx","block":null,"ids":[421,468],"zone":false},{"name":"227","group":"Sale 2xx","block":null,"ids":[587],"zone":false},{"name":"228","group":"Sale 2xx","block":null,"ids":[481],"zone":false},{"name":"229","group":"Sale 2xx","block":null,"ids":[110,353,300,91],"zone":false},{"name":"230","group":"Sale 2xx","block":null,"ids":[301],"zone":false},{"name":"231","group":"Sale 2xx","block":null,"ids":[37],"zone":false},{"name":"301","group":"Sale 3xx","block":null,"ids":[324,644,597],"zone":false},{"name":"302","group":"Sale 3xx","block":null,"ids":[98],"zone":false},{"name":"305","group":"Sale 3xx","block":null,"ids":[185,281,666,60,236],"zone":false},{"name":"306","group":"Sale 3xx","block":null,"ids":[135,238],"zone":false},{"name":"307","group":"Sale 3xx","block":null,"ids":[351],"zone":false},{"name":"308","group":"Sale 3xx","block":null,"ids":[278,222,368,398],"zone":false},{"name":"310","group":"Sale 3xx","block":null,"ids":[593],"zone":false},{"name":"311","group":"Sale 3xx","block":null,"ids":[122],"zone":false},{"name":"312","group":"Sale 3xx","block":null,"ids":[483,436],"zone":false},{"name":"314","group":"Sale 3xx","block":null,"ids":[291],"zone":false},{"name":"315","group":"Sale 3xx","block":null,"ids":[134],"zone":false},{"name":"316","group":"Sale 3xx","block":null,"ids":[101,158,15,172,75,549,618],"zone":false},{"name":"318","group":"Sale 3xx","block":null,"ids":[714],"zone":false},{"name":"322","group":"Sale 3xx","block":null,"ids":[585,226,495,634,114,257,556,561,673],"zone":false},{"name":"323","group":"Sale 3xx","block":null,"ids":[383,263,465],"zone":false},{"name":"325","group":"Sale 3xx","block":null,"ids":[567],"zone":false},{"name":"327","group":"Sale 3xx","block":null,"ids":[101,15,238,172,75,728],"zone":false},{"name":"328","group":"Sale 3xx","block":null,"ids":[423],"zone":false},{"name":"329","group":"Sale 3xx","block":null,"ids":[491,205,220,701],"zone":false},{"name":"330","group":"Sale 3xx","block":null,"ids":[2],"zone":false},{"name":"331","group":"Sale 3xx","block":null,"ids":[382,183,492,376],"zone":false},{"name":"401","group":"Sale 4xx","block":null,"ids":[69,93,660,703,396],"zone":false},{"name":"402","group":"Sale 4xx","block":null,"ids":[69,523,128,396,6,312,397],"zone":false},{"name":"405","group":"Sale 4xx","block":null,"ids":[69,523,128,463,396,6,312,397],"zone":false},{"name":"406","group":"Sale 4xx","block":null,"ids":[69,282,462,396,312,397],"zone":false},{"name":"407","group":"Sale 4xx","block":null,"ids":[4,374,88,339,516],"zone":false},{"name":"408","group":"Sale 4xx","block":null,"ids":[255,315,537],"zone":false},{"name":"410","group":"Sale 4xx","block":null,"ids":[258],"zone":false},{"name":"411","group":"Sale 4xx","block":null,"ids":[570],"zone":false},{"name":"412","group":"Sale 4xx","block":null,"ids":[311,372],"zone":false},{"name":"414","group":"Sale 4xx","block":null,"ids":[259],"zone":false},{"name":"415","group":"Sale 4xx","block":null,"ids":[651],"zone":false},{"name":"416","group":"Sale 4xx","block":null,"ids":[388],"zone":false},{"name":"418","group":"Sale 4xx","block":null,"ids":[687],"zone":false},{"name":"501","group":"Sale 5xx","block":null,"ids":[51,104,118,553,170,368,702,356,126],"zone":false},{"name":"502","group":"Sale 5xx","block":null,"ids":[51,104,118,170,368,384,702,154,126],"zone":false},{"name":"507","group":"Sale 5xx","block":null,"ids":[317],"zone":false},{"name":"508","group":"Sale 5xx","block":null,"ids":[41,297],"zone":false},{"name":"510","group":"Sale 5xx","block":null,"ids":[276],"zone":false},{"name":"515","group":"Sale 5xx","block":null,"ids":[100,232,343,229],"zone":false},{"name":"516","group":"Sale 5xx","block":null,"ids":[87,62,63,13,75,650,684],"zone":false},{"name":"518","group":"Sale 5xx","block":null,"ids":[332,558,449,121,120,228,726],"zone":false},{"name":"601","group":"Sale 6xx","block":null,"ids":[77],"zone":false},{"name":"602","group":"Sale 6xx","block":null,"ids":[135,511,568],"zone":false},{"name":"607","group":"Sale 6xx","block":null,"ids":[372,67],"zone":false},{"name":"608","group":"Sale 6xx","block":null,"ids":[461,316,623,610],"zone":false},{"name":"610","group":"Sale 6xx","block":null,"ids":[428,678],"zone":false},{"name":"615","group":"Sale 6xx","block":null,"ids":[568,599,242],"zone":false},{"name":"616","group":"Sale 6xx","block":null,"ids":[69,284,316,360],"zone":false},{"name":"618","group":"Sale 6xx","block":null,"ids":[461,316,623,610],"zone":false},{"name":"701","group":"Sale 7xx","block":null,"ids":[551,536,546,656],"zone":false},{"name":"702","group":"Sale 7xx","block":null,"ids":[266,488],"zone":false},{"name":"707","group":"Sale 7xx","block":null,"ids":[490,667,95],"zone":false},{"name":"708","group":"Sale 7xx","block":null,"ids":[350,413,218,528],"zone":false},{"name":"710","group":"Sale 7xx","block":null,"ids":[529,22,168,533],"zone":false},{"name":"715","group":"Sale 7xx","block":null,"ids":[436],"zone":false},{"name":"716","group":"Sale 7xx","block":null,"ids":[627],"zone":false},{"name":"718","group":"Sale 7xx","block":null,"ids":[230,335,440],"zone":false}]}]};
+
+const CATS = [
+  { k: "D", label: "Dystrybutorzy i salony" },
+  { k: "G", label: "Głośniki i słuchawki" },
+  { k: "W", label: "Wzmacniacze" },
+  { k: "C", label: "DAC i źródła cyfrowe" },
+  { k: "S", label: "Stoliki" },
+  { k: "R", label: "Adaptacja akustyczna" },
+  { k: "K", label: "Kable i podstawki" },
+  { k: "t", label: "Lampy", tube: true },
+  { sep: true },
+  { k: "A", label: "Analog", outline: true },
+  { k: "P", label: "Płyty", outline: true },
+  { k: "V", label: "Wideo", outline: true },
+  { k: "M", label: "Media", outline: true },
+  { k: "I", label: "Inne", outline: true },
+];
+const CAT_LABEL = Object.fromEntries(CATS.filter(c => c.k).map(c => [c.k, c.label]));
+
+const norm = s => s.normalize("NFD").replace(/\p{M}/gu, "").replace(/ł/g, "l").replace(/Ł/g, "L").toLowerCase().trim();
+
+// mode: klucz filtra (kod kategorii albo "t" dla lamp) -> 1 = pokaż tylko te, 2 = ukryj te
+const state = { q: "", exact: false, mode: new Map() };
+const includes = () => [...state.mode].filter(([k, v]) => v === 1 && k !== "t").map(([k]) => k);
+const chips = [];
+const rooms = [];
+const sections = [];
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k === "text") e.textContent = v;
+    else e.setAttribute(k, v);
+  }
+  e.append(...kids);
+  return e;
+}
+
+const WHERE = {};
+const REGION = (() => { try { return new Intl.DisplayNames(["pl"], { type: "region" }); } catch { return null; } })();
+const flagOf = cc => cc ? String.fromCodePoint(...[...cc].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65)) : "";
+const countryOf = cc => (cc && REGION ? REGION.of(cc) : cc) || "";
+let selected = null;
+let saved = null;
+
+function syncFilterButtons() {
+  document.querySelectorAll(".f").forEach(b => {
+    const k = b.dataset.k;
+    const m = state.mode.get(k) || 0;
+    b.setAttribute("aria-pressed", m === 1 ? "true" : m === 2 ? "mixed" : "false");
+    b.dataset.state = ["off", "include", "exclude"][m];
+    b.title = ["Kliknij, żeby pokazać tylko tę kategorię", "Kliknij ponownie, żeby ukryć tę kategorię", "Kliknij ponownie, żeby wyłączyć filtr"][m];
+  });
+}
+
+function selectExhibitor(id, name) {
+  const input = document.getElementById("q");
+  if (selected === null) {
+    saved = { q: state.q, exact: state.exact, mode: new Map(state.mode), input: input.value };
+  }
+  selected = id;
+  state.mode.clear();
+  syncFilterButtons();
+  input.value = name;
+  state.q = norm(name);
+  state.exact = true;
+  apply();
+  showDetail(id);
+}
+
+function restoreFilters() {
+  const prev = saved || { q: "", exact: false, mode: new Map(), input: "" };
+  state.q = prev.q; state.exact = prev.exact; state.mode = prev.mode;
+  document.getElementById("q").value = prev.input;
+  selected = null;
+  saved = null;
+  showDetail(null);
+  syncFilterButtons();
+  apply();
+}
+
+function showDetail(id) {
+  const box = document.getElementById("detail");
+  if (id == null) { box.hidden = true; box.replaceChildren(); return; }
+  const [name, k, tube, unsure, url, cc, spis] = DATA.exhibitors[id];
+  const cat = CAT_LABEL[k] + (tube ? ", lampy" : "") + (unsure ? " (kategoria niepewna)" : "");
+  const link = url
+    ? el("a", { class: "site", href: url, target: "_blank", rel: "noopener" }, "Strona firmy: " + url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") + " ↗")
+    : el("a", { class: "site search", href: "https://www.google.com/search?q=" + encodeURIComponent(name + " audio"), target: "_blank", rel: "noopener" }, "Brak sprawdzonej strony, szukaj w Google ↗");
+  box.replaceChildren(
+    el("strong", {}, ...(cc ? [el("span", { class: "flag", "aria-hidden": "true", text: flagOf(cc) })] : []), name),
+    ...(cc ? [el("span", { class: "cat", text: countryOf(cc) })] : []),
+    el("span", { class: "cat", text: cat }),
+    el("span", { class: "where", text: WHERE[id].join(" · ") + (spis ? " (sala tylko ze spisu w przewodniku)" : "") }),
+    link);
+  box.hidden = false;
+}
+
+function build() {
+  for (const v of DATA.venues)
+    for (const r of v.rooms)
+      for (const id of r.ids) (WHERE[id] ||= []).push(`${v.code} ${r.name}`);
+
+  const counts = {};
+  let tubes = 0;
+  for (const x of DATA.exhibitors) {
+    counts[x[1]] = (counts[x[1]] || 0) + 1;
+    if (x[2]) tubes++;
+  }
+
+  const filters = document.getElementById("filters");
+  for (const c of CATS) {
+    if (c.sep) { filters.append(el("span", { class: "sep", "aria-hidden": "true" })); continue; }
+    const n = c.tube ? tubes : (counts[c.k] || 0);
+    const b = el("button", {
+      type: "button",
+      class: "f " + (c.outline ? "outline" : c.tube ? "tube outline" : "k-" + c.k),
+      "aria-pressed": "false",
+      "data-k": c.k,
+    }, c.label, el("span", { class: "n", text: String(n) }));
+    b.addEventListener("click", () => {
+      if (selected !== null) {
+        selected = null; saved = null;
+        state.q = ""; state.exact = false;
+        document.getElementById("q").value = "";
+        showDetail(null);
+      }
+      const next = ((state.mode.get(c.k) || 0) + 1) % 3;
+      if (next) state.mode.set(c.k, next); else state.mode.delete(c.k);
+      syncFilterButtons();
+      apply();
+    });
+    filters.append(b);
+  }
+
+  const links = document.getElementById("venue-links");
+  const main = document.getElementById("venues");
+  for (const v of DATA.venues) {
+    const uniq = new Set(v.rooms.flatMap(r => r.ids)).size;
+    links.append(el("a", { href: "#" + v.id }, v.short, el("span", { text: String(uniq) })));
+
+    const sec = el("section", { class: "venue", id: v.id });
+    sec.append(el("div", { class: "venue-head" },
+      el("h2", {}, el("span", { class: "code", text: v.code }), v.name),
+      el("span", { class: "meta", text: `${uniq} wystawców · ${v.rooms.length} sal` })));
+
+    let group = null, block = null;
+    const body = el("div");
+    for (const r of v.rooms) {
+      if (r.block && r.block !== block) {
+        block = r.block;
+        group = null;
+        body.append(el("div", { class: "block-label", text: block }));
+      }
+      if (r.group !== group) {
+        group = r.group;
+        body.append(el("div", { class: "group-label", text: group, "data-group": group }));
+      }
+      const list = el("div", { class: "chips" });
+      const roomChips = [];
+      for (const id of r.ids) {
+        const [name, k, tube, unsure, , cc, spis] = DATA.exhibitors[id];
+        const b = el("button", {
+          type: "button",
+          class: `chip k-${k}${tube ? " tube" : ""}${unsure ? " unsure" : ""}${r.zone ? " zone" : ""}`,
+          title: (cc ? countryOf(cc) + " · " : "") + CAT_LABEL[k] + (tube ? ", lampy" : "") + (unsure ? " (niepewne)" : "") + (spis ? " · sala tylko ze spisu w przewodniku" : ""),
+        }, ...(cc ? [el("span", { class: "flag", "aria-hidden": "true", text: flagOf(cc) })] : []), name,
+          ...(spis ? [el("span", { class: "spis", "aria-hidden": "true", text: "*" })] : []));
+        b.addEventListener("click", () => {
+          if (selected === id) restoreFilters();
+          else selectExhibitor(id, name);
+        });
+        const rec = { b, id, k, tube, key: norm(name) };
+        chips.push(rec);
+        roomChips.push(rec);
+        list.append(b);
+      }
+      const row = el("div", { class: "room" },
+        el("div", { class: "room-name" }, r.name, el("small", { text: `${r.ids.length} ${plural(r.ids.length, "wystawca", "wystawcy", "wystawców")}` })),
+        list);
+      body.append(row);
+      rooms.push({ row, chips: roomChips, group, sec });
+    }
+    const empty = el("p", { class: "empty", text: "Brak wyników w tym miejscu." });
+    empty.hidden = true;
+    sec.append(body, empty);
+    main.append(sec);
+    sections.push({ sec, body, empty });
+  }
+}
+
+function excluded(c) {
+  return state.mode.get(c.k) === 2 || (c.tube && state.mode.get("t") === 2);
+}
+
+function matches(c, inc) {
+  if (state.q && (state.exact ? c.key !== state.q : !c.key.includes(state.q))) return false;
+  if (inc.length && !inc.includes(c.k)) return false;
+  if (state.mode.get("t") === 1 && !c.tube) return false;
+  return true;
+}
+
+function apply() {
+  const active = Boolean(state.q || state.mode.size);
+  const inc = includes();
+  const hitIds = new Set();
+  for (const r of rooms) {
+    let any = false;
+    for (const c of r.chips) {
+      const gone = excluded(c);
+      c.b.hidden = gone;
+      const m = !gone && (!active || matches(c, inc));
+      c.b.classList.toggle("dim", active && !m);
+      c.b.classList.toggle("hit", active && m && Boolean(state.q));
+      if (m) { any = true; if (active) hitIds.add(c.id); }
+    }
+    r.row.hidden = active && !any;
+  }
+  for (const s of sections) {
+    for (const lab of s.body.querySelectorAll(".group-label, .block-label")) {
+      const stop = lab.classList.contains("block-label") ? ".block-label" : ".group-label, .block-label";
+      let n = lab.nextElementSibling, visible = false;
+      while (n && !n.matches(stop)) { if (n.classList.contains("room") && !n.hidden) visible = true; n = n.nextElementSibling; }
+      lab.hidden = !visible;
+    }
+    s.empty.hidden = !active || [...s.body.children].some(n => n.classList.contains("room") && !n.hidden);
+  }
+  const shown = rooms.filter(r => !r.row.hidden).length;
+  document.getElementById("status").textContent = active
+    ? `${hitIds.size} ${plural(hitIds.size, "wystawca", "wystawcy", "wystawców")} w ${shown} ${plural(shown, "sali", "salach", "salach")}`
+    : `${DATA.exhibitors.length} wystawców w ${rooms.length} salach`;
+  document.getElementById("clear").hidden = !active;
+}
+
+function plural(n, one, few, many) {
+  if (n === 1) return one;
+  const d = n % 10, dd = n % 100;
+  return d >= 2 && d <= 4 && (dd < 12 || dd > 14) ? few : many;
+}
+
+document.getElementById("q").addEventListener("input", e => {
+  state.q = norm(e.target.value);
+  state.exact = false;
+  selected = null;
+  saved = null;
+  showDetail(null);
+  apply();
+});
+function clearAll() {
+  state.q = ""; state.exact = false; state.mode.clear();
+  document.getElementById("q").value = "";
+  showDetail(null);
+  selected = null;
+  syncFilterButtons();
+  saved = null;
+  apply();
+}
+document.getElementById("clear").addEventListener("click", clearAll);
+
+build();
+syncFilterButtons();
+apply();
+
+// Wysokość przyklejonego paska zależy od tego, na ile wierszy łamią się filtry;
+// nagłówek miejsca po kliknięciu skrótu ma się pokazać pod paskiem.
+const toolbar = document.querySelector(".toolbar");
+new ResizeObserver(() => {
+  document.documentElement.style.setProperty("--toolbar-h", toolbar.offsetHeight + "px");
+}).observe(toolbar);
+</script>
+
+</body>
+</html>
