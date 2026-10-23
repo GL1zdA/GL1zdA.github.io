@@ -213,6 +213,23 @@ h1 {
 }
 .detail a.site.search { font-weight: 400; }
 .status { font-size: 13px; color: var(--muted); min-height: 1.2em; }
+.btn-filters {
+  display: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  gap: 6px;
+  align-items: baseline;
+}
+.btn-filters .n { font-family: var(--font-mono); font-size: 12px; font-weight: 500; color: var(--muted); }
+.btn-filters::after { content: "▾"; }
+.btn-filters[aria-expanded="true"]::after { content: "▴"; }
 
 /* category colors */
 .k-D { background: var(--c-gray); }
@@ -321,6 +338,11 @@ h2 {
 footer { margin-top: 36px; color: var(--muted); font-size: 13px; display: grid; gap: 6px; max-width: 70ch; }
 footer a { color: inherit; }
 
+/* Na małych ekranach filtry zajmowałyby kilka wierszy przyklejonego paska, więc są zwinięte pod przyciskiem. */
+@media (max-width: 560px), (max-height: 500px) {
+  .btn-filters { display: inline-flex; }
+  .toolbar:not(.filters-open) .filters { display: none; }
+}
 @media (max-width: 560px) {
   .room { grid-template-columns: 1fr; }
   .room-name { padding-top: 0; }
@@ -349,6 +371,7 @@ footer a { color: inherit; }
     <div class="detail" id="detail" hidden></div>
     <div class="filters" id="filters" aria-label="Filtruj według kategorii"></div>
     <div class="row">
+      <button class="btn-filters" id="filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Kategorie<span class="n" id="filters-count"></span></button>
       <div class="status" id="status" aria-live="polite"></div>
       <button class="btn-clear" id="clear" type="button" hidden>Pokaż wszystkich</button>
     </div>
@@ -421,6 +444,8 @@ function syncFilterButtons() {
     b.dataset.state = ["off", "include", "exclude"][m];
     b.title = ["Kliknij, żeby pokazać tylko tę kategorię", "Kliknij ponownie, żeby ukryć tę kategorię", "Kliknij ponownie, żeby wyłączyć filtr"][m];
   });
+  // Liczba włączonych filtrów jest widoczna także przy zwiniętym panelu.
+  document.getElementById("filters-count").textContent = state.mode.size ? String(state.mode.size) : "";
 }
 
 function selectExhibitor(id, name) {
@@ -655,6 +680,10 @@ function clearAll() {
   apply();
 }
 document.getElementById("clear").addEventListener("click", clearAll);
+document.getElementById("filters-toggle").addEventListener("click", e => {
+  const open = document.querySelector(".toolbar").classList.toggle("filters-open");
+  e.currentTarget.setAttribute("aria-expanded", String(open));
+});
 
 build();
 syncFilterButtons();
